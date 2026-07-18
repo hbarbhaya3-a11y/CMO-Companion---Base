@@ -1,0 +1,1590 @@
+{
+ "1": {
+  "id": 1,
+  "time": "06:55 ET",
+  "type": "Earnings",
+  "title": "Q1 2026 US Domestic operating margin 4.0% adj. \u2014 $350M transitional cost drag (250 bps)",
+  "source": "UPS Q1 2026 Earnings Call (Apr 28, 2026)",
+  "impact": "high",
+  "conf": 1.0,
+  "accounts": [
+   "Portfolio"
+  ],
+  "why": "MD-11 retirement, Ground Saver insourcing transition, weather, and casualty expenses created a 250 bps drag on US Domestic margin. CFO Brian Dykes characterized as 'largely behind us.' Q2 guide: 7.5\u20138.5%.",
+  "action": "Track margin recovery weekly; Q2 inflection critical to FY guide.",
+  "signal_enrichment": {
+   "why_it_matters": "US Domestic operating margin fell to 4.0% adjusted \u2014 well below the 7.5\u20138.5% Q2 target. The $350M drag came from four converging transitional costs: MD-11 fleet retirement (maintenance and lease-exit charges), Ground Saver insourcing (shifting USPS-delivered volume onto UPS network at higher cost during ramp), severe Q1 weather events (ice storms in the Southeast), and elevated casualty expenses. CFO Dykes characterized these as 'largely behind us,' implying Q2 should show meaningful recovery. However, if Q2 margin stays below 6%, the FY26 guide of 10%+ adjusted becomes structurally unreachable without dramatic H2 acceleration.",
+   "metrics": [
+    {
+     "value": "4.0%",
+     "label": "US Domestic adj. operating margin",
+     "negative": true,
+     "positive": false
+    },
+    {
+     "value": "250 bps",
+     "label": "Transitional cost drag",
+     "negative": true,
+     "positive": false
+    },
+    {
+     "value": "7.5\u20138.5%",
+     "label": "Q2 margin target",
+     "negative": false,
+     "positive": true
+    }
+   ],
+   "key_insight": "The 250 bps drag is transitional, not structural \u2014 MD-11 retirements complete in Q2, Ground Saver insourcing stabilizes by mid-year, and weather/casualty are non-recurring. The real test is Q2: if margin recovers to the 7.5\u20138.5% guide, the yield-over-volume strategy is confirmed. If it doesn't, the market will question whether the Amazon capacity reallocation is generating sufficient replacement revenue at target margins.",
+   "recent_activity": [
+    {
+     "action": "Q1 earnings reported US Domestic adj. op margin 4.0% \u2014 $350M transitional drag",
+     "actor": "UPS Investor Relations",
+     "time": "Apr 28, 2026"
+    },
+    {
+     "action": "CFO Dykes confirmed MD-11 retirement costs 'largely behind us' on earnings call",
+     "actor": "CFO Office",
+     "time": "Apr 28, 2026"
+    },
+    {
+     "action": "Ground Saver insourcing transition tracking at 78% completion \u2014 ahead of schedule",
+     "actor": "Network Operations",
+     "time": "Last week"
+    },
+    {
+     "action": "Finance team modeling Q2 margin recovery scenarios (base case: 7.8%)",
+     "actor": "Finance & Strategy",
+     "time": "This week"
+    }
+   ],
+   "related_topics": [
+    "Operating Margin",
+    "MD-11 Retirement",
+    "Ground Saver Insourcing",
+    "Q2 Recovery",
+    "FY26 Guidance",
+    "Transitional Costs"
+   ],
+   "recommended_takeaways": [
+    {
+     "action": "Establish weekly margin tracking cadence with finance through Q2",
+     "reasoning": "because Q2 margin recovery to 7.5\u20138.5% is the single most important proof point for the yield strategy \u2014 early warning on shortfall enables course correction.",
+     "impact": "Real-time visibility into margin trajectory, enabling proactive pricing and cost actions if recovery lags."
+    },
+    {
+     "action": "Ensure Ground Saver insourcing completion stays on track for mid-year",
+     "reasoning": "because insourcing is the largest controllable margin headwind \u2014 delays extend the cost drag into H2.",
+     "impact": "Completing insourcing on schedule removes ~100 bps of the transitional drag from Q3 onwards."
+    }
+   ],
+   "data_sources": [
+    {
+     "name": "UPS Q1 2026 Earnings Call",
+     "type": "External",
+     "confidence": "Very High",
+     "updated": "Apr 28, 2026"
+    },
+    {
+     "name": "UPS Finance & Strategy",
+     "type": "Internal",
+     "confidence": "High",
+     "updated": "This week"
+    }
+   ],
+   "confidence_description": "Very high confidence \u2014 sourced directly from UPS Q1 2026 earnings call and SEC filings.",
+   "context_questions": [
+    "What's the Q2 margin recovery tracking at so far?",
+    "How much of the $350M drag was one-time vs recurring?",
+    "Is the Ground Saver insourcing on track for mid-year completion?",
+    "What margin level do we need in Q2 to keep the FY26 guide credible?"
+   ]
+  }
+ },
+ "2": {
+  "id": 2,
+  "time": "06:22 ET",
+  "type": "Volume",
+  "title": "Amazon volume reduced ~500K ADV in Q1 \u2014 glide-down on track for June 2026 completion",
+  "source": "UPS Q1 2026 Earnings Call",
+  "impact": "high",
+  "conf": 1.0,
+  "accounts": [
+   "Portfolio"
+  ],
+  "why": "Amazon was 10.6% of FY25 revenue; targeted to be roughly half by mid-2026. Freed capacity reallocating to higher-yield SMB, Healthcare, B2B, Automotive.",
+  "action": "Confirm capacity reallocation plans hitting SMB / Healthcare growth engines.",
+  "signal_enrichment": {
+   "why_it_matters": "The Amazon glide-down is the cornerstone of Carol Tom\u00e9's 'better, not bigger' strategy. Amazon represented 10.6% of FY25 revenue ($11.3B) \u2014 a massive, low-margin volume dependency. Reducing Amazon to ~5% by mid-2026 frees approximately 700K ADV of network capacity. The strategic bet: reallocate that capacity to higher-yield segments (SMB at $18.40 RPP vs Amazon's ~$8.50 RPP, Healthcare at $22.80 RPP) to grow revenue per piece even as total volume declines. Q1 results show ~500K ADV already removed \u2014 the glide-down is mechanically on track for June completion.",
+   "metrics": [
+    {
+     "value": "~500K",
+     "label": "Amazon ADV reduced in Q1",
+     "negative": false,
+     "positive": true
+    },
+    {
+     "value": "10.6%",
+     "label": "Amazon share of FY25 revenue",
+     "negative": true,
+     "positive": false
+    },
+    {
+     "value": "~700K",
+     "label": "ADV capacity freed by Q2 end",
+     "negative": false,
+     "positive": true
+    }
+   ],
+   "key_insight": "The glide-down is on track mechanically, but the real question is whether freed capacity is being filled with higher-yield volume fast enough. SMB ADV grew +1.6% YoY, Healthcare logistics hit $3B quarterly \u2014 both positive. But US Domestic total ADV is down ~8% YoY, meaning the backfill is running behind the Amazon exit pace. The 4.8% volume gap must close through DAP acquisitions, healthcare penetration, and automotive wins before fixed-cost leverage erodes margins further.",
+   "recent_activity": [
+    {
+     "action": "Q1 earnings confirmed ~500K ADV Amazon volume reduction \u2014 on track for June completion",
+     "actor": "UPS Investor Relations",
+     "time": "Apr 28, 2026"
+    },
+    {
+     "action": "SMB ADV grew +1.6% YoY \u2014 positive but below the 3.5% needed to fully replace Amazon",
+     "actor": "Revenue Management",
+     "time": "This quarter"
+    },
+    {
+     "action": "Healthcare logistics crossed $3B quarterly \u2014 highest-yield backfill segment performing",
+     "actor": "Healthcare Division",
+     "time": "This quarter"
+    },
+    {
+     "action": "Network planning confirmed 700K ADV capacity available by end of Q2",
+     "actor": "Network Planning",
+     "time": "Last week"
+    }
+   ],
+   "related_topics": [
+    "Amazon Glide-Down",
+    "Capacity Reallocation",
+    "SMB Backfill",
+    "Healthcare Growth",
+    "Volume vs Yield Strategy",
+    "Network Utilization"
+   ],
+   "recommended_takeaways": [
+    {
+     "action": "Accelerate SMB and Healthcare capacity reallocation to close the 4.8% volume gap",
+     "reasoning": "because the Amazon exit pace is outrunning the backfill rate \u2014 freed capacity without replacement volume erodes fixed-cost leverage.",
+     "impact": "Closing the gap protects US Domestic margins and validates the yield-over-volume thesis to investors."
+    },
+    {
+     "action": "Monitor for Amazon volume re-entry overtures and maintain pricing discipline",
+     "reasoning": "because Amazon may attempt to reverse the glide-down with volume commitments at low rates \u2014 accepting would unwind 18 months of strategy.",
+     "impact": "Protects the $15.32 RPP baseline and the strategic shift to higher-yield segments."
+    }
+   ],
+   "data_sources": [
+    {
+     "name": "UPS Q1 2026 Earnings Call",
+     "type": "External",
+     "confidence": "Very High",
+     "updated": "Apr 28, 2026"
+    },
+    {
+     "name": "Revenue Management",
+     "type": "Internal",
+     "confidence": "High",
+     "updated": "Real-time"
+    }
+   ],
+   "confidence_description": "Very high confidence \u2014 sourced from UPS Q1 2026 earnings call. Glide-down targets publicly stated.",
+   "context_questions": [
+    "How much of the freed Amazon capacity has been reallocated to higher-yield segments?",
+    "What's the current backfill rate vs the Amazon exit pace?",
+    "Has Amazon made any volume re-entry overtures?",
+    "Which hubs have the most unused capacity post-Amazon?"
+   ]
+  }
+ },
+ "3": {
+  "id": 3,
+  "time": "05:40 ET",
+  "type": "Healthcare",
+  "title": "Healthcare logistics delivered first $3.0B quarter in Q1 2026 \u2014 all 3 segments YoY growth",
+  "source": "UPS Q1 2026 Press Release (Apr 28, 2026)",
+  "impact": "high",
+  "conf": 1.0,
+  "accounts": [
+   "Portfolio \u00b7 Healthcare"
+  ],
+  "why": "On track toward $20B FY late-2026 healthcare target (~doubling 2023 base). Andlauer + Frigo-Trans acquisitions fully integrated. Cold-chain capacity material in US Domestic mix shift.",
+  "action": "Accelerate Healthcare ABM motions; consider penetration plays in pharma + medical devices.",
+  "signal_enrichment": {
+   "why_it_matters": "Healthcare logistics crossed $3.04B in Q1 \u2014 a milestone quarter. UPS Healthcare now operates the world's largest healthcare-specific logistics network: Marken (clinical trials), MNX Global Solutions (time-critical), Andlauer Healthcare Group (Canadian pharma), and Frigo-Trans (European cold-chain). Revenue per piece in healthcare is $22.80 \u2014 nearly double the enterprise average of $12.10. On track toward the $20B FY late-2026 target. All three healthcare sub-segments grew YoY: temperature-controlled (+14%), clinical trials (+11%), medical devices (+8%).",
+   "metrics": [
+    {
+     "value": "$3.04B",
+     "label": "Q1 Healthcare revenue (record)",
+     "negative": false,
+     "positive": true
+    },
+    {
+     "value": "$22.80",
+     "label": "Healthcare RPP (highest vertical)",
+     "negative": false,
+     "positive": true
+    },
+    {
+     "value": "$20B",
+     "label": "FY late-2026 healthcare target",
+     "negative": false,
+     "positive": true
+    }
+   ],
+   "key_insight": "Healthcare is UPS's premium margin engine and the fastest path to replacing Amazon revenue with structurally higher-yield volume. At $22.80 RPP, every healthcare package is worth 2.7\u00d7 an average enterprise package. The Marken clinical trial platform gives UPS a moat that FedEx and DHL cannot replicate without major acquisitions. FedEx's Memphis cold-chain hub delay (July \u2192 September) creates a 6-8 week window to lock in displaced pharma capacity.",
+   "recent_activity": [
+    {
+     "action": "Healthcare revenue confirmed at $3.04B \u2014 first-ever $3B quarter milestone",
+     "actor": "Healthcare Logistics",
+     "time": "Apr 28, 2026"
+    },
+    {
+     "action": "Temperature-controlled shipments up 14% YoY, led by Marken clinical trial logistics",
+     "actor": "Marken Division",
+     "time": "Q1"
+    },
+    {
+     "action": "Andlauer + Frigo-Trans integration completed \u2014 full Canadian and EU cold-chain coverage",
+     "actor": "M&A Integration",
+     "time": "This quarter"
+    },
+    {
+     "action": "FedEx Memphis cold-chain hub delayed July \u2192 September \u2014 capacity window for UPS",
+     "actor": "Competitive Intelligence",
+     "time": "Last week"
+    }
+   ],
+   "related_topics": [
+    "Healthcare Logistics",
+    "Cold-Chain Infrastructure",
+    "Marken Platform",
+    "Clinical Trials",
+    "$20B Target",
+    "FedEx Competition"
+   ],
+   "recommended_takeaways": [
+    {
+     "action": "Accelerate enterprise pharma contract outreach during the FedEx delay window",
+     "reasoning": "because the 6-8 week gap before FedEx's Memphis hub opens is a time-limited opportunity to capture displaced capacity demand.",
+     "impact": "Locks in 3-5 enterprise pharma contracts worth an estimated $120-200M annually."
+    },
+    {
+     "action": "Expand Healthcare ABM motions to medical devices and pharma verticals",
+     "reasoning": "because medical devices grew 8% YoY \u2014 slower than temp-controlled (14%) and clinical (11%) \u2014 indicating untapped potential.",
+     "impact": "Accelerates medical device penetration toward the $20B healthcare target."
+    }
+   ],
+   "data_sources": [
+    {
+     "name": "UPS Q1 2026 Press Release",
+     "type": "External",
+     "confidence": "Very High",
+     "updated": "Apr 28, 2026"
+    },
+    {
+     "name": "Healthcare Logistics Division",
+     "type": "Internal",
+     "confidence": "High",
+     "updated": "Real-time"
+    }
+   ],
+   "confidence_description": "Very high confidence \u2014 public earnings data confirmed by internal healthcare analytics.",
+   "context_questions": [
+    "Which pharma accounts are most at risk when FedEx's Memphis hub opens in September?",
+    "What's driving the 14% growth in temperature-controlled vs 8% in medical devices?",
+    "How does healthcare margin compare across the three sub-segments?",
+    "What cold-chain capacity can we add in the Northeast within 6 weeks?"
+   ]
+  }
+ },
+ "4": {
+  "id": 4,
+  "time": "04:18 ET",
+  "type": "Network",
+  "title": "Network Reconfiguration \u00b7 23 facilities closed in Q1; 27 more closing by end of H1",
+  "source": "UPS Q1 2026 8-K",
+  "impact": "med",
+  "conf": 1.0,
+  "accounts": [
+   "Operations"
+  ],
+  "why": "50-facility H1 closure target. 25,000 operational positions reduced. 28% lower cost-per-piece in automated facilities (per CEO Tom\u00e9). Driver Choice voluntary program \u2014 7,500 buyouts, 77% exited April.",
+  "action": "Monitor service continuity during transition; SMB-facing field readiness.",
+  "signal_enrichment": {
+   "why_it_matters": "UPS is executing the largest network reconfiguration in its 117-year history. 23 facilities closed in Q1, 27 more by end of H1 (50 total). 25,000 operational positions reduced through the Driver Choice voluntary buyout program \u2014 7,500 drivers accepted buyouts, 77% exited by April. CEO Carol Tom\u00e9 reported 28% lower cost-per-piece in fully automated facilities. This is the structural cost reduction that makes the yield-over-volume strategy viable: fewer facilities, higher automation, lower cost-per-piece, capacity freed from Amazon volume reinvested in higher-yield segments.",
+   "metrics": [
+    {
+     "value": "50",
+     "label": "Facilities closing in H1",
+     "negative": false,
+     "positive": false
+    },
+    {
+     "value": "25,000",
+     "label": "Positions reduced",
+     "negative": false,
+     "positive": false
+    },
+    {
+     "value": "28%",
+     "label": "Cost-per-piece reduction (automated)",
+     "negative": false,
+     "positive": true
+    }
+   ],
+   "key_insight": "The 28% cost-per-piece reduction in automated facilities is the headline number \u2014 it proves that the network reconfiguration is delivering structural margin improvement, not just cost-cutting. The risk is service continuity during the transition: 50 facility closures in 6 months means rerouting thousands of lanes. SMB customers in affected geographies may see temporary service disruptions unless field teams are proactively managing expectations and alternatives.",
+   "recent_activity": [
+    {
+     "action": "23 facilities closed in Q1 \u2014 on track for 50 by end of H1",
+     "actor": "Network Operations",
+     "time": "Q1"
+    },
+    {
+     "action": "Driver Choice program: 7,500 buyouts accepted, 77% exited by April",
+     "actor": "HR & Operations",
+     "time": "April"
+    },
+    {
+     "action": "Automated facility cost-per-piece benchmarked at 28% below legacy facilities",
+     "actor": "Finance & Strategy",
+     "time": "This quarter"
+    },
+    {
+     "action": "Service continuity monitoring dashboard activated for affected geographies",
+     "actor": "Network Quality",
+     "time": "This month"
+    }
+   ],
+   "related_topics": [
+    "Network Reconfiguration",
+    "Facility Closures",
+    "Automation",
+    "Driver Choice Program",
+    "Cost-Per-Piece",
+    "Service Continuity"
+   ],
+   "recommended_takeaways": [
+    {
+     "action": "Monitor service continuity in affected geographies and proactively communicate with SMB customers",
+     "reasoning": "because 50 facility closures in H1 create temporary service disruption risk \u2014 losing SMB customers during the transition would undermine the backfill strategy.",
+     "impact": "Protects SMB volume in the 50 affected geographies during the transition period."
+    },
+    {
+     "action": "Accelerate automation deployment to capture the 28% cost-per-piece advantage more broadly",
+     "reasoning": "because every automated facility delivers structural margin improvement \u2014 the faster the rollout, the sooner the cost base supports the yield strategy.",
+     "impact": "Expanding automation to 15 additional facilities in H2 could reduce US Domestic cost base by $200-300M annually."
+    }
+   ],
+   "data_sources": [
+    {
+     "name": "UPS Q1 2026 8-K",
+     "type": "External",
+     "confidence": "Very High",
+     "updated": "Q1 2026"
+    },
+    {
+     "name": "Network Operations",
+     "type": "Internal",
+     "confidence": "High",
+     "updated": "Real-time"
+    }
+   ],
+   "confidence_description": "Very high confidence \u2014 SEC filing data confirmed by internal network operations tracking.",
+   "context_questions": [
+    "Which geographies are most affected by the remaining 27 facility closures?",
+    "What's the service continuity risk level in each affected area?",
+    "How many of the 25,000 position reductions are completed vs pending?",
+    "What's the automation rollout timeline for the next 15 facilities?"
+   ]
+  }
+ },
+ "5": {
+  "id": 5,
+  "time": "21:18 ET (Jun 7)",
+  "type": "Competitor",
+  "title": "FedEx Freight spin-off completed Jun 1, 2026 \u2014 new standalone publicly traded company",
+  "source": "FedEx Corp 8-K (Mar 19, 2026) \u00b7 WSJ (Jun 1, 2026)",
+  "impact": "high",
+  "conf": 1.0,
+  "accounts": [
+   "LTL Competitive Set"
+  ],
+  "why": "FedEx Freight (LTL) spun off as standalone NYSE listing on June 1, 2026 with $3.7B senior notes issued Feb 5. Refocuses FedEx Express on small-parcel competition with UPS. DIM technology aggressively used (90% of shipments) \u2014 material precedent for UPS pricing posture.",
+  "action": "Re-evaluate competitive positioning vs leaner FedEx Express; tighten L0 DIM Divisor floor portfolio-wide.",
+  "signal_enrichment": {
+   "why_it_matters": "FedEx completed the Freight spin-off on June 1, 2026 \u2014 the most significant structural change in the US logistics industry in a decade. By separating LTL into a standalone NYSE-listed company (with $3.7B in senior notes), FedEx Express becomes a leaner, pure-play parcel competitor focused directly on UPS's core business. FedEx Express can now allocate 100% of capital and management attention to small-parcel competition. Their aggressive DIM technology deployment (90% of shipments scanned for dimensional weight) sets a pricing precedent that could pressure UPS if DIM adoption lags.",
+   "metrics": [
+    {
+     "value": "Jun 1",
+     "label": "FedEx Freight spin-off completion",
+     "negative": true,
+     "positive": false
+    },
+    {
+     "value": "$3.7B",
+     "label": "Senior notes issued for spin-off",
+     "negative": false,
+     "positive": false
+    },
+    {
+     "value": "90%",
+     "label": "FedEx DIM scanning adoption",
+     "negative": true,
+     "positive": false
+    }
+   ],
+   "key_insight": "Post-spin-off FedEx Express is a fundamentally different competitor. Without the LTL freight business consuming management bandwidth and capital, FedEx Express will pursue small-parcel market share with singular focus. Their 90% DIM scanning rate means they're pricing more accurately on dimensional weight \u2014 a competitive advantage UPS must match. The L0 DIM Divisor is UPS's primary lever to ensure pricing reflects actual package dimensions. If UPS doesn't tighten DIM floors portfolio-wide, FedEx's pricing accuracy advantage compounds over time.",
+   "recent_activity": [
+    {
+     "action": "FedEx Freight officially listed as standalone company on NYSE \u2014 Jun 1, 2026",
+     "actor": "WSJ / NYSE",
+     "time": "Jun 1, 2026"
+    },
+    {
+     "action": "FedEx Corp 8-K filed Mar 19 confirming spin-off mechanics and $3.7B debt issuance",
+     "actor": "SEC / FedEx IR",
+     "time": "Mar 19, 2026"
+    },
+    {
+     "action": "Competitive Intelligence briefing: post-spin FedEx Express restructuring underway",
+     "actor": "Strategy & CI",
+     "time": "This week"
+    },
+    {
+     "action": "UPS DIM scanning rate at 72% vs FedEx's 90% \u2014 18-point gap",
+     "actor": "Revenue Management",
+     "time": "Current"
+    }
+   ],
+   "related_topics": [
+    "FedEx Freight Spin-Off",
+    "DIM Technology",
+    "Competitive Positioning",
+    "L0 DIM Divisor",
+    "Pricing Discipline",
+    "Small-Parcel Market"
+   ],
+   "recommended_takeaways": [
+    {
+     "action": "Tighten L0 DIM Divisor floor portfolio-wide to match FedEx's pricing precision",
+     "reasoning": "because FedEx's 90% DIM scanning rate gives them an 18-point advantage in pricing accuracy \u2014 leaving UPS at 72% means undercharging on oversized packages.",
+     "impact": "Closing the DIM gap from 72% to 85% could recover an estimated $120-180M annually in under-captured dimensional surcharges."
+    },
+    {
+     "action": "Re-evaluate competitive positioning against the post-spin-off FedEx Express",
+     "reasoning": "because FedEx Express without LTL freight is a leaner, more focused competitor \u2014 UPS's competitive playbook must be updated to reflect the new threat profile.",
+     "impact": "Updated competitive strategy prevents being surprised by FedEx's increased focus on small-parcel market share."
+    }
+   ],
+   "data_sources": [
+    {
+     "name": "FedEx Corp 8-K",
+     "type": "External",
+     "confidence": "Very High",
+     "updated": "Mar 19, 2026"
+    },
+    {
+     "name": "Wall Street Journal",
+     "type": "External",
+     "confidence": "High",
+     "updated": "Jun 1, 2026"
+    },
+    {
+     "name": "Strategy & CI",
+     "type": "Internal",
+     "confidence": "High",
+     "updated": "This week"
+    }
+   ],
+   "confidence_description": "Very high confidence \u2014 SEC filings and public market data. Spin-off is complete.",
+   "context_questions": [
+    "What's FedEx Express's estimated capital allocation post-spin-off?",
+    "How quickly can UPS close the DIM scanning gap from 72% to 85%?",
+    "Which UPS enterprise accounts are most vulnerable to a focused FedEx Express?",
+    "Should we accelerate our own DIM technology deployment timeline?"
+   ]
+  }
+ },
+ "6": {
+  "id": 6,
+  "time": "16:42 ET (Jun 7)",
+  "type": "Competitor",
+  "title": "FedEx Q3 FY26: US domestic revenue +10%, package volume growing \u2014 share pressure vs UPS",
+  "source": "FedEx Corp Q3 FY26 8-K (Mar 19, 2026)",
+  "impact": "high",
+  "conf": 0.95,
+  "accounts": [
+   "Portfolio"
+  ],
+  "why": "FedEx Federal Express segment posted 10% Q3 revenue growth on higher US domestic + International Priority yields AND increased US domestic package volume \u2014 while UPS US Domestic Q1 revenue declined 2.3%. Mix-shift execution is now structural.",
+  "action": "Sharpen pricing discipline on SMB and B2B segments to defend share gains; protect Healthcare premium.",
+  "signal_enrichment": {
+   "why_it_matters": "FedEx's Q3 FY26 results reveal a structural divergence: FedEx US domestic revenue grew 10% with volume growth, while UPS US Domestic Q1 revenue declined 2.3% with 8% volume decline. FedEx is growing both volume AND yield simultaneously \u2014 a combination UPS achieved only on the yield side. FedEx's International Priority yields also grew, pressuring UPS's $15.32 RPP advantage. This is no longer a temporary competitive moment \u2014 FedEx's execution on the Happy Returns acquisition, DIM technology, and post-Freight-spin focus is producing sustained results.",
+   "metrics": [
+    {
+     "value": "+10%",
+     "label": "FedEx US domestic revenue growth",
+     "negative": true,
+     "positive": false
+    },
+    {
+     "value": "-2.3%",
+     "label": "UPS US Domestic revenue (Q1)",
+     "negative": true,
+     "positive": false
+    },
+    {
+     "value": "+8%",
+     "label": "FedEx volume growth (vs UPS -8%)",
+     "negative": true,
+     "positive": false
+    }
+   ],
+   "key_insight": "The 10% revenue growth at FedEx while UPS declined 2.3% is the starkest competitive divergence since 2019. FedEx is executing a volume + yield strategy (grow both) while UPS is executing a yield-only strategy (grow yield, accept volume decline). Both can work \u2014 but UPS's strategy requires the yield premium to outrun the volume loss, and FedEx's momentum makes that harder. The Healthcare and SMB segments where UPS commands pricing power are precisely where FedEx is now investing most aggressively.",
+   "recent_activity": [
+    {
+     "action": "FedEx Q3 FY26 8-K: Federal Express segment revenue +10%, US domestic volume growing",
+     "actor": "FedEx IR / SEC",
+     "time": "Mar 19, 2026"
+    },
+    {
+     "action": "FedEx International Priority yields increased \u2014 pressuring UPS's international RPP advantage",
+     "actor": "Competitive Intelligence",
+     "time": "This quarter"
+    },
+    {
+     "action": "FedEx Happy Returns integration going live at enterprise accounts \u2014 reverse logistics play",
+     "actor": "Competitive Intelligence",
+     "time": "This month"
+    },
+    {
+     "action": "UPS US Domestic Q1 revenue declined 2.3% on -8% ADV \u2014 yield up but volume down more",
+     "actor": "UPS Finance",
+     "time": "Apr 28, 2026"
+    }
+   ],
+   "related_topics": [
+    "FedEx Competition",
+    "Market Share",
+    "Revenue Growth Divergence",
+    "Yield vs Volume Strategy",
+    "Happy Returns",
+    "Pricing Discipline"
+   ],
+   "recommended_takeaways": [
+    {
+     "action": "Sharpen pricing discipline on SMB and B2B segments to defend share gains",
+     "reasoning": "because FedEx is growing volume in exactly the segments UPS is targeting for Amazon replacement \u2014 losing share in SMB/B2B undermines the entire backfill strategy.",
+     "impact": "Protects SMB and B2B share gains that represent the foundation of the yield-over-volume strategy."
+    },
+    {
+     "action": "Analyze FedEx's volume growth sources to understand which UPS segments are losing share",
+     "reasoning": "because FedEx's +10% growth vs UPS's -2.3% implies FedEx is winning specific customer segments \u2014 identifying which ones enables targeted defense.",
+     "impact": "Pinpoints the 3-5 customer segments where UPS is losing competitive position, enabling surgical intervention."
+    }
+   ],
+   "data_sources": [
+    {
+     "name": "FedEx Corp Q3 FY26 8-K",
+     "type": "External",
+     "confidence": "Very High",
+     "updated": "Mar 19, 2026"
+    },
+    {
+     "name": "UPS Q1 2026 Earnings",
+     "type": "External",
+     "confidence": "Very High",
+     "updated": "Apr 28, 2026"
+    },
+    {
+     "name": "Competitive Intelligence",
+     "type": "Internal",
+     "confidence": "High",
+     "updated": "Current"
+    }
+   ],
+   "confidence_description": "Very high confidence \u2014 both companies' SEC filings provide direct comparison data.",
+   "context_questions": [
+    "Which customer segments is FedEx winning volume from UPS?",
+    "How does FedEx's Happy Returns affect our enterprise account retention?",
+    "What's FedEx's pricing strategy in the SMB segment specifically?",
+    "Should we adjust our yield-only strategy to include selective volume plays?"
+   ]
+  }
+ },
+ "7": {
+  "id": 7,
+  "time": "16:08 ET (Jun 7)",
+  "type": "Trade Policy",
+  "title": "2025 trade policy shifts continue rerouting Asia-to-Americas flows \u2014 UPS captured premium trade-lane shifts in Q1",
+  "source": "UPS Q1 2026 Earnings Call + Supply Chain Dive (May 2026)",
+  "impact": "med",
+  "conf": 0.92,
+  "accounts": [
+   "International \u00d7 US Dom B2B"
+  ],
+  "why": "Per CFO Dykes: UPS 'capitalized on trade lane shifts resulting from 2025 trade policy changes.' International Q1 revenue +3.8% on +10.7% RPP. Continued tariff volatility shifts inbound flows toward Mexico + Vietnam.",
+  "action": "Position NAAF Mexico and Asia-Pacific lanes as premium-priced alternatives in Q3 RFPs.",
+  "signal_enrichment": {
+   "why_it_matters": "2025 trade policy changes (tariff adjustments, USMCA enforcement, Section 301 modifications) are structurally rerouting Asia-to-Americas supply chains. Shippers are diversifying away from China-only sourcing toward Vietnam, Mexico, and India \u2014 creating new premium trade lanes where UPS has network advantages. CFO Dykes confirmed UPS 'capitalized on trade lane shifts' with International Q1 revenue up 3.8% and RPP up 10.7%. The NAAF Mexico launch (Aug 10) is perfectly timed to capture nearshoring-driven cross-border volume.",
+   "metrics": [
+    {
+     "value": "+3.8%",
+     "label": "International Q1 revenue",
+     "negative": false,
+     "positive": true
+    },
+    {
+     "value": "+10.7%",
+     "label": "International RPP growth",
+     "negative": false,
+     "positive": true
+    },
+    {
+     "value": "Mexico+Vietnam",
+     "label": "Key rerouting destinations",
+     "negative": false,
+     "positive": true
+    }
+   ],
+   "key_insight": "Trade policy shifts are creating a structural tailwind for UPS's international premium lanes. The +10.7% RPP growth in International means shippers are willing to pay more for reliable cross-border logistics during trade uncertainty. NAAF Mexico is positioned to capture the nearshoring wave \u2014 but only if UPS prices it as a premium service, not a commodity. Vietnam and India lanes also growing, requiring capacity investment in Asia-Pacific hubs.",
+   "recent_activity": [
+    {
+     "action": "CFO Dykes confirmed UPS capitalized on trade lane shifts in Q1 earnings call",
+     "actor": "UPS Earnings Call",
+     "time": "Apr 28, 2026"
+    },
+    {
+     "action": "International revenue up 3.8% on 10.7% RPP growth \u2014 premium pricing holding",
+     "actor": "UPS Finance",
+     "time": "Q1"
+    },
+    {
+     "action": "NAAF Mexico capacity allocation confirmed \u2014 Aug 10 launch on track",
+     "actor": "Network Planning",
+     "time": "Last week"
+    },
+    {
+     "action": "Vietnam-to-US lane volumes up 22% QoQ \u2014 fastest growing trade corridor",
+     "actor": "International Operations",
+     "time": "This quarter"
+    }
+   ],
+   "related_topics": [
+    "Trade Policy",
+    "Nearshoring",
+    "NAAF Mexico",
+    "Vietnam Trade Lane",
+    "USMCA",
+    "Premium Pricing"
+   ],
+   "recommended_takeaways": [
+    {
+     "action": "Position NAAF Mexico as a premium-priced alternative in Q3 enterprise RFPs",
+     "reasoning": "because nearshoring is driving structural demand for cross-border Mexico logistics \u2014 pricing it as premium captures the willingness-to-pay that trade uncertainty creates.",
+     "impact": "Establishes NAAF as a premium service from launch, protecting long-term corridor pricing power."
+    },
+    {
+     "action": "Invest in Asia-Pacific hub capacity to capture Vietnam and India lane growth",
+     "reasoning": "because Vietnam lane volumes are up 22% QoQ \u2014 the fastest growing corridor \u2014 and capacity constraints will limit UPS's ability to capture the tailwind.",
+     "impact": "Capacity expansion in Singapore and Vietnam hubs positions UPS to capture the multi-year trade rerouting trend."
+    }
+   ],
+   "data_sources": [
+    {
+     "name": "UPS Q1 2026 Earnings Call",
+     "type": "External",
+     "confidence": "Very High",
+     "updated": "Apr 28, 2026"
+    },
+    {
+     "name": "Supply Chain Dive",
+     "type": "External",
+     "confidence": "High",
+     "updated": "May 2026"
+    },
+    {
+     "name": "International Operations",
+     "type": "Internal",
+     "confidence": "High",
+     "updated": "Current"
+    }
+   ],
+   "confidence_description": "High confidence \u2014 earnings call data confirmed, trade lane volumes verified by internal operations.",
+   "context_questions": [
+    "Which specific trade lanes saw the biggest volume shifts in Q1?",
+    "How should we price NAAF Mexico relative to existing cross-border services?",
+    "What capacity investments are needed in Vietnam and India?",
+    "Are any major customers actively nearshoring production to Mexico?"
+   ]
+  }
+ },
+ "8": {
+  "id": 8,
+  "time": "14:08 ET (Jun 7)",
+  "type": "Fuel",
+  "title": "Middle East conflict (March 2026) drove sustained fuel cost elevation \u2014 surcharges adjusting weekly",
+  "source": "UPS Q1 2026 Earnings Call \u00b7 EIA weekly diesel data",
+  "impact": "med",
+  "conf": 1.0,
+  "accounts": [
+   "Portfolio"
+  ],
+  "why": "Per CEO Tom\u00e9: 'The conflict in the Middle East in March drove an immediate spike in fuel costs.' UPS fuel surcharges linked to published benchmarks and adjust weekly. Some International margin pressure expected.",
+  "action": "Monitor weekly fuel surcharge pass-through; preserve margin via L1 accessorial discipline.",
+  "signal_enrichment": {
+   "why_it_matters": "The March 2026 Middle East conflict drove an immediate spike in diesel and jet fuel costs, directly impacting UPS's operating margins. CEO Tom\u00e9 called it out on the Q1 earnings call as a material cost headwind. UPS fuel surcharges are linked to published DOE benchmarks and adjust weekly \u2014 meaning the pass-through mechanism works, but with a lag. The risk is international lanes where fuel surcharge recovery is incomplete (typically 85-90% pass-through vs 95%+ domestic). Sustained fuel elevation above $4.00/gallon diesel compresses International margins by an estimated 40-60 bps.",
+   "metrics": [
+    {
+     "value": "$4.00+",
+     "label": "Diesel price (sustained elevation)",
+     "negative": true,
+     "positive": false
+    },
+    {
+     "value": "Weekly",
+     "label": "Surcharge adjustment frequency",
+     "negative": false,
+     "positive": true
+    },
+    {
+     "value": "85-90%",
+     "label": "International surcharge pass-through",
+     "negative": true,
+     "positive": false
+    }
+   ],
+   "key_insight": "The fuel surcharge mechanism mostly works domestically (95%+ pass-through), but International lanes have a structural 10-15% gap. With sustained fuel elevation, this gap compounds \u2014 every week at $4.00+ diesel without full pass-through erodes International margin. The L1 Fuel Surcharge accessorial is the primary lever. Disciplined application across all enterprise contracts is critical to maintaining margins during the elevated cost period.",
+   "recent_activity": [
+    {
+     "action": "CEO Tom\u00e9 cited Middle East conflict as driver of immediate fuel cost spike on Q1 call",
+     "actor": "UPS Earnings Call",
+     "time": "Apr 28, 2026"
+    },
+    {
+     "action": "EIA weekly diesel data shows sustained elevation above $4.00/gallon since March",
+     "actor": "EIA / Energy Markets",
+     "time": "Current"
+    },
+    {
+     "action": "Revenue Management reviewing International fuel surcharge pass-through rates",
+     "actor": "Revenue Management",
+     "time": "This week"
+    },
+    {
+     "action": "L1 FSC compliance audit shows 3% of enterprise contracts with waived surcharges",
+     "actor": "Pricing & Strategy",
+     "time": "Last month"
+    }
+   ],
+   "related_topics": [
+    "Fuel Costs",
+    "Surcharge Mechanism",
+    "L1 FSC",
+    "International Margins",
+    "Middle East Conflict",
+    "Diesel Prices"
+   ],
+   "recommended_takeaways": [
+    {
+     "action": "Audit and enforce L1 fuel surcharge compliance across enterprise contracts",
+     "reasoning": "because 3% of enterprise contracts have waived surcharges \u2014 during sustained elevation, each waived surcharge directly erodes margin.",
+     "impact": "Recovering the 3% waiver gap could add $15-25M annually to fuel surcharge revenue."
+    },
+    {
+     "action": "Review International fuel surcharge pass-through rates to close the 85-90% gap",
+     "reasoning": "because the 10-15% pass-through gap on International lanes compounds weekly during sustained fuel elevation.",
+     "impact": "Closing the pass-through gap to 95% protects International margins by an estimated 40-60 bps."
+    }
+   ],
+   "data_sources": [
+    {
+     "name": "UPS Q1 2026 Earnings Call",
+     "type": "External",
+     "confidence": "Very High",
+     "updated": "Apr 28, 2026"
+    },
+    {
+     "name": "EIA Weekly Diesel Data",
+     "type": "External",
+     "confidence": "Very High",
+     "updated": "Weekly"
+    },
+    {
+     "name": "Revenue Management",
+     "type": "Internal",
+     "confidence": "High",
+     "updated": "Real-time"
+    }
+   ],
+   "confidence_description": "Very high confidence \u2014 CEO statement on earnings call, EIA public data, internal compliance audit.",
+   "context_questions": [
+    "Which enterprise contracts have waived fuel surcharges?",
+    "What's the current diesel price vs UPS's break-even surcharge level?",
+    "How long is the Middle East conflict expected to sustain elevated fuel costs?",
+    "Should we renegotiate International fuel surcharge terms on upcoming renewals?"
+   ]
+  }
+ },
+ "9": {
+  "id": 9,
+  "time": "11:47 ET (Jun 7)",
+  "type": "SMB",
+  "title": "UPS SMB penetration reached record 34.5% of US volume \u2014 Digital Access Program driving acquisition",
+  "source": "UPS Q1 2026 Earnings Call \u00b7 Supply Chain Dive (Mar 2026)",
+  "impact": "high",
+  "conf": 1.0,
+  "accounts": [
+   "SMB segment"
+  ],
+  "why": "B2B at 45.2% of US Domestic volume (6-year high). SMB ADV grew despite overall US Dom ADV down ~8% YoY. CFO Dykes: 'shippers in higher-value verticals demonstrate greater tolerance for price increases.'",
+  "action": "Accelerate SMB acquisition motions; protect penetration via service-quality discipline.",
+  "signal_enrichment": {
+   "why_it_matters": "SMB penetration hitting 34.5% of US volume is the single strongest proof point that the Amazon replacement strategy is working. As Amazon volume exits (~500K ADV in Q1), SMB is backfilling with structurally higher-yield volume \u2014 SMB RPP is $18.40 vs Amazon's ~$8.50. B2B reached 45.2% of US Domestic volume (6-year high), confirming the mix shift. CFO Dykes's statement that 'shippers in higher-value verticals demonstrate greater tolerance for price increases' validates pricing power in the post-Amazon portfolio. DAP is the acquisition engine \u2014 14,200 signups in Q1, 78% activation rate.",
+   "metrics": [
+    {
+     "value": "34.5%",
+     "label": "SMB share of US volume (record)",
+     "negative": false,
+     "positive": true
+    },
+    {
+     "value": "45.2%",
+     "label": "B2B share of US volume (6-yr high)",
+     "negative": false,
+     "positive": true
+    },
+    {
+     "value": "$18.40",
+     "label": "SMB RPP (vs $8.50 Amazon)",
+     "negative": false,
+     "positive": true
+    }
+   ],
+   "key_insight": "The SMB/B2B mix shift is the strategic dividend of the Amazon glide-down. At 34.5% SMB penetration and 45.2% B2B volume, UPS's US Domestic portfolio is structurally different from 2 years ago \u2014 higher-yield, more diversified, less dependent on a single customer. The pricing tolerance statement from the CFO is the most bullish signal for CCO strategy: it means the yield-over-volume approach has room to run. The risk is acquisition efficiency \u2014 CAC is rising 7.8% QoQ, meaning the cost of adding each new SMB shipper is increasing even as penetration grows.",
+   "recent_activity": [
+    {
+     "action": "SMB penetration reached record 34.5% of US volume \u2014 up from 32% a year ago",
+     "actor": "Revenue Management",
+     "time": "Q1"
+    },
+    {
+     "action": "B2B hit 45.2% of US Domestic volume \u2014 highest in 6 years",
+     "actor": "UPS Finance",
+     "time": "Q1"
+    },
+    {
+     "action": "CFO Dykes confirmed pricing tolerance in higher-value verticals on Q1 call",
+     "actor": "UPS Earnings Call",
+     "time": "Apr 28, 2026"
+    },
+    {
+     "action": "DAP signups hit 14,200 in Q1 with 78% activation rate",
+     "actor": "Digital Commerce",
+     "time": "Q1"
+    }
+   ],
+   "related_topics": [
+    "SMB Penetration",
+    "B2B Growth",
+    "Digital Access Program",
+    "Pricing Power",
+    "Amazon Replacement",
+    "Mix Shift Strategy"
+   ],
+   "recommended_takeaways": [
+    {
+     "action": "Accelerate SMB acquisition through DAP while managing CAC discipline",
+     "reasoning": "because 34.5% penetration proves the strategy works, but CAC rising 7.8% QoQ means acquisition efficiency must be monitored to keep the economics viable.",
+     "impact": "Sustaining SMB growth trajectory toward 38% penetration by year-end while maintaining CAC below $120 per activated shipper."
+    },
+    {
+     "action": "Protect SMB pricing power through service-quality discipline",
+     "reasoning": "because CFO Dykes confirmed pricing tolerance exists in higher-value verticals \u2014 but it's contingent on service quality. OTD drops would erode the premium.",
+     "impact": "Maintains the $18.40 SMB RPP premium that makes the entire yield-over-volume strategy work."
+    }
+   ],
+   "data_sources": [
+    {
+     "name": "UPS Q1 2026 Earnings Call",
+     "type": "External",
+     "confidence": "Very High",
+     "updated": "Apr 28, 2026"
+    },
+    {
+     "name": "Supply Chain Dive",
+     "type": "External",
+     "confidence": "High",
+     "updated": "Mar 2026"
+    },
+    {
+     "name": "Digital Commerce Analytics",
+     "type": "Internal",
+     "confidence": "High",
+     "updated": "Real-time"
+    }
+   ],
+   "confidence_description": "Very high confidence \u2014 public earnings data confirmed by internal revenue management.",
+   "context_questions": [
+    "What's the DAP activation rate trend \u2014 is 78% sustainable as volume grows?",
+    "Which SMB verticals show the highest pricing tolerance?",
+    "How does SMB churn rate compare to enterprise accounts?",
+    "What's the CAC breakdown by acquisition channel?"
+   ]
+  }
+ },
+ "10": {
+  "id": 10,
+  "time": "09:22 ET (Jun 7)",
+  "type": "Policy",
+  "title": "USPS Ground Saver final-mile agreement formalized \u2014 2026 launch; volume down 27.7% in Q1",
+  "source": "UPS FY 2025 10-K \u00b7 UPS Q1 2026 Earnings Call",
+  "impact": "med",
+  "conf": 1.0,
+  "accounts": [
+   "Ground Saver product"
+  ],
+  "why": "Cost increases applied; Ground Saver ADV declined 27.7% in Q1. UPS retained higher-yield Ground Saver volume in-network; lower-cost USPS-delivered portion. Margin-led portfolio decision.",
+  "action": "Track Ground Saver yield improvement; monitor SMB volume migration to UPS Ground.",
+  "signal_enrichment": {
+   "why_it_matters": "Ground Saver volume declined 27.7% in Q1 \u2014 a deliberately engineered outcome. UPS applied cost increases to the USPS-delivered final-mile portion, effectively pricing out low-margin volume while retaining higher-yield Ground Saver packages delivered on the UPS network. This is the yield-over-volume strategy applied at the product level: fewer packages, better margin per package. The retained Ground Saver volume has estimated RPP of $12.80 vs $7.20 for the USPS-delivered portion that exited. The risk is that some SMB shippers who relied on Ground Saver's low-cost option may migrate to FedEx SmartPost or regional alternatives.",
+   "metrics": [
+    {
+     "value": "-27.7%",
+     "label": "Ground Saver ADV decline Q1",
+     "negative": false,
+     "positive": true
+    },
+    {
+     "value": "$12.80",
+     "label": "Retained Ground Saver RPP",
+     "negative": false,
+     "positive": true
+    },
+    {
+     "value": "$7.20",
+     "label": "Exited USPS-delivered RPP",
+     "negative": false,
+     "positive": false
+    }
+   ],
+   "key_insight": "The 27.7% volume decline looks alarming on the surface but is actually a successful execution of margin-led portfolio pruning. The retained volume at $12.80 RPP generates nearly double the revenue per piece vs the exited $7.20 USPS-delivered portion. The insourcing of Ground Saver delivery onto UPS's own network also gives UPS full control over service quality \u2014 important for SMB customers who value reliability. Monitor for volume migration to FedEx SmartPost, which offers similar economics.",
+   "recent_activity": [
+    {
+     "action": "Ground Saver ADV declined 27.7% in Q1 as cost increases took effect",
+     "actor": "Revenue Management",
+     "time": "Q1"
+    },
+    {
+     "action": "USPS final-mile agreement formalized with new cost structure for 2026",
+     "actor": "Strategy & Partnerships",
+     "time": "Q1"
+    },
+    {
+     "action": "Ground Saver insourcing at 78% completion \u2014 ahead of mid-year target",
+     "actor": "Network Operations",
+     "time": "Current"
+    },
+    {
+     "action": "3 SMB accounts flagged considering FedEx SmartPost as Ground Saver alternative",
+     "actor": "Enterprise Sales",
+     "time": "This month"
+    }
+   ],
+   "related_topics": [
+    "Ground Saver",
+    "USPS Partnership",
+    "Product Portfolio",
+    "Margin Optimization",
+    "SMB Migration Risk",
+    "Insourcing"
+   ],
+   "recommended_takeaways": [
+    {
+     "action": "Track Ground Saver yield improvement and ensure retained volume maintains $12.80+ RPP",
+     "reasoning": "because the strategic value of the volume decline depends on the retained portfolio maintaining its yield premium.",
+     "impact": "Confirms the margin-led portfolio decision is delivering expected results."
+    },
+    {
+     "action": "Monitor SMB migration to FedEx SmartPost or regional alternatives",
+     "reasoning": "because 3 SMB accounts are already considering alternatives \u2014 early intervention prevents a trend.",
+     "impact": "Retaining at-risk SMB accounts protects the Ground Saver yield improvement from being offset by customer losses."
+    }
+   ],
+   "data_sources": [
+    {
+     "name": "UPS FY 2025 10-K",
+     "type": "External",
+     "confidence": "Very High",
+     "updated": "FY 2025"
+    },
+    {
+     "name": "UPS Q1 2026 Earnings Call",
+     "type": "External",
+     "confidence": "Very High",
+     "updated": "Apr 28, 2026"
+    },
+    {
+     "name": "Revenue Management",
+     "type": "Internal",
+     "confidence": "High",
+     "updated": "Real-time"
+    }
+   ],
+   "confidence_description": "Very high confidence \u2014 SEC filing and earnings call data, confirmed by internal revenue management.",
+   "context_questions": [
+    "Which SMB customers are most at risk of migrating from Ground Saver?",
+    "What's the insourcing completion timeline for Ground Saver?",
+    "How does the retained Ground Saver RPP compare to UPS Ground?",
+    "Is FedEx SmartPost actively targeting our Ground Saver customer base?"
+   ]
+  }
+ },
+ "11": {
+  "id": 11,
+  "time": "08:52 ET",
+  "type": "Competitor",
+  "title": "FedEx Auto Express launches NAAF Mexico cross-border lane \u2014 8% below UPS list",
+  "source": "FreightWaves (Jun 5, 2026)",
+  "impact": "high",
+  "conf": 0.9,
+  "accounts": [
+   "Ford",
+   "Stellantis",
+   "Honda",
+   "Toyota",
+   "Magna"
+  ],
+  "why": "FedEx targeting USMCA-driven nearshoring volume with aggressive pricing. Direct threat on Ford BlueOval City inbound corridor, Stellantis Toluca outbound, Magna's Tier-1 NAAF expansion. UPS NAAF Mexico launches August \u2014 risk that FedEx pre-locks volume.",
+  "action": "Pre-lock NAAF capacity for Ford and Stellantis within 5 business days; activate executive engagement on Magna.",
+  "signal_enrichment": {
+   "why_it_matters": "FedEx Auto Express is priced 8% below UPS list rates on Mexico cross-border lanes \u2014 a deliberate undercut targeting USMCA-driven nearshoring volume. Five of UPS's top automotive accounts (Ford, Stellantis, Honda, Toyota, Magna) are directly affected. FedEx launches August 4, six days before UPS NAAF Mexico (Aug 10). The combination of earlier launch timing AND lower pricing creates a significant first-mover risk. Ford's BlueOval City inbound corridor, Stellantis Toluca outbound, and Magna's Tier-1 NAAF expansion are the three most exposed lanes.",
+   "metrics": [
+    {
+     "value": "8%",
+     "label": "FedEx price undercut vs UPS list",
+     "negative": true,
+     "positive": false
+    },
+    {
+     "value": "6 days",
+     "label": "FedEx launch lead time",
+     "negative": true,
+     "positive": false
+    },
+    {
+     "value": "5",
+     "label": "Top accounts directly threatened",
+     "negative": true,
+     "positive": false
+    }
+   ],
+   "key_insight": "The 8% undercut is aggressive but not insurmountable \u2014 UPS's NAAF offers 1-/2-/3-day tiered service vs FedEx's 2-day only, plus integrated customs brokerage. The real risk is timing: if FedEx locks capacity commitments with Ford and Stellantis before Aug 10, UPS NAAF launches into a market where the premium accounts are already contracted. The counter-strategy: pre-lock capacity guarantees with top 5 accounts within 5 business days, emphasizing the multi-service integration that FedEx cannot match.",
+   "recent_activity": [
+    {
+     "action": "FreightWaves reported FedEx Auto Express pricing at 8% below UPS list on Mexico lanes",
+     "actor": "FreightWaves",
+     "time": "Jun 5, 2026"
+    },
+    {
+     "action": "FedEx pre-launch marketing targeting Ford, Stellantis, and Magna plant managers",
+     "actor": "Competitive Intelligence",
+     "time": "This week"
+    },
+    {
+     "action": "UPS NAAF Mexico capacity allocation at 85% readiness",
+     "actor": "Network Planning",
+     "time": "Current"
+    },
+    {
+     "action": "Honda North America logistics team requested competitive pricing comparison",
+     "actor": "Enterprise Sales",
+     "time": "Yesterday"
+    }
+   ],
+   "related_topics": [
+    "FedEx Auto Express",
+    "NAAF Mexico",
+    "Cross-Border Pricing",
+    "Capacity Pre-Lock",
+    "Automotive Accounts",
+    "Competitive Response"
+   ],
+   "recommended_takeaways": [
+    {
+     "action": "Pre-lock NAAF capacity for Ford and Stellantis within 5 business days",
+     "reasoning": "because FedEx launches 6 days ahead \u2014 capacity commitments made before Aug 4 prevent FedEx from locking these accounts first.",
+     "impact": "Secures the two largest automotive corridor accounts before FedEx's competitive window opens."
+    },
+    {
+     "action": "Lead counter-proposals with 1-day express tier + customs brokerage integration",
+     "reasoning": "because FedEx offers 2-day only without integrated customs \u2014 UPS's tiered service and same-day customs clearance are hard differentiators.",
+     "impact": "Shifts competitive conversation from price (where FedEx is 8% lower) to capability (where UPS is superior)."
+    },
+    {
+     "action": "Activate executive engagement on Magna and Honda immediately",
+     "reasoning": "because Honda is already requesting competitive pricing comparison and Magna's expansion creates an open carrier selection window.",
+     "impact": "Proactive engagement at 2 additional accounts prevents FedEx from expanding beyond Ford/Stellantis."
+    }
+   ],
+   "data_sources": [
+    {
+     "name": "FreightWaves",
+     "type": "External",
+     "confidence": "High",
+     "updated": "Jun 5, 2026"
+    },
+    {
+     "name": "Competitive Intelligence",
+     "type": "Internal",
+     "confidence": "Medium",
+     "updated": "This week"
+    },
+    {
+     "name": "Enterprise Sales",
+     "type": "Internal",
+     "confidence": "High",
+     "updated": "Yesterday"
+    }
+   ],
+   "confidence_description": "Moderate-high confidence \u2014 pricing intel from trade publication, corroborated by competitive intelligence field reports.",
+   "context_questions": [
+    "Can we soft-launch NAAF for top 3 accounts before the Aug 10 official date?",
+    "What's FedEx Auto Express's actual service level vs the marketing claims?",
+    "Should we match the 8% undercut selectively or hold premium pricing?",
+    "Which corridors does FedEx Auto Express NOT cover that NAAF does?"
+   ]
+  }
+ },
+ "12": {
+  "id": 12,
+  "time": "07:48 ET",
+  "type": "Board",
+  "title": "Board pre-read due Jun 11 \u2014 FY26 mid-year revenue and margin recovery view",
+  "source": "Corporate Secretary calendar \u00b7 Board cadence",
+  "impact": "high",
+  "conf": 1.0,
+  "accounts": [
+   "Board \u00b7 CCO submission"
+  ],
+  "why": "Board meets Jun 18, 2026. CCO pre-read deck due Jun 11 covering: US Domestic margin recovery path, Healthcare $20B trajectory, SMB acquisition velocity, the 5 reversed-trend Auto accounts plan, FedEx Freight spin-off competitive response.",
+  "action": "Finalize CCO board narrative this week \u2014 Automotive ABM plan + Enterprise pricing discipline are the two anchor stories.",
+  "signal_enrichment": {
+   "why_it_matters": "The June 18 board meeting is the mid-year checkpoint where the CCO's strategic narrative will be evaluated against results. The pre-read deck due June 11 must cover five critical areas: (1) US Domestic margin recovery from 4.0% toward the 7.5\u20138.5% Q2 target, (2) Healthcare's trajectory toward the $20B FY late-2026 target, (3) SMB acquisition velocity and DAP performance, (4) the Automotive ABM plan including the 5 reversed-trend accounts, and (5) the competitive response to FedEx Freight spin-off and Auto Express. This is Matt Guffey's opportunity to anchor the board around the yield-over-volume narrative with concrete Q1 proof points.",
+   "metrics": [
+    {
+     "value": "Jun 11",
+     "label": "Pre-read deck deadline",
+     "negative": false,
+     "positive": false
+    },
+    {
+     "value": "Jun 18",
+     "label": "Board meeting date",
+     "negative": false,
+     "positive": false
+    },
+    {
+     "value": "5",
+     "label": "Critical narrative areas to cover",
+     "negative": false,
+     "positive": false
+    }
+   ],
+   "key_insight": "The board narrative needs to accomplish two things: (1) explain why Q1 margin at 4.0% is transitional, not structural (cite the $350M one-time costs), and (2) demonstrate that the yield-over-volume strategy is producing durable results (cite $15.32 RPP, 34.5% SMB penetration, $3B healthcare quarter). The Automotive ABM plan and Enterprise pricing discipline are the two anchor stories because they show concrete commercial execution, not just financial metrics.",
+   "recent_activity": [
+    {
+     "action": "Board meeting confirmed for Jun 18, 2026 \u2014 CCO pre-read due Jun 11",
+     "actor": "Corporate Secretary",
+     "time": "Standing cadence"
+    },
+    {
+     "action": "Finance team prepared Q1 margin bridge showing $350M transitional cost breakdown",
+     "actor": "Finance & Strategy",
+     "time": "This week"
+    },
+    {
+     "action": "Healthcare team confirmed $3.04B Q1 milestone for board deck",
+     "actor": "Healthcare Logistics",
+     "time": "This week"
+    },
+    {
+     "action": "Automotive ABM team compiling 5 reversed-trend accounts summary",
+     "actor": "ABM Strategy",
+     "time": "In progress"
+    }
+   ],
+   "related_topics": [
+    "Board Meeting",
+    "CCO Pre-Read",
+    "Strategic Narrative",
+    "Margin Recovery",
+    "Healthcare Target",
+    "Automotive ABM"
+   ],
+   "recommended_takeaways": [
+    {
+     "action": "Finalize the CCO board narrative with Automotive ABM + Enterprise pricing as anchor stories",
+     "reasoning": "because these two areas demonstrate the most concrete commercial execution \u2014 the board wants proof of strategy execution, not just financial results.",
+     "impact": "Strong CCO narrative maintains board confidence in the yield-over-volume strategy and secures continued investment in ABM and NAAF."
+    },
+    {
+     "action": "Include the FedEx competitive response plan in the pre-read deck",
+     "reasoning": "because the FedEx Freight spin-off and Auto Express launch are the board's top competitive concern \u2014 addressing it proactively prevents a reactive Q&A dynamic.",
+     "impact": "Board enters the meeting with confidence that UPS has a clear competitive counter-strategy."
+    }
+   ],
+   "data_sources": [
+    {
+     "name": "Corporate Secretary Calendar",
+     "type": "Internal",
+     "confidence": "Very High",
+     "updated": "Standing"
+    },
+    {
+     "name": "Board Cadence",
+     "type": "Internal",
+     "confidence": "Very High",
+     "updated": "Standing"
+    }
+   ],
+   "confidence_description": "Very high confidence \u2014 board calendar is fixed, pre-read deadline confirmed.",
+   "context_questions": [
+    "What's the status of the Automotive ABM 5 reversed-trend accounts summary?",
+    "Has finance finalized the Q1 margin bridge for the board deck?",
+    "What competitive response narrative should we lead with \u2014 NAAF or pricing discipline?",
+    "Are there any board member concerns we should proactively address?"
+   ]
+  }
+ },
+ "13": {
+  "id": 13,
+  "time": "07:14 ET",
+  "type": "Enterprise",
+  "title": "Q2 Enterprise deal pipeline +18% sequentially \u2014 4 strategic renewals due before Q3 close",
+  "source": "Salesforce CRM \u00b7 Deal Manager (AI)",
+  "impact": "high",
+  "conf": 0.95,
+  "accounts": [
+   "Toyota",
+   "CVS Health",
+   "Walgreens",
+   "Boeing"
+  ],
+  "why": "Toyota Renewal-2026 (Packet 10474, $185M), CVS Health Healthcare-2026 ($94M), Walgreens RFP ($72M), Boeing AOG-renewal ($58M) all touch DA L0/L1/L2 levers. Toyota S3 recommended +$10.5M profit; CVS at modeled TARGET 81.1%.",
+  "action": "Run Deal Workbench against the 4-packet bundle; align L2 ceiling posture before Toyota counter-proposal due Jun 12.",
+  "signal_enrichment": {
+   "why_it_matters": "The Q2 enterprise deal pipeline grew 18% sequentially \u2014 the strongest pipeline growth in 4 quarters. Four strategic renewals collectively worth $409M in annual revenue must close before Q3: Toyota ($185M, Packet #10474), CVS Health ($94M), Walgreens ($72M), and Boeing ($58M). Each touches Deal Analyser pricing levers (L0 DIM Divisor, L1 Basic/Accessorials, L2 Tier Incentives). Toyota's recommended S3 scenario delivers +$10.5M incremental profit. CVS is at modeled TARGET 81.1%. These four deals will define Q3 enterprise revenue and margin trajectory.",
+   "metrics": [
+    {
+     "value": "+18%",
+     "label": "Pipeline growth (sequential)",
+     "negative": false,
+     "positive": true
+    },
+    {
+     "value": "$409M",
+     "label": "Combined renewal value",
+     "negative": false,
+     "positive": true
+    },
+    {
+     "value": "+$10.5M",
+     "label": "Toyota S3 profit lift",
+     "negative": false,
+     "positive": true
+    }
+   ],
+   "key_insight": "Four deals, $409M total, all closing before Q3 \u2014 this is the most concentrated strategic renewal window in 3 years. Toyota S3 (+$10.5M profit) sets the pricing benchmark: L0 DIM 150\u2192156, L2 reshape, L4 raised. If Toyota accepts S3, the pricing posture validates and cascades to CVS and Walgreens. If Toyota counters below S3, it signals pricing resistance that will affect all four deals. The Jun 12 Toyota counter-proposal deadline is the inflection point for the entire Q3 enterprise strategy.",
+   "recent_activity": [
+    {
+     "action": "Q2 enterprise pipeline confirmed at +18% sequential growth \u2014 AI Deal Manager report",
+     "actor": "Salesforce CRM / Deal Manager",
+     "time": "This week"
+    },
+    {
+     "action": "Toyota counter-proposal expected by Jun 12 \u2014 S3 scenario (+$10.5M) recommended",
+     "actor": "Enterprise Sales \u2014 Auto",
+     "time": "Deadline Jun 12"
+    },
+    {
+     "action": "CVS Health Healthcare-2026 negotiations progressing \u2014 modeled at TARGET 81.1%",
+     "actor": "Enterprise Sales \u2014 Healthcare",
+     "time": "Active"
+    },
+    {
+     "action": "Boeing AOG-renewal under review \u2014 critical time-sensitive delivery requirements",
+     "actor": "Enterprise Sales \u2014 Aerospace",
+     "time": "Active"
+    }
+   ],
+   "related_topics": [
+    "Enterprise Pipeline",
+    "Deal Analyser",
+    "Toyota Renewal",
+    "CVS Health",
+    "Walgreens RFP",
+    "Boeing AOG",
+    "Pricing Levers"
+   ],
+   "recommended_takeaways": [
+    {
+     "action": "Run Deal Workbench against the 4-packet bundle to model combined impact",
+     "reasoning": "because the four deals interact \u2014 Toyota's pricing posture sets the benchmark for CVS and Walgreens, and combined margin impact must be modeled holistically.",
+     "impact": "Holistic 4-deal model enables coordinated pricing strategy that maximizes combined margin across $409M in revenue."
+    },
+    {
+     "action": "Align L2 ceiling posture before the Toyota counter-proposal due Jun 12",
+     "reasoning": "because Toyota's response to S3 will cascade to the other three deals \u2014 the L2 ceiling position must be firm before the counter arrives.",
+     "impact": "Firm L2 posture on Toyota protects the $10.5M profit lift and sets the pricing floor for CVS, Walgreens, and Boeing."
+    }
+   ],
+   "data_sources": [
+    {
+     "name": "Salesforce CRM",
+     "type": "Internal",
+     "confidence": "High",
+     "updated": "Real-time"
+    },
+    {
+     "name": "AI Deal Manager",
+     "type": "Internal",
+     "confidence": "High",
+     "updated": "This week"
+    },
+    {
+     "name": "Enterprise Sales",
+     "type": "Internal",
+     "confidence": "High",
+     "updated": "Active"
+    }
+   ],
+   "confidence_description": "High confidence \u2014 CRM pipeline data confirmed by Deal Manager AI analysis and account team verification.",
+   "context_questions": [
+    "What's Toyota's likely response to the S3 scenario?",
+    "How does CVS Healthcare-2026 pricing compare to the current contract?",
+    "What's Boeing's AOG delivery time sensitivity and how does it affect pricing?",
+    "Should we offer a multi-year discount on any of the four renewals?"
+   ]
+  }
+ },
+ "14": {
+  "id": 14,
+  "time": "06:34 ET",
+  "type": "Volume",
+  "title": "Amazon glide-down on track \u2014 Q1 volume reduced 500K ADV; on path to ~half by Jun 2026",
+  "source": "UPS Q1 2026 Earnings Call \u00b7 Supply Chain Dive (May 2026)",
+  "impact": "high",
+  "conf": 1.0,
+  "accounts": [
+   "Portfolio \u00b7 capacity"
+  ],
+  "why": "Amazon was 10.6% of FY25 revenue; targeted to be roughly half by mid-2026. Freed network capacity (~700K ADV by end Q2) is the structural enabler for SMB / Healthcare / Automotive pricing power. CFO Dykes: pricing tolerance is the strategic dividend.",
+  "action": "Confirm capacity reallocation hitting SMB and Healthcare growth engines; protect against Amazon volume re-entry overtures.",
+  "signal_enrichment": {
+   "why_it_matters": "This signal reinforces the Amazon glide-down trajectory with additional context on capacity reallocation. The ~700K ADV freed by end of Q2 is not just empty capacity \u2014 it's the structural enabler for everything else in the CCO strategy. Without freed capacity, UPS cannot selectively onboard higher-yield SMB and Healthcare volume. CFO Dykes's statement about 'pricing tolerance as the strategic dividend' is the clearest articulation of why the Amazon exit creates long-term value: the freed network capacity gives UPS the ability to be selective, which gives them pricing power.",
+   "metrics": [
+    {
+     "value": "500K ADV",
+     "label": "Q1 Amazon volume reduced",
+     "negative": false,
+     "positive": true
+    },
+    {
+     "value": "~700K ADV",
+     "label": "Total capacity freed by Q2 end",
+     "negative": false,
+     "positive": true
+    },
+    {
+     "value": "10.6%\u2192~5%",
+     "label": "Amazon revenue share trajectory",
+     "negative": false,
+     "positive": true
+    }
+   ],
+   "key_insight": "The Amazon glide-down completion by June 2026 marks a structural inflection point for UPS. Post-completion, UPS will have permanently replaced its largest low-margin customer with a diversified, higher-yield portfolio. The key risk post-completion: Amazon may attempt to re-enter with volume commitments at better rates, especially as they expand Amazon Logistics capabilities. The CCO must maintain discipline against re-entry overtures.",
+   "recent_activity": [
+    {
+     "action": "Q1 earnings confirmed 500K ADV reduction \u2014 on track for ~50% Amazon reduction by June",
+     "actor": "UPS Finance",
+     "time": "Apr 28, 2026"
+    },
+    {
+     "action": "CFO Dykes: 'pricing tolerance is the strategic dividend' of capacity selectivity",
+     "actor": "UPS Earnings Call",
+     "time": "Apr 28, 2026"
+    },
+    {
+     "action": "Network planning confirmed 700K ADV capacity will be available by end of Q2",
+     "actor": "Network Planning",
+     "time": "Last week"
+    },
+    {
+     "action": "Amazon Logistics expanding same-day capabilities in 15 metro areas",
+     "actor": "Competitive Intelligence",
+     "time": "This month"
+    }
+   ],
+   "related_topics": [
+    "Amazon Glide-Down",
+    "Capacity Freedom",
+    "Pricing Power",
+    "SMB Backfill",
+    "Network Selectivity",
+    "Amazon Re-Entry Risk"
+   ],
+   "recommended_takeaways": [
+    {
+     "action": "Confirm capacity reallocation plans are actively filling freed Amazon lanes with SMB/Healthcare",
+     "reasoning": "because freed capacity without reallocation becomes fixed-cost drag \u2014 each empty lane erodes margins.",
+     "impact": "Active reallocation protects US Domestic margin trajectory and validates the yield-over-volume strategy."
+    },
+    {
+     "action": "Establish a formal policy against Amazon volume re-entry at below-threshold rates",
+     "reasoning": "because Amazon will likely attempt to re-enter with volume commitments \u2014 a formal policy prevents reactive decision-making.",
+     "impact": "Protects the strategic dividend of pricing selectivity that the entire FY26 strategy is built on."
+    }
+   ],
+   "data_sources": [
+    {
+     "name": "UPS Q1 2026 Earnings Call",
+     "type": "External",
+     "confidence": "Very High",
+     "updated": "Apr 28, 2026"
+    },
+    {
+     "name": "Supply Chain Dive",
+     "type": "External",
+     "confidence": "High",
+     "updated": "May 2026"
+    },
+    {
+     "name": "Network Planning",
+     "type": "Internal",
+     "confidence": "High",
+     "updated": "Last week"
+    }
+   ],
+   "confidence_description": "Very high confidence \u2014 earnings call data, SEC filings, and internal network planning alignment.",
+   "context_questions": [
+    "What percentage of freed Amazon capacity has been reallocated so far?",
+    "Has Amazon made any volume re-entry overtures since Q1?",
+    "Which metro areas are Amazon Logistics expanding into and does it affect UPS?",
+    "What's the minimum acceptable rate if Amazon wants to keep volume?"
+   ]
+  }
+ },
+ "15": {
+  "id": 15,
+  "time": "05:48 ET",
+  "type": "SMB",
+  "title": "Digital Access Program acquired record SMB count in Q1 \u2014 34.5% penetration, +260 bps QoQ",
+  "source": "UPS Q1 2026 Earnings Call \u00b7 Supply Chain Dive (Mar 2026)",
+  "impact": "high",
+  "conf": 1.0,
+  "accounts": [
+   "SMB segment"
+  ],
+  "why": "B2B at 45.2% (6-year high). SMB ADV grew despite total US Dom ADV down 8% YoY. Higher-yield mix shift accelerating. Customers in healthcare + auto verticals showing greater pricing tolerance \u2014 RPP +6.5% YoY.",
+  "action": "Accelerate SMB acquisition motions through Digital Access Program; protect penetration via service-quality discipline and field-level engagement.",
+  "signal_enrichment": {
+   "why_it_matters": "The Digital Access Program achieved record SMB acquisition in Q1 \u2014 14,200 new signups, 78% 14-day activation rate, and 34.5% US volume penetration (+260 bps QoQ). DAP is the most efficient acquisition channel at $58 CAC vs $142 for field sales and $94 for paid digital. Shopify integration v2 launched with 3\u00d7 v1 adoption. Amazon Seller Central integration approved for Q3 \u2014 projected 3,000-5,000 new shippers in 90 days. RPP across the SMB segment grew 6.5% YoY to $18.40, confirming pricing power in higher-value verticals.",
+   "metrics": [
+    {
+     "value": "14,200",
+     "label": "Q1 DAP signups (record)",
+     "negative": false,
+     "positive": true
+    },
+    {
+     "value": "78%",
+     "label": "14-day activation rate",
+     "negative": false,
+     "positive": true
+    },
+    {
+     "value": "+6.5%",
+     "label": "SMB RPP growth YoY",
+     "negative": false,
+     "positive": true
+    }
+   ],
+   "key_insight": "DAP is compounding \u2014 28% QoQ signup growth with improving unit economics ($58 CAC vs $142 field sales). The Shopify v2 integration is the breakout channel (3\u00d7 v1 adoption), and the Amazon Seller Central integration (Q3 launch) could add 3,000-5,000 new shippers \u2014 the largest single-channel addition possible. At +260 bps QoQ penetration growth, SMB will reach 38% by Q4 if momentum holds, fundamentally reshaping UPS's volume mix away from Amazon dependency.",
+   "recent_activity": [
+    {
+     "action": "DAP achieved record 14,200 signups in Q1 \u2014 28% QoQ growth",
+     "actor": "Digital Commerce",
+     "time": "Q1"
+    },
+    {
+     "action": "Shopify integration v2 launched with 3\u00d7 v1 early adoption",
+     "actor": "Platform Partnerships",
+     "time": "1 week ago"
+    },
+    {
+     "action": "Amazon Seller Central integration approved for Q3 launch",
+     "actor": "Product Development",
+     "time": "2 weeks ago"
+    },
+    {
+     "action": "SMB RPP reached $18.40 \u2014 +6.5% YoY, driven by healthcare and auto verticals",
+     "actor": "Revenue Management",
+     "time": "Q1"
+    }
+   ],
+   "related_topics": [
+    "Digital Access Program",
+    "SMB Acquisition",
+    "Shopify Integration",
+    "Amazon Seller Central",
+    "RPP Growth",
+    "Marketplace Partnerships"
+   ],
+   "recommended_takeaways": [
+    {
+     "action": "Fast-track the Amazon Seller Central integration for Q3 launch",
+     "reasoning": "because 3,000-5,000 projected new shippers in 90 days represents the single largest DAP growth lever available.",
+     "impact": "Pulls forward the biggest single-channel acquisition opportunity for Amazon volume replacement."
+    },
+    {
+     "action": "Approve the $4.2M field-to-DAP budget reallocation",
+     "reasoning": "because DAP delivers 2.4\u00d7 marginal ROI vs field sales \u2014 every dollar shifted accelerates SMB penetration growth at lower cost.",
+     "impact": "Funds 6,000+ additional incentivized activations before peak season."
+    }
+   ],
+   "data_sources": [
+    {
+     "name": "UPS Q1 2026 Earnings Call",
+     "type": "External",
+     "confidence": "Very High",
+     "updated": "Apr 28, 2026"
+    },
+    {
+     "name": "Digital Commerce Analytics",
+     "type": "Internal",
+     "confidence": "High",
+     "updated": "Real-time"
+    },
+    {
+     "name": "Platform Partnerships",
+     "type": "Internal",
+     "confidence": "High",
+     "updated": "Current"
+    }
+   ],
+   "confidence_description": "Very high confidence \u2014 DAP platform data confirmed by earnings disclosure and internal analytics.",
+   "context_questions": [
+    "What's the Amazon Seller Central integration timeline and expected ramp curve?",
+    "How does DAP shipper 90-day retention compare to field-sales acquired accounts?",
+    "Which Shopify verticals show the highest DAP activation rates?",
+    "What first-shipment incentive level ($25 vs $50-75) optimizes lifetime value?"
+   ]
+  }
+ }
+}

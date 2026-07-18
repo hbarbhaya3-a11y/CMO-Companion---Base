@@ -1,0 +1,90 @@
+{
+ "outcomes": {
+  "ent_rev_new": 9426.6,
+  "margin_new": 6.215,
+  "leakage_new": 46.0,
+  "realization_new": 84.0,
+  "win_rate_new": 67.76,
+  "modeled_profit_new": 815.4,
+  "rev_lift": 6.6,
+  "margin_lift": 0.015,
+  "leakage_change": 0.0,
+  "win_rate_change": -0.24,
+  "realization_change": 0.0,
+  "profit_lift": 5.3999999999999995,
+  "affected_packets": 0
+ },
+ "options": [
+  {
+   "id": 0,
+   "label": "Defensive",
+   "tag": "Tightest guardrails \u00b7 max margin protection",
+   "color_key": "green",
+   "rev_lift": 3.0,
+   "margin_lift_bps": 2.0,
+   "profit_lift": 7.0,
+   "leakage_change": -22.0,
+   "win_rate_change": -1.4,
+   "realization_change": 4.0,
+   "risk": "Low (margin)",
+   "confidence": "P50 \u00b7 \u00b1$8M",
+   "affected_packets": 142,
+   "key_moves": [
+    "L2 Tier ceiling: 66.8% (sub-TARGET \u00b7 tight)",
+    "L1 Accessorial ceiling: 16% Off (\u20134pp)",
+    "L0 DIM Divisor floor: 156",
+    "L4 Zone Min: Raise 5%",
+    "AutoZone S3: not approved \u00b7 re-stage required"
+   ],
+   "autozone_resolution": "blocked"
+  },
+  {
+   "id": 1,
+   "label": "Balanced \u00b7 Recommended",
+   "tag": "Margin recovery + AutoZone resolution path",
+   "color_key": "gold",
+   "rev_lift": 6.0,
+   "margin_lift_bps": 1.0,
+   "profit_lift": 6.0,
+   "leakage_change": -14.0,
+   "win_rate_change": 0.0,
+   "realization_change": 3.0,
+   "risk": "Medium",
+   "confidence": "P50 \u00b7 \u00b1$12M",
+   "affected_packets": 178,
+   "key_moves": [
+    "L2 Tier ceiling: 119.3% (above TARGET \u00b7 enables AutoZone S3)",
+    "L1 Accessorial ceiling: 18% Off (\u20132pp)",
+    "L0 DIM Divisor floor: 154",
+    "Senior analyst overlay: 25 packets",
+    "AutoZone S3: approved \u00b7 single-use"
+   ],
+   "autozone_resolution": "partial"
+  },
+  {
+   "id": 2,
+   "label": "Aggressive",
+   "tag": "Permissive policy \u00b7 captures share at margin cost",
+   "color_key": "amber",
+   "rev_lift": 9.0,
+   "margin_lift_bps": 22.0,
+   "profit_lift": 3.0,
+   "leakage_change": 8.0,
+   "win_rate_change": 3.2,
+   "realization_change": -1.0,
+   "risk": "Higher",
+   "confidence": "P50 \u00b7 \u00b1$18M",
+   "affected_packets": 187,
+   "key_moves": [
+    "L2 Tier ceiling: 143.1% (max bracket)",
+    "L1 Accessorial ceiling: 22% Off (+2pp)",
+    "L0 DIM Divisor floor: 150 (hold)",
+    "Macro posture: Aggressive",
+    "AutoZone S3: approved as normal \u00b7 sets precedent"
+   ],
+   "autozone_resolution": "resolved"
+  }
+ ],
+ "governance_required": [],
+ "affected_packets": 0
+}

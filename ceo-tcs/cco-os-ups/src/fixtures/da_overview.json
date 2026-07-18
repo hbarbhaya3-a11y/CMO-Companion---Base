@@ -1,0 +1,621 @@
+{
+ "packets": [
+  {
+   "id": 1,
+   "packet_id": 10474,
+   "customer": "Toyota Motor North America",
+   "hierarchy": "Parent",
+   "ref_num": "0000018472",
+   "sub_ind": "Automotive - OEM",
+   "analyst": "P. Subramaniam (Sr.)",
+   "pld_source": "52 weeks - GCPR",
+   "construct": "Daily",
+   "bids": [
+    "P200041288 - TMC-Renewal-2026",
+    "P200041315 - TMC-NAAF-MX-Addendum"
+   ],
+   "scenarios": [
+    {
+     "name": "S0 - Current",
+     "desc": "52-week history - current terms",
+     "adv": 8.4,
+     "baseDisc": 64.2,
+     "totalDisc": 65.8,
+     "rpp": 24.18,
+     "rev": 168.4,
+     "or": 0.58,
+     "profit": 70.7,
+     "modeledTier": "TARGET 81.1%"
+    },
+    {
+     "name": "S1 - Renewal lift +2pp",
+     "desc": "L2 Tier ceiling raised",
+     "adv": 8.4,
+     "baseDisc": 64.2,
+     "totalDisc": 65.8,
+     "rpp": 24.62,
+     "rev": 171.4,
+     "or": 0.57,
+     "profit": 73.7,
+     "modeledTier": "TARGET 83.0%"
+    },
+    {
+     "name": "S2 - NAAF capacity bundle",
+     "desc": "L1 + L4 floor adjustment",
+     "adv": 8.5,
+     "baseDisc": 63.8,
+     "totalDisc": 65.0,
+     "rpp": 24.84,
+     "rev": 175.6,
+     "or": 0.56,
+     "profit": 77.3,
+     "modeledTier": "TARGET 83.0%"
+    },
+    {
+     "name": "S3 - Recommended",
+     "desc": "L0 DIM 150-156 - L2 reshape - L4 raised",
+     "adv": 8.4,
+     "baseDisc": 62.0,
+     "totalDisc": 63.5,
+     "rpp": 24.92,
+     "rev": 184.6,
+     "or": 0.56,
+     "profit": 81.2,
+     "modeledTier": "TARGET 83.0%",
+     "isBest": true
+    }
+   ],
+   "delta_profit": 10.5,
+   "bid_value": 185.0,
+   "levers_touched": [
+    "L0",
+    "L1-Zone",
+    "L1-FSC",
+    "L2",
+    "L4"
+   ],
+   "status": "Pricing Review",
+   "urgency": "med",
+   "last_update": "Jun 6, 16:42",
+   "workstream": "Renewal"
+  },
+  {
+   "id": 2,
+   "packet_id": 10892,
+   "customer": "Magna International",
+   "hierarchy": "Parent",
+   "ref_num": "0000045129",
+   "sub_ind": "Automotive - Tier-1",
+   "analyst": "L. Park",
+   "pld_source": "52 weeks + Opportunity PLD",
+   "construct": "Daily",
+   "bids": [
+    "NEW - Magna-NAAF-Mexico-Pen"
+   ],
+   "scenarios": [
+    {
+     "name": "S0 - Current",
+     "desc": "Existing penetration baseline",
+     "adv": 0,
+     "baseDisc": 0,
+     "totalDisc": 0,
+     "rpp": 0,
+     "rev": 0,
+     "or": 0,
+     "profit": 0,
+     "modeledTier": "-"
+    },
+    {
+     "name": "S1 - NAAF premium pricing",
+     "desc": "L0 DIM 162 - L1 zone floors",
+     "adv": 3.8,
+     "baseDisc": 41.2,
+     "totalDisc": 44.5,
+     "rpp": 27.2,
+     "rev": 24.6,
+     "or": 0.64,
+     "profit": 8.9,
+     "modeledTier": "TARGET 66.8%"
+    },
+    {
+     "name": "S2 - Recommended",
+     "desc": "L0 162 - L1 + L4 - brokerage bundle",
+     "adv": 4.2,
+     "baseDisc": 38.8,
+     "totalDisc": 41.5,
+     "rpp": 28.4,
+     "rev": 28.1,
+     "or": 0.62,
+     "profit": 10.7,
+     "modeledTier": "TARGET 81.1%",
+     "isBest": true
+    }
+   ],
+   "delta_profit": 10.7,
+   "bid_value": 28.0,
+   "levers_touched": [
+    "L0",
+    "L1-Zone",
+    "L2",
+    "L4"
+   ],
+   "status": "Customer Counter",
+   "urgency": "low",
+   "last_update": "Jun 7, 09:08",
+   "workstream": "Penetration"
+  },
+  {
+   "id": 3,
+   "packet_id": 11034,
+   "customer": "Stellantis North America",
+   "hierarchy": "Parent",
+   "ref_num": "0000028119",
+   "sub_ind": "Automotive - OEM",
+   "analyst": "R. Goyal",
+   "pld_source": "Opportunity PLD only",
+   "construct": "Daily",
+   "bids": [
+    "NEW - Stellantis-Toluca-Corridor"
+   ],
+   "scenarios": [
+    {
+     "name": "S0 - Current",
+     "desc": "No existing baseline",
+     "adv": 0,
+     "baseDisc": 0,
+     "totalDisc": 0,
+     "rpp": 0,
+     "rev": 0,
+     "or": 0,
+     "profit": 0,
+     "modeledTier": "-"
+    },
+    {
+     "name": "S1 - Aggressive entry",
+     "desc": "L0 DIM 145 - L1 FSC -25% - L2 stretched",
+     "adv": 6.2,
+     "baseDisc": 71.4,
+     "totalDisc": 73.8,
+     "rpp": 22.4,
+     "rev": 48.6,
+     "or": 0.71,
+     "profit": 14.1,
+     "modeledTier": "TARGET 119%"
+    },
+    {
+     "name": "S2 - Parity posture",
+     "desc": "L0 DIM 150 - L1 zone-tight - L4 floor",
+     "adv": 6.2,
+     "baseDisc": 66.1,
+     "totalDisc": 68.4,
+     "rpp": 23.8,
+     "rev": 51.7,
+     "or": 0.68,
+     "profit": 16.5,
+     "modeledTier": "TARGET 81.1%",
+     "isBest": true
+    },
+    {
+     "name": "S3 - Premium NAAF-led",
+     "desc": "L0 156 - L1 NAAF surcharge intact",
+     "adv": 5.4,
+     "baseDisc": 58.2,
+     "totalDisc": 60.4,
+     "rpp": 26.1,
+     "rev": 42.8,
+     "or": 0.64,
+     "profit": 15.4,
+     "modeledTier": "TARGET 66.8%"
+    }
+   ],
+   "delta_profit": 16.5,
+   "bid_value": 48.0,
+   "levers_touched": [
+    "L0",
+    "L1-Zone",
+    "L1-FSC",
+    "L2",
+    "L4"
+   ],
+   "status": "Building Scenarios",
+   "urgency": "high",
+   "last_update": "Jun 7, 18:14",
+   "workstream": "New Logo"
+  },
+  {
+   "id": 4,
+   "packet_id": 10755,
+   "customer": "Lear Corporation",
+   "hierarchy": "Parent",
+   "ref_num": "0000038201",
+   "sub_ind": "Automotive - Tier-1",
+   "analyst": "M. Chen",
+   "pld_source": "52 weeks - GCPR",
+   "construct": "Daily",
+   "bids": [
+    "P200040611 - Lear 2024",
+    "P200041422 - Lear Save-Play"
+   ],
+   "scenarios": [
+    {
+     "name": "S0 - Current",
+     "desc": "Customer is comparing to FedEx counter",
+     "adv": 4.8,
+     "baseDisc": 68.4,
+     "totalDisc": 70.1,
+     "rpp": 22.1,
+     "rev": 76.2,
+     "or": 0.64,
+     "profit": 27.4,
+     "modeledTier": "TARGET 81.1%"
+    },
+    {
+     "name": "S1 - Match counter",
+     "desc": "L1 FSC -3pp - L2 tier raise - L4 unchanged",
+     "adv": 4.8,
+     "baseDisc": 71.2,
+     "totalDisc": 73.0,
+     "rpp": 21.2,
+     "rev": 73.4,
+     "or": 0.66,
+     "profit": 24.9,
+     "modeledTier": "TARGET 119%"
+    },
+    {
+     "name": "S2 - Recommended save",
+     "desc": "L0 158 - L1-DAS only - L4 raised",
+     "adv": 4.9,
+     "baseDisc": 67.8,
+     "totalDisc": 68.4,
+     "rpp": 22.5,
+     "rev": 78.2,
+     "or": 0.63,
+     "profit": 28.9,
+     "modeledTier": "TARGET 81.1%",
+     "isBest": true
+    }
+   ],
+   "delta_profit": 1.5,
+   "bid_value": 76.0,
+   "levers_touched": [
+    "L0",
+    "L1-FSC",
+    "L1-DAS",
+    "L2",
+    "L4"
+   ],
+   "status": "Customer Counter",
+   "urgency": "med",
+   "last_update": "Jun 7, 14:33",
+   "workstream": "Retention"
+  },
+  {
+   "id": 5,
+   "packet_id": 10612,
+   "customer": "Aptiv PLC",
+   "hierarchy": "Parent",
+   "ref_num": "0000051840",
+   "sub_ind": "Automotive - Tier-1",
+   "analyst": "L. Park",
+   "pld_source": "52 weeks + Opportunity PLD",
+   "construct": "Daily",
+   "bids": [
+    "P200040918 - Aptiv 2024",
+    "NEW - Aptiv-Capital-Bundle"
+   ],
+   "scenarios": [
+    {
+     "name": "S0 - Current",
+     "desc": "Existing terms",
+     "adv": 3.1,
+     "baseDisc": 59.2,
+     "totalDisc": 60.8,
+     "rpp": 26.4,
+     "rev": 18.4,
+     "or": 0.59,
+     "profit": 7.5,
+     "modeledTier": "TARGET 81.1%"
+    },
+    {
+     "name": "S1 - Bundle attach",
+     "desc": "L1 zone reshape + Capital cross-sell",
+     "adv": 3.4,
+     "baseDisc": 57.8,
+     "totalDisc": 59.4,
+     "rpp": 27.1,
+     "rev": 22.0,
+     "or": 0.58,
+     "profit": 9.2,
+     "modeledTier": "TARGET 81.1%",
+     "isBest": true
+    }
+   ],
+   "delta_profit": 1.7,
+   "bid_value": 22.0,
+   "levers_touched": [
+    "L1-Zone",
+    "L2"
+   ],
+   "status": "Approved",
+   "urgency": "low",
+   "last_update": "Jun 7, 11:50",
+   "workstream": "Penetration"
+  },
+  {
+   "id": 6,
+   "packet_id": 10941,
+   "customer": "AutoZone",
+   "hierarchy": "Parent",
+   "ref_num": "0000067577",
+   "sub_ind": "Automotive - Aftermarket",
+   "analyst": "T. Whitaker",
+   "pld_source": "52 weeks - GCPR",
+   "construct": "Daily",
+   "bids": [
+    "P200040711 - AZO 2024 Renewal",
+    "P960040887 - Returns Program"
+   ],
+   "scenarios": [
+    {
+     "name": "S0 - Current",
+     "desc": "Matches against FedEx counter offer",
+     "adv": 5.1,
+     "baseDisc": 66.3,
+     "totalDisc": 66.8,
+     "rpp": 31.62,
+     "rev": 41.2,
+     "or": 0.66,
+     "profit": 14.0,
+     "modeledTier": "TARGET 81.1%"
+    },
+    {
+     "name": "S1 - Match FedEx",
+     "desc": "L1 zone -3pp - L2 tier ceiling +5pp - L4 lowered",
+     "adv": 5.1,
+     "baseDisc": 68.8,
+     "totalDisc": 69.4,
+     "rpp": 30.8,
+     "rev": 40.1,
+     "or": 0.68,
+     "profit": 12.8,
+     "modeledTier": "TARGET 119%"
+    },
+    {
+     "name": "S2 - Save + bundle",
+     "desc": "L1 zone -2pp - L2 ceiling +3pp - Happy Returns attach",
+     "adv": 5.3,
+     "baseDisc": 67.6,
+     "totalDisc": 68.4,
+     "rpp": 31.1,
+     "rev": 43.4,
+     "or": 0.67,
+     "profit": 14.4,
+     "modeledTier": "TARGET 81.1%"
+    },
+    {
+     "name": "S3 - OVERRIDE pending",
+     "desc": "Analyst-recommended floor breached - CCO sign-off",
+     "adv": 5.1,
+     "baseDisc": 69.5,
+     "totalDisc": 70.2,
+     "rpp": 30.4,
+     "rev": 39.4,
+     "or": 0.7,
+     "profit": 11.8,
+     "modeledTier": "TARGET 143%",
+     "isOverride": true,
+     "isBest": true
+    }
+   ],
+   "delta_profit": -2.2,
+   "bid_value": 41.0,
+   "levers_touched": [
+    "L1-Zone",
+    "L1-FSC",
+    "L2",
+    "L4"
+   ],
+   "status": "Override Flag",
+   "urgency": "critical",
+   "last_update": "Jun 7, 17:21",
+   "workstream": "Retention"
+  },
+  {
+   "id": 7,
+   "packet_id": 10883,
+   "customer": "Tesla, Inc.",
+   "hierarchy": "Parent",
+   "ref_num": "0000071204",
+   "sub_ind": "Automotive - EV",
+   "analyst": "R. Goyal",
+   "pld_source": "Opportunity PLD only",
+   "construct": "Daily",
+   "bids": [
+    "NEW - TSLA-Austin-Hub"
+   ],
+   "scenarios": [
+    {
+     "name": "S0 - Current",
+     "desc": "No baseline - greenfield",
+     "adv": 0,
+     "baseDisc": 0,
+     "totalDisc": 0,
+     "rpp": 0,
+     "rev": 0,
+     "or": 0,
+     "profit": 0,
+     "modeledTier": "-"
+    },
+    {
+     "name": "S1 - NAAF-premium pilot",
+     "desc": "L0 DIM 162 - L1 zone-tight - L4 floor",
+     "adv": 2.8,
+     "baseDisc": 32.4,
+     "totalDisc": 35.1,
+     "rpp": 29.8,
+     "rev": 14.2,
+     "or": 0.62,
+     "profit": 5.4,
+     "modeledTier": "TARGET 66.8%",
+     "isBest": true
+    }
+   ],
+   "delta_profit": 5.4,
+   "bid_value": 14.0,
+   "levers_touched": [
+    "L0",
+    "L1-Zone",
+    "L4"
+   ],
+   "status": "Building Scenarios",
+   "urgency": "low",
+   "last_update": "Jun 7, 20:45",
+   "workstream": "New Logo"
+  },
+  {
+   "id": 8,
+   "packet_id": 10708,
+   "customer": "Rivian Automotive",
+   "hierarchy": "Parent",
+   "ref_num": "0000084412",
+   "sub_ind": "Automotive - EV",
+   "analyst": "M. Chen",
+   "pld_source": "Opportunity PLD only",
+   "construct": "Daily",
+   "bids": [
+    "NEW - RIVN-Normal-Pilot"
+   ],
+   "scenarios": [
+    {
+     "name": "S0 - Current",
+     "desc": "No baseline",
+     "adv": 0,
+     "baseDisc": 0,
+     "totalDisc": 0,
+     "rpp": 0,
+     "rev": 0,
+     "or": 0,
+     "profit": 0,
+     "modeledTier": "-"
+    },
+    {
+     "name": "S1 - Pilot terms",
+     "desc": "L0 158 - L1 zone average - L4 standard",
+     "adv": 1.6,
+     "baseDisc": 42.1,
+     "totalDisc": 44.0,
+     "rpp": 24.8,
+     "rev": 8.4,
+     "or": 0.68,
+     "profit": 2.7,
+     "modeledTier": "TARGET 52.5%",
+     "isBest": true
+    }
+   ],
+   "delta_profit": 2.7,
+   "bid_value": 8.0,
+   "levers_touched": [
+    "L0",
+    "L1-Zone"
+   ],
+   "status": "Sourced",
+   "urgency": "low",
+   "last_update": "Jun 7, 13:02",
+   "workstream": "New Logo"
+  }
+ ],
+ "lever_activity": [
+  {
+   "id": 1,
+   "lvl": "L0",
+   "name": "DIM Divisor",
+   "description": "Volumetric pricing - protects RPP on low-density freight",
+   "packets": 64,
+   "pct_touched": 34,
+   "color_key": "blue",
+   "examples": "Most common: 150 \u2192 156, 162. Magna NAAF lifted to 162.",
+   "sort_order": 1
+  },
+  {
+   "id": 2,
+   "lvl": "L1",
+   "name": "Basic Incentives - Zones",
+   "description": "Service zones (Daily zones 2-8) \u00b7 weight breaks \u00b7 base zone discounts",
+   "packets": 142,
+   "pct_touched": 76,
+   "color_key": "gold",
+   "examples": "Ground Commercial \u00b7 Cell-by-Cell common \u00b7 Weight breaks at 1/6/11/21/41/51+ lbs.",
+   "sort_order": 2
+  },
+  {
+   "id": 3,
+   "lvl": "L1",
+   "name": "Basic Incentives - Accessorials",
+   "description": "FSC (Fuel) \u00b7 RES (Residential) \u00b7 DAS \u00b7 Returns \u00b7 Other Charges",
+   "packets": 118,
+   "pct_touched": 63,
+   "color_key": "gold",
+   "examples": "FSC dominant: 20% Off avg \u00b7 RES + DAS together 41 packets \u00b7 Returns active 28.",
+   "sort_order": 3
+  },
+  {
+   "id": 4,
+   "lvl": "L2",
+   "name": "Tier Incentives",
+   "description": "Performance-tier % Modeled brackets (0% \u00b7 38% \u00b7 52% \u00b7 67% \u00b7 81% TARGET \u00b7 119% \u00b7 143%)",
+   "packets": 97,
+   "pct_touched": 52,
+   "color_key": "green",
+   "examples": "23 packets requesting TARGET ceiling raise from 81.1% to 119.3% - flag candidates.",
+   "sort_order": 4
+  },
+  {
+   "id": 5,
+   "lvl": "L4",
+   "name": "Zone Minimums",
+   "description": "Floor pricing per zone \u00b7 protects short-zone profitability",
+   "packets": 38,
+   "pct_touched": 20,
+   "color_key": "brick",
+   "examples": "Most often raised on EV pure-play and aftermarket packets.",
+   "sort_order": 5
+  }
+ ],
+ "pipeline_stages": [
+  {
+   "id": 1,
+   "stage": "Sourced",
+   "count": 22,
+   "color_key": "muted",
+   "sort_order": 1
+  },
+  {
+   "id": 2,
+   "stage": "Building Scenarios",
+   "count": 48,
+   "color_key": "blue",
+   "sort_order": 2
+  },
+  {
+   "id": 3,
+   "stage": "Pricing Review",
+   "count": 67,
+   "color_key": "amber",
+   "sort_order": 3
+  },
+  {
+   "id": 4,
+   "stage": "Customer Counter",
+   "count": 31,
+   "color_key": "brick",
+   "sort_order": 4
+  },
+  {
+   "id": 5,
+   "stage": "Approved",
+   "count": 19,
+   "color_key": "green",
+   "sort_order": 5
+  }
+ ]
+}

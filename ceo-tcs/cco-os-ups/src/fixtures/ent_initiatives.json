@@ -1,0 +1,102 @@
+[
+ {
+  "id": 1,
+  "initiative_id": "PINI-2025-08",
+  "name": "L1 Accessorial concession ceiling tightened 22% \u2192 20%",
+  "scope": "Portfolio \u00b7 all Enterprise packets",
+  "status": "completed",
+  "stage": "Outcome measured \u00b7 steady state",
+  "owner": "R. Patel (VP Revenue Management)",
+  "created_date": "Aug 7, 2025",
+  "end_date": "Mar 31, 2026",
+  "modeled_profit": 36.0,
+  "actual_profit": 42.0,
+  "modeled_margin": 1.4,
+  "actual_margin": 1.6,
+  "notes": "Outperformed. Closed-won margin realization recovered 6pp. Some win-rate compression on Retention saves (~-1.2pp) - within policy tolerance.",
+  "levers": [
+   "L1 Accessorial \u00b7 FSC/RES/DAS"
+  ],
+  "affected_packets": 172
+ },
+ {
+  "id": 2,
+  "initiative_id": "PINI-2025-11",
+  "name": "L2 Tier ceiling held at TARGET 81.1% (committee escalation for >TARGET)",
+  "scope": "Portfolio \u00b7 all Enterprise packets",
+  "status": "completed",
+  "stage": "Outcome measured \u00b7 policy permanent",
+  "owner": "R. Patel (VP Revenue Management) \u00b7 CFO co-sign",
+  "created_date": "Nov 12, 2025",
+  "end_date": "Apr 30, 2026",
+  "modeled_profit": 48.0,
+  "actual_profit": 46.0,
+  "modeled_margin": 1.9,
+  "actual_margin": 1.8,
+  "notes": "On plan. Blocked 23 packets from auto-stretching above TARGET; 7 of those proceeded via committee approval. Margin recovery solid.",
+  "levers": [
+   "L2 Tier ceiling"
+  ],
+  "affected_packets": 187
+ },
+ {
+  "id": 3,
+  "initiative_id": "PINI-2026-03",
+  "name": "Senior Pricing Analyst overlay - Top-20 packets",
+  "scope": "Top-20 by bid value",
+  "status": "in-execution",
+  "stage": "Quarter 3 of 4 in-flight",
+  "owner": "R. Patel (VP Revenue Management)",
+  "created_date": "Feb 1, 2026",
+  "end_date": "Jan 31, 2027",
+  "modeled_profit": 18.0,
+  "actual_profit": 14.0,
+  "modeled_margin": 0.8,
+  "actual_margin": 0.6,
+  "notes": "Leading indicator strong - average scenarios/packet up 2.4 \u2192 3.6 on covered set. Capacity at 18/20 - 2 senior analysts on parental leave Q2.",
+  "levers": [
+   "Capacity \u00b7 Senior analyst overlay"
+  ],
+  "affected_packets": 20
+ },
+ {
+  "id": 4,
+  "initiative_id": "PINI-2026-06",
+  "name": "AutoZone Packet 10941 \u00b7 L2 single-use override \u00b7 committee escalation",
+  "scope": "Single packet \u00b7 AutoZone",
+  "status": "pending-approval",
+  "stage": "Routed for committee sign-off (3 days)",
+  "owner": "M. Guffey (CCO) \u00b7 pending CFO + Pricing Cmte",
+  "created_date": "Jun 7, 2026",
+  "end_date": null,
+  "modeled_profit": 0.0,
+  "actual_profit": 0.0,
+  "modeled_margin": 0.0,
+  "actual_margin": 0.0,
+  "notes": "Analyst T. Whitaker staged S3 to match FedEx counter. Breaches L2 ceiling 81% \u2192 143%. Modeled retention = $62M revenue saved \u00b7 margin OR 0.70. Recommended approval pending committee.",
+  "levers": [
+   "L2 Tier ceiling \u00b7 single-use override"
+  ],
+  "affected_packets": 1
+ },
+ {
+  "id": 5,
+  "initiative_id": "PINI-2026-04",
+  "name": "L0 DIM Divisor floor raised 145 \u2192 150 (portfolio)",
+  "scope": "Portfolio \u00b7 all Enterprise packets",
+  "status": "in-execution",
+  "stage": "Quarter 2 of 4 in-flight",
+  "owner": "R. Patel (VP Revenue Management) \u00b7 CFO co-sign",
+  "created_date": "Mar 14, 2026",
+  "end_date": "Mar 31, 2027",
+  "modeled_profit": 22.0,
+  "actual_profit": 18.0,
+  "modeled_margin": 0.9,
+  "actual_margin": 0.7,
+  "notes": "RPP recovery visible on low-density freight (auto parts, EV batteries). Some friction on aggressive new-logo entry - 3 packets requested 145 exception.",
+  "levers": [
+   "L0 DIM Divisor"
+  ],
+  "affected_packets": 187
+ }
+]

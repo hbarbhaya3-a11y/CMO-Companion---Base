@@ -1,0 +1,23 @@
+[
+ {
+  "key": "signals",
+  "label": "Linked to Signals",
+  "sub_label": "Cross-portfolio market intelligence & macro events",
+  "route": "signals",
+  "count": 6
+ },
+ {
+  "key": "objective-1",
+  "label": "Objective I \u00b7 Automotive Segment Growth",
+  "sub_label": "Account-level ABM plays \u00b7 Deep Simulation",
+  "route": "decision",
+  "count": 0
+ },
+ {
+  "key": "objective-2",
+  "label": "Objective II \u00b7 Digital Deal Analyser",
+  "sub_label": "Packet-level pricing intervention \u00b7 Deep Simulation",
+  "route": "decision",
+  "count": 0
+ }
+]

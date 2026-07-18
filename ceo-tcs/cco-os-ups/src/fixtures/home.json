@@ -1,0 +1,32 @@
+[
+ {
+  "tone": "urgent",
+  "tag": "HIGH PRIORITY",
+  "title": "Q2 SMB BACKFILL PACING",
+  "body": "SMB revenue growth is 4.8% behind the network-backfill plan as the Amazon glide-down completes this month. Existing accounts are stable, but newly acquired SMB cohorts show weaker first-90-day ship frequency and lower 90-day revenue retention. Digital-acquisition decay, onboarding completion gaps, and a crowded competitive pricing window may be suppressing durable, high-yield growth.",
+  "cta": "INVESTIGATE BACKFILL GAP",
+  "to_view": "investigate",
+  "id": 1,
+  "cxo_id": 1
+ },
+ {
+  "tone": "amber",
+  "tag": "EMERGING RISK",
+  "title": "EUROPE EXPORT YIELD & SENTIMENT DIP",
+  "body": "Net customer sentiment on Europe export lanes is down 9 pts over the last 14 days following the latest rate adjustment and de-minimis policy shifts. Freight-forwarder chatter is amplifying the narrative, and SMB export bookings have softened despite healthy network on-time performance.",
+  "cta": "INVESTIGATE EXPORT DIP",
+  "to_view": "signals",
+  "id": 2,
+  "cxo_id": 1
+ },
+ {
+  "tone": "green",
+  "tag": "OPPORTUNITY",
+  "title": "HEALTHCARE COLD-CHAIN WINDOW OPENING",
+  "body": "Temperature-controlled and clinical-trial logistics demand in the US Northeast and EU is up 11% QoQ, and a key competitor just delayed a regional cold-chain facility. There's a 6\u20138 week window to lock in enterprise healthcare contracts and dedicated capacity before peak.",
+  "cta": "EXPLORE OPPORTUNITY",
+  "to_view": "decision",
+  "id": 3,
+  "cxo_id": 1
+ }
+]

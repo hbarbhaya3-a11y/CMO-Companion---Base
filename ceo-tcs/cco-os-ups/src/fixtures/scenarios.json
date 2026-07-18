@@ -1,0 +1,139 @@
+[
+ {
+  "id": 1,
+  "name": "Conservative Recovery",
+  "description": "Low-risk levers only \u2014 digital reactivation, lifecycle pricing, minimal budget increase",
+  "is_preset": true,
+  "levers_config": [
+   {
+    "lever_id": "digital_reactivation",
+    "value": 60
+   },
+   {
+    "lever_id": "onboarding_fix",
+    "value": 65
+   },
+   {
+    "lever_id": "base_discount_band",
+    "value": 17
+   },
+   {
+    "lever_id": "contract_term",
+    "value": 2.0
+   }
+  ],
+  "budget": 5.5,
+  "time_horizon": "Q",
+  "gap_closure_pct": 34.0
+ },
+ {
+  "id": 2,
+  "name": "Recommended Scenario",
+  "description": "Balanced portfolio \u2014 activation sprint + digital + regional pricing + capacity shift",
+  "is_preset": true,
+  "levers_config": [
+   {
+    "lever_id": "abm_budget",
+    "value": 14
+   },
+   {
+    "lever_id": "tier_allocation",
+    "value": 55
+   },
+   {
+    "lever_id": "industry_experts",
+    "value": 20
+   },
+   {
+    "lever_id": "naaf_capacity",
+    "value": 50
+   },
+   {
+    "lever_id": "digital_reactivation",
+    "value": 80
+   },
+   {
+    "lever_id": "onboarding_fix",
+    "value": 75
+   },
+   {
+    "lever_id": "service_mix_push",
+    "value": 30
+   },
+   {
+    "lever_id": "renewal_capacity",
+    "value": 35
+   }
+  ],
+  "budget": 7.2,
+  "time_horizon": "Q",
+  "gap_closure_pct": 62.0
+ },
+ {
+  "id": 3,
+  "name": "Aggressive Recovery",
+  "description": "Full lever pull \u2014 discount ladder, capacity reallocation, NAAF push, executive sponsorship",
+  "is_preset": true,
+  "levers_config": [
+   {
+    "lever_id": "abm_budget",
+    "value": 20
+   },
+   {
+    "lever_id": "tier_allocation",
+    "value": 60
+   },
+   {
+    "lever_id": "channel_mix",
+    "value": 45
+   },
+   {
+    "lever_id": "industry_experts",
+    "value": 30
+   },
+   {
+    "lever_id": "exec_sponsorship",
+    "value": 12
+   },
+   {
+    "lever_id": "naaf_capacity",
+    "value": 65
+   },
+   {
+    "lever_id": "base_discount_band",
+    "value": 22
+   },
+   {
+    "lever_id": "accessorial_caps",
+    "value": 18
+   },
+   {
+    "lever_id": "digital_reactivation",
+    "value": 90
+   },
+   {
+    "lever_id": "onboarding_fix",
+    "value": 90
+   },
+   {
+    "lever_id": "service_mix_push",
+    "value": 40
+   },
+   {
+    "lever_id": "bundling_rules",
+    "value": 5
+   },
+   {
+    "lever_id": "renewal_capacity",
+    "value": 40
+   },
+   {
+    "lever_id": "analyst_headcount",
+    "value": 35
+   }
+  ],
+  "budget": 11.0,
+  "time_horizon": "Q",
+  "gap_closure_pct": 27.0
+ }
+]

@@ -1,0 +1,16 @@
+{
+ "ourShare": {
+  "p10": 21.4,
+  "p50": 24.5,
+  "p90": 27.4
+ },
+ "theirShare": {
+  "p10": 25.0,
+  "p50": 28.5,
+  "p90": 32.3
+ },
+ "winRate": 21,
+ "runs": 1000,
+ "competitor_name": "FedEx",
+ "battle_analysis": null
+}

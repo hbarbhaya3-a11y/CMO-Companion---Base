@@ -1,0 +1,42 @@
+[
+ {
+  "key": "all",
+  "label": "All",
+  "count": 6
+ },
+ {
+  "key": "critical",
+  "label": "Critical",
+  "count": 0
+ },
+ {
+  "key": "competitive",
+  "label": "Competitive",
+  "count": 1
+ },
+ {
+  "key": "customer",
+  "label": "Customer",
+  "count": 2
+ },
+ {
+  "key": "margin",
+  "label": "Margin & Pricing",
+  "count": 1
+ },
+ {
+  "key": "opportunities",
+  "label": "Opportunities",
+  "count": 1
+ },
+ {
+  "key": "network",
+  "label": "Network & Capacity",
+  "count": 1
+ },
+ {
+  "key": "macro",
+  "label": "Macro & Policy",
+  "count": 0
+ }
+]
