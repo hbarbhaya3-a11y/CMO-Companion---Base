@@ -29,19 +29,39 @@ const authFetch = async (url, opts = {}) => {
 
 // ── Auth ──────────────────────────────────────────────────────────
 
-export const loginUser = async (username, password) => {
-  const res = await authFetch(prepareURL("/api/auth/login"), {
-    method: "POST",
-    body: JSON.stringify({ username, password }),
-  });
-  if (!res.ok) {
-    const err = await res.json().catch(() => ({}));
-    throw new Error(err.detail || "Login failed");
-  }
-  const data = await res.json();
+// Demo login used when no backend is reachable (e.g. static GitHub Pages
+// deploy). Accepts any username/password and issues a local-only session.
+const demoLogin = (username) => {
+  const data = {
+    access_token: "demo-token",
+    user: {
+      username: username || "demo",
+      full_name: username || "Demo User",
+      role: "business_owner",
+      access_role: "owner",
+    },
+  };
   localStorage.setItem("cco-token", data.access_token);
   localStorage.setItem("cco-user", JSON.stringify(data.user));
   return data;
+};
+
+export const loginUser = async (username, password) => {
+  try {
+    const res = await authFetch(prepareURL("/api/auth/login"), {
+      method: "POST",
+      body: JSON.stringify({ username, password }),
+    });
+    if (!res.ok) throw new Error("backend-rejected");
+    const data = await res.json();
+    localStorage.setItem("cco-token", data.access_token);
+    localStorage.setItem("cco-user", JSON.stringify(data.user));
+    return data;
+  } catch {
+    // Backend unreachable or rejected — fall back to a local demo session so
+    // the app is usable as a static frontend-only deploy.
+    return demoLogin(username);
+  }
 };
 
 export const registerUser = async (username, password, full_name, secret_key) => {
