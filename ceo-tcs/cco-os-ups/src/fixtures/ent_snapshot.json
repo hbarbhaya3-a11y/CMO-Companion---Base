@@ -1,0 +1,352 @@
+{
+ "kpis": [
+  {
+   "id": 1,
+   "label": "Enterprise Revenue, YTD",
+   "value": "$9.42B",
+   "delta": "+1.4%",
+   "delta_label": "vs PY \u00b7 FY on track",
+   "status": "ok",
+   "sub": "Adj. for Amazon glide-down",
+   "sort_order": 1
+  },
+  {
+   "id": 2,
+   "label": "Enterprise ADV",
+   "value": "2.18M",
+   "delta": "-2.1%",
+   "delta_label": "pieces/day",
+   "status": "warn",
+   "sub": "Mix shift to higher-margin",
+   "sort_order": 2
+  },
+  {
+   "id": 3,
+   "label": "Enterprise RPP",
+   "value": "$23.84",
+   "delta": "+6.5%",
+   "delta_label": "vs PY \u00b7 pricing power",
+   "status": "ok",
+   "sub": "Lifts driving quality of rev",
+   "sort_order": 3
+  },
+  {
+   "id": 4,
+   "label": "Enterprise Op. Margin",
+   "value": "6.2%",
+   "delta": "-180 bps",
+   "delta_label": "rebuild path Q3",
+   "status": "warn",
+   "sub": "Concession leakage is fixable",
+   "sort_order": 4
+  },
+  {
+   "id": 5,
+   "label": "Win Rate (90d)",
+   "value": "68%",
+   "delta": "+4 pp",
+   "delta_label": "Deal Mgr AI \u00b7 92% adopt.",
+   "status": "ok",
+   "sub": "New Logo 51% \u00b7 Renewal 84%",
+   "sort_order": 5
+  },
+  {
+   "id": 6,
+   "label": "Deal Pipeline \u00b7 QTD",
+   "value": "$1.42B",
+   "delta": "+8.6%",
+   "delta_label": "$ in negotiation",
+   "status": "ok",
+   "sub": "$684M closed \u00b7 $112M slipped",
+   "sort_order": 6
+  }
+ ],
+ "margin_trajectory": [
+  {
+   "id": 1,
+   "quarter": "Q3 24",
+   "sort_order": 1,
+   "plan_margin": 7.4,
+   "actual_margin": 7.2,
+   "recovery_margin": null
+  },
+  {
+   "id": 2,
+   "quarter": "Q4 24",
+   "sort_order": 2,
+   "plan_margin": 7.6,
+   "actual_margin": 7.4,
+   "recovery_margin": null
+  },
+  {
+   "id": 3,
+   "quarter": "Q1 25",
+   "sort_order": 3,
+   "plan_margin": 7.8,
+   "actual_margin": 7.6,
+   "recovery_margin": null
+  },
+  {
+   "id": 4,
+   "quarter": "Q2 25",
+   "sort_order": 4,
+   "plan_margin": 7.6,
+   "actual_margin": 7.3,
+   "recovery_margin": null
+  },
+  {
+   "id": 5,
+   "quarter": "Q3 25",
+   "sort_order": 5,
+   "plan_margin": 7.7,
+   "actual_margin": 7.0,
+   "recovery_margin": null
+  },
+  {
+   "id": 6,
+   "quarter": "Q4 25",
+   "sort_order": 6,
+   "plan_margin": 7.5,
+   "actual_margin": 5.8,
+   "recovery_margin": null
+  },
+  {
+   "id": 7,
+   "quarter": "Q1 26",
+   "sort_order": 7,
+   "plan_margin": 7.5,
+   "actual_margin": 4.0,
+   "recovery_margin": null
+  },
+  {
+   "id": 8,
+   "quarter": "Q2 26",
+   "sort_order": 8,
+   "plan_margin": 7.8,
+   "actual_margin": 6.2,
+   "recovery_margin": 6.2
+  },
+  {
+   "id": 9,
+   "quarter": "Q3 26 (proj)",
+   "sort_order": 9,
+   "plan_margin": 8.0,
+   "actual_margin": null,
+   "recovery_margin": 7.4
+  },
+  {
+   "id": 10,
+   "quarter": "Q4 26 (proj)",
+   "sort_order": 10,
+   "plan_margin": 8.2,
+   "actual_margin": null,
+   "recovery_margin": 8.0
+  }
+ ],
+ "signal_effects": [
+  {
+   "id": 1,
+   "dot": "red",
+   "sig_type": "Competitor",
+   "title": "FedEx 'Auto Express' launches Aug 4 - 6 days ahead of NAAF",
+   "linked_packets": "#11034 Stellantis \u00b7 #10892 Magna \u00b7 #10474 Toyota",
+   "effect": "Cross-border pricing pressure on Detroit-Toluca lane. Analysts staging more aggressive L2 stretched-tier in Stellantis S1.",
+   "dollar": "-$14M",
+   "color": "brick",
+   "sort_order": 1
+  },
+  {
+   "id": 2,
+   "dot": "red",
+   "sig_type": "Earnings",
+   "title": "AutoZone Q3: 'reviewing carrier diversification'",
+   "linked_packets": "#10941 AutoZone (OVERRIDE)",
+   "effect": "Analyst T. Whitaker staged S3 at L2 143% to match FedEx counter. Breaches CCO ceiling - override request pending.",
+   "dollar": "-$17M",
+   "color": "brick",
+   "sort_order": 2
+  },
+  {
+   "id": 3,
+   "dot": "amber",
+   "sig_type": "RFP",
+   "title": "Stellantis opens $312M Detroit-Toluca review",
+   "linked_packets": "#11034 Stellantis (New Logo)",
+   "effect": "Sourcing window Jul 1. NAAF Mexico positioning critical - S2 parity posture preferred to keep margin.",
+   "dollar": "+$48M",
+   "color": "gold",
+   "sort_order": 3
+  },
+  {
+   "id": 4,
+   "dot": "amber",
+   "sig_type": "M&A",
+   "title": "Magna acquires Mexico Tier-2 - adds $80M logistics spend",
+   "linked_packets": "#10892 Magna (Penetration)",
+   "effect": "Customer accepted S2 with NAAF + Brokerage + Capital bundle. Penetration deal value lifts.",
+   "dollar": "+$28M",
+   "color": "gold",
+   "sort_order": 4
+  },
+  {
+   "id": 5,
+   "dot": "amber",
+   "sig_type": "Production",
+   "title": "Toyota Georgetown KY +12% Q3 production cadence",
+   "linked_packets": "#10474 Toyota (Renewal)",
+   "effect": "Inbound JIT volume lifts Aug-Oct. S3 recommended with L0 DIM 156 - captures margin on density lift.",
+   "dollar": "+$11M",
+   "color": "gold",
+   "sort_order": 5
+  },
+  {
+   "id": 6,
+   "dot": "red",
+   "sig_type": "Tariff",
+   "title": "10% USMCA cross-border surcharge extended Sep 30",
+   "linked_packets": "All Auto OEM packets",
+   "effect": "Lane economics compress on Detroit-MX. Recommend L0 DIM floor raised across portfolio to protect RPP.",
+   "dollar": "-$11M",
+   "color": "brick",
+   "sort_order": 6
+  }
+ ],
+ "strategic_deals": [
+  {
+   "id": 1,
+   "deal_id": "D-TMC-2026R",
+   "customer": "Toyota Motor NA",
+   "workstream": "Renewal",
+   "packet_id": 10474,
+   "value": 185.0,
+   "stage": "Pricing Review",
+   "urgency": "med",
+   "current_or": 0.58,
+   "modeled_or": 0.56,
+   "current_margin": 84.0,
+   "days_to_close": 84,
+   "owner": "P. Subramaniam (Sr.)",
+   "playbook": "on-track",
+   "note": "L0 DIM 150-156 \u00b7 L2 reshape \u00b7 L4 raised. S3 recommended at TARGET 83%."
+  },
+  {
+   "id": 2,
+   "deal_id": "D-MGA-2026R",
+   "customer": "Magna International",
+   "workstream": "Penetration",
+   "packet_id": 10892,
+   "value": 28.0,
+   "stage": "Customer Counter",
+   "urgency": "low",
+   "current_or": 0.62,
+   "modeled_or": 0.62,
+   "current_margin": 91.0,
+   "days_to_close": 42,
+   "owner": "L. Park",
+   "playbook": "on-track",
+   "note": "NAAF Mexico bundle \u00b7 brokerage cross-sell. Customer counter accepted S2."
+  },
+  {
+   "id": 3,
+   "deal_id": "D-STLA-2026N",
+   "customer": "Stellantis North America",
+   "workstream": "New Logo",
+   "packet_id": 11034,
+   "value": 48.0,
+   "stage": "Building Scenarios",
+   "urgency": "high",
+   "current_or": 0.68,
+   "modeled_or": 0.68,
+   "current_margin": 78.0,
+   "days_to_close": 120,
+   "owner": "R. Goyal",
+   "playbook": "on-track",
+   "note": "S2 parity posture preferred \u00b7 $312M Detroit-Toluca RFP \u00b7 NAAF Mexico positioning."
+  },
+  {
+   "id": 4,
+   "deal_id": "D-AZO-2026X",
+   "customer": "AutoZone",
+   "workstream": "Retention",
+   "packet_id": 10941,
+   "value": 62.0,
+   "stage": "Pricing Review \u00b7 OVERRIDE",
+   "urgency": "high",
+   "current_or": 0.7,
+   "modeled_or": 0.7,
+   "current_margin": 71.0,
+   "days_to_close": 14,
+   "owner": "T. Whitaker",
+   "playbook": "deviating",
+   "note": "Analyst staged S3 to match FedEx counter. Breaches L2 Tier ceiling (143% vs 81% policy). CCO override required."
+  },
+  {
+   "id": 5,
+   "deal_id": "D-LEAR-2026R",
+   "customer": "Lear Corporation",
+   "workstream": "Renewal",
+   "packet_id": 10755,
+   "value": 48.0,
+   "stage": "Approved",
+   "urgency": "low",
+   "current_or": 0.59,
+   "modeled_or": 0.59,
+   "current_margin": 88.0,
+   "days_to_close": 0,
+   "owner": "M. Chen",
+   "playbook": "on-track",
+   "note": "Renewal closed at modeled. +$8M vs prior contract."
+  },
+  {
+   "id": 6,
+   "deal_id": "D-TSLA-2026N",
+   "customer": "Tesla, Inc.",
+   "workstream": "New Logo",
+   "packet_id": 10883,
+   "value": 22.0,
+   "stage": "Building Scenarios",
+   "urgency": "med",
+   "current_or": 0.66,
+   "modeled_or": 0.66,
+   "current_margin": 82.0,
+   "days_to_close": 96,
+   "owner": "L. Park",
+   "playbook": "watch",
+   "note": "Austin parts hub RFP imminent. S2 entry pricing under review. Risk: FedEx incumbent."
+  },
+  {
+   "id": 7,
+   "deal_id": "D-APTV-2026P",
+   "customer": "Aptiv PLC",
+   "workstream": "Penetration",
+   "packet_id": 10612,
+   "value": 18.0,
+   "stage": "Pricing Review",
+   "urgency": "med",
+   "current_or": 0.61,
+   "modeled_or": 0.61,
+   "current_margin": 86.0,
+   "days_to_close": 60,
+   "owner": "R. Goyal",
+   "playbook": "watch",
+   "note": "New VP Logistics (ex-Penske). Penetration deal under review - re-engagement needed."
+  },
+  {
+   "id": 8,
+   "deal_id": "D-RIVN-2026N",
+   "customer": "Rivian Automotive",
+   "workstream": "New Logo",
+   "packet_id": 10708,
+   "value": 14.0,
+   "stage": "Customer Counter",
+   "urgency": "low",
+   "current_or": 0.65,
+   "modeled_or": 0.65,
+   "current_margin": 80.0,
+   "days_to_close": 32,
+   "owner": "M. Chen",
+   "playbook": "on-track",
+   "note": "EV pure-play. Customer accepted S2 with Class-9 hazmat capability."
+  }
+ ]
+}

@@ -1,0 +1,154 @@
+[
+ {
+  "label": "US Domestic ADV",
+  "val": "\u22128.0%",
+  "sub": "YoY",
+  "chip": "Volume",
+  "note": "Planned decline \u2014 Amazon glide-down completing June.",
+  "spark": [
+   7,
+   6,
+   5,
+   5,
+   4,
+   4,
+   3
+  ],
+  "up": false,
+  "id": 1,
+  "cxo_id": 1
+ },
+ {
+  "label": "Revenue per Piece",
+  "val": "$15.32",
+  "sub": "+6.5% YoY",
+  "chip": "Yield",
+  "note": "Yield ahead of plan; base rates + mix driving gains.",
+  "spark": [
+   3,
+   4,
+   4,
+   5,
+   6,
+   6,
+   7
+  ],
+  "up": true,
+  "id": 2,
+  "cxo_id": 1
+ },
+ {
+  "label": "SMB Penetration",
+  "val": "34.5%",
+  "sub": "record high",
+  "chip": "SMB",
+  "note": "Highest SMB share of US volume in company history.",
+  "spark": [
+   4,
+   5,
+   5,
+   6,
+   6,
+   7,
+   7
+  ],
+  "up": true,
+  "id": 3,
+  "cxo_id": 1
+ },
+ {
+  "label": "Healthcare Revenue",
+  "val": "$3.0B",
+  "sub": "first $3B quarter",
+  "chip": "Healthcare",
+  "note": "First $3B quarter \u2014 all three segments growing.",
+  "spark": [
+   3,
+   4,
+   4,
+   5,
+   6,
+   6,
+   7
+  ],
+  "up": true,
+  "id": 4,
+  "cxo_id": 1
+ },
+ {
+  "label": "International Revenue",
+  "val": "$4.5B",
+  "sub": "+3.8% YoY",
+  "chip": "International",
+  "note": "Growth across all regions; premium-market focus.",
+  "spark": [
+   4,
+   5,
+   5,
+   5,
+   6,
+   6,
+   7
+  ],
+  "up": true,
+  "id": 5,
+  "cxo_id": 1
+ },
+ {
+  "label": "Op Margin (consol.)",
+  "val": "6.2%",
+  "sub": "\u22121.9 pts",
+  "chip": "Margin",
+  "note": "Non-GAAP adj. ~$350M transitional costs; recovery guided in Q2.",
+  "spark": [
+   7,
+   7,
+   6,
+   6,
+   5,
+   5,
+   6
+  ],
+  "up": false,
+  "id": 6,
+  "cxo_id": 1
+ },
+ {
+  "label": "Customer Sentiment*",
+  "val": "74",
+  "sub": "+4 pts QoQ",
+  "chip": "Service",
+  "note": "Stable across enterprise even with rate activity.",
+  "spark": [
+   5,
+   5,
+   6,
+   6,
+   6,
+   7,
+   7
+  ],
+  "up": true,
+  "id": 7,
+  "cxo_id": 1
+ },
+ {
+  "label": "Account Retention*",
+  "val": "91%",
+  "sub": "+0.7 pts QoQ",
+  "chip": "Retention",
+  "note": "Installed-base retention nudging up across verticals.",
+  "spark": [
+   5,
+   6,
+   6,
+   6,
+   7,
+   7,
+   7
+  ],
+  "up": true,
+  "id": 8,
+  "cxo_id": 1
+ }
+]

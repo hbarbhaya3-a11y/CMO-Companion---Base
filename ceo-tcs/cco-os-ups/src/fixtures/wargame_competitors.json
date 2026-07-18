@@ -1,0 +1,163 @@
+[
+ {
+  "id": 1,
+  "name": "FedEx",
+  "market_share": "29%",
+  "threat_level": "HIGH",
+  "positioning": "Largest US parcel competitor. Consolidating Ground/Express into unified network (Network 2.0) to cut $4B in costs by 2027. Aggressive on B2B pricing and automotive-specific services.",
+  "strengths": [
+   "Global air network with 700+ aircraft",
+   "Ground economy scale \u2014 largest US ground fleet",
+   "SmartPost density for lightweight e-commerce",
+   "Strong automotive parts logistics (Auto Express launch)"
+  ],
+  "weaknesses": [
+   "Integration complexity post-TNT acquisition",
+   "Margin pressure from Ground yield compression",
+   "Network 2.0 execution risk \u2014 driver reclassification lawsuits",
+   "Lagging behind on healthcare cold-chain infrastructure"
+  ],
+  "recent_moves": [
+   "Launched 'FedEx Auto Express' \u2014 dedicated automotive parts service, 6 days ahead of NAAF",
+   "Network 2.0 restructuring: consolidating Ground and Express into single operating unit",
+   "Aggressive RPP discounting on Top 50 lanes targeting UPS enterprise accounts",
+   "Expanded Sunday delivery to 95% of US population"
+  ],
+  "scenarios": [
+   {
+    "title": "FedEx undercuts RPP by 8% on Top 50 enterprise lanes",
+    "impact_assessment": "Could erode $180M in annual revenue from T1 accounts. Ford, GM, and Stellantis all have multi-carrier contracts making them vulnerable to price-based switching.",
+    "recommended_response": "Activate retention playbooks on at-risk T1 accounts. Lead with service differentiation (on-time performance, dedicated reps) rather than matching price. Consider targeted RPP adjustments on top 10 at-risk lanes only."
+   },
+   {
+    "title": "Network 2.0 consolidation succeeds \u2014 FedEx achieves $4B cost advantage",
+    "impact_assessment": "A unified FedEx network with 15-20% lower operating costs fundamentally changes competitive dynamics. They could sustain lower pricing indefinitely while maintaining margins.",
+    "recommended_response": "Accelerate UPS smart logistics automation investments. Differentiate on specialized services (healthcare, dangerous goods, returns) where network consolidation provides no advantage. Lock in 3-year enterprise commitments before FedEx realizes cost savings."
+   },
+   {
+    "title": "FedEx acquires a regional last-mile carrier",
+    "impact_assessment": "Would fill their rural/suburban delivery gap and threaten UPS SurePost volumes. Estimated impact: -$90M in lightweight parcel revenue over 18 months.",
+    "recommended_response": "Strengthen SurePost partnerships with USPS. Invest in UPS Access Point network density. Proactively lock SMB accounts with volume commitment discounts."
+   }
+  ],
+  "tier": "T1",
+  "sort_order": 1
+ },
+ {
+  "id": 2,
+  "name": "Amazon Logistics",
+  "market_share": "12%",
+  "threat_level": "HIGH",
+  "positioning": "Fastest-growing parcel carrier in US. Vertically integrated with Amazon marketplace. Building independent delivery network that increasingly serves third-party shippers. Focus on speed and last-mile density.",
+  "strengths": [
+   "Last-mile delivery density \u2014 150+ delivery stations in US",
+   "Volume guarantee from Amazon marketplace (5B+ packages/yr)",
+   "Superior technology stack \u2014 real-time routing, customer experience",
+   "Same-day and next-day capability in 90% of metro areas"
+  ],
+  "weaknesses": [
+   "No B2B or healthcare logistics capability",
+   "Limited international presence outside UK/DE/JP",
+   "Cannot handle dangerous goods or high-value freight",
+   "DSP contractor model creates service consistency issues"
+  ],
+  "recent_moves": [
+   "DSP expansion to 15 new metro areas \u2014 building rural delivery capability",
+   "Same-day delivery hub construction in 6 Tier-2 cities",
+   "AMZL rural expansion targeting USPS-dependent ZIP codes",
+   "Testing third-party shipper acceptance program (Buy with Prime logistics)"
+  ],
+  "scenarios": [
+   {
+    "title": "Amazon enters B2B logistics via 'Fulfilled by Amazon' expansion",
+    "impact_assessment": "If Amazon offers B2B parcel service at 20% below market, could capture $2B in SMB volume within 24 months. UPS SMB backfill plan ($4.2B target) becomes unachievable.",
+    "recommended_response": "Accelerate SMB digital acquisition. Lead with integrated returns, dangerous goods, and international \u2014 services Amazon cannot offer. Deepen DAP (Delivery Access Point) network as differentiation."
+   },
+   {
+    "title": "Amazon offers 20% below-market pricing for SMB shippers",
+    "impact_assessment": "Direct threat to UPS Digital Access Program and SMB segment growth. Could erode 8-12% of newly acquired SMB cohort within first year of launch.",
+    "recommended_response": "Do not compete on price against Amazon subsidized logistics. Double down on service reliability, insurance, and multi-carrier flexibility messaging. Target SMB segments Amazon cannot serve (hazmat, alcohol, pharma)."
+   }
+  ],
+  "tier": "T1",
+  "sort_order": 2
+ },
+ {
+  "id": 3,
+  "name": "DHL",
+  "market_share": "8%",
+  "threat_level": "MEDIUM",
+  "positioning": "International logistics leader with growing US presence. Dominant in cross-border e-commerce and healthcare/pharma supply chain. Partnering with USPS for US domestic last-mile.",
+  "strengths": [
+   "International network dominance \u2014 #1 in cross-border logistics",
+   "Supply chain consulting and managed logistics expertise",
+   "Healthcare and pharma cold-chain leadership (GDP-certified)",
+   "Strong European and Asian trade lane coverage"
+  ],
+  "weaknesses": [
+   "Limited US domestic ground network \u2014 relies on USPS partnership",
+   "Premium pricing positions them out of commodity parcel market",
+   "Smaller US sales force and account coverage",
+   "No competitive US next-day air offering"
+  ],
+  "recent_moves": [
+   "DHL eCommerce Solutions US expansion \u2014 8 new distribution centers",
+   "$500M cold-chain investment for pharma logistics in Americas",
+   "Partnership with Shopify for cross-border e-commerce fulfillment",
+   "Launched 'DHL Express Commerce' targeting US-to-EU SMB shippers"
+  ],
+  "scenarios": [
+   {
+    "title": "DHL acquires a mid-size US regional carrier",
+    "impact_assessment": "Would instantly give DHL domestic US ground capability. Threat primarily to UPS International segment where DHL already competes. Estimated $300M revenue at risk in cross-border and healthcare.",
+    "recommended_response": "Strengthen healthcare logistics partnerships and expand Premier cold-chain offering. Lock in long-term contracts with pharma clients. Leverage UPS end-to-end domestic+international advantage that DHL cannot match even with acquisition."
+   },
+   {
+    "title": "DHL undercuts healthcare logistics pricing by 15%",
+    "impact_assessment": "Direct threat to UPS Healthcare division ($3B quarterly revenue). Could lose 10-15% of pharma logistics contracts at renewal. Temperature-controlled and clinical trial logistics are highest-margin services.",
+    "recommended_response": "Invest in GDP certification expansion and IoT tracking capabilities. Emphasize UPS regulatory compliance track record and US domestic healthcare delivery density that DHL cannot replicate."
+   }
+  ],
+  "tier": "T2",
+  "sort_order": 3
+ },
+ {
+  "id": 4,
+  "name": "USPS",
+  "market_share": "31%",
+  "threat_level": "MEDIUM",
+  "positioning": "US government postal service with universal coverage obligation. Largest parcel carrier by volume. DeJoy 10-year modernization plan aims to transform into competitive package delivery network.",
+  "strengths": [
+   "Universal coverage \u2014 reaches every US address including PO boxes",
+   "Last-mile mailbox access monopoly \u2014 lowest rural delivery cost",
+   "Lowest per-package cost for lightweight parcels under 1 lb",
+   "Massive infrastructure: 31,000 post offices, 230,000 delivery routes"
+  ],
+  "weaknesses": [
+   "Service reliability concerns \u2014 on-time rates below FedEx/UPS",
+   "No premium time-definite service (no guaranteed next-day)",
+   "Financial instability \u2014 pension obligations and declining mail volume",
+   "Limited technology investment and tracking capabilities"
+  ],
+  "recent_moves": [
+   "DeJoy 10-year Delivering for America plan \u2014 $40B modernization",
+   "New Next Generation Delivery Vehicle (NGDV) fleet rollout \u2014 60K electric vehicles",
+   "Sunday and holiday delivery expansion for Amazon and commercial shippers",
+   "USPS Ground Advantage product launch \u2014 consolidating retail/commercial ground"
+  ],
+  "scenarios": [
+   {
+    "title": "USPS modernization succeeds \u2014 reliable 2-day ground nationwide",
+    "impact_assessment": "If USPS achieves consistent 2-day delivery with NGDV fleet, their cost advantage becomes decisive for price-sensitive shippers. Could capture additional 5-8% market share from UPS Ground economy segment.",
+    "recommended_response": "Differentiate on guaranteed service levels, enterprise account management, and specialized services. Position UPS Ground as premium-reliable vs USPS Ground Advantage. Maintain SurePost partnership while hedging with alternative last-mile options."
+   },
+   {
+    "title": "USPS raises rates 15% to fund pension obligations",
+    "impact_assessment": "Creates opportunity for UPS to capture price-sensitive volume that shifts away from USPS. Estimated $500M-$800M addressable volume becomes competitive. SurePost economics also shift favorably.",
+    "recommended_response": "Proactively target USPS-heavy shippers with competitive UPS Ground proposals. Adjust SurePost pricing to maintain margin advantage. Launch targeted SMB acquisition campaign in ZIP codes with highest USPS commercial volume."
+   }
+  ],
+  "tier": "T1",
+  "sort_order": 4
+ }
+]

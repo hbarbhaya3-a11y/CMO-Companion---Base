@@ -1,0 +1,219 @@
+[
+ {
+  "id": 1,
+  "time": "06:55 ET",
+  "type": "Earnings",
+  "title": "Q1 2026 US Domestic operating margin 4.0% adj. \u2014 $350M transitional cost drag (250 bps)",
+  "source": "UPS Q1 2026 Earnings Call (Apr 28, 2026)",
+  "impact": "high",
+  "conf": 1.0,
+  "accounts": [
+   "Portfolio"
+  ],
+  "why": "MD-11 retirement, Ground Saver insourcing transition, weather, and casualty expenses created a 250 bps drag on US Domestic margin. CFO Brian Dykes characterized as 'largely behind us.' Q2 guide: 7.5\u20138.5%.",
+  "action": "Track margin recovery weekly; Q2 inflection critical to FY guide."
+ },
+ {
+  "id": 2,
+  "time": "06:22 ET",
+  "type": "Volume",
+  "title": "Amazon volume reduced ~500K ADV in Q1 \u2014 glide-down on track for June 2026 completion",
+  "source": "UPS Q1 2026 Earnings Call",
+  "impact": "high",
+  "conf": 1.0,
+  "accounts": [
+   "Portfolio"
+  ],
+  "why": "Amazon was 10.6% of FY25 revenue; targeted to be roughly half by mid-2026. Freed capacity reallocating to higher-yield SMB, Healthcare, B2B, Automotive.",
+  "action": "Confirm capacity reallocation plans hitting SMB / Healthcare growth engines."
+ },
+ {
+  "id": 3,
+  "time": "05:40 ET",
+  "type": "Healthcare",
+  "title": "Healthcare logistics delivered first $3.0B quarter in Q1 2026 \u2014 all 3 segments YoY growth",
+  "source": "UPS Q1 2026 Press Release (Apr 28, 2026)",
+  "impact": "high",
+  "conf": 1.0,
+  "accounts": [
+   "Portfolio \u00b7 Healthcare"
+  ],
+  "why": "On track toward $20B FY late-2026 healthcare target (~doubling 2023 base). Andlauer + Frigo-Trans acquisitions fully integrated. Cold-chain capacity material in US Domestic mix shift.",
+  "action": "Accelerate Healthcare ABM motions; consider penetration plays in pharma + medical devices."
+ },
+ {
+  "id": 4,
+  "time": "04:18 ET",
+  "type": "Network",
+  "title": "Network Reconfiguration \u00b7 23 facilities closed in Q1; 27 more closing by end of H1",
+  "source": "UPS Q1 2026 8-K",
+  "impact": "med",
+  "conf": 1.0,
+  "accounts": [
+   "Operations"
+  ],
+  "why": "50-facility H1 closure target. 25,000 operational positions reduced. 28% lower cost-per-piece in automated facilities (per CEO Tom\u00e9). Driver Choice voluntary program \u2014 7,500 buyouts, 77% exited April.",
+  "action": "Monitor service continuity during transition; SMB-facing field readiness."
+ },
+ {
+  "id": 5,
+  "time": "21:18 ET (Jun 7)",
+  "type": "Competitor",
+  "title": "FedEx Freight spin-off completed Jun 1, 2026 \u2014 new standalone publicly traded company",
+  "source": "FedEx Corp 8-K (Mar 19, 2026) \u00b7 WSJ (Jun 1, 2026)",
+  "impact": "high",
+  "conf": 1.0,
+  "accounts": [
+   "LTL Competitive Set"
+  ],
+  "why": "FedEx Freight (LTL) spun off as standalone NYSE listing on June 1, 2026 with $3.7B senior notes issued Feb 5. Refocuses FedEx Express on small-parcel competition with UPS. DIM technology aggressively used (90% of shipments) \u2014 material precedent for UPS pricing posture.",
+  "action": "Re-evaluate competitive positioning vs leaner FedEx Express; tighten L0 DIM Divisor floor portfolio-wide."
+ },
+ {
+  "id": 6,
+  "time": "16:42 ET (Jun 7)",
+  "type": "Competitor",
+  "title": "FedEx Q3 FY26: US domestic revenue +10%, package volume growing \u2014 share pressure vs UPS",
+  "source": "FedEx Corp Q3 FY26 8-K (Mar 19, 2026)",
+  "impact": "high",
+  "conf": 0.95,
+  "accounts": [
+   "Portfolio"
+  ],
+  "why": "FedEx Federal Express segment posted 10% Q3 revenue growth on higher US domestic + International Priority yields AND increased US domestic package volume \u2014 while UPS US Domestic Q1 revenue declined 2.3%. Mix-shift execution is now structural.",
+  "action": "Sharpen pricing discipline on SMB and B2B segments to defend share gains; protect Healthcare premium."
+ },
+ {
+  "id": 7,
+  "time": "16:08 ET (Jun 7)",
+  "type": "Trade Policy",
+  "title": "2025 trade policy shifts continue rerouting Asia-to-Americas flows \u2014 UPS captured premium trade-lane shifts in Q1",
+  "source": "UPS Q1 2026 Earnings Call + Supply Chain Dive (May 2026)",
+  "impact": "med",
+  "conf": 0.92,
+  "accounts": [
+   "International \u00d7 US Dom B2B"
+  ],
+  "why": "Per CFO Dykes: UPS 'capitalized on trade lane shifts resulting from 2025 trade policy changes.' International Q1 revenue +3.8% on +10.7% RPP. Continued tariff volatility shifts inbound flows toward Mexico + Vietnam.",
+  "action": "Position NAAF Mexico and Asia-Pacific lanes as premium-priced alternatives in Q3 RFPs."
+ },
+ {
+  "id": 8,
+  "time": "14:08 ET (Jun 7)",
+  "type": "Fuel",
+  "title": "Middle East conflict (March 2026) drove sustained fuel cost elevation \u2014 surcharges adjusting weekly",
+  "source": "UPS Q1 2026 Earnings Call \u00b7 EIA weekly diesel data",
+  "impact": "med",
+  "conf": 1.0,
+  "accounts": [
+   "Portfolio"
+  ],
+  "why": "Per CEO Tom\u00e9: 'The conflict in the Middle East in March drove an immediate spike in fuel costs.' UPS fuel surcharges linked to published benchmarks and adjust weekly. Some International margin pressure expected.",
+  "action": "Monitor weekly fuel surcharge pass-through; preserve margin via L1 accessorial discipline."
+ },
+ {
+  "id": 9,
+  "time": "11:47 ET (Jun 7)",
+  "type": "SMB",
+  "title": "UPS SMB penetration reached record 34.5% of US volume \u2014 Digital Access Program driving acquisition",
+  "source": "UPS Q1 2026 Earnings Call \u00b7 Supply Chain Dive (Mar 2026)",
+  "impact": "high",
+  "conf": 1.0,
+  "accounts": [
+   "SMB segment"
+  ],
+  "why": "B2B at 45.2% of US Domestic volume (6-year high). SMB ADV grew despite overall US Dom ADV down ~8% YoY. CFO Dykes: 'shippers in higher-value verticals demonstrate greater tolerance for price increases.'",
+  "action": "Accelerate SMB acquisition motions; protect penetration via service-quality discipline."
+ },
+ {
+  "id": 10,
+  "time": "09:22 ET (Jun 7)",
+  "type": "Policy",
+  "title": "USPS Ground Saver final-mile agreement formalized \u2014 2026 launch; volume down 27.7% in Q1",
+  "source": "UPS FY 2025 10-K \u00b7 UPS Q1 2026 Earnings Call",
+  "impact": "med",
+  "conf": 1.0,
+  "accounts": [
+   "Ground Saver product"
+  ],
+  "why": "Cost increases applied; Ground Saver ADV declined 27.7% in Q1. UPS retained higher-yield Ground Saver volume in-network; lower-cost USPS-delivered portion. Margin-led portfolio decision.",
+  "action": "Track Ground Saver yield improvement; monitor SMB volume migration to UPS Ground."
+ },
+ {
+  "id": 11,
+  "time": "08:52 ET",
+  "type": "Competitor",
+  "title": "FedEx Auto Express launches NAAF Mexico cross-border lane \u2014 8% below UPS list",
+  "source": "FreightWaves (Jun 5, 2026)",
+  "impact": "high",
+  "conf": 0.9,
+  "accounts": [
+   "Ford",
+   "Stellantis",
+   "Honda",
+   "Toyota",
+   "Magna"
+  ],
+  "why": "FedEx targeting USMCA-driven nearshoring volume with aggressive pricing. Direct threat on Ford BlueOval City inbound corridor, Stellantis Toluca outbound, Magna's Tier-1 NAAF expansion. UPS NAAF Mexico launches August \u2014 risk that FedEx pre-locks volume.",
+  "action": "Pre-lock NAAF capacity for Ford and Stellantis within 5 business days; activate executive engagement on Magna."
+ },
+ {
+  "id": 12,
+  "time": "07:48 ET",
+  "type": "Board",
+  "title": "Board pre-read due Jun 11 \u2014 FY26 mid-year revenue and margin recovery view",
+  "source": "Corporate Secretary calendar \u00b7 Board cadence",
+  "impact": "high",
+  "conf": 1.0,
+  "accounts": [
+   "Board \u00b7 CCO submission"
+  ],
+  "why": "Board meets Jun 18, 2026. CCO pre-read deck due Jun 11 covering: US Domestic margin recovery path, Healthcare $20B trajectory, SMB acquisition velocity, the 5 reversed-trend Auto accounts plan, FedEx Freight spin-off competitive response.",
+  "action": "Finalize CCO board narrative this week \u2014 Automotive ABM plan + Enterprise pricing discipline are the two anchor stories."
+ },
+ {
+  "id": 13,
+  "time": "07:14 ET",
+  "type": "Enterprise",
+  "title": "Q2 Enterprise deal pipeline +18% sequentially \u2014 4 strategic renewals due before Q3 close",
+  "source": "Salesforce CRM \u00b7 Deal Manager (AI)",
+  "impact": "high",
+  "conf": 0.95,
+  "accounts": [
+   "Toyota",
+   "CVS Health",
+   "Walgreens",
+   "Boeing"
+  ],
+  "why": "Toyota Renewal-2026 (Packet 10474, $185M), CVS Health Healthcare-2026 ($94M), Walgreens RFP ($72M), Boeing AOG-renewal ($58M) all touch DA L0/L1/L2 levers. Toyota S3 recommended +$10.5M profit; CVS at modeled TARGET 81.1%.",
+  "action": "Run Deal Workbench against the 4-packet bundle; align L2 ceiling posture before Toyota counter-proposal due Jun 12."
+ },
+ {
+  "id": 14,
+  "time": "06:34 ET",
+  "type": "Volume",
+  "title": "Amazon glide-down on track \u2014 Q1 volume reduced 500K ADV; on path to ~half by Jun 2026",
+  "source": "UPS Q1 2026 Earnings Call \u00b7 Supply Chain Dive (May 2026)",
+  "impact": "high",
+  "conf": 1.0,
+  "accounts": [
+   "Portfolio \u00b7 capacity"
+  ],
+  "why": "Amazon was 10.6% of FY25 revenue; targeted to be roughly half by mid-2026. Freed network capacity (~700K ADV by end Q2) is the structural enabler for SMB / Healthcare / Automotive pricing power. CFO Dykes: pricing tolerance is the strategic dividend.",
+  "action": "Confirm capacity reallocation hitting SMB and Healthcare growth engines; protect against Amazon volume re-entry overtures."
+ },
+ {
+  "id": 15,
+  "time": "05:48 ET",
+  "type": "SMB",
+  "title": "Digital Access Program acquired record SMB count in Q1 \u2014 34.5% penetration, +260 bps QoQ",
+  "source": "UPS Q1 2026 Earnings Call \u00b7 Supply Chain Dive (Mar 2026)",
+  "impact": "high",
+  "conf": 1.0,
+  "accounts": [
+   "SMB segment"
+  ],
+  "why": "B2B at 45.2% (6-year high). SMB ADV grew despite total US Dom ADV down 8% YoY. Higher-yield mix shift accelerating. Customers in healthcare + auto verticals showing greater pricing tolerance \u2014 RPP +6.5% YoY.",
+  "action": "Accelerate SMB acquisition motions through Digital Access Program; protect penetration via service-quality discipline and field-level engagement."
+ }
+]

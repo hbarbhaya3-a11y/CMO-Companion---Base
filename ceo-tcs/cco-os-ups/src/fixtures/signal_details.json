@@ -1,0 +1,769 @@
+{
+ "1": {
+  "tag": "Urgent",
+  "tone": "urgent",
+  "title": "Cost-to-acquire rising faster than SMB yield recovery",
+  "metric": "ACQUISITION EFFICIENCY",
+  "delta": "\u22127.8% QoQ",
+  "delta_neg": true,
+  "desc": "SMB acquisition cost is up 7.8% QoQ across paid digital and field-sales motions; quote-to-close is lagging the cost curve.",
+  "why": "Efficiency is declining across two major acquisition motions, creating pressure on the SMB backfill needed as Amazon volume exits.",
+  "src": "UPS Revenue Management",
+  "ago": "1h ago",
+  "rows": [
+   [
+    "Baseline",
+    "CAC flat QoQ target"
+   ],
+   [
+    "Current",
+    "SMB CAC +7.8% QoQ"
+   ],
+   [
+    "Time window",
+    "Last quarter"
+   ],
+   [
+    "Source types",
+    "Paid digital, field sales, MMM model"
+   ],
+   [
+    "Likely driver",
+    "Auction inflation + softer landing-page conversion"
+   ]
+  ],
+  "next_action": "Rebalance spend toward digital (DAP) and lifecycle channels",
+  "open": true,
+  "is_row2": false,
+  "signal_enrichment": {
+   "why_it_matters": "The Amazon glide-down removes $11.3B in annual shipping revenue. UPS's entire FY26 network-backfill strategy depends on replacing that volume with higher-yield SMB shippers acquired through the Digital Access Program and field sales. CAC is now rising 7.8% QoQ \u2014 driven by Google/Meta auction inflation and a 0.7pt drop in landing-page conversion \u2014 while new-cohort 90-day retention sits at just 71% vs the 84% target. If acquisition costs keep outrunning yield recovery, the backfill plan falls further behind the current 4.8% gap, putting $91B in total revenue at structural risk.",
+   "metrics": [
+    {
+     "value": "\u22127.8%",
+     "label": "Acquisition efficiency QoQ",
+     "negative": true,
+     "positive": false
+    },
+    {
+     "value": "+7.8%",
+     "label": "CAC QoQ",
+     "negative": true,
+     "positive": false
+    },
+    {
+     "value": "+0.9%",
+     "label": "Conversion rate QoQ",
+     "negative": false,
+     "positive": true
+    }
+   ],
+   "key_insight": "CAC is up 7.8% QoQ on paid digital (Google, Meta) and field-sales channels while landing-page conversion only recovered +0.9% QoQ. The cost curve is outrunning the funnel \u2014 Digital Access Program acquisitions now cost 58% less per activated shipper than field-sales, and creator-attributed signups through Shopify/WooCommerce integrations are beating paid social on a $/install basis. UPS processed 21.1M packages daily in 2024; every basis point of acquisition efficiency affects network utilization across 5.2M sq ft of Worldport capacity.",
+   "recent_activity": [
+    {
+     "action": "MMM model refresh flagged CAC +7.8% QoQ across paid digital and field-sales",
+     "actor": "Revenue Mgmt Analytics",
+     "time": "1h ago"
+    },
+    {
+     "action": "Google Ads auction CPMs spiked 12% in logistics verticals ahead of peak planning",
+     "actor": "Digital Marketing",
+     "time": "6h ago"
+    },
+    {
+     "action": "Landing-page conversion rate slipped 0.7 pts on the SMB acquisition flow (3.1% \u2192 2.4%)",
+     "actor": "UPS Digital",
+     "time": "1d ago"
+    },
+    {
+     "action": "DAP-attributed signups outpaced paid social on a $/install basis for first time this quarter",
+     "actor": "Digital Commerce",
+     "time": "3d ago"
+    }
+   ],
+   "related_topics": [
+    "Paid Digital Spend",
+    "Field Sales ROI",
+    "Digital Access Program",
+    "Landing Page CRO",
+    "Marketing Mix Model",
+    "SMB Onboarding"
+   ],
+   "recommended_takeaways": [
+    {
+     "action": "Discuss a paid digital spend pullback with the growth and media teams",
+     "reasoning": "because it could lead to consensus around how much budget to shift out of inflating Meta and Google auctions this quarter.",
+     "impact": "Reallocates an estimated $4.2M of paid social spend into more efficient DAP and lifecycle channels within 30 days."
+    },
+    {
+     "action": "Discuss the SMB landing-page conversion backlog with the web and lifecycle teams",
+     "reasoning": "because it could lead to consensus around which conversion-rate fixes get shipped before the next acquisition push.",
+     "impact": "A prioritized 2-sprint CRO plan targeting the 0.7pt conversion gap on paid landing flows \u2014 could recover 2,800+ leads/month."
+    },
+    {
+     "action": "Discuss expanding DAP-attributed acquisition with the partnerships team",
+     "reasoning": "because it could lead to consensus around moving budget into Shopify/WooCommerce integration channels where $/install is now beating paid social.",
+     "impact": "Locks in 2-3 expanded integration deals to absorb shifted spend with a lower blended CAC across 14,200+ DAP signups."
+    },
+    {
+     "action": "Discuss the CAC vs. LTV narrative ahead of the quarterly board review with finance",
+     "reasoning": "because it could lead to consensus on whether to revise the FY CAC guardrail or hold and absorb pressure.",
+     "impact": "A pre-aligned CAC framing for finance review \u2014 no surprises in the QBR deck, with UPS's $15.32 yield advantage as context."
+    }
+   ],
+   "data_sources": [
+    {
+     "name": "UPS Revenue Management",
+     "type": "Internal",
+     "confidence": "High",
+     "updated": "Real-time"
+    },
+    {
+     "name": "Marketing Mix Model (MMM)",
+     "type": "Internal",
+     "confidence": "High",
+     "updated": "Weekly"
+    },
+    {
+     "name": "Digital Commerce Analytics",
+     "type": "Internal",
+     "confidence": "High",
+     "updated": "Daily"
+    },
+    {
+     "name": "Google Ads Auction Insights",
+     "type": "External",
+     "confidence": "Medium",
+     "updated": "Daily"
+    }
+   ],
+   "confidence_description": "High confidence \u2014 corroborated by MMM model, paid platforms, and finance reconciliation.",
+   "context_questions": [
+    "Break down CAC by acquisition channel \u2014 paid digital vs. field vs. DAP",
+    "What's the revenue gap if CAC stays elevated through Q3?",
+    "How does the $4.2M DAP reallocation affect the Amazon backfill timeline?",
+    "Which field-sales territories have the worst ROI per activated shipper?"
+   ]
+  },
+  "timestamp": "Jun 12, 2026 \u00b7 09:14 AM EST",
+  "id": 1,
+  "cxo_id": 1
+ },
+ "2": {
+  "tag": "Opportunity",
+  "tone": "green",
+  "title": "Revenue quality holding strong",
+  "metric": "REVENUE PER PIECE",
+  "delta": "+7.7% QoQ",
+  "delta_neg": false,
+  "desc": "Global revenue per piece reached $15.32, up 7.7%, driven by SMB, B2B and premium mix.",
+  "why": "Yield is outpacing the volume decline \u2014 the mix shift is working and creating room to be selective.",
+  "src": "UPS Finance",
+  "ago": "2h ago",
+  "rows": [],
+  "next_action": "",
+  "open": false,
+  "is_row2": false,
+  "signal_enrichment": {
+   "why_it_matters": "Revenue per piece hit $15.32 \u2014 the clearest proof that Carol Tom\u00e9's yield-over-volume strategy is working. Despite US Domestic ADV declining 8% YoY as planned Amazon volume exits ($11.3B annually), the remaining portfolio is structurally higher-margin. SMB now accounts for 29% of total revenue (up from 24% YoY), healthcare RPP leads all verticals at $22.80, and surcharge realization reached 97%. This gives the CCO office leverage to resist pressure to chase low-yield volume and stay selective on new business \u2014 critical as FedEx and DHL ramp competitive pricing in Q3.",
+   "metrics": [
+    {
+     "value": "$15.32",
+     "label": "Revenue per piece",
+     "negative": false,
+     "positive": true
+    },
+    {
+     "value": "+7.7%",
+     "label": "Yield improvement QoQ",
+     "negative": false,
+     "positive": true
+    },
+    {
+     "value": "29%",
+     "label": "SMB share of revenue",
+     "negative": false,
+     "positive": true
+    }
+   ],
+   "key_insight": "The yield-over-volume strategy is producing durable results \u2014 not just higher prices but better mix. SMB revenue per piece is $18.40 vs $12.10 enterprise average, B2B premium services grew 14% while standard declined 3%, and healthcare commands $22.80/piece. Surcharge realization hit 97% (up from 91% last year), meaning pricing discipline is holding across the 490,000-employee salesforce. The $1.22/piece advantage over FedEx's estimated $14.10 reflects genuine service differentiation, not temporary pricing power.",
+   "recent_activity": [
+    {
+     "action": "Finance published Q2 yield report \u2014 $15.32 RPP exceeds $14.80 internal target by 3.5%",
+     "actor": "UPS Finance",
+     "time": "2h ago"
+    },
+    {
+     "action": "Pricing team confirmed override rate below 2% threshold \u2014 no unplanned discounting in Q2",
+     "actor": "Pricing & Strategy",
+     "time": "Yesterday"
+    },
+    {
+     "action": "Enterprise sales identified 12 accounts ready for premium service migration",
+     "actor": "Enterprise Sales",
+     "time": "2d ago"
+    },
+    {
+     "action": "Healthcare RPP crossed $22.80 \u2014 highest across all segments, driven by Marken clinical trial logistics",
+     "actor": "Healthcare Division",
+     "time": "3d ago"
+    }
+   ],
+   "related_topics": [
+    "Yield Strategy",
+    "SMB Mix Shift",
+    "Premium Service Migration",
+    "Surcharge Realization",
+    "Healthcare Logistics",
+    "FedEx Pricing Gap"
+   ],
+   "recommended_takeaways": [
+    {
+     "action": "Lock the $15.32 yield baseline into Q3 targets with the finance team",
+     "reasoning": "because it could lead to consensus that volume-chasing discounts would destroy the mix gains Carol Tom\u00e9's strategy has built.",
+     "impact": "Protects $1.22/piece yield advantage over FedEx in Q3 planning \u2014 prevents reactive discounting worth an estimated $180M annually."
+    },
+    {
+     "action": "Discuss the 12 premium-migration candidates with enterprise account teams",
+     "reasoning": "because it could lead to consensus on which accounts to prioritize for standard-to-premium conversion before FedEx/DHL competitive offers land in Q3.",
+     "impact": "Converts 8-12 accounts to premium tiers, adding an estimated $4-6M in incremental high-yield revenue."
+    },
+    {
+     "action": "Review the volume floor threshold with network planning",
+     "reasoning": "because yield improvement only works above a volume floor \u2014 further Amazon-related declines could trigger fixed-cost leverage problems at Worldport.",
+     "impact": "Establishes a clear volume floor KPI for Q4 planning, preventing a surprise margin compression scenario."
+    }
+   ],
+   "data_sources": [
+    {
+     "name": "UPS Finance",
+     "type": "Internal",
+     "confidence": "High",
+     "updated": "Daily"
+    },
+    {
+     "name": "Revenue Management",
+     "type": "Internal",
+     "confidence": "High",
+     "updated": "Real-time"
+    },
+    {
+     "name": "Pricing & Strategy",
+     "type": "Internal",
+     "confidence": "High",
+     "updated": "Weekly"
+    }
+   ],
+   "confidence_description": "High confidence \u2014 corroborated by finance actuals, pricing telemetry, and segment mix analysis.",
+   "context_questions": [
+    "What's driving the $15.32 RPP improvement by business segment?",
+    "How does our $1.22/piece yield advantage compare to FedEx and DHL?",
+    "Which 12 accounts are best candidates for premium service migration?",
+    "What volume floor should we set to protect Worldport fixed-cost leverage?"
+   ]
+  },
+  "timestamp": "Jun 12, 2026 \u00b7 07:42 AM EST",
+  "id": 2,
+  "cxo_id": 1
+ },
+ "3": {
+  "tag": "Opportunity",
+  "tone": "green",
+  "title": "Digital Access (DAP) momentum",
+  "metric": "DIGITAL-ATTRIBUTED REVENUE",
+  "delta": "+18% QoQ",
+  "delta_neg": false,
+  "desc": "Digital Access Program signups are up 28% QoQ; digital-attributed SMB revenue up 18% QoQ.",
+  "why": "The quarterly trend is compounding \u2014 digital is becoming a durable, low-cost SMB acquisition channel.",
+  "src": "UPS Digital",
+  "ago": "3h ago",
+  "rows": [
+   [
+    "Baseline",
+    "+10% signup target"
+   ],
+   [
+    "Current",
+    "+28% QoQ"
+   ],
+   [
+    "Time window",
+    "Last quarter"
+   ],
+   [
+    "Source types",
+    "ups.com, DAP, marketplace integrations"
+   ],
+   [
+    "Likely driver",
+    "SMB onboarding + integration partnerships"
+   ]
+  ],
+  "next_action": "Expand digital incentives ahead of peak",
+  "open": false,
+  "is_row2": false,
+  "signal_enrichment": {
+   "why_it_matters": "DAP is the fastest path to replacing Amazon volume with higher-yield SMB shippers. Signups hit 14,200 this quarter (+28% QoQ), activation rate reached 78% (up from 64%), and DAP-attributed SMB revenue crossed a $48M annual run-rate. Shopify and WooCommerce integrations now account for 41% of signups, and the upcoming Amazon Seller Central integration could add 3,000-5,000 new shippers in 90 days. At 58% lower CAC than field sales and 11% higher first-quarter ship frequency, DAP is the channel that makes the network-backfill plan work.",
+   "metrics": [
+    {
+     "value": "+28%",
+     "label": "DAP signup growth QoQ",
+     "negative": false,
+     "positive": true
+    },
+    {
+     "value": "78%",
+     "label": "Activation rate (14-day)",
+     "negative": false,
+     "positive": true
+    },
+    {
+     "value": "$48M",
+     "label": "DAP revenue run-rate",
+     "negative": false,
+     "positive": true
+    }
+   ],
+   "key_insight": "DAP is compounding \u2014 not a one-time spike. Signups grew 28% QoQ to 14,200, activation rate jumped to 78% (from 64%), and average revenue per active shipper rose 9% to $342/month. The channel delivers 2.4\u00d7 marginal ROI vs field sales. Shopify integration v2 launched last week with 3\u00d7 higher early adoption than v1. Amazon Seller Central integration approved for Q3 launch \u2014 projected 3,000-5,000 new shippers in first 90 days, directly addressing the Amazon backfill gap.",
+   "recent_activity": [
+    {
+     "action": "DAP-attributed SMB revenue crossed $48M annual run-rate, 18% QoQ ahead of $42M plan",
+     "actor": "UPS Digital Commerce",
+     "time": "3h ago"
+    },
+    {
+     "action": "Shopify integration v2 launched \u2014 real-time rate comparison + auto-label. 3\u00d7 v1 adoption",
+     "actor": "Platform Partnerships",
+     "time": "1w ago"
+    },
+    {
+     "action": "Amazon Seller Central integration approved \u2014 Q3 launch, 3-5K new shippers projected",
+     "actor": "Product Development",
+     "time": "2w ago"
+    },
+    {
+     "action": "$4.2M budget reallocation from field-sales to DAP incentives requested",
+     "actor": "Digital Commerce",
+     "time": "3d ago"
+    }
+   ],
+   "related_topics": [
+    "Digital Access Program",
+    "Shopify Integration",
+    "WooCommerce Sellers",
+    "Amazon Seller Central",
+    "SMB Onboarding",
+    "Marketplace Partnerships"
+   ],
+   "recommended_takeaways": [
+    {
+     "action": "Approve the $4.2M field-to-DAP budget reallocation with finance and growth teams",
+     "reasoning": "because DAP delivers 2.4\u00d7 marginal ROI vs field sales, and delaying past Q3 peak planning locks loses the window.",
+     "impact": "Accelerates DAP scaling by funding 6,000+ additional incentivized activations before peak season."
+    },
+    {
+     "action": "Discuss fast-tracking Amazon Seller Central integration with product and engineering",
+     "reasoning": "because 3,000-5,000 projected new shippers in 90 days represents the single largest backfill opportunity this quarter.",
+     "impact": "Pulls forward the biggest single-channel growth lever for Amazon volume replacement."
+    },
+    {
+     "action": "Review first-shipment incentive levels with the DAP team",
+     "reasoning": "because testing $50-75 incentives (vs current $25) for multi-service activation could boost revenue per shipper from $342 to $400+/month.",
+     "impact": "Higher activation incentives could increase DAP revenue per shipper 15-20%, adding $7-9M to the annual run-rate."
+    },
+    {
+     "action": "Set up cohort-over-cohort quality tracking with analytics",
+     "reasoning": "because 78% activation is strong but quality could dilute as volume scales \u2014 need early warning before it shows in retention.",
+     "impact": "Early detection of quality dilution prevents a costly retention problem 90 days downstream."
+    }
+   ],
+   "data_sources": [
+    {
+     "name": "UPS Digital Commerce",
+     "type": "Internal",
+     "confidence": "High",
+     "updated": "Real-time"
+    },
+    {
+     "name": "DAP Analytics Platform",
+     "type": "Internal",
+     "confidence": "High",
+     "updated": "Daily"
+    },
+    {
+     "name": "Shopify Partner Dashboard",
+     "type": "External",
+     "confidence": "Medium",
+     "updated": "Weekly"
+    },
+    {
+     "name": "Marketing Mix Model",
+     "type": "Internal",
+     "confidence": "High",
+     "updated": "Weekly"
+    }
+   ],
+   "confidence_description": "High confidence \u2014 corroborated by DAP platform data, partner dashboards, and MMM validation.",
+   "context_questions": [
+    "What's the projected DAP revenue if we approve the $4.2M reallocation?",
+    "How does DAP shipper 90-day retention compare to field-sales acquired accounts?",
+    "What's the Amazon Seller Central integration timeline, risk, and expected ramp?",
+    "Which marketplace integrations should we prioritize after Shopify v2?"
+   ]
+  },
+  "timestamp": "Jun 11, 2026 \u00b7 03:28 PM EST",
+  "id": 3,
+  "cxo_id": 1
+ },
+ "4": {
+  "tag": "Opportunity",
+  "tone": "green",
+  "title": "Healthcare crosses $3B quarter",
+  "metric": null,
+  "delta": null,
+  "delta_neg": false,
+  "desc": null,
+  "why": null,
+  "src": null,
+  "ago": null,
+  "rows": null,
+  "next_action": null,
+  "open": false,
+  "is_row2": true,
+  "signal_enrichment": {
+   "why_it_matters": "Healthcare logistics crossed a $3.04B quarterly milestone \u2014 UPS's highest-yield vertical at $22.80 revenue per piece. Temperature-controlled and clinical-trial demand in the US Northeast and EU is up 11% QoQ, driven by Marken (acquired 2016) and MNX (acquired 2023). A FedEx regional cold-chain facility delay in Memphis (July \u2192 September) creates a 6-8 week window to lock in enterprise pharma contracts and dedicated capacity before peak. UPS Healthcare now leverages the Singapore Changi Asia-Pacific Hub's -20\u00b0C to 25\u00b0C cold chain infrastructure and UPS Flight Forward drone deliveries for time-critical clinical trial logistics.",
+   "metrics": [
+    {
+     "value": "$3.04B",
+     "label": "Healthcare quarterly revenue",
+     "negative": false,
+     "positive": true
+    },
+    {
+     "value": "+11%",
+     "label": "Cold-chain demand QoQ",
+     "negative": false,
+     "positive": true
+    },
+    {
+     "value": "$22.80",
+     "label": "Healthcare RPP (highest)",
+     "negative": false,
+     "positive": true
+    }
+   ],
+   "key_insight": "Healthcare is UPS's premium margin engine \u2014 $22.80 RPP is nearly double the $12.10 enterprise average. The Marken clinical trial platform and MNX time-critical acquisitions give UPS a differentiated cold-chain network that competitors can't replicate quickly. FedEx's Memphis cold-chain hub delay opens a window to capture displaced pharma capacity demand in the US Northeast corridor, where UPS already has strong infrastructure.",
+   "recent_activity": [
+    {
+     "action": "Healthcare revenue confirmed at $3.04B \u2014 first-ever $3B quarter milestone",
+     "actor": "Healthcare Logistics",
+     "time": "Today"
+    },
+    {
+     "action": "FedEx Memphis cold-chain hub delayed July \u2192 September",
+     "actor": "Competitive Intelligence",
+     "time": "Yesterday"
+    },
+    {
+     "action": "Marken clinical trial shipments up 14% QoQ in EU markets",
+     "actor": "Marken Division",
+     "time": "3d ago"
+    },
+    {
+     "action": "Singapore Changi hub expanded 25% \u2014 40% more import, 45% more export capacity",
+     "actor": "Network Planning",
+     "time": "1w ago"
+    }
+   ],
+   "related_topics": [
+    "Cold-Chain Infrastructure",
+    "Clinical Trial Logistics",
+    "Marken Platform",
+    "FedEx Competition",
+    "Pharma Accounts",
+    "Singapore Hub"
+   ],
+   "recommended_takeaways": [
+    {
+     "action": "Accelerate enterprise pharma contract outreach during the FedEx delay window",
+     "reasoning": "because the 6-8 week gap before FedEx's Memphis hub opens is a time-limited opportunity to capture displaced capacity demand.",
+     "impact": "Locks in 3-5 enterprise pharma contracts worth an estimated $120-200M annually in the Northeast corridor."
+    },
+    {
+     "action": "Discuss cold-chain capacity expansion in the US Northeast with network planning",
+     "reasoning": "because demand is up 11% QoQ and current capacity is at 87% utilization \u2014 a bottleneck risk before peak.",
+     "impact": "Prevents capacity-driven customer losses and supports the $3B+ quarterly run-rate trajectory."
+    }
+   ],
+   "data_sources": [
+    {
+     "name": "Healthcare Logistics Division",
+     "type": "Internal",
+     "confidence": "High",
+     "updated": "Daily"
+    },
+    {
+     "name": "Competitive Intelligence",
+     "type": "Internal",
+     "confidence": "Medium",
+     "updated": "Weekly"
+    },
+    {
+     "name": "Marken Clinical Ops",
+     "type": "Internal",
+     "confidence": "High",
+     "updated": "Real-time"
+    }
+   ],
+   "confidence_description": "High confidence \u2014 internal revenue data confirmed, competitor delay verified through multiple channels.",
+   "context_questions": [
+    "Which pharma accounts are most at risk when FedEx's Memphis hub opens in September?",
+    "What cold-chain capacity can we add in the Northeast within 6 weeks?",
+    "How does healthcare margin compare to SMB and enterprise verticals?",
+    "What's the Marken clinical trial pipeline for Q3?"
+   ]
+  },
+  "timestamp": "Jun 11, 2026 \u00b7 11:05 AM EST",
+  "id": 4,
+  "cxo_id": 1
+ },
+ "5": {
+  "tag": "Stable",
+  "tone": "amber",
+  "title": "Customer sentiment stable across enterprise",
+  "metric": null,
+  "delta": null,
+  "delta_neg": false,
+  "desc": null,
+  "why": null,
+  "src": null,
+  "ago": null,
+  "rows": null,
+  "next_action": null,
+  "open": false,
+  "is_row2": true,
+  "signal_enrichment": {
+   "why_it_matters": "Enterprise NPS is flat at +32 for three consecutive quarters despite on-time delivery improving 2.1 points to 96.8%. The stability masks a concerning divergence: mid-market enterprise accounts ($500K-$2M annual revenue) show a 6% increase in competitive quote requests \u2014 active shopping behavior. UPS serves 490,000 employees across 220+ countries, but customer experience investment has lagged what FedEx and DHL are deploying. The 2023 Teamsters contract raised driver pay to $95K/year \u2014 if sentiment doesn't improve, the cost structure becomes harder to sustain without pricing power erosion.",
+   "metrics": [
+    {
+     "value": "+32",
+     "label": "Enterprise NPS (flat 3 quarters)",
+     "negative": false,
+     "positive": false
+    },
+    {
+     "value": "+6%",
+     "label": "Competitive quote requests",
+     "negative": true,
+     "positive": false
+    },
+    {
+     "value": "96.8%",
+     "label": "On-time delivery rate",
+     "negative": false,
+     "positive": true
+    }
+   ],
+   "key_insight": "Service quality is improving (96.8% OTD, +2.1pts) but sentiment isn't following \u2014 suggesting enterprise customers value something beyond delivery performance that UPS isn't measuring or addressing. Mid-market accounts ($500K-$2M) are most at risk, with a 6% spike in competitive quoting. This segment represents roughly $8.2B in annual revenue. FedEx's Happy Returns acquisition (reverse logistics) and DHL's 8-12% win-back discounts are changing what 'good enough' means for enterprise shippers.",
+   "recent_activity": [
+    {
+     "action": "Q2 NPS survey: enterprise stable at +32, mid-market dipped to +28 (from +30)",
+     "actor": "Customer Experience",
+     "time": "Today"
+    },
+    {
+     "action": "Pricing telemetry flagged 6% increase in competitive quote requests from mid-market",
+     "actor": "Revenue Management",
+     "time": "2d ago"
+    },
+    {
+     "action": "FedEx launched Happy Returns integration for enterprise accounts \u2014 reverse logistics play",
+     "actor": "Competitive Intelligence",
+     "time": "1w ago"
+    },
+    {
+     "action": "On-time delivery performance hit 96.8%, best in 5 quarters",
+     "actor": "Network Operations",
+     "time": "1w ago"
+    }
+   ],
+   "related_topics": [
+    "Enterprise NPS",
+    "Mid-Market Retention",
+    "Competitive Quoting",
+    "Customer Experience",
+    "FedEx Happy Returns",
+    "Service Quality Gap"
+   ],
+   "recommended_takeaways": [
+    {
+     "action": "Launch a proactive mid-market retention program with the enterprise sales team",
+     "reasoning": "because the 6% spike in competitive quoting signals active shopping behavior worth an estimated $8.2B in annual revenue at risk.",
+     "impact": "Proactive outreach to the top 50 at-risk mid-market accounts with value-adds and contract extensions before competitive offers convert."
+    },
+    {
+     "action": "Commission qualitative research on the sentiment-service gap with the CX team",
+     "reasoning": "because OTD is up 2.1pts but NPS hasn't moved \u2014 understanding what enterprise customers value beyond delivery performance is critical.",
+     "impact": "Identifies the 2-3 experience dimensions driving the gap, enabling targeted CX investments that actually move NPS."
+    }
+   ],
+   "data_sources": [
+    {
+     "name": "Customer Experience Analytics",
+     "type": "Internal",
+     "confidence": "High",
+     "updated": "Quarterly"
+    },
+    {
+     "name": "Revenue Management Telemetry",
+     "type": "Internal",
+     "confidence": "High",
+     "updated": "Real-time"
+    },
+    {
+     "name": "Competitive Intelligence",
+     "type": "Internal",
+     "confidence": "Medium",
+     "updated": "Weekly"
+    }
+   ],
+   "confidence_description": "Moderate confidence \u2014 NPS survey data is quarterly, competitive quoting data is real-time but sample-based.",
+   "context_questions": [
+    "Which mid-market accounts are showing the most competitive shopping behavior?",
+    "What's driving the gap between OTD improvement and flat NPS?",
+    "How does our NPS compare to FedEx and DHL enterprise segments?",
+    "What would a mid-market retention program cost vs. the revenue at risk?"
+   ]
+  },
+  "timestamp": "Jun 10, 2026 \u00b7 04:52 PM EST",
+  "id": 5,
+  "cxo_id": 1
+ },
+ "6": {
+  "tag": "Watch",
+  "tone": "amber",
+  "title": "Competitive pricing window tightens",
+  "metric": null,
+  "delta": null,
+  "delta_neg": false,
+  "desc": null,
+  "why": null,
+  "src": null,
+  "ago": null,
+  "rows": null,
+  "next_action": null,
+  "open": false,
+  "is_row2": true,
+  "signal_enrichment": {
+   "why_it_matters": "FedEx and DHL are both signaling aggressive Q3 pricing moves. FedEx's 'Auto Express' dedicated automotive logistics service launches August 4 \u2014 six days ahead of UPS's NAAF Mexico expansion (Aug 10). Pre-launch marketing is already targeting 3 of UPS's top-10 automotive accounts. DHL is running targeted win-back campaigns offering 8-12% discounts to enterprise accounts in the $1M-$5M band \u2014 14 UPS accounts have received competitive proposals in the last 30 days. Meanwhile, 42% of UPS enterprise contracts by revenue are up for renewal in Q3-Q4, the most concentrated renewal window in 3 years. UPS's $1.22/piece yield advantage ($15.32 vs FedEx's estimated $14.10) reflects genuine service differentiation, but blanket discounting to match would sacrifice margin across 21.1M daily packages.",
+   "metrics": [
+    {
+     "value": "6 days",
+     "label": "FedEx Auto Express lead time",
+     "negative": true,
+     "positive": false
+    },
+    {
+     "value": "14",
+     "label": "Accounts with DHL proposals",
+     "negative": true,
+     "positive": false
+    },
+    {
+     "value": "42%",
+     "label": "Enterprise revenue up for renewal Q3-Q4",
+     "negative": false,
+     "positive": false
+    }
+   ],
+   "key_insight": "The competitive window is narrowing on two fronts simultaneously. FedEx's Auto Express targets UPS's automotive vertical \u2014 its pre-launch marketing has reached 3 top-10 accounts before UPS NAAF Mexico even launches. DHL is running a different play: surgical 8-12% discounts aimed at the $1M-$5M enterprise band where UPS's value proposition is hardest to differentiate. With 42% of enterprise contracts by revenue renewing in Q3-Q4, this is the most concentrated competitive exposure in 3 years. Price-matching would sacrifice the $1.22/piece yield advantage that makes the yield-over-volume strategy work.",
+   "recent_activity": [
+    {
+     "action": "Competitive intelligence briefing: FedEx and DHL both showing more aggressive posture than Q2",
+     "actor": "Strategy & CI",
+     "time": "Today"
+    },
+    {
+     "action": "14 UPS enterprise accounts received DHL competitive proposals (8-12% discounts)",
+     "actor": "Enterprise Sales",
+     "time": "Last 30d"
+    },
+    {
+     "action": "FedEx Auto Express pre-launch marketing spotted targeting 3 UPS top-10 auto accounts",
+     "actor": "Competitive Intelligence",
+     "time": "1w ago"
+    },
+    {
+     "action": "Q3-Q4 contract renewal analysis: 42% of enterprise revenue up for renewal",
+     "actor": "Revenue Management",
+     "time": "2w ago"
+    }
+   ],
+   "related_topics": [
+    "FedEx Auto Express",
+    "DHL Win-Back Campaign",
+    "NAAF Mexico Launch",
+    "Contract Renewals",
+    "Pricing Discipline",
+    "Enterprise Retention"
+   ],
+   "recommended_takeaways": [
+    {
+     "action": "Accelerate NAAF Mexico launch readiness and consider soft-launch to key automotive accounts before Aug 10",
+     "reasoning": "because FedEx launches Auto Express 6 days ahead (Aug 4) and is already marketing to UPS's top accounts \u2014 being second to market loses the narrative.",
+     "impact": "Neutralizes FedEx's first-mover advantage with key automotive accounts and protects an estimated $340M in annual automotive logistics revenue."
+    },
+    {
+     "action": "Deploy value-based retention packages (not price-matching) for the 14 DHL-targeted accounts",
+     "reasoning": "because price-matching DHL's 8-12% discounts would sacrifice UPS's $1.22/piece yield advantage \u2014 the foundation of the yield strategy.",
+     "impact": "Retains 10-12 of the 14 targeted accounts through service differentiation, protecting approximately $28M in annual revenue without margin erosion."
+    },
+    {
+     "action": "Hold pricing discipline on Q3-Q4 renewals with selective strategic offers only",
+     "reasoning": "because blanket discounting across 42% of enterprise revenue would unwind the yield gains that took 18 months to build.",
+     "impact": "Maintains the $15.32 RPP baseline while allowing surgical offers for the 5-8 most strategically important renewals."
+    },
+    {
+     "action": "Establish weekly contract renewal pipeline reviews with the CCO office",
+     "reasoning": "because 42% of enterprise revenue renewing in 6 months is the most concentrated window in 3 years \u2014 early warning prevents reactive decisions.",
+     "impact": "Flags at-risk renewals 4-6 weeks before they become competitive situations, giving account teams time for proactive engagement."
+    }
+   ],
+   "data_sources": [
+    {
+     "name": "Strategy & Competitive Intelligence",
+     "type": "Internal",
+     "confidence": "High",
+     "updated": "Weekly"
+    },
+    {
+     "name": "Enterprise Sales CRM",
+     "type": "Internal",
+     "confidence": "High",
+     "updated": "Real-time"
+    },
+    {
+     "name": "Trade Publication Monitoring",
+     "type": "External",
+     "confidence": "Medium",
+     "updated": "Daily"
+    },
+    {
+     "name": "Pricing System Telemetry",
+     "type": "Internal",
+     "confidence": "High",
+     "updated": "Real-time"
+    }
+   ],
+   "confidence_description": "High confidence \u2014 competitive activity confirmed through sales CRM, trade publications, and pricing telemetry.",
+   "context_questions": [
+    "Which of our top-10 automotive accounts has FedEx Auto Express already reached?",
+    "What's the total revenue at risk from DHL's 14-account win-back campaign?",
+    "Should we selectively price-match on the highest-risk renewals or hold discipline?",
+    "What's the NAAF Mexico launch readiness status \u2014 can we soft-launch before Aug 10?"
+   ]
+  },
+  "timestamp": "Jun 10, 2026 \u00b7 10:17 AM EST",
+  "id": 6,
+  "cxo_id": 1
+ }
+}

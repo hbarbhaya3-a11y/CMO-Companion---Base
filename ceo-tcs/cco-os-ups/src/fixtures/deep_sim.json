@@ -1,0 +1,190 @@
+{
+ "scenario_name": "Custom Hybrid",
+ "gap_closure_pct": 0.0,
+ "revenue_impact": {
+  "label": "Revenue Impact",
+  "p10": -0.8,
+  "p50": -0.0,
+  "p90": 0.7,
+  "unit": "$M"
+ },
+ "margin_impact": {
+  "label": "Operating Margin",
+  "p10": -0.0,
+  "p50": 0.0,
+  "p90": 0.0,
+  "unit": "pp"
+ },
+ "win_rate_impact": {
+  "label": "Win Rate",
+  "p10": -0.1,
+  "p50": -0.0,
+  "p90": 0.1,
+  "unit": "pp"
+ },
+ "volume_impact": {
+  "label": "Volume Impact",
+  "p10": -0.0,
+  "p50": 0.0,
+  "p90": 0.0,
+  "unit": "%"
+ },
+ "lever_results": [
+  {
+   "lever_id": "abm_budget",
+   "name": "ABM Budget (Annual)",
+   "category": "marketing",
+   "contribution_pct": 0.0,
+   "revenue_delta": 0.0,
+   "margin_delta": 0.0
+  },
+  {
+   "lever_id": "tier_allocation",
+   "name": "Tier-1 Allocation %",
+   "category": "marketing",
+   "contribution_pct": 0.0,
+   "revenue_delta": 0.0,
+   "margin_delta": 0.0
+  },
+  {
+   "lever_id": "channel_mix",
+   "name": "Executive Briefing Mix %",
+   "category": "marketing",
+   "contribution_pct": 0.0,
+   "revenue_delta": 0.0,
+   "margin_delta": 0.0
+  },
+  {
+   "lever_id": "cadence_tier1",
+   "name": "Tier-1 Cadence",
+   "category": "marketing",
+   "contribution_pct": 0.0,
+   "revenue_delta": 0.0,
+   "margin_delta": 0.0
+  },
+  {
+   "lever_id": "lane_capacity",
+   "name": "Key Lane Capacity",
+   "category": "network",
+   "contribution_pct": 0.0,
+   "revenue_delta": 0.0,
+   "margin_delta": 0.0
+  },
+  {
+   "lever_id": "tms_alliance",
+   "name": "TMS Strategic Alliance",
+   "category": "partnership",
+   "contribution_pct": 0.0,
+   "revenue_delta": 0.0,
+   "margin_delta": 0.0
+  }
+ ],
+ "sensitivity": [
+  {
+   "lever_name": "Tier-1 Allocation %",
+   "lever_id": "tier_allocation",
+   "low_impact": -16.3,
+   "high_impact": 16.3,
+   "base_impact": 0.0
+  },
+  {
+   "lever_name": "ABM Budget (Annual)",
+   "lever_id": "abm_budget",
+   "low_impact": -12.2,
+   "high_impact": 12.2,
+   "base_impact": 0.0
+  },
+  {
+   "lever_name": "Executive Briefing Mix %",
+   "lever_id": "channel_mix",
+   "low_impact": -10.2,
+   "high_impact": 10.2,
+   "base_impact": 0.0
+  },
+  {
+   "lever_name": "Key Lane Capacity",
+   "lever_id": "lane_capacity",
+   "low_impact": -8.2,
+   "high_impact": 8.2,
+   "base_impact": 0.0
+  },
+  {
+   "lever_name": "Tier-1 Cadence",
+   "lever_id": "cadence_tier1",
+   "low_impact": -6.1,
+   "high_impact": 6.1,
+   "base_impact": 0.0
+  },
+  {
+   "lever_name": "TMS Strategic Alliance",
+   "lever_id": "tms_alliance",
+   "low_impact": 0.0,
+   "high_impact": 10.2,
+   "base_impact": 0.0
+  }
+ ],
+ "interaction_warnings": [
+  {
+   "message": "ABM budget increase combined with Tier-1 allocation shift amplifies pipeline quality \u2014 synergy +15%.",
+   "severity": "info",
+   "lever_ids": [
+    "abm_budget",
+    "tier_allocation"
+   ]
+  }
+ ],
+ "verdict": "This scenario closes 0% of the commercial gap with a projected revenue impact of $-0.0M (P50) and margin improvement of 0.0pp at $7.2M/quarter budget. Win rate uplift of -0.0pp is concentrated in the top 6 active levers. Interaction effects detected \u2014 review warnings before committing.",
+ "comparison": {
+  "do_nothing": {
+   "label": "DO NOTHING",
+   "gap_closure": 0.0,
+   "revenue": 0.0,
+   "margin": 0.0,
+   "win_rate": 0.0
+  },
+  "recommended": {
+   "label": "RECOMMENDED",
+   "gap_closure": 62.0,
+   "revenue": -0.0,
+   "margin": 0.0,
+   "win_rate": -0.0
+  },
+  "hybrid": {
+   "label": "YOUR HYBRID",
+   "gap_closure": 0.0,
+   "revenue": -0.0,
+   "margin": 0.0,
+   "win_rate": -0.0
+  }
+ },
+ "chart_data": [
+  {
+   "period": "Current",
+   "baseline": 14100.0,
+   "projected": 14100.0,
+   "p10": 14100.0,
+   "p90": 14100.0
+  },
+  {
+   "period": "Q+1",
+   "baseline": 14100.0,
+   "projected": 14100.0,
+   "p10": 14099.7,
+   "p90": 14100.2
+  },
+  {
+   "period": "Q+2",
+   "baseline": 14100.0,
+   "projected": 14100.0,
+   "p10": 14099.4,
+   "p90": 14100.5
+  },
+  {
+   "period": "Q+3",
+   "baseline": 14100.0,
+   "projected": 14100.0,
+   "p10": 14099.2,
+   "p90": 14100.7
+  }
+ ]
+}

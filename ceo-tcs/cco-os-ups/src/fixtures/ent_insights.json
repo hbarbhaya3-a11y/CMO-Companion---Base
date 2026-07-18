@@ -1,0 +1,907 @@
+{
+ "kpis": [
+  {
+   "id": 1,
+   "label": "Enterprise Revenue, YTD",
+   "value": "$9.42B",
+   "delta": "+1.4%",
+   "delta_label": "vs PY \u00b7 FY on track",
+   "status": "ok",
+   "sub": "Adj. for Amazon glide-down",
+   "sort_order": 1
+  },
+  {
+   "id": 2,
+   "label": "Enterprise ADV",
+   "value": "2.18M",
+   "delta": "-2.1%",
+   "delta_label": "pieces/day",
+   "status": "warn",
+   "sub": "Mix shift to higher-margin",
+   "sort_order": 2
+  },
+  {
+   "id": 3,
+   "label": "Enterprise RPP",
+   "value": "$23.84",
+   "delta": "+6.5%",
+   "delta_label": "vs PY \u00b7 pricing power",
+   "status": "ok",
+   "sub": "Lifts driving quality of rev",
+   "sort_order": 3
+  },
+  {
+   "id": 4,
+   "label": "Enterprise Op. Margin",
+   "value": "6.2%",
+   "delta": "-180 bps",
+   "delta_label": "rebuild path Q3",
+   "status": "warn",
+   "sub": "Concession leakage is fixable",
+   "sort_order": 4
+  },
+  {
+   "id": 5,
+   "label": "Win Rate (90d)",
+   "value": "68%",
+   "delta": "+4 pp",
+   "delta_label": "Deal Mgr AI \u00b7 92% adopt.",
+   "status": "ok",
+   "sub": "New Logo 51% \u00b7 Renewal 84%",
+   "sort_order": 5
+  },
+  {
+   "id": 6,
+   "label": "Deal Pipeline \u00b7 QTD",
+   "value": "$1.42B",
+   "delta": "+8.6%",
+   "delta_label": "$ in negotiation",
+   "status": "ok",
+   "sub": "$684M closed \u00b7 $112M slipped",
+   "sort_order": 6
+  }
+ ],
+ "packets": [
+  {
+   "id": 1,
+   "packet_id": 10474,
+   "customer": "Toyota Motor North America",
+   "hierarchy": "Parent",
+   "ref_num": "0000018472",
+   "sub_ind": "Automotive - OEM",
+   "analyst": "P. Subramaniam (Sr.)",
+   "pld_source": "52 weeks - GCPR",
+   "construct": "Daily",
+   "bids": [
+    "P200041288 - TMC-Renewal-2026",
+    "P200041315 - TMC-NAAF-MX-Addendum"
+   ],
+   "scenarios": [
+    {
+     "name": "S0 - Current",
+     "desc": "52-week history - current terms",
+     "adv": 8.4,
+     "baseDisc": 64.2,
+     "totalDisc": 65.8,
+     "rpp": 24.18,
+     "rev": 168.4,
+     "or": 0.58,
+     "profit": 70.7,
+     "modeledTier": "TARGET 81.1%"
+    },
+    {
+     "name": "S1 - Renewal lift +2pp",
+     "desc": "L2 Tier ceiling raised",
+     "adv": 8.4,
+     "baseDisc": 64.2,
+     "totalDisc": 65.8,
+     "rpp": 24.62,
+     "rev": 171.4,
+     "or": 0.57,
+     "profit": 73.7,
+     "modeledTier": "TARGET 83.0%"
+    },
+    {
+     "name": "S2 - NAAF capacity bundle",
+     "desc": "L1 + L4 floor adjustment",
+     "adv": 8.5,
+     "baseDisc": 63.8,
+     "totalDisc": 65.0,
+     "rpp": 24.84,
+     "rev": 175.6,
+     "or": 0.56,
+     "profit": 77.3,
+     "modeledTier": "TARGET 83.0%"
+    },
+    {
+     "name": "S3 - Recommended",
+     "desc": "L0 DIM 150-156 - L2 reshape - L4 raised",
+     "adv": 8.4,
+     "baseDisc": 62.0,
+     "totalDisc": 63.5,
+     "rpp": 24.92,
+     "rev": 184.6,
+     "or": 0.56,
+     "profit": 81.2,
+     "modeledTier": "TARGET 83.0%",
+     "isBest": true
+    }
+   ],
+   "delta_profit": 10.5,
+   "bid_value": 185.0,
+   "levers_touched": [
+    "L0",
+    "L1-Zone",
+    "L1-FSC",
+    "L2",
+    "L4"
+   ],
+   "status": "Pricing Review",
+   "urgency": "med",
+   "last_update": "Jun 6, 16:42",
+   "workstream": "Renewal"
+  },
+  {
+   "id": 2,
+   "packet_id": 10892,
+   "customer": "Magna International",
+   "hierarchy": "Parent",
+   "ref_num": "0000045129",
+   "sub_ind": "Automotive - Tier-1",
+   "analyst": "L. Park",
+   "pld_source": "52 weeks + Opportunity PLD",
+   "construct": "Daily",
+   "bids": [
+    "NEW - Magna-NAAF-Mexico-Pen"
+   ],
+   "scenarios": [
+    {
+     "name": "S0 - Current",
+     "desc": "Existing penetration baseline",
+     "adv": 0,
+     "baseDisc": 0,
+     "totalDisc": 0,
+     "rpp": 0,
+     "rev": 0,
+     "or": 0,
+     "profit": 0,
+     "modeledTier": "-"
+    },
+    {
+     "name": "S1 - NAAF premium pricing",
+     "desc": "L0 DIM 162 - L1 zone floors",
+     "adv": 3.8,
+     "baseDisc": 41.2,
+     "totalDisc": 44.5,
+     "rpp": 27.2,
+     "rev": 24.6,
+     "or": 0.64,
+     "profit": 8.9,
+     "modeledTier": "TARGET 66.8%"
+    },
+    {
+     "name": "S2 - Recommended",
+     "desc": "L0 162 - L1 + L4 - brokerage bundle",
+     "adv": 4.2,
+     "baseDisc": 38.8,
+     "totalDisc": 41.5,
+     "rpp": 28.4,
+     "rev": 28.1,
+     "or": 0.62,
+     "profit": 10.7,
+     "modeledTier": "TARGET 81.1%",
+     "isBest": true
+    }
+   ],
+   "delta_profit": 10.7,
+   "bid_value": 28.0,
+   "levers_touched": [
+    "L0",
+    "L1-Zone",
+    "L2",
+    "L4"
+   ],
+   "status": "Customer Counter",
+   "urgency": "low",
+   "last_update": "Jun 7, 09:08",
+   "workstream": "Penetration"
+  },
+  {
+   "id": 3,
+   "packet_id": 11034,
+   "customer": "Stellantis North America",
+   "hierarchy": "Parent",
+   "ref_num": "0000028119",
+   "sub_ind": "Automotive - OEM",
+   "analyst": "R. Goyal",
+   "pld_source": "Opportunity PLD only",
+   "construct": "Daily",
+   "bids": [
+    "NEW - Stellantis-Toluca-Corridor"
+   ],
+   "scenarios": [
+    {
+     "name": "S0 - Current",
+     "desc": "No existing baseline",
+     "adv": 0,
+     "baseDisc": 0,
+     "totalDisc": 0,
+     "rpp": 0,
+     "rev": 0,
+     "or": 0,
+     "profit": 0,
+     "modeledTier": "-"
+    },
+    {
+     "name": "S1 - Aggressive entry",
+     "desc": "L0 DIM 145 - L1 FSC -25% - L2 stretched",
+     "adv": 6.2,
+     "baseDisc": 71.4,
+     "totalDisc": 73.8,
+     "rpp": 22.4,
+     "rev": 48.6,
+     "or": 0.71,
+     "profit": 14.1,
+     "modeledTier": "TARGET 119%"
+    },
+    {
+     "name": "S2 - Parity posture",
+     "desc": "L0 DIM 150 - L1 zone-tight - L4 floor",
+     "adv": 6.2,
+     "baseDisc": 66.1,
+     "totalDisc": 68.4,
+     "rpp": 23.8,
+     "rev": 51.7,
+     "or": 0.68,
+     "profit": 16.5,
+     "modeledTier": "TARGET 81.1%",
+     "isBest": true
+    },
+    {
+     "name": "S3 - Premium NAAF-led",
+     "desc": "L0 156 - L1 NAAF surcharge intact",
+     "adv": 5.4,
+     "baseDisc": 58.2,
+     "totalDisc": 60.4,
+     "rpp": 26.1,
+     "rev": 42.8,
+     "or": 0.64,
+     "profit": 15.4,
+     "modeledTier": "TARGET 66.8%"
+    }
+   ],
+   "delta_profit": 16.5,
+   "bid_value": 48.0,
+   "levers_touched": [
+    "L0",
+    "L1-Zone",
+    "L1-FSC",
+    "L2",
+    "L4"
+   ],
+   "status": "Building Scenarios",
+   "urgency": "high",
+   "last_update": "Jun 7, 18:14",
+   "workstream": "New Logo"
+  },
+  {
+   "id": 4,
+   "packet_id": 10755,
+   "customer": "Lear Corporation",
+   "hierarchy": "Parent",
+   "ref_num": "0000038201",
+   "sub_ind": "Automotive - Tier-1",
+   "analyst": "M. Chen",
+   "pld_source": "52 weeks - GCPR",
+   "construct": "Daily",
+   "bids": [
+    "P200040611 - Lear 2024",
+    "P200041422 - Lear Save-Play"
+   ],
+   "scenarios": [
+    {
+     "name": "S0 - Current",
+     "desc": "Customer is comparing to FedEx counter",
+     "adv": 4.8,
+     "baseDisc": 68.4,
+     "totalDisc": 70.1,
+     "rpp": 22.1,
+     "rev": 76.2,
+     "or": 0.64,
+     "profit": 27.4,
+     "modeledTier": "TARGET 81.1%"
+    },
+    {
+     "name": "S1 - Match counter",
+     "desc": "L1 FSC -3pp - L2 tier raise - L4 unchanged",
+     "adv": 4.8,
+     "baseDisc": 71.2,
+     "totalDisc": 73.0,
+     "rpp": 21.2,
+     "rev": 73.4,
+     "or": 0.66,
+     "profit": 24.9,
+     "modeledTier": "TARGET 119%"
+    },
+    {
+     "name": "S2 - Recommended save",
+     "desc": "L0 158 - L1-DAS only - L4 raised",
+     "adv": 4.9,
+     "baseDisc": 67.8,
+     "totalDisc": 68.4,
+     "rpp": 22.5,
+     "rev": 78.2,
+     "or": 0.63,
+     "profit": 28.9,
+     "modeledTier": "TARGET 81.1%",
+     "isBest": true
+    }
+   ],
+   "delta_profit": 1.5,
+   "bid_value": 76.0,
+   "levers_touched": [
+    "L0",
+    "L1-FSC",
+    "L1-DAS",
+    "L2",
+    "L4"
+   ],
+   "status": "Customer Counter",
+   "urgency": "med",
+   "last_update": "Jun 7, 14:33",
+   "workstream": "Retention"
+  },
+  {
+   "id": 5,
+   "packet_id": 10612,
+   "customer": "Aptiv PLC",
+   "hierarchy": "Parent",
+   "ref_num": "0000051840",
+   "sub_ind": "Automotive - Tier-1",
+   "analyst": "L. Park",
+   "pld_source": "52 weeks + Opportunity PLD",
+   "construct": "Daily",
+   "bids": [
+    "P200040918 - Aptiv 2024",
+    "NEW - Aptiv-Capital-Bundle"
+   ],
+   "scenarios": [
+    {
+     "name": "S0 - Current",
+     "desc": "Existing terms",
+     "adv": 3.1,
+     "baseDisc": 59.2,
+     "totalDisc": 60.8,
+     "rpp": 26.4,
+     "rev": 18.4,
+     "or": 0.59,
+     "profit": 7.5,
+     "modeledTier": "TARGET 81.1%"
+    },
+    {
+     "name": "S1 - Bundle attach",
+     "desc": "L1 zone reshape + Capital cross-sell",
+     "adv": 3.4,
+     "baseDisc": 57.8,
+     "totalDisc": 59.4,
+     "rpp": 27.1,
+     "rev": 22.0,
+     "or": 0.58,
+     "profit": 9.2,
+     "modeledTier": "TARGET 81.1%",
+     "isBest": true
+    }
+   ],
+   "delta_profit": 1.7,
+   "bid_value": 22.0,
+   "levers_touched": [
+    "L1-Zone",
+    "L2"
+   ],
+   "status": "Approved",
+   "urgency": "low",
+   "last_update": "Jun 7, 11:50",
+   "workstream": "Penetration"
+  },
+  {
+   "id": 6,
+   "packet_id": 10941,
+   "customer": "AutoZone",
+   "hierarchy": "Parent",
+   "ref_num": "0000067577",
+   "sub_ind": "Automotive - Aftermarket",
+   "analyst": "T. Whitaker",
+   "pld_source": "52 weeks - GCPR",
+   "construct": "Daily",
+   "bids": [
+    "P200040711 - AZO 2024 Renewal",
+    "P960040887 - Returns Program"
+   ],
+   "scenarios": [
+    {
+     "name": "S0 - Current",
+     "desc": "Matches against FedEx counter offer",
+     "adv": 5.1,
+     "baseDisc": 66.3,
+     "totalDisc": 66.8,
+     "rpp": 31.62,
+     "rev": 41.2,
+     "or": 0.66,
+     "profit": 14.0,
+     "modeledTier": "TARGET 81.1%"
+    },
+    {
+     "name": "S1 - Match FedEx",
+     "desc": "L1 zone -3pp - L2 tier ceiling +5pp - L4 lowered",
+     "adv": 5.1,
+     "baseDisc": 68.8,
+     "totalDisc": 69.4,
+     "rpp": 30.8,
+     "rev": 40.1,
+     "or": 0.68,
+     "profit": 12.8,
+     "modeledTier": "TARGET 119%"
+    },
+    {
+     "name": "S2 - Save + bundle",
+     "desc": "L1 zone -2pp - L2 ceiling +3pp - Happy Returns attach",
+     "adv": 5.3,
+     "baseDisc": 67.6,
+     "totalDisc": 68.4,
+     "rpp": 31.1,
+     "rev": 43.4,
+     "or": 0.67,
+     "profit": 14.4,
+     "modeledTier": "TARGET 81.1%"
+    },
+    {
+     "name": "S3 - OVERRIDE pending",
+     "desc": "Analyst-recommended floor breached - CCO sign-off",
+     "adv": 5.1,
+     "baseDisc": 69.5,
+     "totalDisc": 70.2,
+     "rpp": 30.4,
+     "rev": 39.4,
+     "or": 0.7,
+     "profit": 11.8,
+     "modeledTier": "TARGET 143%",
+     "isOverride": true,
+     "isBest": true
+    }
+   ],
+   "delta_profit": -2.2,
+   "bid_value": 41.0,
+   "levers_touched": [
+    "L1-Zone",
+    "L1-FSC",
+    "L2",
+    "L4"
+   ],
+   "status": "Override Flag",
+   "urgency": "critical",
+   "last_update": "Jun 7, 17:21",
+   "workstream": "Retention"
+  },
+  {
+   "id": 7,
+   "packet_id": 10883,
+   "customer": "Tesla, Inc.",
+   "hierarchy": "Parent",
+   "ref_num": "0000071204",
+   "sub_ind": "Automotive - EV",
+   "analyst": "R. Goyal",
+   "pld_source": "Opportunity PLD only",
+   "construct": "Daily",
+   "bids": [
+    "NEW - TSLA-Austin-Hub"
+   ],
+   "scenarios": [
+    {
+     "name": "S0 - Current",
+     "desc": "No baseline - greenfield",
+     "adv": 0,
+     "baseDisc": 0,
+     "totalDisc": 0,
+     "rpp": 0,
+     "rev": 0,
+     "or": 0,
+     "profit": 0,
+     "modeledTier": "-"
+    },
+    {
+     "name": "S1 - NAAF-premium pilot",
+     "desc": "L0 DIM 162 - L1 zone-tight - L4 floor",
+     "adv": 2.8,
+     "baseDisc": 32.4,
+     "totalDisc": 35.1,
+     "rpp": 29.8,
+     "rev": 14.2,
+     "or": 0.62,
+     "profit": 5.4,
+     "modeledTier": "TARGET 66.8%",
+     "isBest": true
+    }
+   ],
+   "delta_profit": 5.4,
+   "bid_value": 14.0,
+   "levers_touched": [
+    "L0",
+    "L1-Zone",
+    "L4"
+   ],
+   "status": "Building Scenarios",
+   "urgency": "low",
+   "last_update": "Jun 7, 20:45",
+   "workstream": "New Logo"
+  },
+  {
+   "id": 8,
+   "packet_id": 10708,
+   "customer": "Rivian Automotive",
+   "hierarchy": "Parent",
+   "ref_num": "0000084412",
+   "sub_ind": "Automotive - EV",
+   "analyst": "M. Chen",
+   "pld_source": "Opportunity PLD only",
+   "construct": "Daily",
+   "bids": [
+    "NEW - RIVN-Normal-Pilot"
+   ],
+   "scenarios": [
+    {
+     "name": "S0 - Current",
+     "desc": "No baseline",
+     "adv": 0,
+     "baseDisc": 0,
+     "totalDisc": 0,
+     "rpp": 0,
+     "rev": 0,
+     "or": 0,
+     "profit": 0,
+     "modeledTier": "-"
+    },
+    {
+     "name": "S1 - Pilot terms",
+     "desc": "L0 158 - L1 zone average - L4 standard",
+     "adv": 1.6,
+     "baseDisc": 42.1,
+     "totalDisc": 44.0,
+     "rpp": 24.8,
+     "rev": 8.4,
+     "or": 0.68,
+     "profit": 2.7,
+     "modeledTier": "TARGET 52.5%",
+     "isBest": true
+    }
+   ],
+   "delta_profit": 2.7,
+   "bid_value": 8.0,
+   "levers_touched": [
+    "L0",
+    "L1-Zone"
+   ],
+   "status": "Sourced",
+   "urgency": "low",
+   "last_update": "Jun 7, 13:02",
+   "workstream": "New Logo"
+  }
+ ],
+ "deals": [
+  {
+   "id": 1,
+   "workstream": "Renewal",
+   "account": "Toyota Motor NA",
+   "val": 185.0,
+   "end_date": "Aug 31, 2026",
+   "margin": 10.6,
+   "risk": "Low",
+   "churn": null,
+   "at_risk": null,
+   "whitespace": null,
+   "source": null,
+   "competitor": null,
+   "stage": null,
+   "action": "On track \u2014 Pricing Committee",
+   "owner": "K. Tate"
+  },
+  {
+   "id": 2,
+   "workstream": "Renewal",
+   "account": "Aptiv PLC",
+   "val": 98.0,
+   "end_date": "Sep 15, 2026",
+   "margin": 9.8,
+   "risk": "Low",
+   "churn": null,
+   "at_risk": null,
+   "whitespace": null,
+   "source": null,
+   "competitor": null,
+   "stage": null,
+   "action": "Bundled penetration draft",
+   "owner": "K. Tate"
+  },
+  {
+   "id": 3,
+   "workstream": "Renewal",
+   "account": "AutoZone",
+   "val": 41.0,
+   "end_date": "Jul 30, 2026",
+   "margin": 6.4,
+   "risk": "High",
+   "churn": null,
+   "at_risk": null,
+   "whitespace": null,
+   "source": null,
+   "competitor": null,
+   "stage": null,
+   "action": "Save-play in motion",
+   "owner": "D. Ruiz"
+  },
+  {
+   "id": 4,
+   "workstream": "Renewal",
+   "account": "O'Reilly Automotive",
+   "val": 36.0,
+   "end_date": "Oct 10, 2026",
+   "margin": 8.1,
+   "risk": "Medium",
+   "churn": null,
+   "at_risk": null,
+   "whitespace": null,
+   "source": null,
+   "competitor": null,
+   "stage": null,
+   "action": "Renewal pre-call set",
+   "owner": "D. Ruiz"
+  },
+  {
+   "id": 5,
+   "workstream": "Renewal",
+   "account": "BorgWarner",
+   "val": 32.0,
+   "end_date": "Aug 18, 2026",
+   "margin": 10.1,
+   "risk": "Low",
+   "churn": null,
+   "at_risk": null,
+   "whitespace": null,
+   "source": null,
+   "competitor": null,
+   "stage": null,
+   "action": "EV penetration overlay",
+   "owner": "K. Tate"
+  },
+  {
+   "id": 6,
+   "workstream": "Retention",
+   "account": "AutoZone",
+   "val": 41.0,
+   "end_date": null,
+   "margin": null,
+   "risk": null,
+   "churn": 0.62,
+   "at_risk": 26.0,
+   "whitespace": null,
+   "source": null,
+   "competitor": null,
+   "stage": "Negotiation",
+   "action": "Pricing override pending \u2014 Matt review",
+   "owner": "D. Ruiz"
+  },
+  {
+   "id": 7,
+   "workstream": "Retention",
+   "account": "Lear Corporation",
+   "val": 76.0,
+   "end_date": null,
+   "margin": null,
+   "risk": null,
+   "churn": 0.41,
+   "at_risk": 31.0,
+   "whitespace": null,
+   "source": null,
+   "competitor": null,
+   "stage": "Counter Received",
+   "action": "Customer counter \u2014 re-modeling",
+   "owner": "K. Tate"
+  },
+  {
+   "id": 8,
+   "workstream": "Retention",
+   "account": "NAPA / GPC",
+   "val": 28.0,
+   "end_date": null,
+   "margin": null,
+   "risk": null,
+   "churn": 0.38,
+   "at_risk": 11.0,
+   "whitespace": null,
+   "source": null,
+   "competitor": null,
+   "stage": "Discovery",
+   "action": "Field marketing activation",
+   "owner": "D. Ruiz"
+  },
+  {
+   "id": 9,
+   "workstream": "Penetration",
+   "account": "Magna International",
+   "val": 28.0,
+   "end_date": null,
+   "margin": null,
+   "risk": null,
+   "churn": null,
+   "at_risk": null,
+   "whitespace": "NAAF - Brokerage - UPS Capital",
+   "source": null,
+   "competitor": null,
+   "stage": "Solution",
+   "action": "Pricing in Packet #10892",
+   "owner": "S. Patel"
+  },
+  {
+   "id": 10,
+   "workstream": "Penetration",
+   "account": "Aptiv PLC",
+   "val": 22.0,
+   "end_date": null,
+   "margin": null,
+   "risk": null,
+   "churn": null,
+   "at_risk": null,
+   "whitespace": "UPS Capital - Premier",
+   "source": null,
+   "competitor": null,
+   "stage": "Negotiation",
+   "action": "Approved Packet #10612",
+   "owner": "S. Patel"
+  },
+  {
+   "id": 11,
+   "workstream": "Penetration",
+   "account": "Bosch NA",
+   "val": 18.0,
+   "end_date": null,
+   "margin": null,
+   "risk": null,
+   "churn": null,
+   "at_risk": null,
+   "whitespace": "Healthcare cold-chain (adjacent)",
+   "source": null,
+   "competitor": null,
+   "stage": "Qualify",
+   "action": "Discovery scheduled",
+   "owner": "S. Patel"
+  },
+  {
+   "id": 12,
+   "workstream": "Penetration",
+   "account": "Denso NA",
+   "val": 14.0,
+   "end_date": null,
+   "margin": null,
+   "risk": null,
+   "churn": null,
+   "at_risk": null,
+   "whitespace": "NAAF - Roadie last-mile",
+   "source": null,
+   "competitor": null,
+   "stage": "Discovery",
+   "action": "Industry briefing this week",
+   "owner": "S. Patel"
+  },
+  {
+   "id": 13,
+   "workstream": "New Logo",
+   "account": "Stellantis NA \u2014 Toluca",
+   "val": 48.0,
+   "end_date": null,
+   "margin": null,
+   "risk": null,
+   "churn": null,
+   "at_risk": null,
+   "whitespace": null,
+   "source": "ABM 1-to-1",
+   "competitor": "FedEx",
+   "stage": "Solution",
+   "action": "Packet #11034 draft",
+   "owner": "J. Brennan"
+  },
+  {
+   "id": 14,
+   "workstream": "New Logo",
+   "account": "Tesla Austin Hub",
+   "val": 14.0,
+   "end_date": null,
+   "margin": null,
+   "risk": null,
+   "churn": null,
+   "at_risk": null,
+   "whitespace": null,
+   "source": "ABM 1-to-1",
+   "competitor": "In-house",
+   "stage": "Discovery",
+   "action": "Packet #10883 draft",
+   "owner": "J. Brennan"
+  },
+  {
+   "id": 15,
+   "workstream": "New Logo",
+   "account": "Rivian \u2014 Normal IL",
+   "val": 8.0,
+   "end_date": null,
+   "margin": null,
+   "risk": null,
+   "churn": null,
+   "at_risk": null,
+   "whitespace": null,
+   "source": "Event referral",
+   "competitor": "Regional 3PL",
+   "stage": "Qualify",
+   "action": "Packet #10708 pilot",
+   "owner": "J. Brennan"
+  },
+  {
+   "id": 16,
+   "workstream": "New Logo",
+   "account": "Hyundai-Kia Metaplant",
+   "val": 22.0,
+   "end_date": null,
+   "margin": null,
+   "risk": null,
+   "churn": null,
+   "at_risk": null,
+   "whitespace": null,
+   "source": "ABM 1-to-1",
+   "competitor": "FedEx + DHL",
+   "stage": "Discovery",
+   "action": "Plant manager briefing booked",
+   "owner": "J. Brennan"
+  }
+ ],
+ "bridge": [
+  {
+   "id": 1,
+   "label": "Enterprise revenue \u2014 current actuals",
+   "val": 9.42,
+   "type": "base"
+  },
+  {
+   "id": 2,
+   "label": "+ Renewals priced (modeled close)",
+   "val": 0.34,
+   "type": "up"
+  },
+  {
+   "id": 3,
+   "label": "+ Retention saves (modeled close)",
+   "val": 0.18,
+   "type": "up"
+  },
+  {
+   "id": 4,
+   "label": "+ Penetration wins (modeled close)",
+   "val": 0.21,
+   "type": "up"
+  },
+  {
+   "id": 5,
+   "label": "+ New-logo wins (modeled close)",
+   "val": 0.14,
+   "type": "up"
+  },
+  {
+   "id": 6,
+   "label": "- Modeled discount leakage",
+   "val": -0.06,
+   "type": "down"
+  },
+  {
+   "id": 7,
+   "label": "Modeled Enterprise revenue, FY26",
+   "val": 10.23,
+   "type": "total"
+  }
+ ]
+}

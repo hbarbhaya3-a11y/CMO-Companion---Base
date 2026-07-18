@@ -1,0 +1,2141 @@
+[
+ {
+  "id": 1,
+  "cxo_id": 1,
+  "title": "5 Auto Accounts $116M Below Plan \u2014 ABM Intervention Required",
+  "body": "Ford ($30M gap, RFP Aug 12) and Stellantis ($24M gap, review open now) are most urgent. Apply GM ABM playbook.",
+  "tone": "urgent",
+  "tag": "HIGH PRIORITY",
+  "category": "customer",
+  "signal_type": "Account",
+  "impact": "high",
+  "source": "Q1 2026 Earnings \u00b7 Internal CRM",
+  "cta_label": "Investigate Growth Gap",
+  "cta_action": "investigate",
+  "related_packet_id": null,
+  "related_account": "Auto Segment \u00b7 5 accounts",
+  "delta_value": "\u2212$116M vs plan",
+  "confidence": "HIGH",
+  "priority_rank": 1,
+  "is_cxo_priority": true,
+  "group_key": "signals",
+  "source_url": null,
+  "source_date": "UPS Q1 2025 Earnings \u00b7 Apr 29, 2025",
+  "investigation_payload": {
+   "seed_question": "Why are five automotive accounts $116M below plan, and what's the recovery path?",
+   "ai_response": "The automotive segment is growing overall \u2014 ADV is up 4.1% and margin is strong at 9.2%. But the revenue gap is concentrated in five specific parent accounts, not the segment broadly. Combined, these five accounts are **$116M below YTD plan**, against a total automotive plan of $1.84B.\n\nThe strongest drivers of the gap are: **FedEx Express** gaining ground on lighter-weight auto parts shipments following their Q3 FY26 revenue surge; two accounts (**Ford, Honda**) facing production schedule disruptions that softened inbound volume; and **account coverage reductions** in the January 2026 reorganization that widened relationship gaps at exactly the wrong moment.\n\nThe good news: UPS has a proven playbook from analogous situations. The **GM ABM motion** (CCO briefings, dedicated Industry Expert, NAAF capacity lock) delivered a modeled $22M lift. The **Magna cross-border bundle** turned a procurement-org change into a SOW expansion from 24% to 31%. These patterns are directly transferable.\n\nTwo of the five accounts have active contract windows: **Ford's battery logistics RFP closes August 12** and **Toyota's renewal is due August 31**. Intervening now \u2014 not after the summer \u2014 is the decision.",
+   "kpis": [
+    {
+     "label": "Auto Revenue YTD",
+     "val": "$1.84B",
+     "sub": "+8.2% vs plan",
+     "neg": false
+    },
+    {
+     "label": "Auto ADV Growth",
+     "val": "+4.1%",
+     "sub": "+2.5pp vs prior Q",
+     "neg": false
+    },
+    {
+     "label": "Auto Op. Margin",
+     "val": "9.2%",
+     "sub": "+140 bps vs PY",
+     "neg": false
+    },
+    {
+     "label": "Pipeline Coverage",
+     "val": "2.8x",
+     "sub": "target 3.5x",
+     "neg": true
+    },
+    {
+     "label": "Gap Accounts",
+     "val": "5",
+     "sub": "$116M combined gap",
+     "neg": true
+    },
+    {
+     "label": "Renewal Windows",
+     "val": "2",
+     "sub": "close before Sep 1",
+     "neg": true
+    }
+   ],
+   "follow_ups": [
+    {
+     "type": "panel",
+     "label": "Why we believe this",
+     "panel_key": "evidence"
+    },
+    {
+     "type": "panel",
+     "label": "Account-by-account breakdown",
+     "panel_key": "account-breakdown"
+    },
+    {
+     "type": "chat",
+     "label": "Show ABM playbook options",
+     "prompt": "What ABM playbook options are available to recover the 5 underperforming automotive accounts?"
+    },
+    {
+     "type": "panel",
+     "label": "Go to ABM Experimentation Workbench",
+     "panel_key": "abm-simulation"
+    },
+    {
+     "type": "panel",
+     "label": "Invite team to investigate",
+     "panel_key": "invite-team"
+    }
+   ],
+   "affected_accounts": [
+    "Ford Motor Company",
+    "Stellantis North America",
+    "Honda",
+    "Tesla, Inc.",
+    "AutoZone"
+   ],
+   "context_summary": "5 strategic auto accounts \u00b7 $116M below plan \u00b7 2 renewal windows",
+   "recommended_action": "Replicate GM ABM playbook (CCO briefings + Industry Expert + NAAF lock) at Ford and Stellantis before August renewal windows close.",
+   "right_panel_views": [
+    {
+     "key": "evidence",
+     "label": "Why we believe this",
+     "title": "Why we believe this \u2014 Evidence view",
+     "subtitle": "Signals supporting the automotive account gap diagnosis.",
+     "content_sections": [
+      {
+       "heading": "Ford Motor Company \u2014 Root Cause Evidence",
+       "body": "BlueOval City TN production start delayed to Aug 2026 (confirmed Ford 8-K) \u2014 softening Detroit-Memphis inbound volume by ~14% in UPS network.\n\nFedEx Federal Express Q3 FY26 US domestic revenue +10% \u2014 capturing share at lighter-weight auto parts bands where Ford aftermarket volume sits.\n\nUPS dedicated account team coverage at Ford reduced from 2.5 FTE to 1.0 FTE in Jan 2026 reorganization \u2014 38% YoY decline in executive-level touchpoints.\n\n**Confidence: HIGH.** Deviation has held outside expected range for 11 consecutive weeks."
+      },
+      {
+       "heading": "Stellantis North America \u2014 Root Cause Evidence",
+       "body": "FedEx Freight spin-off June 1, 2026 refocuses FedEx Express on small-parcel exactly where Stellantis-Toluca cross-border volume sits.\n\n2025 trade policy shifts rerouted Asia-to-Mexico flows \u2014 Stellantis is second-most exposed Detroit-3 OEM.\n\nStellantis procurement reorg late 2025 moved logistics decisions into central Procurement \u2014 weakening UPS relationships built with prior commercial team.\n\nCarrier-mix review window is NOW OPEN for the Detroit-Toluca corridor.\n\n**Confidence: HIGH.** Three independent signal sources corroborate."
+      },
+      {
+       "heading": "Proven Analog Patterns (Why the Playbook Works)",
+       "body": "**GM:** 1-to-1 ABM with monthly CCO briefings + Detroit Industry Expert + NAAF capacity lock. Engagement frequency up 47%, modeled $22M lift trending. 4 quarters in execution.\n\n**Magna:** Industry-event ABM (NAFA + Auto Logistics Summit) + CCO briefings + multi-service bundle (NAAF + Brokerage + Capital). Actual +$21M vs +$18M modeled. SOW lifted 24% \u2192 31% in 3 quarters.\n\n**Rivian:** Class-9 hazmat capability demo + thought leadership + free 8-week pilot + advisory board seat. +$11M revenue, preferred-carrier status secured for 5 quarters."
+      }
+     ],
+     "metrics": [
+      {
+       "label": "Ford Gap",
+       "val": "\u2212$30M",
+       "sub": "largest single account"
+      },
+      {
+       "label": "Stellantis Gap",
+       "val": "\u2212$24M",
+       "sub": "procurement reorg"
+      },
+      {
+       "label": "Honda Gap",
+       "val": "\u2212$21M",
+       "sub": "production schedule"
+      },
+      {
+       "label": "Tesla Gap",
+       "val": "\u2212$20M",
+       "sub": "Austin rebalance"
+      },
+      {
+       "label": "AutoZone",
+       "val": "\u2212$21M",
+       "sub": "FedEx counter offer"
+      }
+     ]
+    },
+    {
+     "key": "account-breakdown",
+     "label": "Account-by-account breakdown",
+     "title": "Automotive Account Health \u2014 Top 12",
+     "subtitle": "Plan vs. actual for top 12 strategic automotive accounts.",
+     "tables": [
+      {
+       "title": "Account Health \u2014 Top 12 Automotive",
+       "columns": [
+        "Account",
+        "Type",
+        "YTD Spend",
+        "SoW%",
+        "Headroom",
+        "Opps",
+        "Health",
+        "Notes"
+       ],
+       "rows": [
+        [
+         "General Motors",
+         "OEM",
+         "$142M",
+         "24%",
+         "$78M",
+         "4",
+         "Green",
+         ""
+        ],
+        [
+         "Ford Motor Company",
+         "OEM",
+         "$118M",
+         "21%",
+         "$92M",
+         "3",
+         "Amber",
+         "Battery RFP \u2014 Aug 12"
+        ],
+        [
+         "Toyota Motor NA",
+         "OEM",
+         "$104M",
+         "19%",
+         "$81M",
+         "2",
+         "Green",
+         "Renewal due Aug 31"
+        ],
+        [
+         "Stellantis NA",
+         "OEM",
+         "$86M",
+         "16%",
+         "$124M",
+         "5",
+         "Amber",
+         "Sourcing review open"
+        ],
+        [
+         "Magna International",
+         "Tier-1",
+         "$76M",
+         "31%",
+         "$42M",
+         "3",
+         "Green",
+         ""
+        ],
+        [
+         "Honda",
+         "OEM",
+         "$62M",
+         "15%",
+         "$58M",
+         "3",
+         "Amber",
+         "Production schedule shift"
+        ],
+        [
+         "Lear Corporation",
+         "Tier-1",
+         "$58M",
+         "26%",
+         "$38M",
+         "2",
+         "Amber",
+         "Save-play active"
+        ],
+        [
+         "Aptiv PLC",
+         "Tier-1",
+         "$51M",
+         "24%",
+         "$34M",
+         "4",
+         "Green",
+         ""
+        ],
+        [
+         "BorgWarner",
+         "Tier-1",
+         "$38M",
+         "22%",
+         "$26M",
+         "2",
+         "Green",
+         ""
+        ],
+        [
+         "Tesla, Inc.",
+         "EV",
+         "$22M",
+         "11%",
+         "$68M",
+         "3",
+         "Amber",
+         ""
+        ],
+        [
+         "Rivian",
+         "EV",
+         "$14M",
+         "18%",
+         "$32M",
+         "2",
+         "Green",
+         ""
+        ],
+        [
+         "AutoZone",
+         "Aftermarket",
+         "$41M",
+         "17%",
+         "$48M",
+         "1",
+         "Amber",
+         "FedEx counter"
+        ],
+        [
+         "O'Reilly",
+         "Aftermarket",
+         "$36M",
+         "19%",
+         "$38M",
+         "2",
+         "Green",
+         ""
+        ]
+       ]
+      }
+     ],
+     "content_sections": [],
+     "metrics": [
+      {
+       "label": "Total YTD",
+       "val": "$1.84B",
+       "sub": "auto segment"
+      },
+      {
+       "label": "Avg SoW",
+       "val": "21%",
+       "sub": "top 12 accounts"
+      },
+      {
+       "label": "Total Headroom",
+       "val": "$719M",
+       "sub": "addressable"
+      },
+      {
+       "label": "Active Opps",
+       "val": "31",
+       "sub": "across 12 accounts"
+      }
+     ]
+    },
+    {
+     "key": "abm-simulation",
+     "label": "Go to ABM Experimentation Workbench",
+     "title": "ABM Experiment Workbench \u2014 Automotive Segment",
+     "subtitle": "Configure marketing and sales levers. Model the revenue and win-rate impact before committing budget.",
+     "content_sections": [
+      {
+       "heading": "Pre-Loaded Account: Ford Motor Company",
+       "body": "**Gap vs Plan:** \u2013$30M (\u201320.3% YTD)\n**Quarters Declining:** 3 consecutive\n**Contract Window:** Battery logistics RFP closes Aug 12, 2026\n**Current ABM Spend:** $0.62M/yr \u2014 blended ROI $3.0 vs benchmark $4.8"
+      },
+      {
+       "heading": "As-Is vs Recommended Lever Comparison",
+       "body": "\u2022 **ABM Budget:** $0.62M \u2192 $1.4M (+$0.78M investment)\n\u2022 **Executive Sponsor Engagement:** 1 session/quarter \u2192 3 sessions/quarter (monthly CCO briefings)\n\u2022 **Account Team FTE:** 1.0 \u2192 2.0 (restore coverage to pre-reorg level)\n\u2022 **Industry Expert deployment:** 1 (general) \u2192 2 (Detroit auto specialist added)\n\u2022 **High-Touch Channel Mix:** 40% \u2192 65% (shift from digital to executive briefings + events)\n\u2022 **Industry Events:** 2/yr \u2192 4/yr (add NAFA and Automotive Logistics Summit)\n\u2022 **NAAF Capacity Guarantee:** 0 \u2192 2 routes guaranteed for Ford battery logistics corridor"
+      }
+     ],
+     "metrics": [
+      {
+       "label": "Modeled Revenue Lift",
+       "val": "+$24M",
+       "sub": "P50 estimate"
+      },
+      {
+       "label": "Confidence Range",
+       "val": "$11M\u2013$38M",
+       "sub": "P10 to P90"
+      },
+      {
+       "label": "Win Rate Change",
+       "val": "+6.2pp",
+       "sub": "improvement"
+      },
+      {
+       "label": "Sales Cycle Impact",
+       "val": "\u201314%",
+       "sub": "shorter"
+      }
+     ]
+    },
+    {
+     "key": "invite-team",
+     "label": "Invite team to investigate",
+     "title": "Invite team to investigate \u2014 Working Group",
+     "subtitle": "Automotive Account Growth Recovery",
+     "content_sections": [
+      {
+       "heading": "Who to Include (Pre-populated)",
+       "body": "\u2022 **VP Automotive Sales \u2014 K. Tate** (account ownership for T1 OEMs)\n\u2022 **VP Revenue Management \u2014 R. Patel** (pricing lever authority)\n\u2022 **Head of ABM** \u2014 Marketing lead for Automotive segment campaigns\n\u2022 **Industry Expert, Automotive** \u2014 Detroit-based field specialist\n\u2022 **UPS Capital** \u2014 Trade-finance attach for Aptiv and Stellantis plays"
+      },
+      {
+       "heading": "Share Preview \u2014 What Gets Sent",
+       "body": "**Priority:** HIGH | **Last observed:** YTD\n\n**Observed Issue:** 5 strategic automotive accounts are $116M below YTD plan. Ford (\u2013$30M), Stellantis (\u2013$24M), Honda (\u2013$21M), Tesla (\u2013$20M), AutoZone (\u2013$21M at risk). FedEx competitive pressure and coverage gaps are primary drivers.\n\n**Suspected Drivers:** FedEx Express Q3 surge capturing auto parts volume (~38%), Coverage reduction in Jan 2026 reorg (~28%), Production schedule disruptions at Ford and Honda (~21%), Procurement reorg at Stellantis (~13%)."
+      },
+      {
+       "heading": "Suggested Questions for Team",
+       "body": "\u2022 Can the GM ABM playbook (CCO briefings + Industry Expert + NAAF lock) be replicated at Ford and Stellantis before August renewal windows close?\n\u2022 What is the current state of UPS executive-level access at Ford \u2014 who is the new decision-maker after the coverage reduction?\n\u2022 Is the Stellantis-Toluca corridor carrier review window formally open? Who owns the carrier negotiation?\n\u2022 What is the lead time to deploy a Detroit-based Industry Expert to Ford and Honda simultaneously?"
+      }
+     ],
+     "metrics": []
+    }
+   ],
+   "default_analytics": {
+    "title": "Automotive Account Growth Analytics",
+    "subtitle": "Plan vs. actual for top 12 strategic automotive accounts. Five accounts with reversed trends are highlighted.",
+    "tables": [
+     {
+      "title": "Account Health \u2014 Top 12 Automotive Accounts",
+      "columns": [
+       "Account",
+       "Sub-segment",
+       "YTD Spend",
+       "SoW%",
+       "Headroom",
+       "Opps",
+       "Health",
+       "Key Milestone"
+      ],
+      "rows": [
+       [
+        "General Motors",
+        "OEM",
+        "$142M",
+        "24%",
+        "$78M",
+        "4",
+        "Green",
+        "Q3 NAAF Mexico review"
+       ],
+       [
+        "Ford Motor Company",
+        "OEM",
+        "$118M",
+        "21%",
+        "$92M",
+        "3",
+        "Amber",
+        "Battery RFP \u2014 Aug 12"
+       ],
+       [
+        "Stellantis NA",
+        "OEM",
+        "$86M",
+        "16%",
+        "$124M",
+        "5",
+        "Amber",
+        "Sourcing review open"
+       ],
+       [
+        "Toyota Motor NA",
+        "OEM",
+        "$104M",
+        "19%",
+        "$81M",
+        "2",
+        "Green",
+        "Renewal due Aug 31"
+       ],
+       [
+        "Magna International",
+        "Tier-1",
+        "$76M",
+        "31%",
+        "$42M",
+        "3",
+        "Green",
+        "Mexico T-2 +$28M opp"
+       ],
+       [
+        "Honda",
+        "OEM",
+        "$62M",
+        "15%",
+        "$58M",
+        "3",
+        "Amber",
+        "Production schedule shift"
+       ],
+       [
+        "Lear Corporation",
+        "Tier-1",
+        "$58M",
+        "26%",
+        "$38M",
+        "2",
+        "Amber",
+        "Save-play active"
+       ],
+       [
+        "Aptiv PLC",
+        "Tier-1",
+        "$51M",
+        "24%",
+        "$34M",
+        "4",
+        "Green",
+        "UPS Capital penetration"
+       ],
+       [
+        "BorgWarner",
+        "Tier-1",
+        "$38M",
+        "22%",
+        "$26M",
+        "2",
+        "Green",
+        "EV transition play"
+       ],
+       [
+        "Tesla, Inc.",
+        "EV",
+        "$22M",
+        "11%",
+        "$68M",
+        "3",
+        "Amber",
+        "Austin rebalance \u2014 $4M"
+       ],
+       [
+        "Rivian",
+        "EV",
+        "$14M",
+        "18%",
+        "$32M",
+        "2",
+        "Green",
+        "Atlanta tradeshow follow-up"
+       ],
+       [
+        "AutoZone",
+        "Aftermarket",
+        "$41M",
+        "17%",
+        "$48M",
+        "1",
+        "Amber",
+        "Renewal at risk \u2014 FedEx"
+       ],
+       [
+        "O'Reilly Automotive",
+        "Aftermarket",
+        "$36M",
+        "19%",
+        "$38M",
+        "2",
+        "Green",
+        "Happy Returns cross-sell"
+       ]
+      ]
+     }
+    ],
+    "charts": [
+     {
+      "type": "bar",
+      "title": "Plan vs Actual \u2014 Monthly Automotive Revenue ($M)",
+      "x_key": "month",
+      "data_keys": [
+       "plan",
+       "actual"
+      ],
+      "colors": [
+       "#C8C0B8",
+       "#FFB500"
+      ],
+      "legend_names": [
+       "Plan",
+       "Actual"
+      ],
+      "data": [
+       {
+        "month": "Jan",
+        "plan": 305,
+        "actual": 298
+       },
+       {
+        "month": "Feb",
+        "plan": 310,
+        "actual": 294
+       },
+       {
+        "month": "Mar",
+        "plan": 318,
+        "actual": 302
+       },
+       {
+        "month": "Apr",
+        "plan": 315,
+        "actual": 306
+       },
+       {
+        "month": "May",
+        "plan": 320,
+        "actual": 308
+       },
+       {
+        "month": "Jun (P)",
+        "plan": 325,
+        "actual": 312
+       }
+      ]
+     }
+    ],
+    "narrative_sections": []
+   }
+  },
+  "recommended_action_summary": "Activate 1-to-1 ABM for Ford + Stellantis \u00b7 Restore account team coverage \u00b7 Pre-lock NAAF capacity.",
+  "analysis_by": "TwinX AI \u00b7 Automotive Intelligence",
+  "strategy_tag": "Retain",
+  "cta2_label": null,
+  "cta2_action": null,
+  "sort_order": 1
+ },
+ {
+  "id": 2,
+  "cxo_id": 1,
+  "title": "FedEx Auto Express Is 8% Below UPS List on NAAF Corridors",
+  "body": "FedEx is quoting Ford and Stellantis on the same corridors UPS NAAF Mexico launches in August. 6-day timing gap.",
+  "tone": "urgent",
+  "tag": "COMPETITOR ACTION",
+  "category": "competitive",
+  "signal_type": "Competitor",
+  "impact": "high",
+  "source": "FedEx 8-K \u00b7 Competitor Signal \u00b7 Account Intelligence",
+  "cta_label": "Stage Competitive Counter",
+  "cta_action": "investigate",
+  "related_packet_id": null,
+  "related_account": "Ford Motor Company \u00b7 Stellantis North America",
+  "delta_value": "5-day pre-lock window",
+  "confidence": "HIGH",
+  "priority_rank": 2,
+  "is_cxo_priority": true,
+  "group_key": "signals",
+  "source_url": null,
+  "source_date": "FreightWaves Jun 5, 2026 + account team Jun 6-7",
+  "investigation_payload": {
+   "seed_question": "What is the FedEx Auto Express threat and how should we counter it?",
+   "ai_response": "The risk here is not that FedEx is better \u2014 it is that they are earlier. UPS NAAF Mexico launches in August. FedEx Auto Express is already quoting Ford and Stellantis sourcing teams at 8% below UPS current list. The margin of competitive disadvantage is not large, but the timing is. If FedEx secures a 12-month commitment before NAAF launches, UPS cannot displace them with NAAF during the window when it would matter most.\n\nThe two accounts at highest risk are **Ford Motor Company** and **Stellantis North America**. Ford's BlueOval City TN production corridor involves high-frequency inbound from Michigan and Ohio suppliers \u2014 exactly the cross-border-adjacent volume FedEx Auto Express is quoting. Stellantis's Detroit-Toluca corridor is the most direct USMCA exposure in the automotive portfolio \u2014 and Stellantis's carrier-mix review window is open right now. FedEx knows this.\n\nThe UPS response is not to lower price. The response is to **pre-lock NAAF capacity** as a commercial commitment to these two accounts before FedEx's window of access closes. A NAAF capacity pre-commitment \u2014 2 dedicated routes for Ford, 3 for Stellantis \u2014 eliminates FedEx's timing advantage. It converts NAAF from a future launch into a present competitive offer.\n\nFor the broader portfolio, the **DIM Divisor floor** needs to be reviewed. FedEx Auto Express pricing at 8% below list likely includes aggressive DIM treatment on low-density auto parts freight. A floor increase from 150 to 156 recovers modeled RPP of +$0.44 per piece on automotive and EV freight \u2014 without touching the account-level pricing relationship.",
+   "kpis": [
+    {
+     "label": "FedEx Price Gap",
+     "val": "\u22128%",
+     "sub": "below UPS list rate",
+     "neg": true
+    },
+    {
+     "label": "FedEx Time Lead",
+     "val": "6 days",
+     "sub": "ahead of NAAF launch",
+     "neg": true
+    },
+    {
+     "label": "Ford Gap",
+     "val": "\u2212$30M",
+     "sub": "BlueOval City corridor",
+     "neg": true
+    },
+    {
+     "label": "Stellantis Gap",
+     "val": "\u2212$24M",
+     "sub": "carrier review open NOW",
+     "neg": true
+    },
+    {
+     "label": "NAAF Pre-Lock",
+     "val": "5 routes",
+     "sub": "2 Ford + 3 Stellantis",
+     "neg": false
+    },
+    {
+     "label": "Modeled Lift",
+     "val": "+$40M",
+     "sub": "P50 combined recovery",
+     "neg": false
+    }
+   ],
+   "follow_ups": [
+    {
+     "type": "panel",
+     "label": "Why we believe this",
+     "panel_key": "evidence"
+    },
+    {
+     "type": "panel",
+     "label": "Show impacted accounts",
+     "panel_key": "impacted-accounts"
+    },
+    {
+     "type": "panel",
+     "label": "Stage NAAF pre-lock for Ford & Stellantis",
+     "panel_key": "naaf-prelock"
+    },
+    {
+     "type": "panel",
+     "label": "Review DIM Divisor guardrail response",
+     "panel_key": "dim-guardrails"
+    },
+    {
+     "type": "panel",
+     "label": "Invite team to investigate",
+     "panel_key": "invite-team"
+    }
+   ],
+   "affected_accounts": [
+    "Ford Motor Company",
+    "Stellantis North America",
+    "Honda North America",
+    "Magna International",
+    "Aptiv PLC"
+   ],
+   "context_summary": "FedEx Auto Express \u00b7 NAAF corridor overlap \u00b7 5-day pre-lock window",
+   "recommended_action": "Pre-lock NAAF capacity for Ford (2 routes) and Stellantis (3 routes) within 5 business days. Raise L0 DIM Divisor floor from 150 to 156.",
+   "right_panel_views": [
+    {
+     "key": "evidence",
+     "label": "Why we believe this",
+     "title": "Why we believe this \u2014 Evidence view",
+     "subtitle": "Signals supporting the FedEx Auto Express threat diagnosis and NAAF pre-lock urgency.",
+     "content_sections": [
+      {
+       "heading": "Primary Evidence",
+       "body": "**FedEx Auto Express launch confirmed by FreightWaves (Jun 5, 2026):** FedEx Federal Express launched a dedicated USMCA automotive cross-border product. Pricing confirmed at 8% below UPS current list rate. Initial corridors: Detroit-Tennessee, Detroit-Toluca, Midwest-Monterrey \u2014 all direct overlaps with UPS automotive T1 account corridors.\n\n**FedEx Freight spin-off (June 1, 2026):** FedEx Express is now a leaner, single-focus competitor. Management attention and capital previously allocated to the Freight business is now available to invest in small-parcel cross-border product development. Auto Express is the first product manifestation of this reallocation.\n\n**USMCA nearshoring volume signal:** Per CFO Dykes (UPS Q1 2026 earnings, Apr 28): UPS 'capitalized on trade lane shifts resulting from 2025 trade policy changes.' International Q1 revenue +3.8% on +10.7% RPP. FedEx is targeting exactly the same USMCA nearshoring trend.\n\n**FedEx DIM application rate at 90% (industry confirmed):** On low-density automotive and EV parts freight \u2014 the dominant freight type in cross-border USMCA corridors \u2014 FedEx is applying DIM pricing aggressively. At UPS's current DIM floor of 150, there is a structural per-piece RPP gap vs FedEx on this freight type.\n\n**Confidence: HIGH** \u2014 Source: FreightWaves primary reporting (Jun 5, 2026), UPS Q1 2026 earnings call and 8-K, FedEx Freight spin-off 8-K (Jun 1, 2026)."
+      },
+      {
+       "heading": "Account-Level Corroboration",
+       "body": "**Ford:** Account team intelligence (Jun 6, 2026) reports FedEx Auto Express quoting directly to Ford's BlueOval City TN logistics team. Ford's battery logistics RFP closes August 12 \u2014 FedEx is specifically positioning for this window.\n\n**Stellantis:** Carrier-mix review for the Detroit-Toluca corridor opened in late May 2026 following Stellantis's procurement reorg. FedEx Auto Express launch timing is not coincidental \u2014 they know the review window is open. UPS relationships weakened in Jan\u2013Mar 2026 as coverage was reduced; FedEx is moving into the gap.\n\n**Honda:** Account team (Jun 7) reports FedEx quoting on Honda's Marysville-Monterrey inbound JIT corridor. Honda's Marysville plant schedule ramps Q3 2026.\n\n**Confidence: HIGH** on Ford and Stellantis. MEDIUM on Honda \u2014 FedEx quote not yet confirmed in deal workbench."
+      }
+     ],
+     "metrics": [
+      {
+       "label": "FedEx Price Gap",
+       "val": "\u22128%",
+       "sub": "below UPS list"
+      },
+      {
+       "label": "Time Lead",
+       "val": "6 days",
+       "sub": "ahead of NAAF"
+      },
+      {
+       "label": "DIM Application",
+       "val": "90%",
+       "sub": "FedEx shipments"
+      },
+      {
+       "label": "Confidence",
+       "val": "HIGH",
+       "sub": "FreightWaves + 8-K"
+      }
+     ]
+    },
+    {
+     "key": "impacted-accounts",
+     "label": "Show impacted accounts",
+     "title": "Accounts with Confirmed Corridor Overlap",
+     "subtitle": "Accounts where FedEx Auto Express is directly targeting UPS NAAF Mexico corridors.",
+     "content_sections": [
+      {
+       "heading": "Corridor Overlap Map",
+       "body": "\u2022 **Ford Motor Company** \u2014 Detroit \u2192 BlueOval City TN. Gap to plan: \u2013$30M. NAAF opportunity: battery logistics pre-lock. FedEx risk: HIGH \u2014 RFP closes Aug 12.\n\u2022 **Stellantis North America** \u2014 Detroit \u2194 Toluca MX. Gap: \u2013$24M. NAAF opportunity: Toluca outbound lane guarantee. FedEx risk: CRITICAL \u2014 carrier review open NOW.\n\u2022 **Honda North America** \u2014 Marysville OH \u2192 Monterrey. Gap: \u2013$21M. NAAF opportunity: Mexico inbound JIT. FedEx risk: MEDIUM \u2014 FedEx quoting.\n\u2022 **Magna International** \u2014 Multiple MX corridors. +$21M (above plan). NAAF opportunity: expand NAAF attach. FedEx risk: LOW \u2014 relationship strong.\n\u2022 **Aptiv PLC** \u2014 Juarez \u2194 Indiana. In-flight. NAAF opportunity: Capital cross-sell + NAAF. FedEx risk: MEDIUM \u2014 new VP Logistics."
+      }
+     ],
+     "metrics": [
+      {
+       "label": "Ford Impact",
+       "val": "\u2212$30M",
+       "sub": "RFP closes Aug 12"
+      },
+      {
+       "label": "Stellantis",
+       "val": "\u2212$24M",
+       "sub": "review open NOW"
+      },
+      {
+       "label": "Honda",
+       "val": "\u2212$21M",
+       "sub": "FedEx quoting"
+      },
+      {
+       "label": "Magna",
+       "val": "+$21M",
+       "sub": "above plan"
+      }
+     ]
+    },
+    {
+     "key": "naaf-prelock",
+     "label": "Stage NAAF pre-lock",
+     "title": "NAAF Mexico Pre-Lock \u2014 Competitive Counter Staging",
+     "subtitle": "Pre-load configuration for the ABM Workbench. Route to Ford and Stellantis account teams for execution within 48 hours.",
+     "content_sections": [
+      {
+       "heading": "What a NAAF Pre-Lock Commitment Does",
+       "body": "A NAAF capacity pre-commitment converts the August 2026 launch from a 'coming soon' promise into a present commercial offer with contractual capacity backing. It removes FedEx's only advantage \u2014 timing \u2014 because the customer can sign a UPS commitment today that activates at NAAF launch without waiting. FedEx cannot match a guaranteed capacity commitment on a network that does not exist yet."
+      },
+      {
+       "heading": "Combined Modeled Impact (Ford + Stellantis)",
+       "body": "\u2022 **Total modeled revenue lift:** +$40M (P50) \u2014 P10: +$22M / P90: +$58M\n\u2022 **Gap recovery** (Ford + Stellantis combined gap: $54M): 74% of gap recovered at P50\n\u2022 **NAAF capacity cost:** 5 dedicated routes \u2014 within August launch capacity (2 routes Ford + 3 routes Stellantis)\n\u2022 **Net competitive posture:** FedEx's 8% price advantage neutralized by capacity guarantee and SLA specificity\n\u2022 **Time to route:** 48 hours to account teams; execution within 5 business days"
+      }
+     ],
+     "metrics": [
+      {
+       "label": "Modeled Lift",
+       "val": "+$40M",
+       "sub": "P50 combined"
+      },
+      {
+       "label": "Gap Recovery",
+       "val": "74%",
+       "sub": "of $54M gap"
+      },
+      {
+       "label": "Routes",
+       "val": "5",
+       "sub": "2 Ford + 3 Stellantis"
+      },
+      {
+       "label": "Time to Route",
+       "val": "48 hrs",
+       "sub": "to account teams"
+      }
+     ]
+    },
+    {
+     "key": "dim-guardrails",
+     "label": "Review DIM Divisor",
+     "title": "DIM Divisor Review \u2014 Competitive Pricing Response",
+     "subtitle": "FedEx Auto Express pricing posture implies aggressive DIM treatment on low-density auto freight. UPS L0 floor review recommended.",
+     "content_sections": [
+      {
+       "heading": "The Structural Pricing Gap",
+       "body": "FedEx Auto Express is pricing at 8% below UPS list on cross-border automotive freight. Much of this is USMCA auto parts: low-density, high-value, irregular dimensional weight \u2014 exactly the freight type where DIM pricing has the highest RPP impact. FedEx applies DIM to 90% of their shipment base. If UPS maintains its current DIM Divisor floor at 150 while FedEx prices with DIM at 90% application, UPS is structurally undercharging on the same freight \u2014 and the RPP gap compounds over volume."
+      },
+      {
+       "heading": "Recommended Guardrail Adjustments",
+       "body": "\u2022 **L0 DIM Divisor Floor:** 150 \u2192 Raise to 156. +$0.44 per piece RPP on automotive and EV freight. Across automotive T1 portfolio, modeled at +$8.2M annualized. CFO co-sign required.\n\u2022 **L1 Accessorial Discount Cap:** 20% Off max \u2192 Tighten to 18% Off. +~$12M portfolio-wide per 2pp tightening. VP Revenue Mgmt + CFO.\n\u2022 **L2 Tier Incentive Ceiling:** Hold TARGET 81.1%. Do not loosen in response to FedEx. AutoZone Packet 10941 is a single-use exception.\n\u2022 **NAAF Cross-Border Pricing Posture:** Not yet set \u2192 NAAF premium: 3\u20135% above standard Ground list. VP Revenue Mgmt."
+      }
+     ],
+     "metrics": [
+      {
+       "label": "L0 DIM Floor",
+       "val": "150 \u2192 156",
+       "sub": "+$8.2M annualized"
+      },
+      {
+       "label": "L1 Cap",
+       "val": "20% \u2192 18%",
+       "sub": "+$12M per 2pp"
+      },
+      {
+       "label": "L2 Ceiling",
+       "val": "Hold",
+       "sub": "81.1% TARGET"
+      },
+      {
+       "label": "NAAF Premium",
+       "val": "3\u20135%",
+       "sub": "above Ground list"
+      }
+     ]
+    },
+    {
+     "key": "invite-team",
+     "label": "Invite team to investigate",
+     "title": "Invite team to investigate \u2014 Working Group",
+     "subtitle": "FedEx Auto Express Competitive Counter \u2014 NAAF Pre-Lock Execution",
+     "content_sections": [
+      {
+       "heading": "Who to Include",
+       "body": "\u2022 **VP Automotive Sales \u2014 K. Tate** (Ford and Stellantis account ownership; routes the pre-lock offer to account teams)\n\u2022 **Head of NAAF Mexico** \u2014 Commercial launch lead; confirms capacity allocation for pre-lock commitment\n\u2022 **VP Revenue Management \u2014 R. Patel** (DIM Divisor guardrail authority; approves L0 floor change to 156)\n\u2022 **Industry Expert, Automotive (Detroit-based)** \u2014 Deploy to Ford and Stellantis immediately for executive engagement\n\u2022 **UPS Capital** \u2014 Trade-finance attach for Stellantis; confirms $2.8M incremental ARR modeling\n\u2022 **Competitive Intelligence Analyst** \u2014 FedEx Auto Express product monitoring and corridor expansion tracking"
+      },
+      {
+       "heading": "Suggested Questions for Team",
+       "body": "\u2022 Is the August NAAF launch capacity firm enough to support 5 pre-committed routes across Ford and Stellantis? What is the contingency if the August date slips?\n\u2022 Does Stellantis procurement have a formal decision timeline for the carrier-mix review? Who is the new decision-maker post-reorg?\n\u2022 Is the customs brokerage bundle feasible to include in the Stellantis offer within the 5-day window, or does it require a separate proposal track?\n\u2022 What is FedEx's track record on cross-border SLA performance? Is the UPS 98.5\u201399.0% SLA commitment defensible operationally at NAAF Mexico launch?\n\u2022 If Ford signs a NAAF pre-commitment, does that satisfy the battery logistics RFP (Aug 12) or is a separate formal RFP response still required?"
+      }
+     ],
+     "metrics": []
+    }
+   ],
+   "default_analytics": {
+    "title": "FedEx Auto Express \u2014 Competitive Intelligence & NAAF Exposure Map",
+    "subtitle": "Account-level exposure, NAAF corridor overlap, and pricing posture analysis for the Detroit-Mexico cross-border automotive corridor.",
+    "tables": [
+     {
+      "title": "Competitive Signal \u2014 What We Know",
+      "columns": [
+       "Metric",
+       "Value"
+      ],
+      "rows": [
+       [
+        "FedEx Auto Express launch",
+        "Confirmed \u2014 FreightWaves Jun 5, 2026"
+       ],
+       [
+        "FedEx Auto Express pricing",
+        "8% below UPS current list rate"
+       ],
+       [
+        "Corridors targeted",
+        "Detroit\u2192Tennessee, Detroit\u2194Toluca, Midwest\u2192Monterrey"
+       ],
+       [
+        "UPS NAAF Mexico launch",
+        "August 2026 \u2014 confirmed"
+       ],
+       [
+        "Time gap (FedEx lead)",
+        "~6 days ahead of UPS NAAF in market"
+       ],
+       [
+        "FedEx DIM application rate",
+        "90% of shipments"
+       ],
+       [
+        "FedEx Freight spin-off",
+        "Completed June 1, 2026"
+       ]
+      ]
+     },
+     {
+      "title": "Accounts with Confirmed Corridor Overlap",
+      "columns": [
+       "Account",
+       "Corridor",
+       "Gap to Plan",
+       "NAAF Opportunity",
+       "FedEx Risk"
+      ],
+      "rows": [
+       [
+        "Ford Motor Company",
+        "Detroit \u2192 BlueOval City TN",
+        "\u2013$30M",
+        "Battery logistics pre-lock",
+        "HIGH \u2014 RFP closes Aug 12"
+       ],
+       [
+        "Stellantis NA",
+        "Detroit \u2194 Toluca MX",
+        "\u2013$24M",
+        "Toluca outbound lane guarantee",
+        "CRITICAL \u2014 review open NOW"
+       ],
+       [
+        "Honda NA",
+        "Marysville OH \u2192 Monterrey",
+        "\u2013$21M",
+        "Mexico inbound JIT",
+        "MEDIUM \u2014 FedEx quoting"
+       ],
+       [
+        "Magna International",
+        "Multiple MX corridors",
+        "+$21M",
+        "Expand NAAF attach",
+        "LOW \u2014 relationship strong"
+       ],
+       [
+        "Aptiv PLC",
+        "Juarez \u2194 Indiana",
+        "In-flight",
+        "Capital cross-sell + NAAF",
+        "MEDIUM \u2014 new VP Logistics"
+       ]
+      ]
+     }
+    ],
+    "charts": [],
+    "narrative_sections": [
+     {
+      "heading": "NAAF Mexico Pre-Lock Window",
+      "bullets": [
+       "UPS NAAF Mexico launches August 2026. FedEx Auto Express is in market now.",
+       "The 5-business-day pre-lock window means Ford and Stellantis account teams must be given a commercial NAAF commitment by June 16, 2026.",
+       "Ford pre-lock: 2 dedicated routes \u2014 Detroit\u2194BlueOval City TN battery logistics + Ford Michigan inbound. Modeled: +$18M P50.",
+       "Stellantis pre-lock: 3 dedicated routes \u2014 Detroit\u2194Toluca outbound + Toluca\u2192Texas import corridor + Monterrey buffer lane. Modeled: +$22M P50.",
+       "Combined modeled revenue lift: +$40M (P50). Gap recovery: 74% of $54M combined gap."
+      ]
+     }
+    ]
+   }
+  },
+  "recommended_action_summary": "Pre-lock NAAF routes for Ford (2) + Stellantis (3) within 5 days before FedEx secures commitments.",
+  "analysis_by": "TwinX AI \u00b7 Competitive Intelligence",
+  "strategy_tag": "Retain",
+  "cta2_label": null,
+  "cta2_action": null,
+  "sort_order": 2
+ },
+ {
+  "id": 3,
+  "cxo_id": 1,
+  "title": "Board Meeting in 3 Weeks \u2014 Commercial Strategy Review",
+  "body": "Board probes: Q1 margin drag, $89.7B path, NAAF $50M ROI, FedEx posture. Deck due June 11.",
+  "tone": "amber",
+  "tag": "UPCOMING EVENT",
+  "category": "customer",
+  "signal_type": "Earnings",
+  "impact": "high",
+  "source": "Internal \u00b7 Board Calendar \u00b7 Q1 2026 Earnings",
+  "cta_label": "Prepare for Board Meeting",
+  "cta_action": "investigate",
+  "related_packet_id": null,
+  "related_account": "Portfolio-wide",
+  "delta_value": "21 days out",
+  "confidence": "HIGH",
+  "priority_rank": 3,
+  "is_cxo_priority": true,
+  "group_key": "signals",
+  "source_url": null,
+  "source_date": "Board meeting in 21 days",
+  "investigation_payload": {
+   "seed_question": "What should my Board narrative look like, and what hard questions should I expect?",
+   "ai_response": "Board prep for this cycle is more consequential than usual. Q1 2026 landed at **4.0% US Domestic adjusted operating margin**, and the Q2 guide of **7.5\u20138.5%** implies a significant recovery that needs a clear, credible explanation. The Board will not accept a narrative that blames transitional costs without a specific recovery mechanism.\n\nLooking at the last four board meeting transcripts and the questions raised at each, there are **four themes that will almost certainly come up**: (1) The **commercial revenue recovery path** \u2014 specifically, what closes the gap between the $89.7B FY guide and the $14.2B Q1 pace. (2) The **automotive strategy** \u2014 $50M in NAAF investment, when does it convert to revenue, and what is the win rate on the five underperforming accounts. (3) The **FedEx competitive posture** \u2014 the Board has access to FedEx public earnings data and will notice the +10% growth vs UPS decline. (4) **Capital allocation** \u2014 the $3B cost-out is on track, but dividends at $5.4B require FCF confidence; the Board will probe operating leverage visibility.\n\nThe strongest narrative architecture for Matt is: **Lead with what is structurally working** (SMB record penetration, Healthcare first $3B quarter, B2B at 6-year high, Amazon exit complete). Frame Q1 margin as planned transitional drag \u2014 250 bps from one-time costs that are 'largely behind us' per CFO language. Then pivot to the forward-looking commercial story: NAAF Mexico launch in August, automotive T1 account recovery plan, and Enterprise pricing discipline restoring margin realization from 84% to 90%+. End with capital discipline confidence.",
+   "kpis": [
+    {
+     "label": "Consol Revenue",
+     "val": "$89.7B",
+     "sub": "FY target \u00b7 23.7% done",
+     "neg": false
+    },
+    {
+     "label": "Consol Adj Margin",
+     "val": "9.6%",
+     "sub": "FY target \u00b7 Q1 at 6.2%",
+     "neg": true
+    },
+    {
+     "label": "US Dom Margin",
+     "val": "4.0%",
+     "sub": "Q2 guide 7.5\u20138.5%",
+     "neg": true
+    },
+    {
+     "label": "Healthcare Rev",
+     "val": "$3.0B",
+     "sub": "first $3B quarter",
+     "neg": false
+    },
+    {
+     "label": "$3B Cost Reduce",
+     "val": "28%",
+     "sub": "complete \u00b7 on track",
+     "neg": false
+    },
+    {
+     "label": "Board Meeting",
+     "val": "21 days",
+     "sub": "Q2 2026 cycle",
+     "neg": true
+    }
+   ],
+   "follow_ups": [
+    {
+     "type": "panel",
+     "label": "Show anticipated board questions",
+     "panel_key": "board-questions"
+    },
+    {
+     "type": "chat",
+     "label": "Draft commercial metrics narrative",
+     "prompt": "Draft a concise commercial metrics narrative for the Board that leads with structural wins (SMB, Healthcare, B2B) and frames Q1 margin as transitional."
+    },
+    {
+     "type": "panel",
+     "label": "Pull prior board action items",
+     "panel_key": "prior-actions"
+    },
+    {
+     "type": "panel",
+     "label": "Invite team to prepare",
+     "panel_key": "invite-team"
+    }
+   ],
+   "affected_accounts": [
+    "Portfolio-wide"
+   ],
+   "context_summary": "Board prep \u00b7 Q2 2026 \u00b7 4 anticipated hard questions",
+   "recommended_action": "Lead with structural wins, frame Q1 as transitional, pivot to NAAF + auto recovery + pricing discipline for forward story.",
+   "right_panel_views": [
+    {
+     "key": "board-questions",
+     "label": "Anticipated board questions",
+     "title": "Anticipated Board Questions \u2014 Preparation Briefs",
+     "subtitle": "Four questions virtually certain to arise at the Q2 2026 Board meeting.",
+     "content_sections": [
+      {
+       "heading": "Q1: How does 4.0% become 7.5\u20138.5% in one quarter?",
+       "body": "**Recommended Answer Framework:**\nThe 4.0% Q1 margin includes 250 bps of transitional drag from three one-time costs: MD-11 aircraft retirement, Ground Saver insourcing transition, and weather + casualty events. These costs are 'largely behind us' per CFO Dykes and do not repeat in Q2.\n\nNetwork reconfiguration is delivering: 28% lower cost-per-piece in automated facilities; 25,000 operational position reductions; 50 facility closures in H1 at targeted cost base.\n\nRevenue quality is improving: RPP +6.5% YoY even as volume declined. SMB and B2B mix-shift is structural, not seasonal.\n\nThe Q2 guide range of 7.5\u20138.5% is the operating leverage release as transitional costs clear plus the full quarter of network savings."
+      },
+      {
+       "heading": "Q2: FedEx grew +10% while UPS declined 2.3%. What is the response?",
+       "body": "**Recommended Answer Framework:**\nOur response is three-pronged: (1) Tighten DIM Divisor floor to match FedEx's 90% application rate on low-density freight. (2) Accelerate Tier-1 automotive ABM motions where FedEx encroachment is confirmed \u2014 Ford, Stellantis, AutoZone. (3) Protect SMB penetration record with service quality, not price discounting.\n\nWe are not chasing FedEx volume. We are protecting margin-positive accounts. That is the strategy."
+      },
+      {
+       "heading": "Q3: Five automotive accounts below plan \u2014 is NAAF at risk?",
+       "body": "**Recommended Answer Framework:**\nThe five account gaps are account-specific, not segment-wide. Automotive segment ADV is up 4.1% and margin is 9.2% \u2014 above the US Domestic guide.\n\nNAAF Mexico launches August 2026. The accounts most at risk (Ford, Stellantis) are precisely the accounts for whom NAAF creates the most compelling value proposition \u2014 cross-border US-Mexico auto parts corridors. We have two contract windows closing before September.\n\nThe $50M investment is not at risk \u2014 it is the primary tool to recover these accounts."
+      },
+      {
+       "heading": "Q4: Enterprise margin realization at 84% \u2014 is this structural?",
+       "body": "**Recommended Answer Framework:**\nThe leakage is identifiable and addressable. The primary source is post-approval accessorial concessions added after deals close. The L1 Accessorial cap \u2014 currently 20% Off \u2014 will be tightened to 18% in the next guardrail cycle. Every 2pp tightened recovers approximately $12M.\n\nThe Digital Deal Analyser gives me real-time visibility into all 187 in-flight pricing packets \u2014 I can see guardrail breaches before they become margin leakage, not after.\n\nThe target is 90%+ margin realization within two quarters. We have the tooling to get there."
+      }
+     ],
+     "metrics": [
+      {
+       "label": "Margin Gap",
+       "val": "350\u2013450 bps",
+       "sub": "Q1 vs FY guide"
+      },
+      {
+       "label": "Transitional Drag",
+       "val": "250 bps",
+       "sub": "one-time costs"
+      },
+      {
+       "label": "Margin Realization",
+       "val": "84%",
+       "sub": "target 90%+"
+      },
+      {
+       "label": "Hard Questions",
+       "val": "4",
+       "sub": "virtually certain"
+      }
+     ]
+    },
+    {
+     "key": "prior-actions",
+     "label": "Prior board action items",
+     "title": "Prior Board Meeting Action Items \u2014 Status Tracker",
+     "subtitle": "Actions committed at Q4 2025 and Q1 2026 board meetings. Status as of June 8, 2026.",
+     "content_sections": [
+      {
+       "heading": "Q4 2025 Board \u2014 Actions Committed",
+       "body": "\u2022 Amazon exit complete by mid-2026 \u2192 **STATUS: On track.** ADV reduced 500K in Q1.\n\u2022 SMB penetration to record level \u2192 **STATUS: DELIVERED.** 34.5% in Q1 2026 \u2014 highest in UPS history.\n\u2022 Healthcare revenue toward $20B FY target \u2192 **STATUS: On track.** First $3B quarter delivered in Q1.\n\u2022 Initiate network reconfiguration \u2014 50 facilities in H1 \u2192 **STATUS:** 23 closed Q1, 27 on track for Q2."
+      },
+      {
+       "heading": "Q1 2026 Board \u2014 Actions Committed",
+       "body": "\u2022 Automotive segment growth plan \u2014 NAAF Mexico by August 2026 \u2192 **STATUS: On track.** Launch confirmed August 2026.\n\u2022 Enterprise pricing discipline \u2014 margin realization improvement plan \u2192 **STATUS: In progress.** L0 DIM raised 145\u2192150.\n\u2022 FedEx competitive response plan \u2192 **STATUS: Being developed.** ABM acceleration for exposed accounts.\n\u2022 $3B cost-out on track \u2192 **STATUS:** 28% complete. Network and workforce reductions on plan."
+      }
+     ],
+     "metrics": [
+      {
+       "label": "Q4 Actions",
+       "val": "4/4",
+       "sub": "on track or delivered"
+      },
+      {
+       "label": "Q1 Actions",
+       "val": "4/4",
+       "sub": "in progress"
+      }
+     ]
+    },
+    {
+     "key": "invite-team",
+     "label": "Invite team to prepare",
+     "title": "Invite team to prepare \u2014 Board Prep Working Group",
+     "subtitle": "Board Meeting Preparation",
+     "content_sections": [
+      {
+       "heading": "Who to Include",
+       "body": "\u2022 **CFO / Finance Lead** \u2014 Revenue and margin recovery narrative alignment\n\u2022 **VP Revenue Management \u2014 R. Patel** (Enterprise pricing metrics, guardrail status)\n\u2022 **VP Automotive Sales \u2014 K. Tate** (automotive account recovery status, NAAF pre-sell progress)\n\u2022 **Head of Strategy & Corporate Communications** \u2014 Board narrative crafting\n\u2022 **Competitive Intelligence** \u2014 FedEx response slides"
+      },
+      {
+       "heading": "Suggested Questions for Team",
+       "body": "\u2022 Is the Q2 7.5\u20138.5% margin recovery path fully supported by the current cost-out trajectory?\n\u2022 Can we confirm the NAAF August launch timeline is firm before the board meeting?\n\u2022 Do we have a specific number for projected margin realization improvement from the L1 guardrail tightening?\n\u2022 What is the right level of specificity on the FedEx response \u2014 account-level or portfolio-level narrative?"
+      }
+     ],
+     "metrics": []
+    }
+   ],
+   "default_analytics": {
+    "title": "Board Meeting Preparation \u2014 Commercial Dashboard",
+    "subtitle": "Key metrics, narrative anchors, and risk areas for the Q2 2026 Board review.",
+    "tables": [
+     {
+      "title": "FY26 Goal Tracker \u2014 Board-Visible Metrics",
+      "columns": [
+       "Metric",
+       "Target",
+       "Q1 Actual",
+       "Status"
+      ],
+      "rows": [
+       [
+        "Consolidated Revenue",
+        "$89.7B",
+        "$21.2B (23.7% of year)",
+        "On pace if H2 accelerates"
+       ],
+       [
+        "Consolidated Adj. Op. Margin",
+        "9.6%",
+        "6.2%",
+        "Gap: ~350 bps \u2014 H2 recovery required"
+       ],
+       [
+        "US Domestic Margin",
+        "Q2 guide 7.5\u20138.5%",
+        "4.0%",
+        "$350M transitional costs clearing"
+       ],
+       [
+        "Healthcare Revenue",
+        "$20B FY",
+        "$3.0B \u2014 first $3B quarter",
+        "On track"
+       ],
+       [
+        "$3B Cost Reduction",
+        "FY26",
+        "28% complete \u2014 23/50 facilities, 25K positions",
+        "On track"
+       ]
+      ]
+     }
+    ],
+    "charts": [],
+    "narrative_sections": [
+     {
+      "heading": "Strategic Narrative Anchors \u2014 What Is Working",
+      "bullets": [
+       "SMB Penetration: 34.5% of US volume \u2014 record high in UPS history",
+       "B2B Share: 45.2% \u2014 highest in 6 years",
+       "Healthcare: First $3B quarter. Andlauer + Frigo-Trans fully integrated",
+       "Amazon glide-down: Complete. Freed capacity reallocating to higher-yield segments",
+       "Network reconfiguration: 23 facilities closed Q1, 27 more in H1. 28% lower cost-per-piece in automated facilities"
+      ]
+     },
+     {
+      "heading": "Anticipated Hard Questions \u2014 Risk Areas",
+      "bullets": [
+       "Q: The Q2 margin guide of 7.5\u20138.5% requires a 350\u2013450 bps recovery in one quarter. What specifically makes that achievable?",
+       "Q: FedEx reported +10% US Domestic revenue growth in the same quarter UPS declined. What is UPS's competitive response?",
+       "Q: Five of your largest automotive accounts are running below plan. Is the $50M NAAF investment at risk?",
+       "Q: Margin realization on Enterprise deals is 84% of modeled. Is pricing discipline a structural problem?"
+      ]
+     }
+    ]
+   }
+  },
+  "recommended_action_summary": "Anchor on what's working \u2014 SMB record, Healthcare $3B, Amazon exit on track. Frame Q1 as transitional.",
+  "analysis_by": "TwinX AI \u00b7 Strategy & Board Prep",
+  "strategy_tag": "Board Prep",
+  "cta2_label": null,
+  "cta2_action": null,
+  "sort_order": 3
+ },
+ {
+  "id": 4,
+  "cxo_id": 1,
+  "title": "SMB at Record 34.5% \u2014 6-Week Window Before FedEx Targets This Segment",
+  "body": "B2B at 45.2% (6-year high). FedEx post-spin will move into SMB Digital Access in Q3.",
+  "tone": "green",
+  "tag": "OPPORTUNITY",
+  "category": "opportunities",
+  "signal_type": "Volume",
+  "impact": "high",
+  "source": "Q1 2026 Earnings \u00b7 Internal CRM \u00b7 Promotions Data",
+  "cta_label": "Explore SMB Opportunity",
+  "cta_action": "investigate",
+  "related_packet_id": null,
+  "related_account": "SMB Segment",
+  "delta_value": "34.5% record",
+  "confidence": "HIGH",
+  "priority_rank": 4,
+  "is_cxo_priority": true,
+  "group_key": "signals",
+  "source_url": null,
+  "source_date": "UPS Q1 2026 Earnings \u00b7 Apr 28, 2026",
+  "investigation_payload": {
+   "seed_question": "How do we capitalize on record SMB penetration before FedEx targets this space?",
+   "ai_response": "The SMB record is structurally significant, not a one-quarter artifact. It reflects two things happening simultaneously: **UPS made space** \u2014 the Amazon exit freed capacity that is being reallocated to higher-yield SMB shippers. And **UPS built the muscle** \u2014 the Digital Access Program created the acquisition infrastructure that is now converting at scale.\n\nBut record penetration is not the ceiling. Three SMB verticals are under-penetrated relative to their TAM: **Healthcare SMB** (pharmacy chains, medical device SMBs, lab-to-hospital supply chains \u2014 all benefiting from Andlauer and Frigo-Trans acquisitions, now fully integrated); **Automotive Aftermarket SMB** (NAPA-style independents, collision repair supply chains \u2014 natural extension of the enterprise automotive strategy); and **High-Tech SMB** (component manufacturers and chip distributors benefiting from re-shoring trends).\n\nThe urgency is the **FedEx factor**. FedEx historically punted on SMB \u2014 their product infrastructure was built around large shippers and the Freight business. With Freight spun off, a leaner FedEx Express will be looking for growth vectors. SMB via digital channels is the most obvious move. CFO Dykes noted in Q1 earnings that 'shippers in higher-value verticals demonstrate greater tolerance for price increases' \u2014 this is the exact SMB segment UPS needs to defend.\n\nThe **6-week intervention window** is: new Digital Access Program cohorts, healthcare SMB lifecycle campaigns, and a targeted automotive aftermarket SMB push.",
+   "kpis": [
+    {
+     "label": "SMB Penetration",
+     "val": "34.5%",
+     "sub": "US Dom vol \u2014 record",
+     "neg": false
+    },
+    {
+     "label": "B2B Share",
+     "val": "45.2%",
+     "sub": "6-year high",
+     "neg": false
+    },
+    {
+     "label": "SMB ADV Growth",
+     "val": "+4.2%",
+     "sub": "vs prior quarter",
+     "neg": false
+    },
+    {
+     "label": "Healthcare SMB",
+     "val": "$380M",
+     "sub": "modeled headroom",
+     "neg": false
+    },
+    {
+     "label": "Auto Aftermarket",
+     "val": "$210M",
+     "sub": "modeled headroom",
+     "neg": false
+    },
+    {
+     "label": "High-Tech SMB",
+     "val": "$155M",
+     "sub": "modeled headroom",
+     "neg": false
+    }
+   ],
+   "follow_ups": [
+    {
+     "type": "panel",
+     "label": "Why we believe this",
+     "panel_key": "evidence"
+    },
+    {
+     "type": "chat",
+     "label": "Show SMB vertical breakdown",
+     "prompt": "Break down the SMB opportunity by vertical \u2014 Healthcare, Auto Aftermarket, High-Tech. Show TAM, current penetration, and addressable accounts for each."
+    },
+    {
+     "type": "chat",
+     "label": "Model acquisition scenarios",
+     "prompt": "Model the impact of increasing Digital Access Program acquisition rate by 15% in Q3 \u2014 what's the revenue uplift and what's the gating constraint?"
+    },
+    {
+     "type": "panel",
+     "label": "Invite team to investigate",
+     "panel_key": "invite-team"
+    }
+   ],
+   "affected_accounts": [
+    "SMB Segment",
+    "Healthcare SMB",
+    "Auto Aftermarket SMB",
+    "High-Tech SMB"
+   ],
+   "context_summary": "Record SMB penetration \u00b7 3 verticals with headroom \u00b7 FedEx threat emerging",
+   "recommended_action": "Launch Healthcare SMB lifecycle campaigns + auto aftermarket SMB push. Increase DAP acquisition rate 15% before FedEx reloads.",
+   "right_panel_views": [
+    {
+     "key": "evidence",
+     "label": "Why we believe this",
+     "title": "Why we believe this \u2014 Evidence view",
+     "subtitle": "Signals supporting the SMB growth opportunity and FedEx threat window.",
+     "content_sections": [
+      {
+       "heading": "Record SMB Performance \u2014 Source Data",
+       "body": "**UPS Q1 2026 Earnings Call (Apr 28, 2026):** CEO Tom\u00e9 confirmed SMB penetration at 34.5% \u2014 'record high.' B2B at 45.2% 'highest in 6 years.'\n\n**CFO Dykes on SMB pricing power:** 'Shippers in higher-value verticals demonstrate greater tolerance for price increases.'\n\nUS Domestic RPP +6.5% YoY \u2014 driven by SMB and B2B mix-shift, not volume.\n\nAmazon glide-down releasing ~500K ADV in Q1 \u2014 capacity now available for SMB reallocation.\n\n**Confidence: HIGH.** Source: UPS direct public disclosures."
+      },
+      {
+       "heading": "FedEx SMB Threat Assessment",
+       "body": "FedEx Freight spin-off June 1, 2026: FedEx Express is now a leaner business with freed management attention and capital.\n\nFedEx Digital Access equivalent (FedEx Ship Manager) historically inferior to UPS Digital Access Program in SMB acquisition capability.\n\nFedEx Q3 FY26 +10% US Domestic: Volume and yield growing \u2014 competing at every level of the market.\n\n**Risk window:** 6\u20138 weeks before FedEx completes post-spin integration and begins aggressive SMB digital acquisition campaigns.\n\n**Confidence: MEDIUM-HIGH.** Based on structural competitive analysis, not confirmed FedEx SMB campaign signals yet."
+      }
+     ],
+     "metrics": [
+      {
+       "label": "SMB Record",
+       "val": "34.5%",
+       "sub": "confirmed CEO"
+      },
+      {
+       "label": "B2B High",
+       "val": "45.2%",
+       "sub": "6-year high"
+      },
+      {
+       "label": "RPP Growth",
+       "val": "+6.5%",
+       "sub": "YoY mix-shift"
+      },
+      {
+       "label": "Threat Window",
+       "val": "6\u20138 wks",
+       "sub": "before FedEx moves"
+      }
+     ]
+    },
+    {
+     "key": "invite-team",
+     "label": "Invite team to investigate",
+     "title": "Invite team to investigate \u2014 Working Group",
+     "subtitle": "SMB Segment Acceleration",
+     "content_sections": [
+      {
+       "heading": "Who to Include",
+       "body": "\u2022 **Head of SMB Marketing** \u2014 Digital Access Program lead\n\u2022 **VP Healthcare Logistics** \u2014 Andlauer / Frigo-Trans integration and healthcare SMB go-to-market\n\u2022 **Head of Automotive ABM** \u2014 Automotive aftermarket SMB downstream extension\n\u2022 **Digital Product Lead** \u2014 Digital Access Program acquisition funnel optimisation\n\u2022 **Competitive Intelligence** \u2014 FedEx SMB threat monitoring"
+      },
+      {
+       "heading": "Share Preview",
+       "body": "**Priority:** OPPORTUNITY | **Window:** 6 weeks\n\n**Observed:** SMB penetration at record 34.5%. Three verticals with modeled headroom: Healthcare SMB ($380M), Automotive Aftermarket SMB ($210M), High-Tech SMB ($155M). FedEx post-spin-off SMB threat emerging within 6\u20138 weeks.\n\n**Suggested Questions:**\n\u2022 What is the current Digital Access Program conversion rate for healthcare SMB cohorts vs the record benchmark?\n\u2022 Can the automotive aftermarket SMB play be launched as a downstream extension of the T1 ABM motion?\n\u2022 What would it take to increase the Digital Access Program acquisition rate by 15% in Q3?"
+      }
+     ],
+     "metrics": []
+    }
+   ],
+   "default_analytics": {
+    "title": "SMB Segment Analytics \u2014 Penetration and Opportunity",
+    "subtitle": "Current SMB performance, vertical breakdown, and modeled headroom by segment.",
+    "tables": [
+     {
+      "title": "Top 3 SMB Verticals with Headroom",
+      "columns": [
+       "Vertical",
+       "Description",
+       "Modeled Headroom"
+      ],
+      "rows": [
+       [
+        "Healthcare SMB",
+        "Pharmacy chains, medical device SMBs, lab supply chains. Andlauer + Frigo-Trans cold-chain fully integrated.",
+        "$380M"
+       ],
+       [
+        "Automotive Aftermarket SMB",
+        "Independent collision repair, NAPA-style distributors, 3PL sub-tier. 1,498 Tier-3 accounts addressable via 1-to-many ABM.",
+        "$210M"
+       ],
+       [
+        "High-Tech SMB",
+        "Component manufacturers, chip distributors, IoT device makers. Re-shoring trends driving domestic logistics needs.",
+        "$155M"
+       ]
+      ]
+     }
+    ],
+    "charts": [
+     {
+      "type": "bar",
+      "title": "SMB Vertical Headroom ($M)",
+      "x_key": "vertical",
+      "data_keys": [
+       "headroom"
+      ],
+      "colors": [
+       "#FFB500"
+      ],
+      "legend_names": [
+       "Modeled Headroom"
+      ],
+      "data": [
+       {
+        "vertical": "Healthcare",
+        "headroom": 380
+       },
+       {
+        "vertical": "Auto Aftermarket",
+        "headroom": 210
+       },
+       {
+        "vertical": "High-Tech",
+        "headroom": 155
+       }
+      ]
+     }
+    ],
+    "narrative_sections": [
+     {
+      "heading": "Competitive Watch",
+      "bullets": [
+       "FedEx Express historically weak in SMB. Post-Freight spin-off, FedEx Express has freed capacity and management attention.",
+       "Amazon Shipping Services (3P carrier) growing in SMB digital channel. UPS Digital Access Program must stay the easier, higher-quality option.",
+       "USPS Ground Saver: UPS retaining higher-yield Ground Saver volume in-network. ADV declined 27.7% Q1 (margin-led decision). Monitor SMB migration to UPS Ground."
+      ]
+     }
+    ]
+   }
+  },
+  "recommended_action_summary": "Launch Healthcare SMB + Auto Aftermarket SMB campaigns now to lock cohorts before FedEx enters.",
+  "analysis_by": "TwinX AI \u00b7 SMB Intelligence",
+  "strategy_tag": "Grow",
+  "cta2_label": null,
+  "cta2_action": null,
+  "sort_order": 4
+ },
+ {
+  "id": 5,
+  "cxo_id": 1,
+  "title": "Amazon Exit Completing June 2026 \u2014 Is Capacity Reallocation On Track?",
+  "body": "~500K ADV freed in Q1. SMB + Healthcare absorbing well. Enterprise Automotive is the pace risk.",
+  "tone": "amber",
+  "tag": "STRATEGY & EXECUTION",
+  "category": "network",
+  "signal_type": "Volume",
+  "impact": "high",
+  "source": "Q1 2026 Earnings \u00b7 Competitor Signal Data",
+  "cta_label": "Investigate Reallocation Status",
+  "cta_action": "investigate",
+  "related_packet_id": null,
+  "related_account": "Portfolio \u00b7 All Segments",
+  "delta_value": "~500K ADV freed",
+  "confidence": "HIGH",
+  "priority_rank": 5,
+  "is_cxo_priority": true,
+  "group_key": "signals",
+  "source_url": "https://about.ups.com/us/en/newsroom/press-releases/strategy/ups-takes-strategic-actions.html",
+  "source_date": "UPS Q4 2024 Earnings \u00b7 Jan 30, 2025",
+  "investigation_payload": {
+   "seed_question": "Is the Amazon capacity reallocation executing at the pace the FY guide requires?",
+   "ai_response": "The Amazon exit is the most consequential revenue decision in UPS's recent history. Amazon was the single largest customer \u2014 **10.6% of FY25 revenue, approximately $9.5B**. Choosing to exit that volume on strategic grounds required a credible thesis that higher-yield replacement volume could be won faster than Amazon volume was lost.\n\n**Three indicators show the thesis is executing:** SMB penetration at a record **34.5%** demonstrates the Digital Access Program is filling the void in the small-shipper segment. Healthcare delivered its first **$3B quarter** \u2014 Andlauer and Frigo-Trans acquisitions are generating the premium-yield volume the strategy needed. And RPP is up **6.5% YoY** \u2014 the replacement volume is genuinely higher-yield per piece than the Amazon volume it replaced.\n\n**The one pace risk is the Enterprise segment.** Amazon's volume was low-margin but it filled the network efficiently \u2014 the replacement Enterprise volume needs to be at higher yield and comparable network utilisation. The five underperforming automotive accounts represent a specific gap: these were accounts that should have been filling the Amazon-freed Enterprise capacity but are running below plan due to FedEx competition and coverage gaps.\n\nThe **network reconfiguration** is the structural enabler: 23 facilities closed in Q1, 27 more in H1. The automated facilities running at 28% lower cost-per-piece need to be fed with higher-yield volume. The Q2 margin recovery (7.5\u20138.5% guide) depends on this happening.",
+   "kpis": [
+    {
+     "label": "Amazon FY25 Share",
+     "val": "10.6%",
+     "sub": "~$9.5B revenue",
+     "neg": false
+    },
+    {
+     "label": "Q1 ADV Released",
+     "val": "~500K",
+     "sub": "from network",
+     "neg": false
+    },
+    {
+     "label": "Glide-Down",
+     "val": "Jun 2026",
+     "sub": "on track",
+     "neg": false
+    },
+    {
+     "label": "SMB Penetration",
+     "val": "34.5%",
+     "sub": "record \u2014 working",
+     "neg": false
+    },
+    {
+     "label": "Healthcare Q1",
+     "val": "$3.0B",
+     "sub": "first $3B quarter",
+     "neg": false
+    },
+    {
+     "label": "RPP Growth",
+     "val": "+6.5%",
+     "sub": "higher-yield mix",
+     "neg": false
+    }
+   ],
+   "follow_ups": [
+    {
+     "type": "panel",
+     "label": "Why we believe this",
+     "panel_key": "evidence"
+    },
+    {
+     "type": "chat",
+     "label": "Show replacement volume progress",
+     "prompt": "Break down the replacement volume by segment \u2014 SMB, Healthcare, B2B, Automotive. Show actual vs. plan for each."
+    },
+    {
+     "type": "chat",
+     "label": "Identify pace risk accounts",
+     "prompt": "Which Enterprise accounts are behind on absorbing freed Amazon capacity? Show the gap between expected and actual volume replacement."
+    },
+    {
+     "type": "panel",
+     "label": "Invite team to investigate",
+     "panel_key": "invite-team"
+    }
+   ],
+   "affected_accounts": [
+    "Portfolio \u00b7 SMB",
+    "Portfolio \u00b7 Healthcare",
+    "Portfolio \u00b7 Enterprise",
+    "Portfolio \u00b7 Automotive"
+   ],
+   "context_summary": "Amazon exit completing \u00b7 capacity reallocation \u00b7 Enterprise pace risk",
+   "recommended_action": "Prioritise SMB onboarding fix + Healthcare cold-chain expansion. Accelerate automotive ABM to fill Enterprise gap.",
+   "right_panel_views": [
+    {
+     "key": "evidence",
+     "label": "Why we believe this",
+     "title": "Why we believe this \u2014 Evidence view",
+     "subtitle": "Signals supporting the capacity reallocation assessment.",
+     "content_sections": [
+      {
+       "heading": "Evidence the Reallocation Is Working",
+       "body": "**UPS Q1 2026 Earnings Call:** CEO Tom\u00e9 explicitly framed Amazon exit as 'freed capacity reallocating to higher-yield SMB, Healthcare, B2B, Automotive.'\n\n**SMB at record 34.5%:** CFO Dykes attributed SMB growth to Digital Access Program \u2014 not a cyclical effect. Structural acquisition channel now operating at scale.\n\n**Healthcare $3.0B quarter:** Andlauer (Canadian cold-chain) + Frigo-Trans (European cold-chain) fully integrated. Healthcare Q1 on track toward $20B FY target.\n\n**RPP +6.5% YoY:** Revenue per piece up while overall volume declined \u2014 definitively proves replacement mix is higher-yield.\n\n**Confidence: HIGH.** Source: UPS Q1 2026 earnings call and 8-K."
+      },
+      {
+       "heading": "Evidence of Pace Risk \u2014 Enterprise Gap",
+       "body": "Five automotive enterprise accounts $116M below plan \u2014 these are precisely the accounts that should absorb freed Enterprise capacity.\n\nAmazon's network utilisation was efficient (large, regular, predictable volumes). Enterprise replacement volume requires higher sales effort per ADV unit.\n\nQ2 margin recovery (7.5\u20138.5%) requires both cost clearing AND yield improvement from mix-shift. If Enterprise replacement pace slips, the margin leverage is compressed.\n\n**Confidence: MEDIUM.** The risk is real but recoverable if automotive account interventions execute before September contract windows close."
+      }
+     ],
+     "metrics": [
+      {
+       "label": "Reallocation",
+       "val": "Working",
+       "sub": "3 of 4 indicators"
+      },
+      {
+       "label": "Pace Risk",
+       "val": "Enterprise",
+       "sub": "auto accounts lagging"
+      },
+      {
+       "label": "Confidence",
+       "val": "HIGH",
+       "sub": "Q1 earnings source"
+      },
+      {
+       "label": "Recovery Window",
+       "val": "Before Sep",
+       "sub": "contract windows"
+      }
+     ]
+    },
+    {
+     "key": "invite-team",
+     "label": "Invite team to investigate",
+     "title": "Invite team to investigate \u2014 Working Group",
+     "subtitle": "Amazon Exit \u2014 Capacity Reallocation Review",
+     "content_sections": [
+      {
+       "heading": "Who to Include",
+       "body": "\u2022 **VP Network Operations** \u2014 Capacity reallocation and facility utilisation post-Amazon exit\n\u2022 **VP Enterprise Sales \u2014 K. Tate** (Enterprise volume pace against Amazon replacement targets)\n\u2022 **VP Healthcare Logistics** \u2014 Healthcare SMB and enterprise acquisition pace\n\u2022 **Head of SMB Marketing** \u2014 Digital Access Program throughput and capacity absorption\n\u2022 **Finance / Revenue Forecasting** \u2014 Q2 margin recovery model sensitivity"
+      },
+      {
+       "heading": "Suggested Questions",
+       "body": "\u2022 Is the automated facility network running at sufficient utilisation post-Amazon exit, or is there capacity being underused?\n\u2022 What is the modeled revenue requirement from Enterprise accounts in Q2 to hit the 7.5\u20138.5% margin guide?\n\u2022 If the five underperforming automotive accounts close their gap by $60M in Q2, does that restore margin to the guide range?"
+      }
+     ],
+     "metrics": []
+    }
+   ],
+   "default_analytics": {
+    "title": "Amazon Exit \u2014 Capacity Reallocation Tracker",
+    "subtitle": "Tracking the replacement of Amazon volume with higher-yield SMB, Healthcare, Automotive, and B2B volume.",
+    "tables": [
+     {
+      "title": "Replacement Volume \u2014 Leading Indicators",
+      "columns": [
+       "Indicator",
+       "Value",
+       "Status"
+      ],
+      "rows": [
+       [
+        "SMB Penetration",
+        "34.5% \u2014 record",
+        "Working \u2713"
+       ],
+       [
+        "Healthcare Q1 Revenue",
+        "$3.0B \u2014 first $3B quarter",
+        "Working \u2713"
+       ],
+       [
+        "B2B Share",
+        "45.2% \u2014 6-year high",
+        "Working \u2713"
+       ],
+       [
+        "RPP Growth",
+        "+6.5% YoY \u2014 higher-yield mix",
+        "Working \u2713"
+       ],
+       [
+        "Enterprise Auto Gap",
+        "5 T1 accounts $116M below plan",
+        "Pace Risk \u26a0"
+       ],
+       [
+        "Ground Saver ADV",
+        "\u201327.7% Q1 (margin-led)",
+        "Monitoring"
+       ]
+      ]
+     }
+    ],
+    "charts": [
+     {
+      "type": "stacked_bar",
+      "title": "US Domestic ADV by Customer Type (K)",
+      "x_key": "quarter",
+      "data_keys": [
+       "amazon",
+       "enterprise",
+       "smb",
+       "healthcare"
+      ],
+      "colors": [
+       "#B0443A",
+       "#4A2E1C",
+       "#FFB500",
+       "#2E7D5B"
+      ],
+      "legend_names": [
+       "Amazon",
+       "Enterprise",
+       "SMB",
+       "Healthcare"
+      ],
+      "data": [
+       {
+        "quarter": "Q3 2025",
+        "amazon": 580,
+        "enterprise": 420,
+        "smb": 310,
+        "healthcare": 190
+       },
+       {
+        "quarter": "Q4 2025",
+        "amazon": 520,
+        "enterprise": 430,
+        "smb": 330,
+        "healthcare": 200
+       },
+       {
+        "quarter": "Q1 2026",
+        "amazon": 400,
+        "enterprise": 440,
+        "smb": 360,
+        "healthcare": 210
+       },
+       {
+        "quarter": "Q2 2026P",
+        "amazon": 200,
+        "enterprise": 460,
+        "smb": 390,
+        "healthcare": 225
+       }
+      ]
+     }
+    ],
+    "narrative_sections": [
+     {
+      "heading": "Amazon Exit Status",
+      "bullets": [
+       "Amazon FY25 Revenue Share: 10.6% of consolidated revenue (~$9.5B)",
+       "Q1 2026 ADV Reduction: ~500K ADV released from network",
+       "Glide-Down Completion Target: June 2026 \u2014 on track",
+       "Prior Amazon Target Revenue Share (FY26): ~5% (halved from FY25)"
+      ]
+     },
+     {
+      "heading": "Pace Risk \u2014 Where Reallocation May Be Lagging",
+      "bullets": [
+       "Enterprise Automotive Gap: Five T1 accounts $116M below plan \u2014 FedEx competition and coverage gaps slowing Enterprise volume replacement",
+       "Q2 Margin Recovery: 4.0% \u2192 7.5\u20138.5% requires transitional costs clearing AND replacement volume at modeled yield \u2014 both must hold",
+       "Ground Saver ADV: \u201327.7% in Q1 (margin-led retention of high-yield, USPS for lower-yield) \u2014 watch SMB migration timing"
+      ]
+     }
+    ]
+   }
+  },
+  "recommended_action_summary": "Confirm auto accounts close the $116M gap \u2014 freed capacity must convert to margin, not vacancy.",
+  "analysis_by": "TwinX AI \u00b7 Network & Capacity Intelligence",
+  "strategy_tag": "Grow",
+  "cta2_label": null,
+  "cta2_action": null,
+  "sort_order": 5
+ },
+ {
+  "id": 6,
+  "cxo_id": 1,
+  "title": "AutoZone Packet 10941 Needs Your Sign-Off \u2014 $36M Recoverable",
+  "body": "FedEx counter-offer triggered save-play. S2 (Happy Returns bundle) retains at OR 0.67 within guardrails \u2014 better than S3.",
+  "tone": "urgent",
+  "tag": "ACTION REQUIRED",
+  "category": "margin",
+  "signal_type": "Override",
+  "impact": "high",
+  "source": "Digital Deal Analyser \u00b7 Internal Pricing Data",
+  "cta_label": "Review Packet",
+  "cta_action": "investigate",
+  "related_packet_id": 10941,
+  "related_account": "AutoZone \u00b7 Enterprise Portfolio",
+  "delta_value": "$36M recoverable",
+  "confidence": "HIGH",
+  "priority_rank": 6,
+  "is_cxo_priority": true,
+  "group_key": "signals",
+  "source_url": null,
+  "source_date": "Jun 7, 2026 \u00b7 Live",
+  "investigation_payload": {
+   "seed_question": "What are the two pricing decisions sitting with me, and what's the right call on each?",
+   "ai_response": "There are two distinct pricing decisions sitting with you this morning. They are related but should be handled separately.\n\n**Decision One \u2014 AutoZone Packet 10941 override:** Analyst T. Whitaker has staged S3 on AutoZone's renewal to match FedEx's counter-offer. The scenario technically saves the **$41M account** but breaches the L2 Tier Incentive ceiling by 62 percentage points (81.1% \u2192 143%). At those terms, the operating ratio is **0.70 against your target of 0.62**. The question is: do you approve the override as a single-use exception to retain the account, send it back for a re-work (there is a viable S2 that saves the account at an operating ratio of 0.67 with a bundle \u2014 Happy Returns attach), or decline and let FedEx have it?\n\n**Decision Two \u2014 L1 Accessorial cap portfolio-wide:** The accessorial discount ceiling is currently **20% Off**. This is the single biggest driver of the 84% \u2192 100% margin realization gap. Every 2 percentage points you tighten the cap recovers approximately **$12M** across the portfolio. Tightening from 20% to 16% \u2014 a single guardrail change \u2014 recovers approximately **$36M**. It affects all 187 in-flight packets. Three accounts will likely push back: those already at or near the current ceiling.\n\nTogether, these two decisions \u2014 the AutoZone override call and the L1 cap tightening \u2014 determine whether Enterprise margin realization moves from 84% toward the 90%+ target this quarter or next.",
+   "kpis": [
+    {
+     "label": "In-Flight Packets",
+     "val": "187",
+     "sub": "active Analyser Packets",
+     "neg": false
+    },
+    {
+     "label": "Margin Realization",
+     "val": "84%",
+     "sub": "target 90%+",
+     "neg": true
+    },
+    {
+     "label": "Leakage Source",
+     "val": "L1 Accessorial",
+     "sub": "post-approval concessions",
+     "neg": true
+    },
+    {
+     "label": "Packets Above OR",
+     "val": "23",
+     "sub": "require intervention",
+     "neg": true
+    },
+    {
+     "label": "AutoZone Risk",
+     "val": "$41M",
+     "sub": "retention decision",
+     "neg": true
+    },
+    {
+     "label": "L1 Cap Recovery",
+     "val": "$36M",
+     "sub": "if tightened 20\u219216%",
+     "neg": false
+    }
+   ],
+   "follow_ups": [
+    {
+     "type": "panel",
+     "label": "Why we believe this",
+     "panel_key": "evidence"
+    },
+    {
+     "type": "panel",
+     "label": "Show all 187 packets overview",
+     "panel_key": "packets-overview"
+    },
+    {
+     "type": "chat",
+     "label": "Go to Deal Workbench \u2014 AutoZone Packet 10941",
+     "prompt": "Show me the full scenario comparison for AutoZone Packet 10941: S0 (current terms), S2 (bundle save with Happy Returns), and S3 (override to match FedEx). Include operating ratio, profit, and tier ceiling for each."
+    },
+    {
+     "type": "chat",
+     "label": "Model L1 guardrail scenarios",
+     "prompt": "Model the impact of tightening the L1 Accessorial cap from 20% to 16% across all 187 packets. Which 3 accounts would be above the new ceiling and what are the options for each?"
+    },
+    {
+     "type": "panel",
+     "label": "Invite team to investigate",
+     "panel_key": "invite-team"
+    }
+   ],
+   "affected_accounts": [
+    "AutoZone",
+    "Enterprise Portfolio \u00b7 187 packets"
+   ],
+   "context_summary": "Two pricing decisions \u00b7 AutoZone override + L1 cap tightening \u00b7 $36M recovery",
+   "recommended_action": "Approve AutoZone S2 bundle (not S3 override). Tighten L1 Accessorial cap from 20% to 16% to recover $36M.",
+   "right_panel_views": [
+    {
+     "key": "evidence",
+     "label": "Why we believe this",
+     "title": "Why we believe this \u2014 Evidence view",
+     "subtitle": "Signals supporting the pricing margin leakage diagnosis and L1 guardrail recommendation.",
+     "content_sections": [
+      {
+       "heading": "Margin Leakage \u2014 Root Cause Evidence",
+       "body": "**Deal Analyser portfolio audit (internal, Q1 2026):** Primary leakage source identified as post-approval accessorial concessions. Analysts and field sales are adding fuel surcharge and delivery area surcharge discounts after the core pricing scenario is approved \u2014 outside the formal packet approval process.\n\nCurrent L1 Accessorial cap: 20% Off maximum. Benchmark vs peer carriers and prior UPS pricing cycles suggests 16\u201318% Off is the appropriate ceiling for the current market.\n\nEvery 2pp tighter: Modeled recovery ~$12M across the 187-packet portfolio. Tightening from 20% to 16% = ~$36M recovery.\n\nAutoZone Packet 10941 provides a live example: The save-play scenario S3 required a 69.5% base discount + accessorial concessions to match FedEx \u2014 this is exactly the type of deal that pulls margin realization below modeled.\n\n**Confidence: HIGH.** Root cause corroborated by deal-level data across multiple analysts."
+      },
+      {
+       "heading": "AutoZone Packet 10941 \u2014 Override Request Evidence",
+       "body": "Analyst T. Whitaker, staged Jun 7, 2026 17:21.\n\n**S0 (Current terms):** OR 0.66, profit $14.0M, Tier TARGET 81.1%.\n**S2 (Recommended bundle save):** OR 0.67, profit $14.4M, Tier TARGET 81.1%. Includes Happy Returns attach that increases ADV by 0.2K and improves overall account economics.\n**S3 (Override requested):** OR 0.70, profit $11.8M, Tier TARGET 143%. Matches FedEx counter. Is the minimum needed to retain AutoZone if no bundle attach is accepted.\n\n**Key question for CCO:** Is S2 (bundle) still on the table with AutoZone? If yes, S3 is not needed. S2 saves the account at better economics than S3.\n\n**Confidence: HIGH.** Source: Live Deal Analyser packet data."
+      }
+     ],
+     "metrics": [
+      {
+       "label": "S0 Profit",
+       "val": "$14.0M",
+       "sub": "current terms"
+      },
+      {
+       "label": "S2 Profit",
+       "val": "$14.4M",
+       "sub": "bundle save"
+      },
+      {
+       "label": "S3 Profit",
+       "val": "$11.8M",
+       "sub": "override match"
+      },
+      {
+       "label": "L1 Recovery",
+       "val": "$36M",
+       "sub": "20\u219216% cap"
+      }
+     ]
+    },
+    {
+     "key": "packets-overview",
+     "label": "Show all 187 packets overview",
+     "title": "Enterprise Portfolio \u2014 All In-Flight Packets",
+     "subtitle": "Bird's eye view of all in-flight Analyser Packets by workstream.",
+     "content_sections": [
+      {
+       "heading": "Portfolio by Workstream",
+       "body": "\u2022 **Renewals:** 5 packets | Total bid value: $391M | Avg margin: 9.1% | Risk: 1 High (AutoZone), 4 Low\n\u2022 **Retention (Save-Plays):** 3 packets | Total bid value: $175M | Avg margin: 7.8% | Risk: 2 Medium, 1 High\n\u2022 **Penetration:** 4 packets | Total bid value: $140M | New volume \u2014 modeled yield above portfolio average\n\u2022 **New Logo:** 4 packets | Total bid value: $94M | All Building Scenarios or Sourced \u2014 low urgency"
+      },
+      {
+       "heading": "Packets Requiring CCO Attention",
+       "body": "\u2022 **CRITICAL:** AutoZone Packet 10941 \u2014 L2 override flag. CCO sign-off required. Options: Approve S3, send back with S2 bundle instruction, or decline.\n\u2022 **HIGH:** Stellantis Packet 11034 \u2014 $48M new logo. Scenario building in progress. Urgency driven by carrier-mix review window being open now.\n\u2022 **MEDIUM:** Toyota Packet 10474 \u2014 $185M renewal due Aug 31. S3 recommended. All levers within guardrails \u2014 timeline tight.\n\u2022 **MEDIUM:** Lear Packet 10755 \u2014 $76M save-play. FedEx counter active. S2 recommended. Monitoring needed."
+      },
+      {
+       "heading": "CCO Guardrail Control Panel",
+       "body": "\u2022 **L0 DIM Divisor Floor:** Currently 150. Raised from 145 in Mar 2026. Next review: Sep 2026.\n\u2022 **L1 Accessorial Discount Cap:** Currently 20% Off. RECOMMENDATION: Tighten to 16% Off. Recovers $36M. 3 packets affected above new ceiling.\n\u2022 **L2 Tier Incentive Ceiling:** Currently TARGET 81.1%. 8 packets requesting above-TARGET \u2014 7 can be resolved without override; AutoZone S3 requires explicit sign-off.\n\u2022 **L4 Zone Minimum Posture:** Currently Hold. No change recommended this cycle."
+      }
+     ],
+     "metrics": [
+      {
+       "label": "Total Packets",
+       "val": "187",
+       "sub": "in-flight"
+      },
+      {
+       "label": "Total Bid Value",
+       "val": "$800M",
+       "sub": "across workstreams"
+      },
+      {
+       "label": "CCO Attention",
+       "val": "4",
+       "sub": "packets flagged"
+      },
+      {
+       "label": "L1 Recovery",
+       "val": "$36M",
+       "sub": "if cap tightened"
+      }
+     ]
+    },
+    {
+     "key": "invite-team",
+     "label": "Invite team to investigate",
+     "title": "Invite team to investigate \u2014 Working Group",
+     "subtitle": "Enterprise Pricing Discipline & AutoZone Save-Play",
+     "content_sections": [
+      {
+       "heading": "Who to Include",
+       "body": "\u2022 **VP Revenue Management \u2014 R. Patel** (guardrail authority, L1 cap change approval)\n\u2022 **Analyst T. Whitaker** \u2014 AutoZone Packet 10941 (direct author of the override request)\n\u2022 **VP Enterprise Sales** \u2014 AutoZone relationship owner (is S2 bundle still on the table?)\n\u2022 **CFO / Finance** \u2014 L1 cap tightening financial impact sign-off ($36M recovery)\n\u2022 **Pricing Committee** \u2014 For formal L2 override approval on AutoZone if S3 is chosen"
+      },
+      {
+       "heading": "Share Preview",
+       "body": "**Priority:** ACTION REQUIRED | **Observed:** Jun 7, 2026\n\n**Observed Issues:** (1) AutoZone Packet 10941 \u2014 analyst T. Whitaker staged S3 to match FedEx counter. Breaches L2 ceiling 81.1% \u2192 143%. OR 0.70 vs target 0.62. $41M account retention decision required. (2) L1 Accessorial cap at 20% Off is primary driver of 84% margin realization. Tightening to 16% recovers ~$36M.\n\n**Suggested Questions:**\n\u2022 Is S2 (bundle save with Happy Returns attach) still a viable offer to AutoZone?\n\u2022 If S3 is approved, what is the message to the other pricing analysts about L2 ceiling exceptions?\n\u2022 Which 3 packets would be above the new L1 ceiling if it moves to 16%?\n\u2022 What is the CFO's view on the $36M margin recovery timeline?"
+      }
+     ],
+     "metrics": []
+    }
+   ],
+   "default_analytics": {
+    "title": "Enterprise Pricing Analytics \u2014 Deal Analyser Snapshot",
+    "subtitle": "Bird's eye view of all in-flight Analyser Packets. Guardrail adherence, margin realization trajectory, and workstream breakdown.",
+    "tables": [
+     {
+      "title": "In-Flight Packets \u2014 Top 8 (Automotive)",
+      "columns": [
+       "Account",
+       "Packet",
+       "Bid",
+       "Type",
+       "Status",
+       "Scenario",
+       "Delta Profit",
+       "Urgency"
+      ],
+      "rows": [
+       [
+        "Toyota Motor NA",
+        "10474",
+        "$185M",
+        "Renewal",
+        "Pricing Review",
+        "S3: L0+L2+L4",
+        "+$10.5M",
+        "Medium"
+       ],
+       [
+        "Magna International",
+        "10892",
+        "$28M",
+        "Penetration",
+        "Customer Counter",
+        "S2: L0+L4+bundle",
+        "+$10.7M",
+        "Low"
+       ],
+       [
+        "Stellantis NA",
+        "11034",
+        "$48M",
+        "New Logo",
+        "Building Scenarios",
+        "S2 recommended",
+        "+$16.5M",
+        "HIGH"
+       ],
+       [
+        "Lear Corporation",
+        "10755",
+        "$76M",
+        "Retention",
+        "Customer Counter",
+        "S2: save vs FedEx",
+        "+$1.5M",
+        "Medium"
+       ],
+       [
+        "Aptiv PLC",
+        "10612",
+        "$22M",
+        "Penetration",
+        "APPROVED",
+        "S1: bundle attach",
+        "+$1.7M",
+        "Low"
+       ],
+       [
+        "AutoZone",
+        "10941",
+        "$41M",
+        "Retention",
+        "OVERRIDE FLAG",
+        "S3 breaches L2 (143%)",
+        "\u2212$2.2M",
+        "CRITICAL"
+       ],
+       [
+        "Tesla, Inc.",
+        "10883",
+        "$14M",
+        "New Logo",
+        "Building Scenarios",
+        "S1: NAAF-premium pilot",
+        "+$5.4M",
+        "Low"
+       ],
+       [
+        "Rivian",
+        "10708",
+        "$8M",
+        "New Logo",
+        "Sourced",
+        "S1: pilot terms",
+        "+$2.7M",
+        "Low"
+       ]
+      ]
+     },
+     {
+      "title": "CCO Guardrail Control Panel",
+      "columns": [
+       "Guardrail",
+       "Current",
+       "Recommendation",
+       "Impact"
+      ],
+      "rows": [
+       [
+        "L0 DIM Divisor Floor",
+        "150",
+        "Next review Sep 2026",
+        "Raised from 145 Mar 2026"
+       ],
+       [
+        "L1 Accessorial Cap",
+        "20% Off",
+        "Tighten to 16% Off",
+        "Recovers $36M"
+       ],
+       [
+        "L2 Tier Incentive Ceiling",
+        "TARGET 81.1%",
+        "Hold \u2014 handle exceptions",
+        "8 packets requesting above"
+       ],
+       [
+        "L4 Zone Minimum",
+        "Hold",
+        "No change this cycle",
+        "\u2014"
+       ]
+      ]
+     }
+    ],
+    "charts": [
+     {
+      "type": "line",
+      "title": "Margin Realization Trajectory (% of Modeled)",
+      "x_key": "quarter",
+      "data_keys": [
+       "actual",
+       "target"
+      ],
+      "colors": [
+       "#FFB500",
+       "#2E7D5B"
+      ],
+      "legend_names": [
+       "Actual",
+       "Target"
+      ],
+      "data": [
+       {
+        "quarter": "Q4 FY24",
+        "actual": 88,
+        "target": 90
+       },
+       {
+        "quarter": "Q1 FY25",
+        "actual": 87,
+        "target": 90
+       },
+       {
+        "quarter": "Q2 FY25",
+        "actual": 86,
+        "target": 90
+       },
+       {
+        "quarter": "Q3 FY25",
+        "actual": 85,
+        "target": 90
+       },
+       {
+        "quarter": "Q4 FY25",
+        "actual": 84,
+        "target": 90
+       },
+       {
+        "quarter": "Q1 FY26",
+        "actual": 84,
+        "target": 90
+       },
+       {
+        "quarter": "Q2 FY26P",
+        "actual": 86,
+        "target": 90
+       },
+       {
+        "quarter": "Q3 FY26P",
+        "actual": 90,
+        "target": 90
+       }
+      ]
+     }
+    ],
+    "narrative_sections": []
+   }
+  },
+  "recommended_action_summary": "Approve S2 (not S3 override) + tighten L1 Accessorial cap 20%\u219218% portfolio-wide.",
+  "analysis_by": "TwinX AI \u00b7 Pricing Intelligence",
+  "strategy_tag": "Retain",
+  "cta2_label": "Go to Deal Analyser",
+  "cta2_action": "deep-enterprise",
+  "sort_order": 6
+ }
+]
