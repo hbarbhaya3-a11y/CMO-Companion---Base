@@ -1,0 +1,6282 @@
+{
+ "user": {
+  "username": "raj",
+  "email": "raj@tcs.com",
+  "full_name": "K Krithivasan",
+  "password": "tcs-demo-12",
+  "role": "business_owner",
+  "access_role": "owner"
+ },
+ "firm": {
+  "slug": "tcs",
+  "name": "TCS",
+  "legal_name": "Tata Consultancy Services Ltd.",
+  "ticker": "TCS",
+  "industry": "IT Services",
+  "sub_industry": "Consulting & Digital",
+  "geography_hq": "Mumbai, India — Global",
+  "currency": "INR",
+  "timezone": "Asia/Kolkata",
+  "brand_primary_color": "#0A2896",
+  "brand_accent_color": "#E31937",
+  "website": "https://www.tcs.com",
+  "linkedin_url": "https://linkedin.com/company/tata-consultancy-services",
+  "public_private": "PUBLIC",
+  "company_stage": "MATURE",
+  "revenue_annual": 29000000000,
+  "marketing_budget": 400000000,
+  "marketing_budget_brand_pct": 40,
+  "marketing_budget_perf_pct": 40,
+  "marketing_budget_content_pct": 20,
+  "tagline": "Building on Belief",
+  "key_initiatives": [
+   "GenAI at scale",
+   "Cloud migration",
+   "BFSI modernization"
+  ],
+  "value_propositions": [
+   "Deep domain expertise",
+   "Global delivery model",
+   "Contextual knowledge"
+  ],
+  "competitors": [
+   "Accenture",
+   "Infosys",
+   "Cognizant",
+   "Wipro"
+  ],
+  "social_handles": {
+   "twitter": "@TCS",
+   "linkedin": "tata-consultancy-services"
+  },
+  "status": "active"
+ },
+ "app_config": {
+  "brand_text": "CXO Companion"
+ },
+ "ticker": {
+  "symbol": "TCS",
+  "price": 3205.9,
+  "change_pct": -0.6,
+  "trade_date": "2026-07-08",
+  "source": "demo"
+ },
+ "cxo_profile": {
+  "name": "K Krithivasan",
+  "title": "Chief Executive Officer",
+  "role_archetype": "transformation_driver",
+  "focus_areas": [
+   "AI-Led Transformation",
+   "Revenue & Large-Deal Growth",
+   "Margin Discipline",
+   "AI-Ready Workforce"
+  ],
+  "role_focus": "Becoming the world's largest AI-led services company while defending industry-leading margins and building the largest AI-ready workforce",
+  "priorities": "GenAI revenue ramp, large-deal TCV growth, margin defense, attrition control & reskilling",
+  "is_primary": true
+ },
+ "nav_items": [
+  {
+   "key": "home",
+   "label": "Home",
+   "icon_key": "Home",
+   "route": "home",
+   "section": "core",
+   "sort_order": 0
+  },
+  {
+   "key": "signals",
+   "label": "Signals",
+   "icon_key": "Sparkles",
+   "route": "signals",
+   "section": "core",
+   "sort_order": 1
+  },
+  {
+   "key": "memory",
+   "label": "Memory",
+   "icon_key": "Brain",
+   "route": "memory",
+   "section": "core",
+   "sort_order": 2
+  },
+  {
+   "key": "decision",
+   "label": "Decision Lab",
+   "icon_key": "FlaskConical",
+   "route": "decision",
+   "section": "core",
+   "sort_order": 3
+  }
+ ],
+  "pulse_metrics": [
+    {
+      "key": "revenue",
+      "label": "Revenue",
+      "source": "Finance",
+      "metric_type": "flow (÷4)",
+      "faces": [
+        {
+          "period": "Q3 FY26 · Current",
+          "target": "$7.6B",
+          "actual": "$7.61B",
+          "note": "Projected · on target",
+          "delta": "+0.1% vs target",
+          "up": true,
+          "basis": "Target = FY26 plan $30.4B ÷ 4",
+          "ref": "Current quarter in progress — actual assumed"
+        },
+        {
+          "period": "Q2 FY26 · Previous",
+          "target": "$7.6B",
+          "actual": "$7.47B",
+          "note": "Miss · macro caution",
+          "delta": "−1.7% vs target",
+          "up": false,
+          "basis": "Target = FY26 plan $30.4B ÷ 4",
+          "ref": "TCS Q2 FY26 press release, 9-Oct-2025 ($7,466M)"
+        },
+        {
+          "period": "FY26 · Annual plan",
+          "target": "$30.4B",
+          "actual": "$30.2B",
+          "note": "Projected · slightly below plan",
+          "delta": "−0.7% vs plan · ~flat YoY (USD)",
+          "up": false,
+          "basis": "Actual = H1 real + H2 projection",
+          "ref": "H1 actual $14.89B = Q1 $7.42B + Q2 $7.47B (TCS filings)"
+        }
+      ]
+    },
+    {
+      "key": "tcv",
+      "label": "Deal TCV",
+      "source": "Sales",
+      "metric_type": "flow (÷4)",
+      "faces": [
+        {
+          "period": "Q3 FY26 · Current",
+          "target": "$10.0B",
+          "actual": "$10.4B",
+          "note": "Projected · strong AI-led pipeline",
+          "delta": "+4% vs target",
+          "up": true,
+          "basis": "Target = FY26 plan $40B ÷ 4",
+          "ref": "Current quarter in progress — actual assumed"
+        },
+        {
+          "period": "Q2 FY26 · Previous",
+          "target": "$10.0B",
+          "actual": "$10.0B",
+          "note": "On plan · +16% YoY",
+          "delta": "0% vs target",
+          "up": true,
+          "basis": "Target = FY26 plan $40B ÷ 4",
+          "ref": "TCS Q2 FY26: order-book TCV $10B (up 16% YoY)"
+        },
+        {
+          "period": "FY26 · Annual plan",
+          "target": "$40.0B",
+          "actual": "$40.4B",
+          "note": "Projected · above plan",
+          "delta": "+1% vs plan",
+          "up": true,
+          "basis": "Actual = H1 real + H2 projection",
+          "ref": "H1 actual $19.4B = Q1 $9.4B + Q2 $10.0B (TCS filings)"
+        }
+      ]
+    },
+    {
+      "key": "attrition",
+      "label": "Attrition (LTM)",
+      "source": "HR",
+      "metric_type": "run-rate (NOT ÷4)",
+      "faces": [
+        {
+          "period": "Q3 FY26 · Current",
+          "target": "12.0%",
+          "actual": "13.6%",
+          "note": "Projected · easing post-restructuring",
+          "delta": "+1.6pp vs target",
+          "up": false,
+          "basis": "Run-rate LTM — target is annual level, NOT ÷4",
+          "ref": "Current quarter in progress — actual assumed"
+        },
+        {
+          "period": "Q2 FY26 · Previous",
+          "target": "12.0%",
+          "actual": "13.8%",
+          "note": "Above target",
+          "delta": "+1.8pp vs target",
+          "up": false,
+          "basis": "Run-rate LTM — NOT ÷4",
+          "ref": "TCS Q1 FY26 LTM IT attrition 13.8%; Q2 FY26 not separately disclosed — assumed held"
+        },
+        {
+          "period": "FY26 · Annual plan",
+          "target": "11.5%",
+          "actual": "13.5%",
+          "note": "At risk",
+          "delta": "+2.0pp vs plan",
+          "up": false,
+          "basis": "Run-rate LTM — NOT ÷4",
+          "ref": "Trend from FY26 H1 (~13.8% LTM)"
+        }
+      ]
+    },
+    {
+      "key": "op_margin",
+      "label": "Operating Margin",
+      "source": "Finance",
+      "metric_type": "run-rate (NOT ÷4)",
+      "faces": [
+        {
+          "period": "Q3 FY26 · Current",
+          "target": "26.0%",
+          "actual": "25.6%",
+          "note": "Projected · improving",
+          "delta": "−0.4pp vs aspiration",
+          "up": true,
+          "basis": "Run-rate % — NOT ÷4; 26–28% aspiration",
+          "ref": "Current quarter in progress — actual assumed"
+        },
+        {
+          "period": "Q2 FY26 · Previous",
+          "target": "26.0%",
+          "actual": "25.2%",
+          "note": "Below aspiration · +70bps QoQ",
+          "delta": "−0.8pp vs aspiration",
+          "up": true,
+          "basis": "Run-rate % — NOT ÷4",
+          "ref": "TCS Q2 FY26: operating margin 25.2%, up 70bps QoQ"
+        },
+        {
+          "period": "FY26 · Annual plan",
+          "target": "26.0%",
+          "actual": "25.3%",
+          "note": "Below aspiration",
+          "delta": "−0.7pp vs plan",
+          "up": false,
+          "basis": "Run-rate % — NOT ÷4",
+          "ref": "H1 avg ~24.85% (Q1 24.5%, Q2 25.2%)"
+        }
+      ]
+    }
+  ],
+ "kpis": [
+  {
+   "label": "Revenue",
+   "val": "$7.51B",
+   "sub": "+2.4% YoY CC",
+   "note": "Q1 in line; growth broad-based across BFSI and Consumer.",
+   "chip": "Revenue",
+   "spark": [
+    7.31,
+    7.36,
+    7.42,
+    7.47,
+    7.49,
+    7.51
+   ],
+   "up": true,
+   "period": "Q1 FY26",
+   "source": "TCS Q1 FY26 Earnings"
+  },
+  {
+   "label": "Deal TCV",
+   "val": "$9.4B",
+   "sub": "book-to-bill 1.1x",
+   "note": "Order book healthy; North America $4.4B, BFSI $2.5B.",
+   "chip": "Revenue",
+   "spark": [
+    8.3,
+    8.6,
+    9.0,
+    9.2,
+    9.4,
+    9.4
+   ],
+   "up": true,
+   "period": "Q1 FY26",
+   "source": "TCS Q1 FY26 Earnings"
+  },
+  {
+   "label": "Operating Margin",
+   "val": "24.5%",
+   "sub": "-1.6pp QoQ",
+   "note": "Q1 wage revision + GenAI investment; recovery expected H2.",
+   "chip": "Margin",
+   "spark": [
+    26.0,
+    25.6,
+    25.3,
+    25.0,
+    24.7,
+    24.5
+   ],
+   "up": false,
+   "period": "Q1 FY26",
+   "source": "TCS Q1 FY26 Earnings"
+  },
+  {
+   "label": "AI / GenAI Revenue",
+   "val": "$1.8B",
+   "sub": "annualized",
+   "note": "Scaling fast; trailing Accenture's ~$3B GenAI bookings.",
+   "chip": "GenAI",
+   "spark": [
+    0.9,
+    1.1,
+    1.3,
+    1.5,
+    1.7,
+    1.8
+   ],
+   "up": true,
+   "period": "Q3 FY26",
+   "source": "Service-Line Finance"
+  },
+  {
+   "label": "LTM Attrition",
+   "val": "13.8%",
+   "sub": "+0.7pp QoQ",
+   "note": "GenAI/cloud poaching concentrated in 2 hubs.",
+   "chip": "Talent",
+   "spark": [
+    12.8,
+    13.1,
+    13.3,
+    13.5,
+    13.7,
+    13.8
+   ],
+   "up": false,
+   "period": "Q1 FY26",
+   "source": "HR Analytics"
+  },
+  {
+   "label": "AI-Ready Workforce",
+   "val": "62%",
+   "sub": "+14pp YTD",
+   "note": "tcsAI fluency program scaling toward ~100%.",
+   "chip": "Talent",
+   "spark": [
+    40,
+    46,
+    51,
+    55,
+    59,
+    62
+   ],
+   "up": true,
+   "period": "Q1 FY26",
+   "source": "TCS Learning"
+  },
+  {
+   "label": "Win Rate vs ACN",
+   "val": "38%",
+   "sub": "-6pp QoQ",
+   "note": "Slipping on consulting-led GenAI evaluations.",
+   "chip": "Competitive",
+   "spark": [
+    46,
+    44,
+    43,
+    41,
+    40,
+    38
+   ],
+   "up": false,
+   "period": "Q1 FY26",
+   "source": "CRM"
+  },
+  {
+   "label": "Utilization (ex-trainees)",
+   "val": "85.2%",
+   "sub": "+0.6pp QoQ",
+   "note": "Bench redeployment improving; margin lever.",
+   "chip": "Delivery",
+   "spark": [
+    83.8,
+    84.1,
+    84.5,
+    84.8,
+    85.0,
+    85.2
+   ],
+   "up": true,
+   "period": "Q1 FY26",
+   "source": "Delivery Ops"
+  }
+ ],
+ "attention_cards": [
+  {
+   "key": "card1",
+   "signal_type": "Competitor",
+   "tone": "urgent",
+   "tag": "COMPETITOR ACTION",
+   "title": "Accenture GenAI bookings hit $3B, pulling ahead in TCS's target segment",
+   "body": "Accenture reported $3B in GenAI bookings this quarter vs TCS's $1.5B ramp. Three of TCS's top-20 accounts issued GenAI RFPs Accenture is contesting.",
+   "stage": "Retain",
+   "delta_value": "5-day RFP window",
+   "confidence": "HIGH",
+   "impact": "high",
+   "source": "Accenture Q2 Earnings + Field Intel",
+   "ago": "2 days ago",
+   "chat_seed_question": "How do we close the GenAI bookings gap with Accenture?",
+   "primary_cta_label": "Investigate the gap",
+   "kpis": [
+    {
+     "label": "GenAI Bookings",
+     "value": "$1.5B",
+     "delta": "-$1.5B vs peer",
+     "positive": false
+    },
+    {
+     "label": "Win Rate vs ACN",
+     "value": "38%",
+     "delta": "-6pp",
+     "positive": false
+    },
+    {
+     "label": "Pipeline at Risk",
+     "value": "$2.1B",
+     "delta": "top 20 accts",
+     "positive": false
+    }
+   ],
+   "investigation": {
+    "seed_question": "What is the Accenture GenAI threat and how should we counter it?",
+    "context_summary": "Accenture GenAI · $3B bookings · consulting-led motion · 3 TCS top-20 accounts contested",
+    "recommended_action": "Stand up a GenAI deal SWAT team for the 3 contested accounts within 5 business days. Introduce an outcome-based GenAI SKU for mid-market. CFO co-sign on pricing floor.",
+    "kpis": [
+     {
+      "label": "GenAI Bookings Gap",
+      "val": "-$1.5B",
+      "sub": "vs Accenture Q2",
+      "neg": true
+     },
+     {
+      "label": "Win Rate vs ACN",
+      "val": "38%",
+      "sub": "-6pp QoQ",
+      "neg": true
+     },
+     {
+      "label": "Pipeline at Risk",
+      "val": "$2.1B",
+      "sub": "top-20 accounts",
+      "neg": true
+     },
+     {
+      "label": "Deal Velocity",
+      "val": "142 days",
+      "sub": "+18 days vs LY",
+      "neg": true
+     },
+     {
+      "label": "Top-20 Coverage",
+      "val": "3.1x",
+      "sub": "GenAI pipeline",
+      "neg": false
+     },
+     {
+      "label": "TCV Trend",
+      "val": "+9%",
+      "sub": "YoY, all deals",
+      "neg": false
+     }
+    ],
+    "follow_ups": [
+     {
+      "type": "panel",
+      "label": "Why we believe this",
+      "panel_key": "evidence"
+     },
+     {
+      "type": "panel",
+      "label": "Show contested accounts",
+      "panel_key": "accounts"
+     },
+     {
+      "type": "panel",
+      "label": "Stage the GenAI SWAT response",
+      "panel_key": "swat"
+     },
+     {
+      "type": "panel",
+      "label": "Review pricing guardrails",
+      "panel_key": "pricing"
+     },
+     {
+      "type": "panel",
+      "label": "Invite team to investigate",
+      "panel_key": "invite-team"
+     }
+    ],
+    "actions": [
+     {
+      "key": "invite-team",
+      "label": "Invite team to investigate",
+      "icon_key": "users",
+      "tone": "brand",
+      "action_type": "invite",
+      "action_target": {}
+     },
+     {
+      "key": "go-decision-lab",
+      "label": "Go to Decision Lab",
+      "icon_key": "arrow-right",
+      "tone": "brand",
+      "action_type": "decision-lab",
+      "action_target": {}
+     }
+    ],
+    "affected_accounts": [
+     {
+      "name": "Global Bank A — $420M ARR"
+     },
+     {
+      "name": "Insurer B — $180M ARR"
+     },
+     {
+      "name": "Retail Group C — $95M ARR"
+     },
+     {
+      "name": "Telco D — $260M ARR"
+     },
+     {
+      "name": "Manufacturer E — $140M ARR"
+     }
+    ],
+    "panels": [
+     {
+      "key": "evidence",
+      "label": "Why we believe this",
+      "title": "Why we believe this — Evidence view",
+      "subtitle": "Sources and correlation",
+      "blocks": [
+       {
+        "block_type": "narrative",
+        "payload": {
+         "heading": "What triggered this",
+         "body": "• **Accenture Q2 earnings call:** reported $3B GenAI bookings, up from $1.8B QoQ, explicitly citing 'consulting-led reinvention' wins in BFSI and Products.\n• **Field intel (3 accounts):** Global Bank A, Insurer B and Telco D each issued GenAI transformation RFPs in the last 30 days; Accenture is incumbent advisor on two.\n• **Internal CRM:** TCS GenAI pipeline coverage in these accounts is 3.1x but win-rate has slipped 6pp QoQ as deals stall in evaluation."
+        }
+       },
+       {
+        "block_type": "narrative",
+        "payload": {
+         "heading": "Why it matters now",
+         "body": "The 3 contested accounts represent $2.1B of at-risk pipeline. Accenture's consulting-first motion converts ~18 days faster; every stalled evaluation cycle widens the bookings gap. A 5-day RFP response window is closing on Global Bank A."
+        }
+       },
+       {
+        "block_type": "metrics",
+        "payload": {
+         "items": [
+          {
+           "label": "GenAI Bookings (ACN)",
+           "val": "$3.0B",
+           "sub": "Q2, +67% QoQ",
+           "neg": true
+          },
+          {
+           "label": "GenAI Bookings (TCS)",
+           "val": "$1.5B",
+           "sub": "Q2 ramp",
+           "neg": true
+          },
+          {
+           "label": "Contested Pipeline",
+           "val": "$2.1B",
+           "sub": "3 accounts",
+           "neg": true
+          },
+          {
+           "label": "Win-rate Delta",
+           "val": "-6pp",
+           "sub": "QoQ vs ACN",
+           "neg": true
+          }
+         ]
+        }
+       }
+      ]
+     },
+     {
+      "key": "accounts",
+      "label": "Show contested accounts",
+      "title": "Accounts with Active GenAI RFPs",
+      "subtitle": "Where Accenture is contesting",
+      "blocks": [
+       {
+        "block_type": "narrative",
+        "payload": {
+         "heading": "Contested accounts",
+         "body": "• **Global Bank A** ($420M ARR): GenAI fraud + ops RFP, 5-day response window, Accenture incumbent advisor.\n• **Insurer B** ($180M ARR): claims automation GenAI pilot expanding to enterprise; TCS + Accenture shortlisted.\n• **Telco D** ($260M ARR): network ops GenAI RFP; decision expected in 3 weeks."
+        }
+       },
+       {
+        "block_type": "metrics",
+        "payload": {
+         "items": [
+          {
+           "label": "Combined ARR",
+           "val": "$860M",
+           "sub": "3 contested",
+           "neg": false
+          },
+          {
+           "label": "Response Windows",
+           "val": "5-21 days",
+           "sub": "closing",
+           "neg": true
+          },
+          {
+           "label": "TCS Incumbency",
+           "val": "2 of 3",
+           "sub": "advantage",
+           "neg": false
+          }
+         ]
+        }
+       }
+      ]
+     },
+     {
+      "key": "swat",
+      "label": "Stage the GenAI SWAT response",
+      "title": "GenAI SWAT Team — Competitive Counter Staging",
+      "subtitle": "48-hour mobilization",
+      "blocks": [
+       {
+        "block_type": "narrative",
+        "payload": {
+         "heading": "Recommended staging",
+         "body": "• **SWAT pod per account:** 1 partner + 1 GenAI solution architect + 1 domain SME. Route within 48 hrs.\n• **Outcome-based proposal:** lead with fixed-outcome pricing on the first GenAI use case to neutralize Accenture's consulting framing.\n• **Reference velocity:** deploy the 2 closed BFSI GenAI references into Global Bank A within 5 days."
+        }
+       },
+       {
+        "block_type": "metrics",
+        "payload": {
+         "items": [
+          {
+           "label": "Modeled Win Uplift",
+           "val": "+11pp",
+           "sub": "P50, contested",
+           "neg": false
+          },
+          {
+           "label": "Pipeline Protected",
+           "val": "$1.4B",
+           "sub": "of $2.1B",
+           "neg": false
+          },
+          {
+           "label": "Time to Route",
+           "val": "48 hrs",
+           "sub": "to account teams",
+           "neg": false
+          }
+         ]
+        }
+       }
+      ]
+     },
+     {
+      "key": "pricing",
+      "label": "Review pricing guardrails",
+      "title": "GenAI Pricing Guardrail Review",
+      "subtitle": "Margin protection",
+      "blocks": [
+       {
+        "block_type": "narrative",
+        "payload": {
+         "heading": "Recommended guardrail adjustments",
+         "body": "• **Outcome-based floor:** set minimum blended margin at 24% on GenAI outcome deals. CFO co-sign required.\n• **Mid-market SKU:** introduce a productized GenAI bundle 15% below custom to counter Infosys Topaz, capped at 3 use cases.\n• **Discount ceiling:** hold at 18% for GenAI; no exceptions without VP Revenue Mgmt sign-off."
+        }
+       },
+       {
+        "block_type": "metrics",
+        "payload": {
+         "items": [
+          {
+           "label": "Margin Floor",
+           "val": "24%",
+           "sub": "outcome deals",
+           "neg": false
+          },
+          {
+           "label": "Bundle Discount",
+           "val": "-15%",
+           "sub": "vs custom",
+           "neg": false
+          },
+          {
+           "label": "Portfolio Impact",
+           "val": "+$40M",
+           "sub": "modeled annualized",
+           "neg": false
+          }
+         ]
+        }
+       }
+      ]
+     },
+     {
+      "key": "invite-team",
+      "label": "Invite team to investigate",
+      "title": "Invite team to investigate — Working Group",
+      "subtitle": "Collaborate on the response",
+      "blocks": [
+       {
+        "block_type": "narrative",
+        "payload": {
+         "heading": "Suggested working group",
+         "body": "Loop in Head of GenAI, VP BFSI Sales, and the CFO office for the pricing floor sign-off. Kick off a 48-hour war-room on the 3 contested accounts."
+        }
+       },
+       {
+        "block_type": "narrative",
+        "payload": {
+         "heading": "First 24 hours",
+         "body": "• Confirm SWAT pods staffed.\n• Send outcome-based proposal draft to Global Bank A.\n• Pull the 2 BFSI GenAI references."
+        }
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "card2",
+   "signal_type": "Earnings",
+   "tone": "urgent",
+   "tag": "MARGIN WATCH",
+   "title": "Q2 operating margin tracking to 24.3% — 170bps below aspiration as the wage cycle lands",
+   "body": "The Q1 wage revision and GenAI capability investment are compressing margin ahead of the H2 utilization recovery. Q2 is the inflection that sets the FY26 margin narrative with the Street.",
+   "stage": "Defend",
+   "delta_value": "Q2 close in 5 weeks",
+   "confidence": "HIGH",
+   "impact": "high",
+   "source": "Finance + FP&A model",
+   "ago": "Today",
+   "chat_seed_question": "Which levers protect Q2 margin without cutting GenAI investment?",
+   "primary_cta_label": "Investigate the levers",
+   "kpis": [
+    {
+     "label": "Operating Margin",
+     "value": "24.3%",
+     "delta": "-1.7pp vs band",
+     "positive": false
+    },
+    {
+     "label": "Wage Revision Drag",
+     "value": "-110bps",
+     "delta": "Q1 impact",
+     "positive": false
+    },
+    {
+     "label": "Utilization",
+     "value": "85.2%",
+     "delta": "+0.6pp",
+     "positive": true
+    }
+   ],
+   "investigation": {
+    "seed_question": "How do we defend Q2 margin while protecting the AI-led investment agenda?",
+    "context_summary": "Margin 24.3% · wage cycle -110bps · GenAI invest -60bps · utilization recovering · FY band 26-28%",
+    "recommended_action": "Approve the Q2 margin-defense mix — utilization +1.5pp, pyramid rebalancing (fresher intake), subcontractor -8%, discretionary-cost hold — while ring-fencing the GenAI capability budget. CFO Samir Seksaria co-owns the plan.",
+    "kpis": [
+     {
+      "label": "Operating Margin",
+      "val": "24.3%",
+      "sub": "Q2 to-date",
+      "neg": true
+     },
+     {
+      "label": "Wage-Revision Drag",
+      "val": "-110bps",
+      "sub": "Q1 cycle",
+      "neg": true
+     },
+     {
+      "label": "GenAI Invest Drag",
+      "val": "-60bps",
+      "sub": "capability build",
+      "neg": true
+     },
+     {
+      "label": "Utilization (ex-trainee)",
+      "val": "85.2%",
+      "sub": "+0.6pp QoQ",
+      "neg": false
+     },
+     {
+      "label": "Subcontractor Cost",
+      "val": "8.1%",
+      "sub": "of revenue",
+      "neg": true
+     },
+     {
+      "label": "Aspirational Band",
+      "val": "26-28%",
+      "sub": "FY target",
+      "neg": false
+     }
+    ],
+    "follow_ups": [
+     {
+      "type": "panel",
+      "label": "Why the margin moved",
+      "panel_key": "bridge"
+     },
+     {
+      "type": "panel",
+      "label": "Show the defense levers",
+      "panel_key": "levers"
+     },
+     {
+      "type": "panel",
+      "label": "Ring-fence GenAI investment",
+      "panel_key": "ringfence"
+     },
+     {
+      "type": "panel",
+      "label": "Earnings-narrative read",
+      "panel_key": "earnings"
+     },
+     {
+      "type": "panel",
+      "label": "Invite team to investigate",
+      "panel_key": "invite-team"
+     }
+    ],
+    "actions": [
+     {
+      "key": "invite-team",
+      "label": "Invite team to investigate",
+      "icon_key": "users",
+      "tone": "brand",
+      "action_type": "invite",
+      "action_target": {}
+     },
+     {
+      "key": "go-decision-lab",
+      "label": "Go to Decision Lab",
+      "icon_key": "arrow-right",
+      "tone": "brand",
+      "action_type": "decision-lab",
+      "action_target": {}
+     }
+    ],
+    "affected_accounts": [
+     {
+      "name": "Subcontractor spend — ~$620M annualized"
+     },
+     {
+      "name": "North America onshore mix — delivery cost"
+     },
+     {
+      "name": "Fresher intake — FY26 42,000 trainees"
+     },
+     {
+      "name": "GenAI capability build — ring-fenced"
+     },
+     {
+      "name": "Bench (ex-trainee) — redeployment pool"
+     }
+    ],
+    "panels": [
+     {
+      "key": "bridge",
+      "label": "Why the margin moved",
+      "title": "Margin Bridge — Q1 to Q2",
+      "subtitle": "What compressed the ratio",
+      "blocks": [
+       {
+        "block_type": "narrative",
+        "payload": {
+         "heading": "What triggered this",
+         "body": "• **Annual wage revision** landed in Q1, the single largest quarterly drag at ~110bps — standard for the cycle but front-loaded.\n• **GenAI capability investment** (tcsAI, platforms, reskilling) is a deliberate ~60bps drag — capability ahead of revenue.\n• **FX and furlough tail** from Q4 added a residual few bps. None of these are structural."
+        }
+       },
+       {
+        "block_type": "narrative",
+        "payload": {
+         "heading": "Why it matters now",
+         "body": "Q2 is the swing quarter. If margin recovers toward the 26% zone, the FY26 narrative holds and the AI-investment thesis is validated. If it stays sub-25%, the Street questions whether GenAI spend is diluting the industry-leading margin."
+        }
+       },
+       {
+        "block_type": "metrics",
+        "payload": {
+         "items": [
+          {
+           "label": "Wage revision",
+           "val": "-110bps",
+           "sub": "Q1 cycle",
+           "neg": true
+          },
+          {
+           "label": "GenAI investment",
+           "val": "-60bps",
+           "sub": "deliberate",
+           "neg": true
+          },
+          {
+           "label": "FX / furlough tail",
+           "val": "-15bps",
+           "sub": "residual",
+           "neg": true
+          },
+          {
+           "label": "Recovery levers",
+           "val": "+140bps",
+           "sub": "H2 modeled",
+           "neg": false
+          }
+         ]
+        }
+       }
+      ]
+     },
+     {
+      "key": "levers",
+      "label": "Show the defense levers",
+      "title": "Margin-Defense Lever Mix",
+      "subtitle": "The recovery path",
+      "blocks": [
+       {
+        "block_type": "narrative",
+        "payload": {
+         "heading": "Recommended lever mix",
+         "body": "• **Utilization +1.5pp:** redeploy bench into the healthy order book (book-to-bill 1.1x); the fastest, lowest-risk lever.\n• **Pyramid rebalancing:** lift fresher mix via the 42,000 FY26 trainee intake to reset the cost curve.\n• **Subcontractor -8%:** substitute subcontractor spend with reskilled internal talent as AI-fluency scales.\n• **Discretionary-cost hold:** freeze non-essential discretionary spend for two quarters — no hiring freeze on hot skills."
+        }
+       },
+       {
+        "block_type": "metrics",
+        "payload": {
+         "items": [
+          {
+           "label": "Utilization",
+           "val": "+1.5pp",
+           "sub": "~+55bps",
+           "neg": false
+          },
+          {
+           "label": "Pyramid",
+           "val": "fresher mix",
+           "sub": "~+35bps",
+           "neg": false
+          },
+          {
+           "label": "Subcontractor",
+           "val": "-8%",
+           "sub": "~+30bps",
+           "neg": false
+          },
+          {
+           "label": "Discretionary hold",
+           "val": "2 quarters",
+           "sub": "~+20bps",
+           "neg": false
+          }
+         ]
+        }
+       }
+      ]
+     },
+     {
+      "key": "ringfence",
+      "label": "Ring-fence GenAI investment",
+      "title": "Protect the AI-Led Investment",
+      "subtitle": "Capability over near-term optics",
+      "blocks": [
+       {
+        "block_type": "narrative",
+        "payload": {
+         "heading": "What must stay funded",
+         "body": "The margin defense must **not** come from the GenAI capability budget. Ring-fence tcsAI platform build, reskilling waves, and the AI-solution factory. Cutting these to flatter one quarter's optics would forfeit the world's-largest-AI-led-services position — the exact trade the CEO has said he will not make."
+        }
+       },
+       {
+        "block_type": "metrics",
+        "payload": {
+         "items": [
+          {
+           "label": "GenAI budget",
+           "val": "ring-fenced",
+           "sub": "no cut",
+           "neg": false
+          },
+          {
+           "label": "Reskilling waves",
+           "val": "on schedule",
+           "sub": "protected",
+           "neg": false
+          },
+          {
+           "label": "Net margin defense",
+           "val": "from run levers",
+           "sub": "not capability",
+           "neg": false
+          }
+         ]
+        }
+       }
+      ]
+     },
+     {
+      "key": "earnings",
+      "label": "Earnings-narrative read",
+      "title": "Earnings & Analyst Narrative",
+      "subtitle": "Framing Q2",
+      "blocks": [
+       {
+        "block_type": "narrative",
+        "payload": {
+         "heading": "How to frame it",
+         "body": "Frame Q1 as the seasonal wage-cycle low with GenAI investment deliberately layered in, and Q2 as the start of the recovery toward the 26% zone. Anchor on the record order book ($40.7B FY TCV) and AI revenue at $1.8B annualized as the growth proof points that justify the investment."
+        }
+       },
+       {
+        "block_type": "metrics",
+        "payload": {
+         "items": [
+          {
+           "label": "Q1 margin",
+           "val": "24.5%",
+           "sub": "wage-cycle low",
+           "neg": true
+          },
+          {
+           "label": "Q4 FY26 modeled",
+           "val": "25.3%",
+           "sub": "4-yr high",
+           "neg": false
+          },
+          {
+           "label": "FY TCV",
+           "val": "$40.7B",
+           "sub": "record",
+           "neg": false
+          },
+          {
+           "label": "AI revenue",
+           "val": "$1.8B",
+           "sub": "annualized",
+           "neg": false
+          }
+         ]
+        }
+       }
+      ]
+     },
+     {
+      "key": "invite-team",
+      "label": "Invite team to investigate",
+      "title": "Invite team — Margin War-Room",
+      "subtitle": "Collaborate on the plan",
+      "blocks": [
+       {
+        "block_type": "narrative",
+        "payload": {
+         "heading": "Suggested working group",
+         "body": "Loop in CFO Samir Seksaria (owns the bridge), the COO / Global Delivery head (utilization + pyramid), and Business-Group heads (discretionary hold). 90-minute margin war-room this week."
+        }
+       },
+       {
+        "block_type": "narrative",
+        "payload": {
+         "heading": "First 24 hours",
+         "body": "• Lock the utilization redeployment plan.\n• Confirm subcontractor substitution targets by BG.\n• Publish the ring-fenced GenAI budget so no one raids it for optics."
+        }
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "card3",
+   "signal_type": "Deal",
+   "tone": "urgent",
+   "tag": "LARGE-DEAL GATE",
+   "title": "$1.2B North America BFSI consolidation deal at final gate — pricing & ramp decision needed",
+   "body": "A global bank is consolidating vendors; TCS is in the final two on a ~$1.2B TCV, 7-year managed-services + AI deal. Aggressive pricing and a demanding ramp raise concentration and margin questions. Client fiscal close in 3 weeks.",
+   "stage": "Pursue",
+   "delta_value": "Decision gate in 3 weeks",
+   "confidence": "MEDIUM",
+   "impact": "high",
+   "source": "Deal Desk + BFSI Sales",
+   "ago": "1 day ago",
+   "chat_seed_question": "Do we pursue the BFSI mega-deal as-is, reprice, or walk?",
+   "primary_cta_label": "Investigate the deal",
+   "kpis": [
+    {
+     "label": "Deal TCV",
+     "value": "$1.2B",
+     "delta": "7-year",
+     "positive": true
+    },
+    {
+     "label": "Blended Margin",
+     "value": "22.5%",
+     "delta": "-3.5pp vs firm",
+     "positive": false
+    },
+    {
+     "label": "Ramp",
+     "value": "9 months",
+     "delta": "demanding",
+     "positive": false
+    }
+   ],
+   "investigation": {
+    "seed_question": "What is the right shape for the BFSI mega-deal — pursue, reprice, or walk?",
+    "context_summary": "Global bank consolidation · $1.2B TCV / 7yr · sub-22% price ask · 9-month ramp · concentration risk",
+    "recommended_action": "Pursue with repriced terms — hold a 23% blended-margin floor, phase the ramp over 9 months, and lead with an AI-led productivity commitment as the differentiator. Walk only if the client will not move off the sub-22% ask.",
+    "kpis": [
+     {
+      "label": "Deal TCV",
+      "val": "$1.2B",
+      "sub": "7-year",
+      "neg": false
+     },
+     {
+      "label": "Client Price Ask",
+      "val": "sub-22%",
+      "sub": "blended margin",
+      "neg": true
+     },
+     {
+      "label": "Margin Floor",
+      "val": "23%",
+      "sub": "recommended",
+      "neg": false
+     },
+     {
+      "label": "Ramp Period",
+      "val": "9 months",
+      "sub": "capacity draw",
+      "neg": true
+     },
+     {
+      "label": "Client Concentration",
+      "val": "+0.9pp",
+      "sub": "of revenue",
+      "neg": true
+     },
+     {
+      "label": "AI Productivity Offer",
+      "val": "-20%",
+      "sub": "run-cost yr 3",
+      "neg": false
+     }
+    ],
+    "follow_ups": [
+     {
+      "type": "panel",
+      "label": "Deal economics",
+      "panel_key": "econ"
+     },
+     {
+      "type": "panel",
+      "label": "Ramp & delivery risk",
+      "panel_key": "ramp"
+     },
+     {
+      "type": "panel",
+      "label": "AI-led differentiation",
+      "panel_key": "aidiff"
+     },
+     {
+      "type": "panel",
+      "label": "Concentration & precedent",
+      "panel_key": "conc"
+     },
+     {
+      "type": "panel",
+      "label": "Invite team to investigate",
+      "panel_key": "invite-team"
+     }
+    ],
+    "actions": [
+     {
+      "key": "invite-team",
+      "label": "Invite team to investigate",
+      "icon_key": "users",
+      "tone": "brand",
+      "action_type": "invite",
+      "action_target": {}
+     },
+     {
+      "key": "go-decision-lab",
+      "label": "Go to Decision Lab",
+      "icon_key": "arrow-right",
+      "tone": "brand",
+      "action_type": "decision-lab",
+      "action_target": {}
+     }
+    ],
+    "affected_accounts": [
+     {
+      "name": "Global Bank (target) — $1.2B TCV"
+     },
+     {
+      "name": "Incumbent vendor A — being consolidated out"
+     },
+     {
+      "name": "Incumbent vendor B — being consolidated out"
+     },
+     {
+      "name": "TCS BFSI delivery — North America"
+     },
+     {
+      "name": "AI-solution factory — productivity commitment"
+     }
+    ],
+    "panels": [
+     {
+      "key": "econ",
+      "label": "Deal economics",
+      "title": "Deal Economics — $1.2B Consolidation",
+      "subtitle": "Value vs. margin",
+      "blocks": [
+       {
+        "block_type": "narrative",
+        "payload": {
+         "heading": "The economics",
+         "body": "• **$1.2B TCV over 7 years** — one of the largest NA BFSI consolidation awards in play; would lift the order book and NA share meaningfully.\n• **Price pressure:** the client's target implies a sub-22% blended margin in the ramp years — below the firm's ~26% and TCS's stated floor.\n• **Accretion curve:** dilutive in years 1-2 during ramp, accretive from year 3 as AI-led productivity and annuity kick in."
+        }
+       },
+       {
+        "block_type": "metrics",
+        "payload": {
+         "items": [
+          {
+           "label": "TCV",
+           "val": "$1.2B",
+           "sub": "7-year",
+           "neg": false
+          },
+          {
+           "label": "Yr1-2 margin",
+           "val": "~22%",
+           "sub": "ramp-dilutive",
+           "neg": true
+          },
+          {
+           "label": "Yr3+ margin",
+           "val": "~25%",
+           "sub": "accretive",
+           "neg": false
+          },
+          {
+           "label": "NPV vs walk",
+           "val": "+$180M",
+           "sub": "at 23% floor",
+           "neg": false
+          }
+         ]
+        }
+       }
+      ]
+     },
+     {
+      "key": "ramp",
+      "label": "Ramp & delivery risk",
+      "title": "Ramp & Delivery Risk",
+      "subtitle": "Can we execute the transition",
+      "blocks": [
+       {
+        "block_type": "narrative",
+        "payload": {
+         "heading": "Transition risk",
+         "body": "A 9-month cutover from two incumbents at once is demanding. Risk concentrates in data migration, regulatory approvals, and standing up the delivery pyramid without spiking subcontractor cost. The BFSI Cloud Migration (2025) playbook in Memory is the directly transferable analog — its lesson was to front-load data-quality audits."
+        }
+       },
+       {
+        "block_type": "metrics",
+        "payload": {
+         "items": [
+          {
+           "label": "Ramp",
+           "val": "9 months",
+           "sub": "dual cutover",
+           "neg": true
+          },
+          {
+           "label": "Delivery pods",
+           "val": "6 to stand up",
+           "sub": "capacity",
+           "neg": true
+          },
+          {
+           "label": "Analog",
+           "val": "BFSI Cloud 2025",
+           "sub": "playbook ready",
+           "neg": false
+          }
+         ]
+        }
+       }
+      ]
+     },
+     {
+      "key": "aidiff",
+      "label": "AI-led differentiation",
+      "title": "AI-Led Differentiation",
+      "subtitle": "Why TCS wins on more than price",
+      "blocks": [
+       {
+        "block_type": "narrative",
+        "payload": {
+         "heading": "The differentiator",
+         "body": "Neutralize the price fight by leading with an **AI-led productivity commitment**: contractually guarantee a ~20% run-cost reduction by year 3 via tcsAI in the SDLC and operations. This reframes the deal from rate-card to outcomes — the exact motion beating the consulting-led narrative elsewhere, and it protects blended margin while meeting the client's cost goal."
+        }
+       },
+       {
+        "block_type": "metrics",
+        "payload": {
+         "items": [
+          {
+           "label": "Run-cost commitment",
+           "val": "-20%",
+           "sub": "by year 3",
+           "neg": false
+          },
+          {
+           "label": "tcsAI coverage",
+           "val": "SDLC + ops",
+           "sub": "embedded",
+           "neg": false
+          },
+          {
+           "label": "Reframes",
+           "val": "price to outcome",
+           "sub": "differentiator",
+           "neg": false
+          }
+         ]
+        }
+       }
+      ]
+     },
+     {
+      "key": "conc",
+      "label": "Concentration & precedent",
+      "title": "Concentration & Precedent",
+      "subtitle": "Portfolio and guardrails",
+      "blocks": [
+       {
+        "block_type": "narrative",
+        "payload": {
+         "heading": "What to weigh",
+         "body": "The deal adds ~0.9pp of revenue in one account — meaningful but within guardrails given the annuity quality. Precedent: TCS has won and ramped comparable BFSI mega-deals; the discipline is to hold the margin floor rather than buy the logo. Board-level visibility given the size."
+        }
+       },
+       {
+        "block_type": "metrics",
+        "payload": {
+         "items": [
+          {
+           "label": "Concentration add",
+           "val": "+0.9pp",
+           "sub": "of revenue",
+           "neg": true
+          },
+          {
+           "label": "Annuity share",
+           "val": "~70%",
+           "sub": "of TCV",
+           "neg": false
+          },
+          {
+           "label": "Margin floor",
+           "val": "23%",
+           "sub": "walk below",
+           "neg": false
+          }
+         ]
+        }
+       }
+      ]
+     },
+     {
+      "key": "invite-team",
+      "label": "Invite team to investigate",
+      "title": "Invite team — Deal Review",
+      "subtitle": "Collaborate on the bid",
+      "blocks": [
+       {
+        "block_type": "narrative",
+        "payload": {
+         "heading": "Suggested working group",
+         "body": "Deal Desk, CFO office (margin-floor sign-off), BFSI Business-Group head, and the AI-solution factory lead for the productivity commitment. Decision review before the client's fiscal close."
+        }
+       },
+       {
+        "block_type": "narrative",
+        "payload": {
+         "heading": "First 24 hours",
+         "body": "• Model the 23%-floor repriced bid.\n• Draft the AI productivity guarantee terms.\n• Confirm delivery-pod availability for a 9-month ramp."
+        }
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "card4",
+   "signal_type": "Talent",
+   "tone": "amber",
+   "tag": "TALENT WATCH",
+   "title": "Attrition ticks to 13.8% as GenAI/cloud engineers get poached in 2 hubs — reskilling is the counter",
+   "body": "LTM attrition rose to 13.8%, concentrated in GenAI and cloud skills at the Pune and Hyderabad hubs. The AI-fluency reskilling program is the structural counter — reskill-and-redeploy, not replace.",
+   "stage": "Retain",
+   "delta_value": "Comp cycle window open",
+   "confidence": "HIGH",
+   "impact": "medium",
+   "source": "HR Analytics + Hub reports",
+   "ago": "3 days ago",
+   "chat_seed_question": "How do we hold GenAI/cloud talent without a broad comp reset?",
+   "primary_cta_label": "Investigate the hotspots",
+   "kpis": [
+    {
+     "label": "LTM Attrition",
+     "value": "13.8%",
+     "delta": "+0.7pp",
+     "positive": false
+    },
+    {
+     "label": "GenAI/Cloud Attrition",
+     "value": "19%",
+     "delta": "2 hubs",
+     "positive": false
+    },
+    {
+     "label": "AI-Ready Workforce",
+     "value": "62%",
+     "delta": "+14pp YTD",
+     "positive": true
+    }
+   ],
+   "investigation": {
+    "seed_question": "How do we retain hot-skill talent while scaling the AI-ready workforce?",
+    "context_summary": "Attrition 13.8% · GenAI/cloud 19% in Pune & Hyderabad · reskilling program at 62% · Global Top Employer",
+    "recommended_action": "Approve targeted retention for the two hot-skill hubs (spot comp + accelerated growth paths) and accelerate the AI-fluency reskilling waves to lift the AI-ready workforce from 62% to 85% by Q4. Frame explicitly as skills realignment, not a cost action.",
+    "kpis": [
+     {
+      "label": "LTM Attrition",
+      "val": "13.8%",
+      "sub": "+0.7pp QoQ",
+      "neg": true
+     },
+     {
+      "label": "Hot-Skill Attrition",
+      "val": "19%",
+      "sub": "GenAI/cloud",
+      "neg": true
+     },
+     {
+      "label": "AI-Ready Workforce",
+      "val": "62%",
+      "sub": "+14pp YTD",
+      "neg": false
+     },
+     {
+      "label": "Reskilling Throughput",
+      "val": "5.2M",
+      "sub": "competencies FY",
+      "neg": false
+     },
+     {
+      "label": "Comp Gap to Market",
+      "val": "-6%",
+      "sub": "hot skills",
+      "neg": true
+     },
+     {
+      "label": "Global Top Employer",
+      "val": "10+ yrs",
+      "sub": "unbroken",
+      "neg": false
+     }
+    ],
+    "follow_ups": [
+     {
+      "type": "panel",
+      "label": "Where the hotspots are",
+      "panel_key": "hotspots"
+     },
+     {
+      "type": "panel",
+      "label": "The reskilling program",
+      "panel_key": "reskill"
+     },
+     {
+      "type": "panel",
+      "label": "Retention levers",
+      "panel_key": "retention"
+     },
+     {
+      "type": "panel",
+      "label": "Engagement & culture",
+      "panel_key": "engage"
+     },
+     {
+      "type": "panel",
+      "label": "Invite team to investigate",
+      "panel_key": "invite-team"
+     }
+    ],
+    "actions": [
+     {
+      "key": "invite-team",
+      "label": "Invite team to investigate",
+      "icon_key": "users",
+      "tone": "brand",
+      "action_type": "invite",
+      "action_target": {}
+     },
+     {
+      "key": "go-decision-lab",
+      "label": "Go to Decision Lab",
+      "icon_key": "arrow-right",
+      "tone": "brand",
+      "action_type": "decision-lab",
+      "action_target": {}
+     }
+    ],
+    "affected_accounts": [
+     {
+      "name": "Pune hub — GenAI/cloud engineering"
+     },
+     {
+      "name": "Hyderabad hub — data & platform"
+     },
+     {
+      "name": "AI-fluency reskilling program — enterprise-wide"
+     },
+     {
+      "name": "Hot-skill cohort — ~14,000 engineers"
+     },
+     {
+      "name": "Fresher pipeline — 42,000 FY26 intake"
+     }
+    ],
+    "panels": [
+     {
+      "key": "hotspots",
+      "label": "Where the hotspots are",
+      "title": "Attrition Hotspots",
+      "subtitle": "Concentrated, not broad",
+      "blocks": [
+       {
+        "block_type": "narrative",
+        "payload": {
+         "heading": "What the data shows",
+         "body": "• **Concentration:** overall attrition (13.8%) is industry-best, but GenAI/cloud roles at Pune and Hyderabad are running ~19% as start-ups and GCCs poach.\n• **Comp gap:** hot-skill comp is ~6% behind aggressive market offers, though total-rewards and growth still hold most people.\n• **Not systemic:** the broad workforce is stable — this is a targeted, not a company-wide, problem."
+        }
+       },
+       {
+        "block_type": "metrics",
+        "payload": {
+         "items": [
+          {
+           "label": "Overall attrition",
+           "val": "13.8%",
+           "sub": "industry-best",
+           "neg": true
+          },
+          {
+           "label": "Hot-skill attrition",
+           "val": "19%",
+           "sub": "2 hubs",
+           "neg": true
+          },
+          {
+           "label": "Comp gap",
+           "val": "-6%",
+           "sub": "vs aggressive offers",
+           "neg": true
+          },
+          {
+           "label": "Affected cohort",
+           "val": "~14,000",
+           "sub": "engineers",
+           "neg": false
+          }
+         ]
+        }
+       }
+      ]
+     },
+     {
+      "key": "reskill",
+      "label": "The reskilling program",
+      "title": "AI-Ready Workforce Program",
+      "subtitle": "Reskill, not replace",
+      "blocks": [
+       {
+        "block_type": "narrative",
+        "payload": {
+         "heading": "The structural counter",
+         "body": "The tcsAI fluency program is the durable answer: AI fluency for all, GenAI developer tooling in the SDLC, and weekly AI-lab time. AI-ready workforce is at 62%, up 14pp YTD, targeting ~85% by Q4 and ~100% over time. Every reskilled engineer both lowers attrition risk and reduces subcontractor dependence — a margin and retention win at once."
+        }
+       },
+       {
+        "block_type": "metrics",
+        "payload": {
+         "items": [
+          {
+           "label": "AI-ready now",
+           "val": "62%",
+           "sub": "+14pp YTD",
+           "neg": false
+          },
+          {
+           "label": "Q4 target",
+           "val": "85%",
+           "sub": "on track",
+           "neg": false
+          },
+          {
+           "label": "Learning hours",
+           "val": "69M",
+           "sub": "FY",
+           "neg": false
+          },
+          {
+           "label": "Competencies",
+           "val": "5.2M",
+           "sub": "acquired",
+           "neg": false
+          }
+         ]
+        }
+       }
+      ]
+     },
+     {
+      "key": "retention",
+      "label": "Retention levers",
+      "title": "Targeted Retention Levers",
+      "subtitle": "Precision, not a broad reset",
+      "blocks": [
+       {
+        "block_type": "narrative",
+        "payload": {
+         "heading": "Recommended levers",
+         "body": "• **Spot comp** for the ~14,000 hot-skill cohort at the two hubs — precision, not a company-wide reset that would hit margin.\n• **Accelerated growth paths:** fast-track architect and AI-lead roles for high performers.\n• **Project pull:** route marquee GenAI programs to these hubs so the best work is here, not at the poachers."
+        }
+       },
+       {
+        "block_type": "metrics",
+        "payload": {
+         "items": [
+          {
+           "label": "Spot-comp cohort",
+           "val": "~14,000",
+           "sub": "targeted",
+           "neg": false
+          },
+          {
+           "label": "Margin impact",
+           "val": "~-8bps",
+           "sub": "contained",
+           "neg": true
+          },
+          {
+           "label": "Modeled attrition",
+           "val": "-3pp",
+           "sub": "hot skills",
+           "neg": false
+          }
+         ]
+        }
+       }
+      ]
+     },
+     {
+      "key": "engage",
+      "label": "Engagement & culture",
+      "title": "Engagement & Culture",
+      "subtitle": "The People & Culture lens",
+      "blocks": [
+       {
+        "block_type": "narrative",
+        "payload": {
+         "heading": "Why culture is the moat",
+         "body": "The CEO's framing — the AI-first transformation is 'as much about culture as technology' — matters here. Reskill-and-redeploy protects trust; a cost-first response would spike attrition further. TCS's decade-plus Global Top Employer standing and industry-best retention are the moat competitors cannot copy quickly."
+        }
+       },
+       {
+        "block_type": "metrics",
+        "payload": {
+         "items": [
+          {
+           "label": "Global Top Employer",
+           "val": "10+ yrs",
+           "sub": "unbroken",
+           "neg": false
+          },
+          {
+           "label": "Engagement",
+           "val": "top-quartile",
+           "sub": "stable",
+           "neg": false
+          },
+          {
+           "label": "Framing",
+           "val": "skills realignment",
+           "sub": "not cost",
+           "neg": false
+          }
+         ]
+        }
+       }
+      ]
+     },
+     {
+      "key": "invite-team",
+      "label": "Invite team to investigate",
+      "title": "Invite team — Talent Council",
+      "subtitle": "Collaborate on retention",
+      "blocks": [
+       {
+        "block_type": "narrative",
+        "payload": {
+         "heading": "Suggested working group",
+         "body": "CHRO Milind Lakkad (owns retention + reskilling), the two hub heads, and the tcsAI program lead. Weekly hot-skill attrition tracking to the exec team."
+        }
+       },
+       {
+        "block_type": "narrative",
+        "payload": {
+         "heading": "First 24 hours",
+         "body": "• Approve the spot-comp cohort list.\n• Confirm the Q4 85% reskilling milestone plan.\n• Route two marquee GenAI programs to Pune/Hyderabad."
+        }
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "card5",
+   "signal_type": "Customer",
+   "tone": "amber",
+   "tag": "DEMAND SOFTENING",
+   "title": "North America discretionary softens for a 2nd quarter — 2 transformation programs paused",
+   "body": "Two large NA clients paused discretionary transformation programs and pipeline conversion is slowing. Cost-takeout and vendor-consolidation demand is rising as an offset if freed bench is redeployed quickly.",
+   "stage": "Reposition",
+   "delta_value": "Q2 pipeline review this week",
+   "confidence": "MEDIUM",
+   "impact": "high",
+   "source": "Regional Sales + Pipeline",
+   "ago": "2 days ago",
+   "chat_seed_question": "How do we offset the NA discretionary softness this quarter?",
+   "primary_cta_label": "Investigate the demand",
+   "kpis": [
+    {
+     "label": "NA Discretionary",
+     "value": "-6% QoQ",
+     "delta": "2nd quarter",
+     "positive": false
+    },
+    {
+     "label": "Programs Paused",
+     "value": "2 large",
+     "delta": "~$140M",
+     "positive": false
+    },
+    {
+     "label": "Consolidation Pipeline",
+     "value": "+$1.8B",
+     "delta": "offset",
+     "positive": true
+    }
+   ],
+   "investigation": {
+    "seed_question": "What's the exposure from NA discretionary softness and how do we offset it?",
+    "context_summary": "NA discretionary -6% QoQ · 2 programs paused (~$140M) · consolidation/cost-takeout pipeline +$1.8B",
+    "recommended_action": "Redeploy freed bench into cost-takeout and vendor-consolidation deals, protect the FY growth narrative, and lead NA renewals with an AI-productivity story. Institute weekly demand tracking to the exec team.",
+    "kpis": [
+     {
+      "label": "NA Discretionary",
+      "val": "-6%",
+      "sub": "QoQ, 2nd qtr",
+      "neg": true
+     },
+     {
+      "label": "Programs Paused",
+      "val": "2 large",
+      "sub": "~$140M ACV",
+      "neg": true
+     },
+     {
+      "label": "Consolidation Pipeline",
+      "val": "+$1.8B",
+      "sub": "rising offset",
+      "neg": false
+     },
+     {
+      "label": "Cost-Takeout Demand",
+      "val": "+22%",
+      "sub": "QoQ inbound",
+      "neg": false
+     },
+     {
+      "label": "Bench Freed",
+      "val": "~1,900",
+      "sub": "redeployable",
+      "neg": false
+     },
+     {
+      "label": "Book-to-Bill",
+      "val": "1.1x",
+      "sub": "still healthy",
+      "neg": false
+     }
+    ],
+    "follow_ups": [
+     {
+      "type": "panel",
+      "label": "Read the demand signal",
+      "panel_key": "read"
+     },
+     {
+      "type": "panel",
+      "label": "The consolidation offset",
+      "panel_key": "offset"
+     },
+     {
+      "type": "panel",
+      "label": "Bench redeployment",
+      "panel_key": "bench"
+     },
+     {
+      "type": "panel",
+      "label": "Protect the FY narrative",
+      "panel_key": "narrative"
+     },
+     {
+      "type": "panel",
+      "label": "Invite team to investigate",
+      "panel_key": "invite-team"
+     }
+    ],
+    "actions": [
+     {
+      "key": "invite-team",
+      "label": "Invite team to investigate",
+      "icon_key": "users",
+      "tone": "brand",
+      "action_type": "invite",
+      "action_target": {}
+     },
+     {
+      "key": "go-decision-lab",
+      "label": "Go to Decision Lab",
+      "icon_key": "arrow-right",
+      "tone": "brand",
+      "action_type": "decision-lab",
+      "action_target": {}
+     }
+    ],
+    "affected_accounts": [
+     {
+      "name": "NA Client 1 — transformation paused (~$80M)"
+     },
+     {
+      "name": "NA Client 2 — transformation paused (~$60M)"
+     },
+     {
+      "name": "Consolidation pipeline — 5 opportunities"
+     },
+     {
+      "name": "Cost-takeout pipeline — 9 opportunities"
+     },
+     {
+      "name": "Freed bench — ~1,900 associates"
+     }
+    ],
+    "panels": [
+     {
+      "key": "read",
+      "label": "Read the demand signal",
+      "title": "Demand Read — North America",
+      "subtitle": "Cyclical, not structural",
+      "blocks": [
+       {
+        "block_type": "narrative",
+        "payload": {
+         "heading": "What's happening",
+         "body": "• **Discretionary pullback:** two large NA clients paused transformation programs (~$140M combined ACV) amid macro caution; a second consecutive soft quarter.\n• **Not a share loss:** win rates hold — this is budget timing, not competitive loss.\n• **Demand rotation:** the same caution is lifting cost-takeout and vendor-consolidation demand, which favors scaled incumbents like TCS."
+        }
+       },
+       {
+        "block_type": "metrics",
+        "payload": {
+         "items": [
+          {
+           "label": "Discretionary",
+           "val": "-6%",
+           "sub": "QoQ",
+           "neg": true
+          },
+          {
+           "label": "Paused ACV",
+           "val": "~$140M",
+           "sub": "2 clients",
+           "neg": true
+          },
+          {
+           "label": "Win rate",
+           "val": "stable",
+           "sub": "no share loss",
+           "neg": false
+          },
+          {
+           "label": "Cost-takeout inbound",
+           "val": "+22%",
+           "sub": "QoQ",
+           "neg": false
+          }
+         ]
+        }
+       }
+      ]
+     },
+     {
+      "key": "offset",
+      "label": "The consolidation offset",
+      "title": "Vendor-Consolidation Offset",
+      "subtitle": "Turning caution into share",
+      "blocks": [
+       {
+        "block_type": "narrative",
+        "payload": {
+         "heading": "The offset",
+         "body": "Client caution is a tailwind for consolidation: enterprises cutting vendor rosters route more scope to a trusted, scaled partner. TCS's consolidation and cost-takeout pipeline has grown +$1.8B. Leading with an AI-productivity story (do more for less via tcsAI) converts these faster and at defensible margin."
+        }
+       },
+       {
+        "block_type": "metrics",
+        "payload": {
+         "items": [
+          {
+           "label": "Consolidation pipeline",
+           "val": "+$1.8B",
+           "sub": "QoQ",
+           "neg": false
+          },
+          {
+           "label": "Opportunities",
+           "val": "5 + 9",
+           "sub": "consol + cost-out",
+           "neg": false
+          },
+          {
+           "label": "Conversion",
+           "val": "AI-led",
+           "sub": "faster close",
+           "neg": false
+          }
+         ]
+        }
+       }
+      ]
+     },
+     {
+      "key": "bench",
+      "label": "Bench redeployment",
+      "title": "Bench Redeployment",
+      "subtitle": "Protect utilization and margin",
+      "blocks": [
+       {
+        "block_type": "narrative",
+        "payload": {
+         "heading": "Redeploy fast",
+         "body": "The ~1,900 associates freed by the paused programs are a margin risk if idle and an opportunity if redeployed. Route them into the consolidation and cost-takeout wins and into reskilling waves. Fast redeployment protects utilization (85.2%) — the same lever defending Q2 margin."
+        }
+       },
+       {
+        "block_type": "metrics",
+        "payload": {
+         "items": [
+          {
+           "label": "Freed bench",
+           "val": "~1,900",
+           "sub": "at risk if idle",
+           "neg": true
+          },
+          {
+           "label": "Target redeploy",
+           "val": "<30 days",
+           "sub": "utilization",
+           "neg": false
+          },
+          {
+           "label": "Utilization",
+           "val": "85.2%",
+           "sub": "protect",
+           "neg": false
+          }
+         ]
+        }
+       }
+      ]
+     },
+     {
+      "key": "narrative",
+      "label": "Protect the FY narrative",
+      "title": "FY Growth Narrative",
+      "subtitle": "Framing the quarter",
+      "blocks": [
+       {
+        "block_type": "narrative",
+        "payload": {
+         "heading": "How to frame it",
+         "body": "Frame the softness as macro-timing, not structural, and lead with the record $40.7B order book, the consolidation-share opportunity, and AI revenue at $1.8B. The story is: TCS converts client caution into consolidation share and productivity wins — resilient by design."
+        }
+       },
+       {
+        "block_type": "metrics",
+        "payload": {
+         "items": [
+          {
+           "label": "Order book",
+           "val": "$40.7B",
+           "sub": "record",
+           "neg": false
+          },
+          {
+           "label": "AI revenue",
+           "val": "$1.8B",
+           "sub": "growth proof",
+           "neg": false
+          },
+          {
+           "label": "Framing",
+           "val": "macro timing",
+           "sub": "not structural",
+           "neg": false
+          }
+         ]
+        }
+       }
+      ]
+     },
+     {
+      "key": "invite-team",
+      "label": "Invite team to investigate",
+      "title": "Invite team — Demand Review",
+      "subtitle": "Collaborate on the offset",
+      "blocks": [
+       {
+        "block_type": "narrative",
+        "payload": {
+         "heading": "Suggested working group",
+         "body": "NA Regional head, the Business-Group heads with paused programs, and the deal desk for consolidation pursuits. Weekly demand + redeployment tracking to the exec team."
+        }
+       },
+       {
+        "block_type": "narrative",
+        "payload": {
+         "heading": "First 24 hours",
+         "body": "• Confirm the 5 consolidation pursuits to accelerate.\n• Lock bench redeployment plan (<30 days).\n• Draft the AI-productivity renewal pitch for the 2 paused clients."
+        }
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "card6",
+   "signal_type": "Market",
+   "tone": "green",
+   "tag": "GROWTH ENGINE",
+   "title": "India sovereign-tech momentum builds — BSNL milestone, semiconductor & quantum open a new frontier",
+   "body": "The BSNL nationwide rollout hit a major milestone, and the Tata Electronics semiconductor and IBM/Andhra Pradesh quantum programs are maturing. A distinctive India-led, sovereign-tech growth engine to frame for the board.",
+   "stage": "Grow",
+   "delta_value": "Board strategy session in 2 weeks",
+   "confidence": "HIGH",
+   "impact": "high",
+   "source": "Strategy Office + Public deals",
+   "ago": "4 days ago",
+   "chat_seed_question": "How do we frame the India sovereign-tech growth engine for the board?",
+   "primary_cta_label": "Investigate the opportunity",
+   "kpis": [
+    {
+     "label": "BSNL Program",
+     "value": "$1.0B+",
+     "delta": "milestone hit",
+     "positive": true
+    },
+    {
+     "label": "Sovereign Pipeline",
+     "value": "+$2.5B",
+     "delta": "building",
+     "positive": true
+    },
+    {
+     "label": "Indigenous-Tech Partners",
+     "value": "3",
+     "delta": "Tata, IBM, govt",
+     "positive": true
+    }
+   ],
+   "investigation": {
+    "seed_question": "How large and how fundable is the India sovereign-tech growth engine?",
+    "context_summary": "BSNL $1.0B+ milestone · semiconductor (Tata Electronics) · quantum (IBM + Andhra Pradesh) · sovereign pipeline +$2.5B",
+    "recommended_action": "Frame the India sovereign-tech engine at the July board — BSNL as proof, semiconductor and quantum as option value — and approve targeted capability investment. Position it as a differentiated, India-led growth story that peers cannot easily replicate.",
+    "kpis": [
+     {
+      "label": "BSNL Program",
+      "val": "$1.0B+",
+      "sub": "milestone hit",
+      "neg": false
+     },
+     {
+      "label": "Sovereign Pipeline",
+      "val": "+$2.5B",
+      "sub": "building",
+      "neg": false
+     },
+     {
+      "label": "Semiconductor",
+      "val": "Tata Electronics",
+      "sub": "design partner",
+      "neg": false
+     },
+     {
+      "label": "Quantum",
+      "val": "IBM + AP",
+      "sub": "hub building",
+      "neg": false
+     },
+     {
+      "label": "Indigenous Angle",
+      "val": "self-reliance",
+      "sub": "policy tailwind",
+      "neg": false
+     },
+     {
+      "label": "Peer Replicability",
+      "val": "low",
+      "sub": "differentiated",
+      "neg": false
+     }
+    ],
+    "follow_ups": [
+     {
+      "type": "panel",
+      "label": "BSNL as the proof point",
+      "panel_key": "bsnl"
+     },
+     {
+      "type": "panel",
+      "label": "Semiconductor & quantum",
+      "panel_key": "deeptech"
+     },
+     {
+      "type": "panel",
+      "label": "Board framing",
+      "panel_key": "board"
+     },
+     {
+      "type": "panel",
+      "label": "The growth model",
+      "panel_key": "model"
+     },
+     {
+      "type": "panel",
+      "label": "Invite team to investigate",
+      "panel_key": "invite-team"
+     }
+    ],
+    "actions": [
+     {
+      "key": "invite-team",
+      "label": "Invite team to investigate",
+      "icon_key": "users",
+      "tone": "brand",
+      "action_type": "invite",
+      "action_target": {}
+     },
+     {
+      "key": "go-decision-lab",
+      "label": "Go to Decision Lab",
+      "icon_key": "arrow-right",
+      "tone": "brand",
+      "action_type": "decision-lab",
+      "action_target": {}
+     }
+    ],
+    "affected_accounts": [
+     {
+      "name": "BSNL — nationwide rollout ($1.0B+)"
+     },
+     {
+      "name": "Tata Electronics — semiconductor design"
+     },
+     {
+      "name": "IBM + Andhra Pradesh — quantum hub"
+     },
+     {
+      "name": "Sovereign-cloud pipeline — govt & PSU"
+     },
+     {
+      "name": "India growth engine — board topic"
+     }
+    ],
+    "panels": [
+     {
+      "key": "bsnl",
+      "label": "BSNL as the proof point",
+      "title": "BSNL — Sovereign Delivery Proof",
+      "subtitle": "India-scale execution",
+      "blocks": [
+       {
+        "block_type": "narrative",
+        "payload": {
+         "heading": "Why BSNL matters",
+         "body": "• **Proof at scale:** the BSNL nationwide network program (a $1.0B+ mandate) demonstrates TCS can deliver sovereign, nation-scale technology end-to-end.\n• **Reference value:** it anchors credibility for further government, PSU, and sovereign-cloud pursuits.\n• **Indigenous story:** it aligns with India's self-reliance agenda — a policy tailwind peers with less local depth cannot match."
+        }
+       },
+       {
+        "block_type": "metrics",
+        "payload": {
+         "items": [
+          {
+           "label": "BSNL program",
+           "val": "$1.0B+",
+           "sub": "milestone",
+           "neg": false
+          },
+          {
+           "label": "Scope",
+           "val": "nationwide",
+           "sub": "sovereign",
+           "neg": false
+          },
+          {
+           "label": "Reference pull",
+           "val": "high",
+           "sub": "PSU/govt",
+           "neg": false
+          }
+         ]
+        }
+       }
+      ]
+     },
+     {
+      "key": "deeptech",
+      "label": "Semiconductor & quantum",
+      "title": "Semiconductor & Quantum Frontier",
+      "subtitle": "Option value",
+      "blocks": [
+       {
+        "block_type": "narrative",
+        "payload": {
+         "heading": "The deep-tech options",
+         "body": "• **Semiconductor:** chip-design work with Tata Electronics extends TCS into a high-value, scarce-skill frontier.\n• **Quantum:** the IBM + Government of Andhra Pradesh quantum hub positions TCS at the leading edge of a nascent, high-optionality market.\nThese are capability bets ahead of revenue — classic Transformation-Driver moves that build differentiated moats."
+        }
+       },
+       {
+        "block_type": "metrics",
+        "payload": {
+         "items": [
+          {
+           "label": "Semiconductor",
+           "val": "Tata Electronics",
+           "sub": "design",
+           "neg": false
+          },
+          {
+           "label": "Quantum",
+           "val": "IBM + AP",
+           "sub": "hub",
+           "neg": false
+          },
+          {
+           "label": "Horizon",
+           "val": "3-5 yr",
+           "sub": "option value",
+           "neg": false
+          }
+         ]
+        }
+       }
+      ]
+     },
+     {
+      "key": "board",
+      "label": "Board framing",
+      "title": "Board Framing — India Growth Engine",
+      "subtitle": "The narrative",
+      "blocks": [
+       {
+        "block_type": "narrative",
+        "payload": {
+         "heading": "How to frame it",
+         "body": "Position for the July board as a **differentiated, India-led growth engine**: BSNL as delivered proof, semiconductor and quantum as option value, and sovereign cloud as the near-term pipeline (+$2.5B). The ask: targeted capability investment now, framed as building the moat while peers chase the same enterprise AI budgets."
+        }
+       },
+       {
+        "block_type": "metrics",
+        "payload": {
+         "items": [
+          {
+           "label": "Proof",
+           "val": "BSNL",
+           "sub": "delivered",
+           "neg": false
+          },
+          {
+           "label": "Option value",
+           "val": "chip + quantum",
+           "sub": "frontier",
+           "neg": false
+          },
+          {
+           "label": "Near-term pipeline",
+           "val": "+$2.5B",
+           "sub": "sovereign cloud",
+           "neg": false
+          }
+         ]
+        }
+       }
+      ]
+     },
+     {
+      "key": "model",
+      "label": "The growth model",
+      "title": "Growth Model — Why It Compounds",
+      "subtitle": "Durability",
+      "blocks": [
+       {
+        "block_type": "narrative",
+        "payload": {
+         "heading": "Why it compounds",
+         "body": "Sovereign and indigenous-tech work is sticky (multi-year, mission-critical), reference-rich (each win pulls the next), and skill-scarce (hard for peers to staff). It diversifies TCS's growth away from discretionary enterprise cycles — exactly the resilience the CEO emphasizes."
+        }
+       },
+       {
+        "block_type": "metrics",
+        "payload": {
+         "items": [
+          {
+           "label": "Stickiness",
+           "val": "multi-year",
+           "sub": "annuity",
+           "neg": false
+          },
+          {
+           "label": "Reference pull",
+           "val": "compounding",
+           "sub": "PSU/govt",
+           "neg": false
+          },
+          {
+           "label": "Diversification",
+           "val": "vs discretionary",
+           "sub": "resilience",
+           "neg": false
+          }
+         ]
+        }
+       }
+      ]
+     },
+     {
+      "key": "invite-team",
+      "label": "Invite team to investigate",
+      "title": "Invite team — India Growth",
+      "subtitle": "Collaborate on the pitch",
+      "blocks": [
+       {
+        "block_type": "narrative",
+        "payload": {
+         "heading": "Suggested working group",
+         "body": "The Chief Strategy Officer, the India/Regional Markets head, and the deep-tech (semiconductor/quantum) leads. Prepare the board narrative and the capability-investment ask."
+        }
+       },
+       {
+        "block_type": "narrative",
+        "payload": {
+         "heading": "First 24 hours",
+         "body": "• Finalize the BSNL milestone proof points.\n• Size the sovereign-cloud pipeline for the board.\n• Draft the capability-investment ask for chip + quantum."
+        }
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+"signals": [
+    {
+      "key": "sig1",
+      "signal_type": "Competitor",
+      "tone": "amber",
+      "title": "Infosys Topaz undercuts TCS on price in mid-market GenAI",
+      "body": "Infosys Topaz targets mid-market with aggressive fixed-price GenAI bundles ~15% below TCS custom pricing; reinforced at Q2 FY26 earnings.",
+      "impact": "high",
+      "conf": 0.86,
+      "source": "Infosys Q2 FY26 + Field Intel",
+      "time_label": "2 days ago",
+      "recommended_action": "Ship a productized mid-market GenAI SKU to remove price as the deciding factor.",
+      "filters": [
+        "Competitor",
+        "infosys",
+        "Deals",
+        "genai",
+        "Customer",
+        "bfsi",
+        "retail_cpg",
+        "manufacturing",
+        "Market",
+        "north_america",
+        "uk_europe",
+        "Earnings",
+        "infosys_earnings"
+      ],
+      "detail": {
+        "why_it_matters": "Mid-market is TCS's fastest-growing GenAI segment; a price war there compresses margin fastest.",
+        "key_insight": "Price has become the mid-market battleground, not capability.",
+        "confidence_description": "Corroborated by two independent field reports and Infosys launch/earnings materials."
+      },
+      "accounts": [
+        {
+          "name": "Retailer X"
+        },
+        {
+          "name": "Manufacturer Y"
+        },
+        {
+          "name": "Regional Bank Z"
+        },
+        {
+          "name": "Healthcare Provider W"
+        }
+      ],
+      "metrics": [
+        {
+          "value": "-15%",
+          "label": "Topaz price vs TCS custom",
+          "negative": true
+        },
+        {
+          "value": "-12%",
+          "label": "Mid-market win rate QoQ",
+          "negative": true
+        },
+        {
+          "value": "$400M",
+          "label": "Mid-market pipeline exposed",
+          "negative": true
+        }
+      ],
+      "activities": [
+        {
+          "action": "Infosys demoed Topaz at Retailer X",
+          "actor": "Field team",
+          "time_label": "1 day ago"
+        },
+        {
+          "action": "Topaz fixed-price bundle published",
+          "actor": "Infosys Press",
+          "time_label": "2 days ago"
+        },
+        {
+          "action": "Manufacturer Y requested price match",
+          "actor": "Account team",
+          "time_label": "Today"
+        },
+        {
+          "action": "Analyst note flags mid-market price pressure",
+          "actor": "ISG",
+          "time_label": "3 days ago"
+        }
+      ],
+      "topics": [
+        {
+          "label": "GenAI"
+        },
+        {
+          "label": "Pricing"
+        },
+        {
+          "label": "Mid-market"
+        },
+        {
+          "label": "Infosys"
+        },
+        {
+          "label": "Competitive"
+        },
+        {
+          "label": "Margin"
+        },
+        {
+          "label": "Productization"
+        }
+      ],
+      "takeaways": [
+        {
+          "action": "Ship a mid-market GenAI bundle",
+          "reasoning": "Need a price-competitive productized SKU",
+          "impact_text": "Protects ~$400M pipeline"
+        },
+        {
+          "action": "Brief field on Topaz battlecards",
+          "reasoning": "Sales needs positioning within 2 weeks",
+          "impact_text": "Reduces stalled evaluations"
+        }
+      ],
+      "data_sources": [
+        {
+          "name": "Infosys Q2 FY26 press release",
+          "source_type": "external",
+          "confidence": "high",
+          "updated_label": "2d ago"
+        },
+        {
+          "name": "Field Intel — Retailer X",
+          "source_type": "internal",
+          "confidence": "medium",
+          "updated_label": "1d ago"
+        },
+        {
+          "name": "ISG Analyst Note",
+          "source_type": "external",
+          "confidence": "high",
+          "updated_label": "3d ago"
+        }
+      ],
+      "questions": [
+        {
+          "text": "Which mid-market accounts are most price-sensitive?"
+        },
+        {
+          "text": "What margin floor can the bundle hold?"
+        },
+        {
+          "text": "How fast can we productize the top 3 use cases?"
+        },
+        {
+          "text": "Do we have references at this price point?"
+        }
+      ]
+    },
+    {
+      "key": "sig2",
+      "signal_type": "Market",
+      "tone": "green",
+      "title": "Enterprise GenAI services spend forecast raised for FY26-27",
+      "body": "Analyst consensus raises enterprise GenAI services spend forecast, expanding TCS's addressable market across BFSI and telco.",
+      "impact": "high",
+      "conf": 0.9,
+      "source": "Gartner + Morgan Stanley",
+      "time_label": "1 week ago",
+      "recommended_action": "Revise upward GenAI capacity and hiring plans for top accounts.",
+      "filters": [
+        "Market",
+        "north_america",
+        "uk_europe",
+        "Deals",
+        "genai",
+        "Customer",
+        "bfsi",
+        "telco_media"
+      ],
+      "detail": {
+        "why_it_matters": "A larger TAM justifies front-loading GenAI delivery capacity ahead of demand.",
+        "key_insight": "Budget headroom in target accounts is rising faster than supply.",
+        "confidence_description": "Two independent analyst houses aligned on the direction of revision."
+      },
+      "accounts": [
+        {
+          "name": "Global Bank A"
+        },
+        {
+          "name": "Vodafone"
+        },
+        {
+          "name": "US Health System"
+        },
+        {
+          "name": "Nordic Telco"
+        }
+      ],
+      "metrics": [
+        {
+          "value": "+30%",
+          "label": "GenAI spend forecast revision",
+          "positive": true
+        },
+        {
+          "value": "$4.2B",
+          "label": "TCS incremental TAM",
+          "positive": true
+        },
+        {
+          "value": "18mo",
+          "label": "window to capture early share",
+          "negative": true
+        }
+      ],
+      "activities": [
+        {
+          "action": "Gartner raised forecast",
+          "actor": "Gartner",
+          "time_label": "1 week ago"
+        },
+        {
+          "action": "MS reiterates IT-services overweight",
+          "actor": "Morgan Stanley",
+          "time_label": "5 days ago"
+        },
+        {
+          "action": "Client RFPs up in BFSI",
+          "actor": "Pipeline",
+          "time_label": "2 days ago"
+        },
+        {
+          "action": "Telco GenAI budgets approved",
+          "actor": "Field team",
+          "time_label": "Today"
+        }
+      ],
+      "topics": [
+        {
+          "label": "GenAI"
+        },
+        {
+          "label": "Market"
+        },
+        {
+          "label": "TAM"
+        },
+        {
+          "label": "Enterprise"
+        },
+        {
+          "label": "Capacity"
+        },
+        {
+          "label": "BFSI"
+        },
+        {
+          "label": "Telco"
+        }
+      ],
+      "takeaways": [
+        {
+          "action": "Front-load GenAI delivery capacity",
+          "reasoning": "Demand headroom rising",
+          "impact_text": "Captures early share"
+        },
+        {
+          "action": "Prioritize BFSI + telco staffing",
+          "reasoning": "Highest budget headroom",
+          "impact_text": "Aligns supply to demand"
+        }
+      ],
+      "data_sources": [
+        {
+          "name": "Gartner Forecast",
+          "source_type": "external",
+          "confidence": "high",
+          "updated_label": "1w ago"
+        },
+        {
+          "name": "Morgan Stanley Note",
+          "source_type": "external",
+          "confidence": "high",
+          "updated_label": "5d ago"
+        },
+        {
+          "name": "TCS Pipeline Analytics",
+          "source_type": "internal",
+          "confidence": "medium",
+          "updated_label": "2d ago"
+        }
+      ],
+      "questions": [
+        {
+          "text": "Which accounts have the most budget headroom?"
+        },
+        {
+          "text": "Do we have delivery capacity to meet it?"
+        },
+        {
+          "text": "What is the hiring lead time for GenAI skills?"
+        },
+        {
+          "text": "Where is competitor capacity thinnest?"
+        }
+      ]
+    },
+    {
+      "key": "sig3",
+      "signal_type": "Earnings",
+      "tone": "amber",
+      "title": "Accenture posts strong GenAI bookings, beats and raises",
+      "body": "Accenture reports another quarter of large GenAI new-bookings and beats consensus, hardening its consulting-led AI narrative in North America.",
+      "impact": "high",
+      "conf": 0.88,
+      "source": "Accenture earnings + press",
+      "time_label": "4 days ago",
+      "recommended_action": "Counter with outcome-based pricing and reference velocity on contested enterprise deals.",
+      "filters": [
+        "Earnings",
+        "accenture_earnings",
+        "beat",
+        "Competitor",
+        "accenture",
+        "Deals",
+        "genai",
+        "Market",
+        "north_america"
+      ],
+      "detail": {
+        "why_it_matters": "Accenture's bookings momentum shapes the analyst and C-suite narrative on who leads AI transformation.",
+        "key_insight": "The gap is narrative and outcome-proof, not capability or cost.",
+        "confidence_description": "Sourced from Accenture's official release and earnings call."
+      },
+      "accounts": [
+        {
+          "name": "Citi"
+        },
+        {
+          "name": "MetLife"
+        },
+        {
+          "name": "AT&T"
+        },
+        {
+          "name": "Global Retailer"
+        }
+      ],
+      "metrics": [
+        {
+          "value": "~2x",
+          "label": "Accenture GenAI bookings vs TCS",
+          "negative": true
+        },
+        {
+          "value": "-6pp",
+          "label": "TCS win-rate vs ACN QoQ",
+          "negative": true
+        },
+        {
+          "value": "$2.1B",
+          "label": "contested pipeline",
+          "negative": true
+        }
+      ],
+      "activities": [
+        {
+          "action": "Accenture earnings beat published",
+          "actor": "Accenture",
+          "time_label": "4 days ago"
+        },
+        {
+          "action": "ACN raises full-year outlook",
+          "actor": "Accenture",
+          "time_label": "4 days ago"
+        },
+        {
+          "action": "ACN named in 2 TCS contested RFPs",
+          "actor": "Field team",
+          "time_label": "2 days ago"
+        },
+        {
+          "action": "Analysts flag AI-bookings leadership",
+          "actor": "Sell-side",
+          "time_label": "3 days ago"
+        }
+      ],
+      "topics": [
+        {
+          "label": "GenAI"
+        },
+        {
+          "label": "Bookings"
+        },
+        {
+          "label": "Accenture"
+        },
+        {
+          "label": "Competitive"
+        },
+        {
+          "label": "Narrative"
+        },
+        {
+          "label": "Win-rate"
+        },
+        {
+          "label": "Enterprise"
+        }
+      ],
+      "takeaways": [
+        {
+          "action": "Lead contested deals with outcome pricing",
+          "reasoning": "Neutralizes the consulting frame",
+          "impact_text": "Improves win-rate on top-20"
+        },
+        {
+          "action": "Deploy closed BFSI references fast",
+          "reasoning": "Shortens evaluations",
+          "impact_text": "Counters the bookings narrative"
+        }
+      ],
+      "data_sources": [
+        {
+          "name": "Accenture Earnings Release",
+          "source_type": "external",
+          "confidence": "high",
+          "updated_label": "4d ago"
+        },
+        {
+          "name": "Earnings Call Transcript",
+          "source_type": "external",
+          "confidence": "high",
+          "updated_label": "4d ago"
+        },
+        {
+          "name": "TCS Win-Loss Analytics",
+          "source_type": "internal",
+          "confidence": "medium",
+          "updated_label": "2d ago"
+        }
+      ],
+      "questions": [
+        {
+          "text": "Which 3 accounts can we defend first?"
+        },
+        {
+          "text": "What outcome guarantees can we underwrite?"
+        },
+        {
+          "text": "Where is ACN's delivery cost structure exposed?"
+        },
+        {
+          "text": "Which references map to contested deals?"
+        }
+      ]
+    },
+    {
+      "key": "sig4",
+      "signal_type": "Policy",
+      "tone": "red",
+      "title": "US $100,000 H-1B petition fee reshapes onshore delivery economics",
+      "body": "The US proclamation imposing a $100,000 H-1B petition fee raises onshore staffing cost and accelerates the shift to nearshore and local hiring.",
+      "impact": "high",
+      "conf": 0.92,
+      "source": "US Federal Register + Legal",
+      "time_label": "1 week ago",
+      "recommended_action": "Accelerate US local hiring and nearshore (LATAM) build-out to de-risk delivery cost.",
+      "filters": [
+        "Policy",
+        "h1b",
+        "Talent",
+        "hiring",
+        "Market",
+        "north_america",
+        "latam",
+        "Deals",
+        "genai"
+      ],
+      "detail": {
+        "why_it_matters": "Onshore cost inflation directly pressures margin on US-delivered work and changes bid economics.",
+        "key_insight": "Delivery mix — not visa strategy alone — is now the lever that protects US margin.",
+        "confidence_description": "Based on the published federal proclamation and legal-counsel interpretation."
+      },
+      "accounts": [
+        {
+          "name": "US Federal Bank"
+        },
+        {
+          "name": "US Health System"
+        },
+        {
+          "name": "US Telco"
+        },
+        {
+          "name": "Global Manufacturer US"
+        }
+      ],
+      "metrics": [
+        {
+          "value": "$100K",
+          "label": "per-petition H-1B fee",
+          "negative": true
+        },
+        {
+          "value": "+7%",
+          "label": "est. onshore delivery cost",
+          "negative": true
+        },
+        {
+          "value": "3",
+          "label": "quarters to rebalance mix",
+          "negative": true
+        }
+      ],
+      "activities": [
+        {
+          "action": "Proclamation published",
+          "actor": "US Government",
+          "time_label": "1 week ago"
+        },
+        {
+          "action": "Legal advisory issued",
+          "actor": "TCS Legal",
+          "time_label": "6 days ago"
+        },
+        {
+          "action": "Nearshore hiring plan drafted",
+          "actor": "Talent Acquisition",
+          "time_label": "3 days ago"
+        },
+        {
+          "action": "Client asks on delivery continuity",
+          "actor": "Account teams",
+          "time_label": "Today"
+        }
+      ],
+      "topics": [
+        {
+          "label": "H-1B"
+        },
+        {
+          "label": "Visa policy"
+        },
+        {
+          "label": "Delivery mix"
+        },
+        {
+          "label": "Nearshore"
+        },
+        {
+          "label": "LATAM"
+        },
+        {
+          "label": "Margin"
+        },
+        {
+          "label": "Talent"
+        }
+      ],
+      "takeaways": [
+        {
+          "action": "Scale US local + LATAM nearshore hiring",
+          "reasoning": "Reduces H-1B dependency",
+          "impact_text": "Protects US-delivered margin"
+        },
+        {
+          "action": "Re-price affected bids",
+          "reasoning": "Reflect new cost base",
+          "impact_text": "Preserves deal economics"
+        }
+      ],
+      "data_sources": [
+        {
+          "name": "US Federal Register",
+          "source_type": "external",
+          "confidence": "high",
+          "updated_label": "1w ago"
+        },
+        {
+          "name": "TCS Legal Advisory",
+          "source_type": "internal",
+          "confidence": "high",
+          "updated_label": "6d ago"
+        },
+        {
+          "name": "Delivery Cost Model",
+          "source_type": "internal",
+          "confidence": "medium",
+          "updated_label": "3d ago"
+        }
+      ],
+      "questions": [
+        {
+          "text": "Which accounts have the highest H-1B exposure?"
+        },
+        {
+          "text": "How fast can LATAM nearshore scale?"
+        },
+        {
+          "text": "What bids need immediate re-pricing?"
+        },
+        {
+          "text": "What is the local-hire ramp lead time?"
+        }
+      ]
+    },
+    {
+      "key": "sig5",
+      "signal_type": "Deals",
+      "tone": "green",
+      "title": "European bank advances core-banking + GenAI modernization on BaNCS",
+      "body": "A large UK/Europe bank moves a core-banking modernization plus GenAI risk program toward award, favoring TCS BaNCS incumbency.",
+      "impact": "high",
+      "conf": 0.83,
+      "source": "Field + Deal Desk",
+      "time_label": "3 days ago",
+      "recommended_action": "Lead with a fixed-outcome first use case and lock a multi-year BaNCS + GenAI agreement.",
+      "filters": [
+        "Deals",
+        "digital_core",
+        "genai",
+        "Customer",
+        "bfsi",
+        "Market",
+        "uk_europe",
+        "Competitor",
+        "accenture"
+      ],
+      "detail": {
+        "why_it_matters": "A marquee European BFSI win becomes the reference that unlocks other contested BFSI evals.",
+        "key_insight": "Incumbency plus a guaranteed-outcome first use case is the winning pattern in BFSI.",
+        "confidence_description": "Deal-desk stage-gate data plus two field confirmations."
+      },
+      "accounts": [
+        {
+          "name": "Deutsche Bank"
+        },
+        {
+          "name": "UK Retail Bank"
+        },
+        {
+          "name": "Nordic Bank"
+        },
+        {
+          "name": "EU Custody Bank"
+        }
+      ],
+      "metrics": [
+        {
+          "value": "$480M",
+          "label": "est. multi-year TCV",
+          "positive": true
+        },
+        {
+          "value": "+21%",
+          "label": "account growth vs plan",
+          "positive": true
+        },
+        {
+          "value": "2",
+          "label": "adjacent workstreams open",
+          "positive": true
+        }
+      ],
+      "activities": [
+        {
+          "action": "Client shortlists TCS + ACN",
+          "actor": "Deal Desk",
+          "time_label": "3 days ago"
+        },
+        {
+          "action": "BaNCS demo delivered",
+          "actor": "Solution team",
+          "time_label": "2 days ago"
+        },
+        {
+          "action": "Fixed-outcome pilot proposed",
+          "actor": "Account team",
+          "time_label": "1 day ago"
+        },
+        {
+          "action": "Board AI-ROI mandate confirmed",
+          "actor": "Field",
+          "time_label": "Today"
+        }
+      ],
+      "topics": [
+        {
+          "label": "BaNCS"
+        },
+        {
+          "label": "Core banking"
+        },
+        {
+          "label": "GenAI"
+        },
+        {
+          "label": "BFSI"
+        },
+        {
+          "label": "UK & Europe"
+        },
+        {
+          "label": "Digital core"
+        },
+        {
+          "label": "Reference"
+        }
+      ],
+      "takeaways": [
+        {
+          "action": "Propose fixed-outcome first use case",
+          "reasoning": "Reframes from effort to outcome",
+          "impact_text": "Improves close probability"
+        },
+        {
+          "action": "Package as EU BFSI reference",
+          "reasoning": "Reusable proof",
+          "impact_text": "Unlocks other contested banks"
+        }
+      ],
+      "data_sources": [
+        {
+          "name": "Deal Desk Stage-Gate",
+          "source_type": "internal",
+          "confidence": "high",
+          "updated_label": "3d ago"
+        },
+        {
+          "name": "Field Confirmation",
+          "source_type": "internal",
+          "confidence": "medium",
+          "updated_label": "2d ago"
+        },
+        {
+          "name": "BaNCS Solution Brief",
+          "source_type": "internal",
+          "confidence": "high",
+          "updated_label": "2d ago"
+        }
+      ],
+      "questions": [
+        {
+          "text": "What outcome SLA can we guarantee?"
+        },
+        {
+          "text": "Which references are deployable in 5 days?"
+        },
+        {
+          "text": "What is ACN's counter likely to be?"
+        },
+        {
+          "text": "Can we lock multi-year now?"
+        }
+      ]
+    },
+    {
+      "key": "sig6",
+      "signal_type": "Competitor",
+      "tone": "amber",
+      "title": "Cognizant pushes Neuro AI into US healthcare large deals",
+      "body": "Cognizant regains US large-deal momentum in healthcare/BFSI with its Neuro AI platform, contesting TCS in its US health footprint.",
+      "impact": "medium",
+      "conf": 0.8,
+      "source": "Field + Analyst",
+      "time_label": "5 days ago",
+      "recommended_action": "Defend US healthcare accounts with life-sciences depth and cross-industry references.",
+      "filters": [
+        "Competitor",
+        "cognizant",
+        "Customer",
+        "healthcare",
+        "bfsi",
+        "Market",
+        "north_america",
+        "Deals",
+        "genai"
+      ],
+      "detail": {
+        "why_it_matters": "US healthcare is a battleground where Cognizant is strongest and TCS must protect share.",
+        "key_insight": "Domain depth and delivery credibility beat platform-first pitches in regulated healthcare.",
+        "confidence_description": "Analyst commentary plus field reports on two contested pursuits."
+      },
+      "accounts": [
+        {
+          "name": "US Health System"
+        },
+        {
+          "name": "US Payer"
+        },
+        {
+          "name": "US Pharma"
+        },
+        {
+          "name": "Regional Provider"
+        }
+      ],
+      "metrics": [
+        {
+          "value": "+2",
+          "label": "CTSH contested US health deals",
+          "negative": true
+        },
+        {
+          "value": "8%",
+          "label": "CTSH AI-services share",
+          "negative": true
+        },
+        {
+          "value": "$300M",
+          "label": "US health pipeline at risk",
+          "negative": true
+        }
+      ],
+      "activities": [
+        {
+          "action": "CTSH announces Neuro AI health suite",
+          "actor": "Cognizant",
+          "time_label": "5 days ago"
+        },
+        {
+          "action": "CTSH shortlisted at US Payer",
+          "actor": "Field",
+          "time_label": "3 days ago"
+        },
+        {
+          "action": "Analyst upgrades CTSH health",
+          "actor": "Sell-side",
+          "time_label": "4 days ago"
+        },
+        {
+          "action": "TCS proposes ADD-led counter",
+          "actor": "Account team",
+          "time_label": "Today"
+        }
+      ],
+      "topics": [
+        {
+          "label": "Neuro AI"
+        },
+        {
+          "label": "Healthcare"
+        },
+        {
+          "label": "Cognizant"
+        },
+        {
+          "label": "US"
+        },
+        {
+          "label": "Competitive"
+        },
+        {
+          "label": "Life sciences"
+        },
+        {
+          "label": "Large deals"
+        }
+      ],
+      "takeaways": [
+        {
+          "action": "Lead with life-sciences / ADD depth",
+          "reasoning": "Regulated-domain credibility wins",
+          "impact_text": "Defends US health accounts"
+        },
+        {
+          "action": "Deploy cross-industry AI references",
+          "reasoning": "Proof beats platform pitch",
+          "impact_text": "Improves win-rate"
+        }
+      ],
+      "data_sources": [
+        {
+          "name": "Cognizant Press",
+          "source_type": "external",
+          "confidence": "high",
+          "updated_label": "5d ago"
+        },
+        {
+          "name": "ISG Health Note",
+          "source_type": "external",
+          "confidence": "medium",
+          "updated_label": "4d ago"
+        },
+        {
+          "name": "Field Report",
+          "source_type": "internal",
+          "confidence": "medium",
+          "updated_label": "3d ago"
+        }
+      ],
+      "questions": [
+        {
+          "text": "Which US health accounts are most exposed?"
+        },
+        {
+          "text": "What ADD references apply?"
+        },
+        {
+          "text": "Where is CTSH thin outside the US?"
+        },
+        {
+          "text": "What executive sponsorship is needed?"
+        }
+      ]
+    },
+    {
+      "key": "sig7",
+      "signal_type": "Policy",
+      "tone": "amber",
+      "title": "EU AI Act + GDPR guidance tighten enterprise AI compliance",
+      "body": "Phased EU AI Act obligations and new GDPR-AI guidance raise compliance requirements for enterprise GenAI in the UK & Europe.",
+      "impact": "high",
+      "conf": 0.85,
+      "source": "EU Commission + DPA guidance",
+      "time_label": "6 days ago",
+      "recommended_action": "Package a compliance-by-design GenAI accelerator to turn regulation into a differentiator.",
+      "filters": [
+        "Policy",
+        "ai_regulation",
+        "gdpr",
+        "Market",
+        "uk_europe",
+        "Deals",
+        "genai",
+        "data_platform",
+        "Customer",
+        "bfsi"
+      ],
+      "detail": {
+        "why_it_matters": "Compliance is becoming a buying criterion; TCS's governance rigor can be a win-theme.",
+        "key_insight": "Regulation favors integrators who can prove governed, auditable AI at scale.",
+        "confidence_description": "Based on published EU obligations and data-protection authority guidance."
+      },
+      "accounts": [
+        {
+          "name": "EU Bank"
+        },
+        {
+          "name": "EU Insurer"
+        },
+        {
+          "name": "EU Public Agency"
+        },
+        {
+          "name": "UK Retailer"
+        }
+      ],
+      "metrics": [
+        {
+          "value": "2026",
+          "label": "key obligations phase-in",
+          "negative": true
+        },
+        {
+          "value": "+9",
+          "label": "governance controls required",
+          "negative": true
+        },
+        {
+          "value": "+$250M",
+          "label": "compliance-led pipeline",
+          "positive": true
+        }
+      ],
+      "activities": [
+        {
+          "action": "EU AI Act milestone published",
+          "actor": "EU Commission",
+          "time_label": "6 days ago"
+        },
+        {
+          "action": "DPA issues GenAI guidance",
+          "actor": "Regulator",
+          "time_label": "4 days ago"
+        },
+        {
+          "action": "Client CISO asks on auditability",
+          "actor": "Account team",
+          "time_label": "2 days ago"
+        },
+        {
+          "action": "Compliance accelerator drafted",
+          "actor": "Solution team",
+          "time_label": "Today"
+        }
+      ],
+      "topics": [
+        {
+          "label": "AI regulation"
+        },
+        {
+          "label": "GDPR"
+        },
+        {
+          "label": "Compliance"
+        },
+        {
+          "label": "UK & Europe"
+        },
+        {
+          "label": "Governance"
+        },
+        {
+          "label": "Data platform"
+        },
+        {
+          "label": "BFSI"
+        }
+      ],
+      "takeaways": [
+        {
+          "action": "Ship a compliance-by-design GenAI kit",
+          "reasoning": "Regulation is now a buying criterion",
+          "impact_text": "Wins governed-AI deals"
+        },
+        {
+          "action": "Train field on EU AI Act positioning",
+          "reasoning": "Turns risk into differentiation",
+          "impact_text": "Shortens security reviews"
+        }
+      ],
+      "data_sources": [
+        {
+          "name": "EU Commission Guidance",
+          "source_type": "external",
+          "confidence": "high",
+          "updated_label": "6d ago"
+        },
+        {
+          "name": "DPA Guidance",
+          "source_type": "external",
+          "confidence": "high",
+          "updated_label": "4d ago"
+        },
+        {
+          "name": "TCS Governance Framework",
+          "source_type": "internal",
+          "confidence": "high",
+          "updated_label": "1d ago"
+        }
+      ],
+      "questions": [
+        {
+          "text": "Which accounts face the earliest deadlines?"
+        },
+        {
+          "text": "What controls can we productize?"
+        },
+        {
+          "text": "How does this shape data-residency needs?"
+        },
+        {
+          "text": "What is the audit-evidence pack?"
+        }
+      ]
+    },
+    {
+      "key": "sig8",
+      "signal_type": "Talent",
+      "tone": "amber",
+      "title": "Hot-skill GenAI/cloud attrition and comp pressure rising in India hubs",
+      "body": "Regretted attrition in GenAI and cloud roles is rising in Pune/Hyderabad on aggressive external offers, even as overall bench utilization improves.",
+      "impact": "high",
+      "conf": 0.84,
+      "source": "HR Analytics + Field",
+      "time_label": "2 days ago",
+      "recommended_action": "Deploy targeted spot-comp and accelerated reskilling to protect scarce GenAI/cloud talent.",
+      "filters": [
+        "Talent",
+        "attrition",
+        "comp",
+        "bench",
+        "Deals",
+        "genai",
+        "cloud",
+        "Market",
+        "india"
+      ],
+      "detail": {
+        "why_it_matters": "Scarce-skill attrition directly caps the GenAI delivery ramp and inflates subcontractor cost.",
+        "key_insight": "The risk is concentrated in two hubs and two skill families — a precision problem, not a broad one.",
+        "confidence_description": "HR analytics on regretted exits plus field compensation intelligence."
+      },
+      "accounts": [
+        {
+          "name": "Pune GenAI Pod"
+        },
+        {
+          "name": "Hyderabad Cloud Pod"
+        },
+        {
+          "name": "Bengaluru Platform Pod"
+        },
+        {
+          "name": "Chennai Data Pod"
+        }
+      ],
+      "metrics": [
+        {
+          "value": "19%",
+          "label": "hot-skill attrition",
+          "negative": true
+        },
+        {
+          "value": "-6%",
+          "label": "comp gap vs offers",
+          "negative": true
+        },
+        {
+          "value": "+0.6pp",
+          "label": "bench utilization QoQ",
+          "positive": true
+        }
+      ],
+      "activities": [
+        {
+          "action": "Regretted exits spike in Pune",
+          "actor": "HR Analytics",
+          "time_label": "2 days ago"
+        },
+        {
+          "action": "Start-up offers +18% observed",
+          "actor": "Comp Intel",
+          "time_label": "3 days ago"
+        },
+        {
+          "action": "Reskilling wave proposed",
+          "actor": "L&D",
+          "time_label": "1 day ago"
+        },
+        {
+          "action": "Bench utilization improves",
+          "actor": "Ops",
+          "time_label": "Today"
+        }
+      ],
+      "topics": [
+        {
+          "label": "Attrition"
+        },
+        {
+          "label": "Compensation"
+        },
+        {
+          "label": "GenAI"
+        },
+        {
+          "label": "Cloud"
+        },
+        {
+          "label": "Reskilling"
+        },
+        {
+          "label": "India"
+        },
+        {
+          "label": "Bench"
+        }
+      ],
+      "takeaways": [
+        {
+          "action": "Targeted spot-comp for ~14K cohort",
+          "reasoning": "Precision retention, not broad reset",
+          "impact_text": "Cuts regretted attrition"
+        },
+        {
+          "action": "Accelerate AI-fluency reskilling",
+          "reasoning": "Builds internal supply",
+          "impact_text": "Reduces subcontractor cost"
+        }
+      ],
+      "data_sources": [
+        {
+          "name": "HR Attrition Dashboard",
+          "source_type": "internal",
+          "confidence": "high",
+          "updated_label": "2d ago"
+        },
+        {
+          "name": "Compensation Intel",
+          "source_type": "internal",
+          "confidence": "medium",
+          "updated_label": "3d ago"
+        },
+        {
+          "name": "L&D Capacity Plan",
+          "source_type": "internal",
+          "confidence": "medium",
+          "updated_label": "1d ago"
+        }
+      ],
+      "questions": [
+        {
+          "text": "Which roles have the highest regret risk?"
+        },
+        {
+          "text": "What comp delta closes the gap?"
+        },
+        {
+          "text": "How fast can reskilling lift AI-ready %?"
+        },
+        {
+          "text": "Can bench absorb redeployment?"
+        }
+      ]
+    },
+    {
+      "key": "sig9",
+      "signal_type": "M&A",
+      "tone": "amber",
+      "title": "Capgemini acquires engineering-AI boutique, deepens manufacturing play",
+      "body": "Capgemini's tuck-in of an engineering-AI firm strengthens its manufacturing/industrial GenAI offer in the UK & Europe.",
+      "impact": "medium",
+      "conf": 0.79,
+      "source": "M&A wire + Analyst",
+      "time_label": "1 week ago",
+      "recommended_action": "Counter with IP-protected engineering-GenAI accelerators and safety-assured delivery.",
+      "filters": [
+        "M&A",
+        "acquisition",
+        "tuck_in",
+        "Competitor",
+        "capgemini",
+        "Customer",
+        "manufacturing",
+        "Market",
+        "uk_europe",
+        "Deals",
+        "genai"
+      ],
+      "detail": {
+        "why_it_matters": "Engineering GenAI is a contested growth area where an acquisition can shift capability quickly.",
+        "key_insight": "Assurance and IP-protection, not raw capability, decide regulated engineering deals.",
+        "confidence_description": "M&A announcement plus analyst assessment of the fit."
+      },
+      "accounts": [
+        {
+          "name": "EU Automaker"
+        },
+        {
+          "name": "Aerospace OEM"
+        },
+        {
+          "name": "Industrial Group"
+        },
+        {
+          "name": "Heavy Equipment Maker"
+        }
+      ],
+      "metrics": [
+        {
+          "value": "tuck-in",
+          "label": "Capgemini engineering-AI deal",
+          "negative": true
+        },
+        {
+          "value": "+1",
+          "label": "contested manufacturing pursuit",
+          "negative": true
+        },
+        {
+          "value": "$180M",
+          "label": "engineering pipeline exposed",
+          "negative": true
+        }
+      ],
+      "activities": [
+        {
+          "action": "Capgemini announces acquisition",
+          "actor": "M&A Wire",
+          "time_label": "1 week ago"
+        },
+        {
+          "action": "Analyst notes manufacturing boost",
+          "actor": "Sell-side",
+          "time_label": "5 days ago"
+        },
+        {
+          "action": "Capgemini shortlisted at EU Automaker",
+          "actor": "Field",
+          "time_label": "2 days ago"
+        },
+        {
+          "action": "TCS assured-GenAI counter drafted",
+          "actor": "Solution",
+          "time_label": "Today"
+        }
+      ],
+      "topics": [
+        {
+          "label": "M&A"
+        },
+        {
+          "label": "Capgemini"
+        },
+        {
+          "label": "Engineering"
+        },
+        {
+          "label": "Manufacturing"
+        },
+        {
+          "label": "GenAI"
+        },
+        {
+          "label": "Assurance"
+        },
+        {
+          "label": "UK & Europe"
+        }
+      ],
+      "takeaways": [
+        {
+          "action": "Lead with IP-protected engineering accelerators",
+          "reasoning": "Resolves assurance up front",
+          "impact_text": "Defends engineering deals"
+        },
+        {
+          "action": "Surface engineering-GenAI SMEs",
+          "reasoning": "Proves depth vs acquirer",
+          "impact_text": "Improves win-rate"
+        }
+      ],
+      "data_sources": [
+        {
+          "name": "M&A Announcement",
+          "source_type": "external",
+          "confidence": "high",
+          "updated_label": "1w ago"
+        },
+        {
+          "name": "Analyst Note",
+          "source_type": "external",
+          "confidence": "medium",
+          "updated_label": "5d ago"
+        },
+        {
+          "name": "Field Report",
+          "source_type": "internal",
+          "confidence": "medium",
+          "updated_label": "2d ago"
+        }
+      ],
+      "questions": [
+        {
+          "text": "Which engineering accounts are exposed?"
+        },
+        {
+          "text": "What assurance pack do we lead with?"
+        },
+        {
+          "text": "Where is the acquirer integration-risk?"
+        },
+        {
+          "text": "Which references are certification-ready?"
+        }
+      ]
+    },
+    {
+      "key": "sig10",
+      "signal_type": "Market",
+      "tone": "green",
+      "title": "Middle East sovereign-AI and data-center demand accelerates",
+      "body": "Gulf sovereign-AI programs and data-center build-outs expand demand for localized AI platforms; aligns with TCS's sovereign-AI subsidiary.",
+      "impact": "high",
+      "conf": 0.82,
+      "source": "Regional press + Field",
+      "time_label": "4 days ago",
+      "recommended_action": "Position sovereign-AI + data-platform offer and pursue a local JV for in-country delivery.",
+      "filters": [
+        "Market",
+        "middle_east",
+        "Deals",
+        "genai",
+        "data_platform",
+        "Customer",
+        "public_sector",
+        "energy",
+        "M&A",
+        "jv"
+      ],
+      "detail": {
+        "why_it_matters": "Sovereign AI is a low-copy moat where TCS scale and localization can win against premium peers.",
+        "key_insight": "In-country delivery and data residency are the gating requirements — a JV accelerates both.",
+        "confidence_description": "Regional program announcements plus field pipeline confirmation."
+      },
+      "accounts": [
+        {
+          "name": "Gulf Sovereign Fund"
+        },
+        {
+          "name": "National Oil Co"
+        },
+        {
+          "name": "Regional Bank"
+        },
+        {
+          "name": "Public AI Authority"
+        }
+      ],
+      "metrics": [
+        {
+          "value": "+$1B",
+          "label": "sovereign-AI pipeline",
+          "positive": true
+        },
+        {
+          "value": "3",
+          "label": "in-country programs active",
+          "positive": true
+        },
+        {
+          "value": "2026",
+          "label": "data-center go-live",
+          "positive": true
+        }
+      ],
+      "activities": [
+        {
+          "action": "Sovereign-AI program announced",
+          "actor": "Regional Gov",
+          "time_label": "4 days ago"
+        },
+        {
+          "action": "TCS sovereign-AI subsidiary noted",
+          "actor": "TCS",
+          "time_label": "1 week ago"
+        },
+        {
+          "action": "Local JV partner identified",
+          "actor": "BD team",
+          "time_label": "2 days ago"
+        },
+        {
+          "action": "Data-residency RFP issued",
+          "actor": "Client",
+          "time_label": "Today"
+        }
+      ],
+      "topics": [
+        {
+          "label": "Sovereign AI"
+        },
+        {
+          "label": "Data center"
+        },
+        {
+          "label": "Middle East"
+        },
+        {
+          "label": "Public sector"
+        },
+        {
+          "label": "Energy"
+        },
+        {
+          "label": "JV"
+        },
+        {
+          "label": "Data platform"
+        }
+      ],
+      "takeaways": [
+        {
+          "action": "Stand up an in-country JV",
+          "reasoning": "Meets residency + delivery needs",
+          "impact_text": "Unlocks sovereign programs"
+        },
+        {
+          "action": "Lead with sovereign-AI platform",
+          "reasoning": "Un-copyable moat vs peers",
+          "impact_text": "Wins localized AI mandates"
+        }
+      ],
+      "data_sources": [
+        {
+          "name": "Regional Press",
+          "source_type": "external",
+          "confidence": "medium",
+          "updated_label": "4d ago"
+        },
+        {
+          "name": "TCS Sovereign-AI Brief",
+          "source_type": "internal",
+          "confidence": "high",
+          "updated_label": "1w ago"
+        },
+        {
+          "name": "BD Pipeline",
+          "source_type": "internal",
+          "confidence": "medium",
+          "updated_label": "2d ago"
+        }
+      ],
+      "questions": [
+        {
+          "text": "Which JV partner fits best?"
+        },
+        {
+          "text": "What residency controls are required?"
+        },
+        {
+          "text": "How does this map to energy + public sector?"
+        },
+        {
+          "text": "What is the data-center delivery model?"
+        }
+      ]
+    },
+    {
+      "key": "sig11",
+      "signal_type": "Policy",
+      "tone": "amber",
+      "title": "India DPDP data-localization rules raise on-shore data-platform demand",
+      "body": "India's DPDP Act implementation rules tighten data-localization and consent norms, lifting demand for compliant, localized data platforms.",
+      "impact": "medium",
+      "conf": 0.81,
+      "source": "Govt notification + Legal",
+      "time_label": "5 days ago",
+      "recommended_action": "Offer a DPDP-compliant data-platform blueprint to BFSI and public-sector clients in India.",
+      "filters": [
+        "Policy",
+        "data_local",
+        "tax_reform",
+        "Market",
+        "india",
+        "Customer",
+        "bfsi",
+        "public_sector",
+        "Deals",
+        "data_platform"
+      ],
+      "detail": {
+        "why_it_matters": "Localization mandates convert into modernization budgets for compliant data platforms.",
+        "key_insight": "Compliance-driven demand is durable and favors integrators with governance depth.",
+        "confidence_description": "Government notification plus legal interpretation."
+      },
+      "accounts": [
+        {
+          "name": "India Public Bank"
+        },
+        {
+          "name": "India Insurer"
+        },
+        {
+          "name": "State Agency"
+        },
+        {
+          "name": "India Fintech"
+        }
+      ],
+      "metrics": [
+        {
+          "value": "2025",
+          "label": "DPDP rules effective",
+          "negative": true
+        },
+        {
+          "value": "+$300M",
+          "label": "India data-platform pipeline",
+          "positive": true
+        },
+        {
+          "value": "+6",
+          "label": "controls to implement",
+          "negative": true
+        }
+      ],
+      "activities": [
+        {
+          "action": "DPDP rules notified",
+          "actor": "Govt of India",
+          "time_label": "5 days ago"
+        },
+        {
+          "action": "Legal advisory issued",
+          "actor": "TCS Legal",
+          "time_label": "4 days ago"
+        },
+        {
+          "action": "BFSI client asks on residency",
+          "actor": "Account team",
+          "time_label": "2 days ago"
+        },
+        {
+          "action": "DPDP blueprint drafted",
+          "actor": "Solution",
+          "time_label": "Today"
+        }
+      ],
+      "topics": [
+        {
+          "label": "Data localization"
+        },
+        {
+          "label": "DPDP"
+        },
+        {
+          "label": "India"
+        },
+        {
+          "label": "BFSI"
+        },
+        {
+          "label": "Public sector"
+        },
+        {
+          "label": "Data platform"
+        },
+        {
+          "label": "Compliance"
+        }
+      ],
+      "takeaways": [
+        {
+          "action": "Ship a DPDP-compliant data blueprint",
+          "reasoning": "Turns mandate into modernization",
+          "impact_text": "Wins localized data deals"
+        },
+        {
+          "action": "Prioritize BFSI + public sector",
+          "reasoning": "Highest compliance urgency",
+          "impact_text": "Aligns to budget cycles"
+        }
+      ],
+      "data_sources": [
+        {
+          "name": "Govt Notification",
+          "source_type": "external",
+          "confidence": "high",
+          "updated_label": "5d ago"
+        },
+        {
+          "name": "TCS Legal Advisory",
+          "source_type": "internal",
+          "confidence": "high",
+          "updated_label": "4d ago"
+        },
+        {
+          "name": "Solution Blueprint",
+          "source_type": "internal",
+          "confidence": "medium",
+          "updated_label": "1d ago"
+        }
+      ],
+      "questions": [
+        {
+          "text": "Which clients face the tightest deadlines?"
+        },
+        {
+          "text": "What residency architecture do we standardize?"
+        },
+        {
+          "text": "How does this interact with tax/reporting reform?"
+        },
+        {
+          "text": "What is the reference implementation?"
+        }
+      ]
+    },
+    {
+      "key": "sig12",
+      "signal_type": "Competitor",
+      "tone": "amber",
+      "title": "HCLTech and Wipro chase large cloud deal in ANZ; Wipro guide soft",
+      "body": "HCLTech and Wipro are contesting a large ANZ telco cloud-migration deal; Wipro's soft near-term guidance signals aggressive pricing.",
+      "impact": "medium",
+      "conf": 0.78,
+      "source": "Field + Peer earnings",
+      "time_label": "3 days ago",
+      "recommended_action": "Differentiate on AI-led run-cost reduction and multi-cloud FinOps, not headcount.",
+      "filters": [
+        "Competitor",
+        "hcl",
+        "wipro",
+        "Market",
+        "apac",
+        "Deals",
+        "cloud",
+        "Customer",
+        "telco_media",
+        "energy",
+        "Earnings",
+        "miss",
+        "guide"
+      ],
+      "detail": {
+        "why_it_matters": "ANZ cloud migrations are large, multi-year anchors; losing one cedes a regional beachhead.",
+        "key_insight": "AI-led run-cost economics beat lift-and-shift pricing in mature cloud buyers.",
+        "confidence_description": "Field pursuit intel plus peer earnings guidance."
+      },
+      "accounts": [
+        {
+          "name": "ANZ Telco"
+        },
+        {
+          "name": "ANZ Utility"
+        },
+        {
+          "name": "ANZ Bank"
+        },
+        {
+          "name": "APAC Media Group"
+        }
+      ],
+      "metrics": [
+        {
+          "value": "2",
+          "label": "peers contesting",
+          "negative": true
+        },
+        {
+          "value": "$350M",
+          "label": "ANZ cloud deal value",
+          "positive": true
+        },
+        {
+          "value": "-1",
+          "label": "Wipro guide vs consensus",
+          "negative": true
+        }
+      ],
+      "activities": [
+        {
+          "action": "Wipro issues soft guidance",
+          "actor": "Wipro",
+          "time_label": "3 days ago"
+        },
+        {
+          "action": "HCL shortlisted at ANZ Telco",
+          "actor": "Field",
+          "time_label": "2 days ago"
+        },
+        {
+          "action": "Client requests FinOps proof",
+          "actor": "Account team",
+          "time_label": "1 day ago"
+        },
+        {
+          "action": "TCS multi-cloud POC proposed",
+          "actor": "Solution",
+          "time_label": "Today"
+        }
+      ],
+      "topics": [
+        {
+          "label": "Cloud migration"
+        },
+        {
+          "label": "HCLTech"
+        },
+        {
+          "label": "Wipro"
+        },
+        {
+          "label": "ANZ"
+        },
+        {
+          "label": "APAC"
+        },
+        {
+          "label": "FinOps"
+        },
+        {
+          "label": "Telco"
+        }
+      ],
+      "takeaways": [
+        {
+          "action": "Lead with AI-led FinOps + run-cost cuts",
+          "reasoning": "Beats lift-and-shift pricing",
+          "impact_text": "Wins on TCO"
+        },
+        {
+          "action": "Prove multi-cloud automation",
+          "reasoning": "Differentiates vs peers",
+          "impact_text": "Improves close probability"
+        }
+      ],
+      "data_sources": [
+        {
+          "name": "Peer Earnings",
+          "source_type": "external",
+          "confidence": "high",
+          "updated_label": "3d ago"
+        },
+        {
+          "name": "Field Pursuit Intel",
+          "source_type": "internal",
+          "confidence": "medium",
+          "updated_label": "2d ago"
+        },
+        {
+          "name": "FinOps Benchmark",
+          "source_type": "internal",
+          "confidence": "medium",
+          "updated_label": "1d ago"
+        }
+      ],
+      "questions": [
+        {
+          "text": "What run-cost reduction can we guarantee?"
+        },
+        {
+          "text": "Where are peers pricing thinnest?"
+        },
+        {
+          "text": "Which FinOps references apply?"
+        },
+        {
+          "text": "What is the multi-cloud POC scope?"
+        }
+      ]
+    },
+    {
+      "key": "sig13",
+      "signal_type": "Customer",
+      "tone": "green",
+      "title": "Retail & CPG GenAI demand surges across US and Europe",
+      "body": "Retail and CPG buyers accelerate GenAI investment in merchandising, supply chain and customer experience across the US and Europe.",
+      "impact": "high",
+      "conf": 0.83,
+      "source": "Category demand + Field",
+      "time_label": "6 days ago",
+      "recommended_action": "Scale a productized retail GenAI SKU (merch + supply + CX) with outcome pricing.",
+      "filters": [
+        "Customer",
+        "retail_cpg",
+        "Market",
+        "north_america",
+        "uk_europe",
+        "Deals",
+        "genai",
+        "data_platform"
+      ],
+      "detail": {
+        "why_it_matters": "Retail is a high-velocity GenAI segment where a productized SKU compounds share fast.",
+        "key_insight": "Buyers want packaged outcomes (markdown, forecast accuracy), not bespoke builds.",
+        "confidence_description": "Category demand signals plus multiple field confirmations."
+      },
+      "accounts": [
+        {
+          "name": "Global Retailer"
+        },
+        {
+          "name": "Tesco"
+        },
+        {
+          "name": "US Grocer"
+        },
+        {
+          "name": "EU CPG Group"
+        }
+      ],
+      "metrics": [
+        {
+          "value": "+28%",
+          "label": "retail GenAI spend",
+          "positive": true
+        },
+        {
+          "value": "$600M",
+          "label": "retail pipeline",
+          "positive": true
+        },
+        {
+          "value": "6",
+          "label": "packaged use cases ready",
+          "positive": true
+        }
+      ],
+      "activities": [
+        {
+          "action": "Retail GenAI RFPs rise",
+          "actor": "Pipeline",
+          "time_label": "6 days ago"
+        },
+        {
+          "action": "Tesco requests merch-AI proof",
+          "actor": "Account team",
+          "time_label": "3 days ago"
+        },
+        {
+          "action": "CPG group approves budget",
+          "actor": "Field",
+          "time_label": "2 days ago"
+        },
+        {
+          "action": "Retail SKU packaged",
+          "actor": "Solution",
+          "time_label": "Today"
+        }
+      ],
+      "topics": [
+        {
+          "label": "Retail"
+        },
+        {
+          "label": "CPG"
+        },
+        {
+          "label": "GenAI"
+        },
+        {
+          "label": "Merchandising"
+        },
+        {
+          "label": "Supply chain"
+        },
+        {
+          "label": "Data platform"
+        },
+        {
+          "label": "US & Europe"
+        }
+      ],
+      "takeaways": [
+        {
+          "action": "Ship the productized retail GenAI SKU",
+          "reasoning": "Packaged outcomes win fast",
+          "impact_text": "Captures ~$600M pipeline"
+        },
+        {
+          "action": "Outcome-price on markdown + forecast",
+          "reasoning": "Removes price objection",
+          "impact_text": "Improves close rate"
+        }
+      ],
+      "data_sources": [
+        {
+          "name": "Category Demand Report",
+          "source_type": "external",
+          "confidence": "medium",
+          "updated_label": "6d ago"
+        },
+        {
+          "name": "Field Confirmations",
+          "source_type": "internal",
+          "confidence": "high",
+          "updated_label": "3d ago"
+        },
+        {
+          "name": "Retail SKU Brief",
+          "source_type": "internal",
+          "confidence": "high",
+          "updated_label": "1d ago"
+        }
+      ],
+      "questions": [
+        {
+          "text": "Which retail use cases convert fastest?"
+        },
+        {
+          "text": "What outcome KPIs do we underwrite?"
+        },
+        {
+          "text": "Do we have references at scale?"
+        },
+        {
+          "text": "How fast can we package CX use cases?"
+        }
+      ]
+    },
+    {
+      "key": "sig14",
+      "signal_type": "Deals",
+      "tone": "green",
+      "title": "Cybersecurity mega-demand rises in energy and BFSI",
+      "body": "Escalating threat activity lifts cybersecurity and AI-security demand across energy/utilities and BFSI in North America and the Middle East.",
+      "impact": "high",
+      "conf": 0.85,
+      "source": "Threat intel + Pipeline",
+      "time_label": "4 days ago",
+      "recommended_action": "Bundle AI-augmented security operations into GenAI and cloud deals as a cross-sell.",
+      "filters": [
+        "Deals",
+        "cybersecurity",
+        "Customer",
+        "energy",
+        "bfsi",
+        "Market",
+        "north_america",
+        "middle_east",
+        "data_platform"
+      ],
+      "detail": {
+        "why_it_matters": "Cybersecurity is the #1 CIO priority and a durable, cross-sellable annuity attached to every deal.",
+        "key_insight": "AI-augmented SOC is where demand and differentiation now concentrate.",
+        "confidence_description": "Threat-landscape intelligence plus pipeline analytics."
+      },
+      "accounts": [
+        {
+          "name": "National Utility"
+        },
+        {
+          "name": "US Bank"
+        },
+        {
+          "name": "Gulf Energy Co"
+        },
+        {
+          "name": "Global Insurer"
+        }
+      ],
+      "metrics": [
+        {
+          "value": "#1",
+          "label": "CIO security priority",
+          "positive": true
+        },
+        {
+          "value": "+$450M",
+          "label": "security pipeline",
+          "positive": true
+        },
+        {
+          "value": "+22%",
+          "label": "AI-security demand",
+          "positive": true
+        }
+      ],
+      "activities": [
+        {
+          "action": "Threat activity escalates",
+          "actor": "Threat Intel",
+          "time_label": "4 days ago"
+        },
+        {
+          "action": "Utility issues security RFP",
+          "actor": "Client",
+          "time_label": "3 days ago"
+        },
+        {
+          "action": "BFSI cross-sell identified",
+          "actor": "Account team",
+          "time_label": "2 days ago"
+        },
+        {
+          "action": "AI-SOC offer packaged",
+          "actor": "Solution",
+          "time_label": "Today"
+        }
+      ],
+      "topics": [
+        {
+          "label": "Cybersecurity"
+        },
+        {
+          "label": "AI security"
+        },
+        {
+          "label": "Energy"
+        },
+        {
+          "label": "BFSI"
+        },
+        {
+          "label": "SOC"
+        },
+        {
+          "label": "Cross-sell"
+        },
+        {
+          "label": "Data platform"
+        }
+      ],
+      "takeaways": [
+        {
+          "action": "Attach AI-SOC to GenAI/cloud deals",
+          "reasoning": "Durable annuity + differentiation",
+          "impact_text": "Grows attach rate"
+        },
+        {
+          "action": "Prioritize energy + BFSI",
+          "reasoning": "Highest threat urgency",
+          "impact_text": "Captures ~$450M pipeline"
+        }
+      ],
+      "data_sources": [
+        {
+          "name": "Threat Landscape Report",
+          "source_type": "external",
+          "confidence": "high",
+          "updated_label": "4d ago"
+        },
+        {
+          "name": "Pipeline Analytics",
+          "source_type": "internal",
+          "confidence": "medium",
+          "updated_label": "2d ago"
+        },
+        {
+          "name": "AI-SOC Offer Brief",
+          "source_type": "internal",
+          "confidence": "high",
+          "updated_label": "1d ago"
+        }
+      ],
+      "questions": [
+        {
+          "text": "Which deals can attach AI-SOC now?"
+        },
+        {
+          "text": "What SLAs can we commit?"
+        },
+        {
+          "text": "Where is demand most acute regionally?"
+        },
+        {
+          "text": "What references prove AI-SOC value?"
+        }
+      ]
+    },
+    {
+      "key": "sig15",
+      "signal_type": "Talent",
+      "tone": "amber",
+      "title": "Competitive leadership moves and mid-tier alliances reshape the field",
+      "body": "A rival poaches a senior GenAI delivery leader while an LTIMindtree–IBM alliance and a peer divestiture reshape mid-market competition.",
+      "impact": "medium",
+      "conf": 0.76,
+      "source": "Exec intel + M&A wire",
+      "time_label": "2 days ago",
+      "recommended_action": "Retain key GenAI leaders and monitor alliance moves that could shift mid-market dynamics.",
+      "filters": [
+        "Talent",
+        "exec_move",
+        "Competitor",
+        "accenture",
+        "ibm",
+        "ltimindtree",
+        "M&A",
+        "jv",
+        "divestiture",
+        "Deals",
+        "genai",
+        "cloud",
+        "Market",
+        "north_america"
+      ],
+      "detail": {
+        "why_it_matters": "Leadership and alliance shifts move delivery capability and mid-market share faster than organic growth.",
+        "key_insight": "Talent stability and ecosystem alliances are competitive moats, not HR footnotes.",
+        "confidence_description": "Executive-search intelligence plus M&A wire."
+      },
+      "accounts": [
+        {
+          "name": "GenAI Delivery Org"
+        },
+        {
+          "name": "Mid-market BFSI"
+        },
+        {
+          "name": "Mid-market Retail"
+        },
+        {
+          "name": "Cloud Practice"
+        }
+      ],
+      "metrics": [
+        {
+          "value": "1",
+          "label": "senior GenAI leader poached",
+          "negative": true
+        },
+        {
+          "value": "+1",
+          "label": "mid-tier alliance formed",
+          "negative": true
+        },
+        {
+          "value": "$X",
+          "label": "peer non-core divestiture",
+          "negative": true
+        }
+      ],
+      "activities": [
+        {
+          "action": "Rival hires TCS GenAI leader",
+          "actor": "Exec Intel",
+          "time_label": "2 days ago"
+        },
+        {
+          "action": "LTIMindtree–IBM alliance announced",
+          "actor": "M&A Wire",
+          "time_label": "4 days ago"
+        },
+        {
+          "action": "Peer divests non-core unit",
+          "actor": "M&A Wire",
+          "time_label": "5 days ago"
+        },
+        {
+          "action": "Retention plan activated",
+          "actor": "Leadership",
+          "time_label": "Today"
+        }
+      ],
+      "topics": [
+        {
+          "label": "Executive moves"
+        },
+        {
+          "label": "Alliances"
+        },
+        {
+          "label": "IBM"
+        },
+        {
+          "label": "LTIMindtree"
+        },
+        {
+          "label": "M&A"
+        },
+        {
+          "label": "GenAI"
+        },
+        {
+          "label": "Retention"
+        }
+      ],
+      "takeaways": [
+        {
+          "action": "Activate leader retention plan",
+          "reasoning": "Protects delivery capability",
+          "impact_text": "Reduces disruption risk"
+        },
+        {
+          "action": "Monitor mid-tier alliances",
+          "reasoning": "Anticipates share shifts",
+          "impact_text": "Informs competitive response"
+        }
+      ],
+      "data_sources": [
+        {
+          "name": "Executive-Search Intel",
+          "source_type": "external",
+          "confidence": "medium",
+          "updated_label": "2d ago"
+        },
+        {
+          "name": "M&A Wire",
+          "source_type": "external",
+          "confidence": "high",
+          "updated_label": "4d ago"
+        },
+        {
+          "name": "Retention Task Force",
+          "source_type": "internal",
+          "confidence": "high",
+          "updated_label": "1d ago"
+        }
+      ],
+      "questions": [
+        {
+          "text": "Which leaders are highest flight-risk?"
+        },
+        {
+          "text": "How does the alliance change mid-market?"
+        },
+        {
+          "text": "What capability gap opens if they leave?"
+        },
+        {
+          "text": "What is the counter-retention offer?"
+        }
+      ]
+    }
+  ],
+  "signal_filters": [
+    {
+      "key": "Competitor",
+      "label": "Competitor",
+      "children": [
+        {
+          "key": "infosys",
+          "label": "Infosys"
+        },
+        {
+          "key": "wipro",
+          "label": "Wipro"
+        },
+        {
+          "key": "hcl",
+          "label": "HCLTech"
+        },
+        {
+          "key": "accenture",
+          "label": "Accenture"
+        },
+        {
+          "key": "cognizant",
+          "label": "Cognizant"
+        },
+        {
+          "key": "capgemini",
+          "label": "Capgemini"
+        },
+        {
+          "key": "ibm",
+          "label": "IBM Consulting"
+        },
+        {
+          "key": "ltimindtree",
+          "label": "LTIMindtree"
+        }
+      ]
+    },
+    {
+      "key": "Market",
+      "label": "Market",
+      "children": [
+        {
+          "key": "north_america",
+          "label": "North America"
+        },
+        {
+          "key": "uk_europe",
+          "label": "UK & Europe"
+        },
+        {
+          "key": "india",
+          "label": "India"
+        },
+        {
+          "key": "apac",
+          "label": "Asia-Pacific"
+        },
+        {
+          "key": "middle_east",
+          "label": "Middle East"
+        },
+        {
+          "key": "latam",
+          "label": "LATAM"
+        }
+      ]
+    },
+    {
+      "key": "Customer",
+      "label": "Customer",
+      "children": [
+        {
+          "key": "bfsi",
+          "label": "BFSI"
+        },
+        {
+          "key": "retail_cpg",
+          "label": "Retail & CPG"
+        },
+        {
+          "key": "manufacturing",
+          "label": "Manufacturing"
+        },
+        {
+          "key": "healthcare",
+          "label": "Healthcare"
+        },
+        {
+          "key": "telco_media",
+          "label": "Telco & Media"
+        },
+        {
+          "key": "public_sector",
+          "label": "Public sector"
+        },
+        {
+          "key": "energy",
+          "label": "Energy & Utilities"
+        }
+      ]
+    },
+    {
+      "key": "Talent",
+      "label": "Talent",
+      "children": [
+        {
+          "key": "exec_move",
+          "label": "Executive moves"
+        },
+        {
+          "key": "attrition",
+          "label": "Attrition"
+        },
+        {
+          "key": "hiring",
+          "label": "Campus hiring"
+        },
+        {
+          "key": "comp",
+          "label": "Comp & bonus"
+        },
+        {
+          "key": "bench",
+          "label": "Bench utilization"
+        }
+      ]
+    },
+    {
+      "key": "Policy",
+      "label": "Policy",
+      "children": [
+        {
+          "key": "h1b",
+          "label": "H-1B / visa"
+        },
+        {
+          "key": "data_local",
+          "label": "Data localization"
+        },
+        {
+          "key": "gdpr",
+          "label": "GDPR / privacy"
+        },
+        {
+          "key": "ai_regulation",
+          "label": "AI regulation"
+        },
+        {
+          "key": "tax_reform",
+          "label": "Tax reform"
+        }
+      ]
+    },
+    {
+      "key": "Deals",
+      "label": "Deals",
+      "children": [
+        {
+          "key": "genai",
+          "label": "GenAI transformation"
+        },
+        {
+          "key": "cloud",
+          "label": "Cloud migration"
+        },
+        {
+          "key": "digital_core",
+          "label": "Digital core / ERP"
+        },
+        {
+          "key": "cybersecurity",
+          "label": "Cybersecurity"
+        },
+        {
+          "key": "data_platform",
+          "label": "Data platform"
+        }
+      ]
+    },
+    {
+      "key": "M&A",
+      "label": "M&A",
+      "children": [
+        {
+          "key": "acquisition",
+          "label": "Acquisition"
+        },
+        {
+          "key": "divestiture",
+          "label": "Divestiture"
+        },
+        {
+          "key": "jv",
+          "label": "JV / partnership"
+        },
+        {
+          "key": "tuck_in",
+          "label": "Tuck-in"
+        }
+      ]
+    },
+    {
+      "key": "Earnings",
+      "label": "Earnings",
+      "children": [
+        {
+          "key": "infosys_earnings",
+          "label": "Infosys earnings"
+        },
+        {
+          "key": "accenture_earnings",
+          "label": "Accenture earnings"
+        },
+        {
+          "key": "beat",
+          "label": "Beat"
+        },
+        {
+          "key": "miss",
+          "label": "Miss"
+        },
+        {
+          "key": "guide",
+          "label": "Guidance"
+        }
+      ]
+    }
+  ],
+ "memory_items": [
+  {
+   "key": "mem1",
+   "title": "GenAI Go-To-Market Ramp — Top 50 Accounts",
+   "status": "current",
+   "body": "Consulting-led GenAI motion targeting top 50 accounts with outcome-based pricing, mobilized after the Accenture bookings gap.",
+   "owners": "K Krithivasan",
+   "region": "Global",
+   "tags": [
+    {
+     "label": "genai",
+     "tone": "pos"
+    },
+    {
+     "label": "strategy",
+     "tone": "neutral"
+    }
+   ],
+   "nodes": [
+    {
+     "key": "trigger",
+     "parent_key": null,
+     "order_index": 0,
+     "node_type": "signal",
+     "node_status": "done",
+     "label": "GenAI Bookings Gap vs Accenture",
+     "sub": "$1.5B behind on Q2 bookings",
+     "color": "#2CA58D"
+    },
+    {
+     "key": "ext1",
+     "parent_key": "trigger",
+     "order_index": 1,
+     "node_type": "data_external",
+     "node_status": "done",
+     "label": "External: Accenture Q2 Earnings",
+     "sub": "$3B GenAI bookings, consulting-led",
+     "color": "#2CA58D"
+    },
+    {
+     "key": "ext2",
+     "parent_key": "trigger",
+     "order_index": 2,
+     "node_type": "data_external",
+     "node_status": "done",
+     "label": "External: Infosys Topaz launch",
+     "sub": "Mid-market fixed-price GenAI bundles",
+     "color": "#2CA58D"
+    },
+    {
+     "key": "int1",
+     "parent_key": "trigger",
+     "order_index": 3,
+     "node_type": "data_internal",
+     "node_status": "done",
+     "label": "Internal: CRM Win-rate Slip",
+     "sub": "-6pp QoQ vs Accenture on GenAI",
+     "color": "#2CA58D"
+    },
+    {
+     "key": "int2",
+     "parent_key": "trigger",
+     "order_index": 4,
+     "node_type": "data_internal",
+     "node_status": "done",
+     "label": "Internal: BFSI GenAI References",
+     "sub": "2 closed deals available to deploy",
+     "color": "#2CA58D"
+    },
+    {
+     "key": "correlates",
+     "parent_key": "trigger",
+     "order_index": 5,
+     "node_type": "analysis",
+     "node_status": "done",
+     "label": "Companion Correlates",
+     "sub": "HIGH — $2.1B contested across 3 accounts",
+     "color": "#2CA58D"
+    },
+    {
+     "key": "options",
+     "parent_key": "correlates",
+     "order_index": 6,
+     "node_type": "action",
+     "node_status": "done",
+     "label": "Options: SWAT / Outcome SKU / Reference velocity",
+     "sub": "A: SWAT + outcome pricing (+11pp win)",
+     "color": "#2CA58D"
+    },
+    {
+     "key": "decision",
+     "parent_key": "options",
+     "order_index": 7,
+     "node_type": "decision",
+     "node_status": "done",
+     "label": "K Krithivasan Selected: Option A",
+     "sub": "GenAI SWAT pods routed to 3 accounts",
+     "color": "#0EA5E9"
+    },
+    {
+     "key": "exec1",
+     "parent_key": "decision",
+     "order_index": 8,
+     "node_type": "action",
+     "node_status": "current",
+     "label": "Execute: SWAT pods staffed",
+     "sub": "3 pods live, proposals in draft",
+     "color": "#2CA58D"
+    },
+    {
+     "key": "exec2",
+     "parent_key": "decision",
+     "order_index": 9,
+     "node_type": "action",
+     "node_status": "current",
+     "label": "Execute: Outcome SKU pricing floor",
+     "sub": "CFO sign-off pending",
+     "color": "#2CA58D"
+    }
+   ],
+   "logs": [
+    {
+     "log_id": "TR01",
+     "date_label": "2026-06-28",
+     "step": "External Scan",
+     "change": "Accenture reported $3B GenAI bookings",
+     "context": "Earnings Call",
+     "delta": "High",
+     "notes": "Consulting-led framing widening gap"
+    },
+    {
+     "log_id": "TR02",
+     "date_label": "2026-06-29",
+     "step": "Internal Correlation",
+     "change": "CRM win-rate slip confirmed at -6pp",
+     "context": "Salesforce",
+     "delta": "High",
+     "notes": "3 accounts contested"
+    },
+    {
+     "log_id": "TR03",
+     "date_label": "2026-07-01",
+     "step": "Options Modeled",
+     "change": "SWAT + outcome pricing modeled at +11pp win",
+     "context": "Companion",
+     "delta": "Medium",
+     "notes": "Protects $1.4B of $2.1B"
+    },
+    {
+     "log_id": "TR04",
+     "date_label": "2026-07-02",
+     "step": "Decision",
+     "change": "Option A selected — SWAT pods routed",
+     "context": "CEO review",
+     "delta": "High",
+     "notes": "48-hour mobilization"
+    }
+   ],
+   "learnings": []
+  },
+  {
+   "key": "mem2",
+   "title": "BFSI Cloud Migration Program (2025)",
+   "status": "resolved",
+   "body": "Completed 40-account BFSI cloud migration ahead of schedule; became the reference motion for the GenAI ramp.",
+   "owners": "K Krithivasan",
+   "region": "Global",
+   "tags": [
+    {
+     "label": "cloud",
+     "tone": "pos"
+    },
+    {
+     "label": "bfsi",
+     "tone": "neutral"
+    },
+    {
+     "label": "done",
+     "tone": "pos"
+    }
+   ],
+   "nodes": [
+    {
+     "key": "trigger",
+     "parent_key": null,
+     "order_index": 0,
+     "node_type": "signal",
+     "node_status": "done",
+     "label": "BFSI Cloud Migration Mandate",
+     "sub": "40 accounts, legacy core to cloud",
+     "color": "#2CA58D"
+    },
+    {
+     "key": "ext1",
+     "parent_key": "trigger",
+     "order_index": 1,
+     "node_type": "data_external",
+     "node_status": "done",
+     "label": "External: Hyperscaler co-invest",
+     "sub": "migration credits + joint GTM",
+     "color": "#2CA58D"
+    },
+    {
+     "key": "ext2",
+     "parent_key": "trigger",
+     "order_index": 2,
+     "node_type": "data_external",
+     "node_status": "done",
+     "label": "External: Client regulatory deadline",
+     "sub": "data-residency compliance date",
+     "color": "#2CA58D"
+    },
+    {
+     "key": "int1",
+     "parent_key": "trigger",
+     "order_index": 3,
+     "node_type": "data_internal",
+     "node_status": "done",
+     "label": "Internal: Delivery-capacity model",
+     "sub": "pod availability across 40 accounts",
+     "color": "#2CA58D"
+    },
+    {
+     "key": "int2",
+     "parent_key": "trigger",
+     "order_index": 4,
+     "node_type": "data_internal",
+     "node_status": "done",
+     "label": "Internal: Data-quality baseline",
+     "sub": "legacy data debt assessed",
+     "color": "#2CA58D"
+    },
+    {
+     "key": "correlates",
+     "parent_key": "trigger",
+     "order_index": 5,
+     "node_type": "analysis",
+     "node_status": "done",
+     "label": "Companion Correlates",
+     "sub": "SWAT-pod model cuts cutover time ~30%",
+     "color": "#2CA58D"
+    },
+    {
+     "key": "options",
+     "parent_key": "correlates",
+     "order_index": 6,
+     "node_type": "action",
+     "node_status": "done",
+     "label": "Options: Big-bang / Phased / SWAT-pods",
+     "sub": "C: dedicated migration SWAT pods",
+     "color": "#2CA58D"
+    },
+    {
+     "key": "decision",
+     "parent_key": "options",
+     "order_index": 7,
+     "node_type": "decision",
+     "node_status": "done",
+     "label": "Selected: SWAT-Pod Migration",
+     "sub": "40-account phased cutover",
+     "color": "#0EA5E9"
+    },
+    {
+     "key": "exec1",
+     "parent_key": "decision",
+     "order_index": 8,
+     "node_type": "action",
+     "node_status": "done",
+     "label": "Execute: 40 accounts migrated",
+     "sub": "ahead of schedule",
+     "color": "#2CA58D"
+    },
+    {
+     "key": "exec2",
+     "parent_key": "decision",
+     "order_index": 9,
+     "node_type": "action",
+     "node_status": "done",
+     "label": "Execute: Reference packaged",
+     "sub": "became GenAI-ramp analog",
+     "color": "#2CA58D"
+    }
+   ],
+   "logs": [
+    {
+     "log_id": "TR01",
+     "date_label": "2025-03-10",
+     "step": "Signal",
+     "change": "Cloud migration mandate scoped",
+     "context": "Program Office",
+     "delta": "High",
+     "notes": "40 BFSI accounts"
+    },
+    {
+     "log_id": "TR02",
+     "date_label": "2025-04-05",
+     "step": "Correlation",
+     "change": "SWAT-pod model cuts cutover ~30%",
+     "context": "Companion",
+     "delta": "Medium",
+     "notes": "Capacity confirmed"
+    },
+    {
+     "log_id": "TR03",
+     "date_label": "2025-05-20",
+     "step": "Decision",
+     "change": "SWAT-pod migration selected",
+     "context": "CEO review",
+     "delta": "High",
+     "notes": "Phased cutover"
+    },
+    {
+     "log_id": "TR04",
+     "date_label": "2025-09-30",
+     "step": "Outcome",
+     "change": "Completed ahead of schedule",
+     "context": "Delivery",
+     "delta": "High",
+     "notes": "Now the reference motion"
+    }
+   ],
+   "learnings": [
+    {
+     "category": "worked",
+     "body": "Dedicated migration SWAT pods cut cutover time 30%."
+    },
+    {
+     "category": "didnt_work",
+     "body": "Underestimated legacy data-cleansing effort in Q1; caused a 3-week slip mid-program."
+    },
+    {
+     "category": "next_time",
+     "body": "Front-load data-quality audits before committing account timelines."
+    }
+   ]
+  },
+  {
+   "key": "mem3",
+   "title": "Q2 Margin-Defense Lever Program — FY26",
+   "status": "current",
+   "body": "Coordinated lever program to defend Q2 operating margin against the wage-cycle and GenAI-investment drag, without cutting the AI capability budget.",
+   "owners": "K Krithivasan",
+   "region": "Global",
+   "tags": [
+    {
+     "label": "margin",
+     "tone": "warn"
+    },
+    {
+     "label": "finance",
+     "tone": "neutral"
+    }
+   ],
+   "nodes": [
+    {
+     "key": "trigger",
+     "parent_key": null,
+     "order_index": 0,
+     "node_type": "signal",
+     "node_status": "done",
+     "label": "Q2 Margin Below Aspiration",
+     "sub": "24.3% vs 26-28% band",
+     "color": "#2CA58D"
+    },
+    {
+     "key": "ext1",
+     "parent_key": "trigger",
+     "order_index": 1,
+     "node_type": "data_external",
+     "node_status": "done",
+     "label": "External: Wage-cycle norm",
+     "sub": "Peers absorbing similar Q1 wage drag",
+     "color": "#2CA58D"
+    },
+    {
+     "key": "ext2",
+     "parent_key": "trigger",
+     "order_index": 2,
+     "node_type": "data_external",
+     "node_status": "done",
+     "label": "External: Analyst margin scrutiny",
+     "sub": "Street watching AI-spend dilution",
+     "color": "#2CA58D"
+    },
+    {
+     "key": "int1",
+     "parent_key": "trigger",
+     "order_index": 3,
+     "node_type": "data_internal",
+     "node_status": "done",
+     "label": "Internal: Wage revision -110bps",
+     "sub": "Q1 cycle, front-loaded",
+     "color": "#2CA58D"
+    },
+    {
+     "key": "int2",
+     "parent_key": "trigger",
+     "order_index": 4,
+     "node_type": "data_internal",
+     "node_status": "done",
+     "label": "Internal: GenAI invest -60bps",
+     "sub": "deliberate capability build",
+     "color": "#2CA58D"
+    },
+    {
+     "key": "correlates",
+     "parent_key": "trigger",
+     "order_index": 5,
+     "node_type": "analysis",
+     "node_status": "done",
+     "label": "Companion Correlates",
+     "sub": "Recovery needs ~+140bps from run levers",
+     "color": "#2CA58D"
+    },
+    {
+     "key": "options",
+     "parent_key": "correlates",
+     "order_index": 6,
+     "node_type": "action",
+     "node_status": "done",
+     "label": "Options: Utilization / Pyramid / Subcon / Discretionary",
+     "sub": "A: run-lever mix, ring-fence GenAI",
+     "color": "#2CA58D"
+    },
+    {
+     "key": "decision",
+     "parent_key": "options",
+     "order_index": 7,
+     "node_type": "decision",
+     "node_status": "done",
+     "label": "K Krithivasan Selected: Run-Lever Mix",
+     "sub": "GenAI budget ring-fenced",
+     "color": "#0EA5E9"
+    },
+    {
+     "key": "exec1",
+     "parent_key": "decision",
+     "order_index": 8,
+     "node_type": "action",
+     "node_status": "current",
+     "label": "Execute: Utilization +1.5pp",
+     "sub": "bench redeploy into order book",
+     "color": "#2CA58D"
+    },
+    {
+     "key": "exec2",
+     "parent_key": "decision",
+     "order_index": 9,
+     "node_type": "action",
+     "node_status": "current",
+     "label": "Execute: Subcontractor -8%",
+     "sub": "internal reskilled substitution",
+     "color": "#2CA58D"
+    }
+   ],
+   "logs": [
+    {
+     "log_id": "TR01",
+     "date_label": "2026-07-01",
+     "step": "Signal",
+     "change": "Q2 margin tracking 24.3%",
+     "context": "FP&A model",
+     "delta": "High",
+     "notes": "170bps below band"
+    },
+    {
+     "log_id": "TR02",
+     "date_label": "2026-07-02",
+     "step": "Correlation",
+     "change": "Drag decomposed: wage -110, GenAI -60",
+     "context": "Finance",
+     "delta": "High",
+     "notes": "Non-structural"
+    },
+    {
+     "log_id": "TR03",
+     "date_label": "2026-07-03",
+     "step": "Options Modeled",
+     "change": "Run-lever mix modeled at +140bps",
+     "context": "Companion",
+     "delta": "Medium",
+     "notes": "No capability cut"
+    },
+    {
+     "log_id": "TR04",
+     "date_label": "2026-07-04",
+     "step": "Decision",
+     "change": "Run-lever mix approved; GenAI ring-fenced",
+     "context": "CEO+CFO",
+     "delta": "High",
+     "notes": "War-room stood up"
+    }
+   ],
+   "learnings": []
+  },
+  {
+   "key": "mem4",
+   "title": "AI-Ready Workforce & GenAI Reskilling Wave",
+   "status": "current",
+   "body": "Enterprise reskilling program to lift AI-ready workforce from 62% to 85% by Q4 and counter GenAI/cloud attrition through reskill-and-redeploy, not replacement.",
+   "owners": "K Krithivasan",
+   "region": "Global",
+   "tags": [
+    {
+     "label": "talent",
+     "tone": "pos"
+    },
+    {
+     "label": "culture",
+     "tone": "neutral"
+    }
+   ],
+   "nodes": [
+    {
+     "key": "trigger",
+     "parent_key": null,
+     "order_index": 0,
+     "node_type": "signal",
+     "node_status": "done",
+     "label": "Hot-Skill Attrition Rising",
+     "sub": "GenAI/cloud 19% in 2 hubs",
+     "color": "#2CA58D"
+    },
+    {
+     "key": "ext1",
+     "parent_key": "trigger",
+     "order_index": 1,
+     "node_type": "data_external",
+     "node_status": "done",
+     "label": "External: Start-up/GCC poaching",
+     "sub": "aggressive offers in Pune/Hyderabad",
+     "color": "#2CA58D"
+    },
+    {
+     "key": "ext2",
+     "parent_key": "trigger",
+     "order_index": 2,
+     "node_type": "data_external",
+     "node_status": "done",
+     "label": "External: Hot-skill wage inflation",
+     "sub": "comp gap ~6% vs offers",
+     "color": "#2CA58D"
+    },
+    {
+     "key": "int1",
+     "parent_key": "trigger",
+     "order_index": 3,
+     "node_type": "data_internal",
+     "node_status": "done",
+     "label": "Internal: AI-ready at 62%",
+     "sub": "+14pp YTD via tcsAI",
+     "color": "#2CA58D"
+    },
+    {
+     "key": "int2",
+     "parent_key": "trigger",
+     "order_index": 4,
+     "node_type": "data_internal",
+     "node_status": "done",
+     "label": "Internal: Global Top Employer",
+     "sub": "decade+ retention moat",
+     "color": "#2CA58D"
+    },
+    {
+     "key": "correlates",
+     "parent_key": "trigger",
+     "order_index": 5,
+     "node_type": "analysis",
+     "node_status": "done",
+     "label": "Companion Correlates",
+     "sub": "Reskilling widens supply; retention alone = bidding war",
+     "color": "#2CA58D"
+    },
+    {
+     "key": "options",
+     "parent_key": "correlates",
+     "order_index": 6,
+     "node_type": "action",
+     "node_status": "done",
+     "label": "Options: Spot-comp / Reskill waves / Project-pull",
+     "sub": "A: targeted comp + accelerate reskilling",
+     "color": "#2CA58D"
+    },
+    {
+     "key": "decision",
+     "parent_key": "options",
+     "order_index": 7,
+     "node_type": "decision",
+     "node_status": "done",
+     "label": "K Krithivasan Selected: Reskill-and-Redeploy",
+     "sub": "framed as skills realignment",
+     "color": "#0EA5E9"
+    },
+    {
+     "key": "exec1",
+     "parent_key": "decision",
+     "order_index": 8,
+     "node_type": "action",
+     "node_status": "current",
+     "label": "Execute: Spot-comp for ~14,000",
+     "sub": "two hubs, targeted",
+     "color": "#2CA58D"
+    },
+    {
+     "key": "exec2",
+     "parent_key": "decision",
+     "order_index": 9,
+     "node_type": "action",
+     "node_status": "current",
+     "label": "Execute: Reskilling to 85% by Q4",
+     "sub": "AI-fluency waves",
+     "color": "#2CA58D"
+    }
+   ],
+   "logs": [
+    {
+     "log_id": "TR01",
+     "date_label": "2026-06-30",
+     "step": "Signal",
+     "change": "Hot-skill attrition at 19%",
+     "context": "HR Analytics",
+     "delta": "Medium",
+     "notes": "Concentrated, not systemic"
+    },
+    {
+     "log_id": "TR02",
+     "date_label": "2026-07-01",
+     "step": "Correlation",
+     "change": "Comp gap + reskilling status mapped",
+     "context": "Rewards+Learning",
+     "delta": "Medium",
+     "notes": "62% AI-ready"
+    },
+    {
+     "log_id": "TR03",
+     "date_label": "2026-07-02",
+     "step": "Options Modeled",
+     "change": "Targeted comp + reskilling modeled -3pp attrition",
+     "context": "Companion",
+     "delta": "Medium",
+     "notes": "Margin impact ~8bps"
+    },
+    {
+     "log_id": "TR04",
+     "date_label": "2026-07-03",
+     "step": "Decision",
+     "change": "Reskill-and-redeploy approved",
+     "context": "CEO+CHRO",
+     "delta": "High",
+     "notes": "Skills realignment framing"
+    }
+   ],
+   "learnings": []
+  },
+  {
+   "key": "mem5",
+   "title": "NA BFSI Mega-Deal Pursuit — $1.2B Consolidation",
+   "status": "current",
+   "body": "Final-gate pursuit of a $1.2B, 7-year North America BFSI consolidation deal; repriced to a 23% margin floor and differentiated with an AI-led productivity commitment.",
+   "owners": "K Krithivasan",
+   "region": "North America",
+   "tags": [
+    {
+     "label": "deal",
+     "tone": "pos"
+    },
+    {
+     "label": "bfsi",
+     "tone": "neutral"
+    }
+   ],
+   "nodes": [
+    {
+     "key": "trigger",
+     "parent_key": null,
+     "order_index": 0,
+     "node_type": "signal",
+     "node_status": "done",
+     "label": "BFSI Consolidation at Final Gate",
+     "sub": "$1.2B TCV, final two",
+     "color": "#2CA58D"
+    },
+    {
+     "key": "ext1",
+     "parent_key": "trigger",
+     "order_index": 1,
+     "node_type": "data_external",
+     "node_status": "done",
+     "label": "External: Client vendor consolidation",
+     "sub": "cutting roster to a scaled partner",
+     "color": "#2CA58D"
+    },
+    {
+     "key": "ext2",
+     "parent_key": "trigger",
+     "order_index": 2,
+     "node_type": "data_external",
+     "node_status": "done",
+     "label": "External: Competitor sub-22% price",
+     "sub": "aggressive incumbent defense",
+     "color": "#2CA58D"
+    },
+    {
+     "key": "int1",
+     "parent_key": "trigger",
+     "order_index": 3,
+     "node_type": "data_internal",
+     "node_status": "done",
+     "label": "Internal: Margin floor 23%",
+     "sub": "below = walk",
+     "color": "#2CA58D"
+    },
+    {
+     "key": "int2",
+     "parent_key": "trigger",
+     "order_index": 4,
+     "node_type": "data_internal",
+     "node_status": "done",
+     "label": "Internal: BFSI Cloud 2025 analog",
+     "sub": "ramp playbook ready",
+     "color": "#2CA58D"
+    },
+    {
+     "key": "correlates",
+     "parent_key": "trigger",
+     "order_index": 5,
+     "node_type": "analysis",
+     "node_status": "done",
+     "label": "Companion Correlates",
+     "sub": "Accretive yr3+; AI productivity reframes price",
+     "color": "#2CA58D"
+    },
+    {
+     "key": "options",
+     "parent_key": "correlates",
+     "order_index": 6,
+     "node_type": "action",
+     "node_status": "done",
+     "label": "Options: As-is / Reprice / Walk",
+     "sub": "B: reprice to 23% floor + AI commitment",
+     "color": "#2CA58D"
+    },
+    {
+     "key": "decision",
+     "parent_key": "options",
+     "order_index": 7,
+     "node_type": "decision",
+     "node_status": "done",
+     "label": "K Krithivasan Selected: Reprice + AI Commitment",
+     "sub": "-20% run-cost by yr3",
+     "color": "#0EA5E9"
+    },
+    {
+     "key": "exec1",
+     "parent_key": "decision",
+     "order_index": 8,
+     "node_type": "action",
+     "node_status": "current",
+     "label": "Execute: Repriced bid at 23% floor",
+     "sub": "CFO sign-off",
+     "color": "#2CA58D"
+    },
+    {
+     "key": "exec2",
+     "parent_key": "decision",
+     "order_index": 9,
+     "node_type": "action",
+     "node_status": "current",
+     "label": "Execute: Phase 9-month ramp",
+     "sub": "6 delivery pods",
+     "color": "#2CA58D"
+    }
+   ],
+   "logs": [
+    {
+     "log_id": "TR01",
+     "date_label": "2026-07-02",
+     "step": "Signal",
+     "change": "Deal reached final gate",
+     "context": "Deal Desk",
+     "delta": "High",
+     "notes": "Client close in 3 weeks"
+    },
+    {
+     "log_id": "TR02",
+     "date_label": "2026-07-03",
+     "step": "Correlation",
+     "change": "Economics + ramp risk modeled",
+     "context": "Companion",
+     "delta": "High",
+     "notes": "Analog: BFSI Cloud 2025"
+    },
+    {
+     "log_id": "TR03",
+     "date_label": "2026-07-04",
+     "step": "Options Modeled",
+     "change": "Reprice-to-floor NPV +$180M vs walk",
+     "context": "Finance",
+     "delta": "Medium",
+     "notes": "Yr1-2 dilutive"
+    },
+    {
+     "log_id": "TR04",
+     "date_label": "2026-07-05",
+     "step": "Decision",
+     "change": "Reprice + AI commitment approved",
+     "context": "CEO+CFO",
+     "delta": "High",
+     "notes": "23% floor held"
+    }
+   ],
+   "learnings": []
+  },
+  {
+   "key": "mem6",
+   "title": "GenAI Pilot-to-Scale Playbook — Global Insurer (2025)",
+   "status": "resolved",
+   "body": "Converted a stalled GenAI claims-automation pilot at a global insurer into an enterprise-scale program with outcome-based pricing — the analog now fueling the Top-50 GenAI ramp.",
+   "owners": "K Krithivasan",
+   "region": "Global",
+   "tags": [
+    {
+     "label": "genai",
+     "tone": "pos"
+    },
+    {
+     "label": "resolved",
+     "tone": "neutral"
+    }
+   ],
+   "nodes": [
+    {
+     "key": "trigger",
+     "parent_key": null,
+     "order_index": 0,
+     "node_type": "signal",
+     "node_status": "done",
+     "label": "Stalled GenAI Pilot at Insurer",
+     "sub": "pilot not converting to scale",
+     "color": "#2CA58D"
+    },
+    {
+     "key": "ext1",
+     "parent_key": "trigger",
+     "order_index": 1,
+     "node_type": "data_external",
+     "node_status": "done",
+     "label": "External: Board pressure for AI ROI",
+     "sub": "insurer CEO wanted production value",
+     "color": "#2CA58D"
+    },
+    {
+     "key": "ext2",
+     "parent_key": "trigger",
+     "order_index": 2,
+     "node_type": "data_external",
+     "node_status": "done",
+     "label": "External: Competitor circling account",
+     "sub": "consulting-led reinvention pitch",
+     "color": "#2CA58D"
+    },
+    {
+     "key": "int1",
+     "parent_key": "trigger",
+     "order_index": 3,
+     "node_type": "data_internal",
+     "node_status": "done",
+     "label": "Internal: Working claims-automation POC",
+     "sub": "23% cycle-time gain proven",
+     "color": "#2CA58D"
+    },
+    {
+     "key": "int2",
+     "parent_key": "trigger",
+     "order_index": 4,
+     "node_type": "data_internal",
+     "node_status": "done",
+     "label": "Internal: Outcome-pricing template",
+     "sub": "from prior BFSI deal",
+     "color": "#2CA58D"
+    },
+    {
+     "key": "correlates",
+     "parent_key": "trigger",
+     "order_index": 5,
+     "node_type": "analysis",
+     "node_status": "done",
+     "label": "Companion Correlates",
+     "sub": "Scale-path + outcome pricing unlock the mandate",
+     "color": "#2CA58D"
+    },
+    {
+     "key": "options",
+     "parent_key": "correlates",
+     "order_index": 6,
+     "node_type": "action",
+     "node_status": "done",
+     "label": "Options: Extend pilot / Outcome-scale / Exit",
+     "sub": "B: outcome-based enterprise scale",
+     "color": "#2CA58D"
+    },
+    {
+     "key": "decision",
+     "parent_key": "options",
+     "order_index": 7,
+     "node_type": "decision",
+     "node_status": "done",
+     "label": "K Krithivasan Selected: Outcome-Scale",
+     "sub": "fixed-outcome first use case",
+     "color": "#0EA5E9"
+    },
+    {
+     "key": "exec1",
+     "parent_key": "decision",
+     "order_index": 8,
+     "node_type": "action",
+     "node_status": "done",
+     "label": "Execute: Enterprise rollout signed",
+     "sub": "8 processes in production",
+     "color": "#2CA58D"
+    },
+    {
+     "key": "exec2",
+     "parent_key": "decision",
+     "order_index": 9,
+     "node_type": "action",
+     "node_status": "done",
+     "label": "Execute: Reference packaged",
+     "sub": "reused in Top-50 ramp",
+     "color": "#2CA58D"
+    }
+   ],
+   "logs": [
+    {
+     "log_id": "TR01",
+     "date_label": "2025-11-10",
+     "step": "Signal",
+     "change": "Pilot stalled at conversion",
+     "context": "Account Team",
+     "delta": "Medium",
+     "notes": "AI ROI questioned"
+    },
+    {
+     "log_id": "TR02",
+     "date_label": "2025-11-20",
+     "step": "Correlation",
+     "change": "POC gains + outcome template mapped",
+     "context": "Companion",
+     "delta": "High",
+     "notes": "23% cycle-time proof"
+    },
+    {
+     "log_id": "TR03",
+     "date_label": "2025-12-05",
+     "step": "Decision",
+     "change": "Outcome-scale selected",
+     "context": "CEO review",
+     "delta": "High",
+     "notes": "Fixed-outcome first case"
+    },
+    {
+     "log_id": "TR04",
+     "date_label": "2026-02-15",
+     "step": "Outcome",
+     "change": "Enterprise rollout live; +$140M TCV",
+     "context": "Delivery",
+     "delta": "High",
+     "notes": "Above model"
+    }
+   ],
+   "learnings": [
+    {
+     "category": "worked",
+     "body": "Leading with a fixed-outcome first use case neutralized the competitor's consulting framing and unlocked the enterprise mandate."
+    },
+    {
+     "category": "didnt_work",
+     "body": "The initial pilot lingered too long in evaluation; delay let a competitor re-enter and nearly cost the account."
+    },
+    {
+     "category": "next_time",
+     "body": "Set a pilot-to-scale decision gate at 90 days with a pre-agreed outcome-pricing path, so pilots convert before competitors circle."
+    }
+   ]
+  }
+ ],
+ "memory_time_windows": [
+  {
+   "key": "7d",
+   "label": "Last 7 Days",
+   "days": 7
+  },
+  {
+   "key": "30d",
+   "label": "Last 30 Days",
+   "days": 30
+  },
+  {
+   "key": "90d",
+   "label": "Last 90 Days",
+   "days": 90
+  },
+  {
+   "key": "all",
+   "label": "All Time",
+   "days": null
+  }
+ ],
+ "firm_capabilities": [
+  {
+   "capability_key": "wargame",
+   "sort_order": 0,
+   "metric_chips": [
+    {
+     "label": "Active threats",
+     "value": "3",
+     "tone": "warn"
+    },
+    {
+     "label": "Accenture GenAI gap",
+     "value": "-$1.2B",
+     "tone": "bad"
+    },
+    {
+     "label": "Contested pipeline",
+     "value": "$2.1B",
+     "tone": "neutral"
+    },
+    {
+     "label": "AI-led win motion",
+     "value": "outcome-based",
+     "tone": "good"
+    }
+   ]
+  }
+ ],
+ "lite_sim_suggestions": [
+  {
+   "label": "Worst-performing top-20 account right now?",
+   "prompt": "Which of my top-20 accounts is furthest behind plan right now, and why?",
+   "category": "default"
+  },
+  {
+   "label": "Close the Accenture GenAI bookings gap",
+   "prompt": "What's the fastest path to close the $1.2B GenAI bookings gap with Accenture this half?",
+   "category": "default"
+  },
+  {
+   "label": "Defend Q2 margin without cutting AI spend",
+   "prompt": "If I need to hold Q2 margin at 25%, which levers do it without touching the GenAI capability budget?",
+   "category": "default"
+  },
+  {
+   "label": "Where to deploy the next $50M capability budget",
+   "prompt": "Where should I deploy my next $50M of capability investment for the highest 3-year value — GenAI, sovereign/deep-tech, or delivery automation?",
+   "category": "default"
+  },
+  {
+   "label": "Read-through if I pursue the $1.2B BFSI deal",
+   "prompt": "Read-through on margin, concentration, and ramp risk if I pursue the $1.2B BFSI consolidation deal at a 23% floor?",
+   "category": "default"
+  },
+  {
+   "label": "What worked in the 2025 GenAI pilot-to-scale?",
+   "prompt": "What worked when we scaled the insurer GenAI pilot in 2025, and how do we reuse it in the Top-50 ramp?",
+   "category": "default"
+  }
+ ],
+ "brief_stakeholders": [
+  {
+   "key": "board",
+   "name": "Board of Directors",
+   "role": "Board",
+   "default_tone": "formal",
+   "default_length": "long",
+   "icon_key": "Users",
+   "color_key": "purple"
+  },
+  {
+   "key": "cfo",
+   "name": "Samir Seksaria",
+   "role": "Chief Financial Officer",
+   "default_tone": "executive",
+   "default_length": "medium",
+   "icon_key": "User",
+   "color_key": "blue"
+  },
+  {
+   "key": "coo",
+   "name": "Aarthi Subramanian",
+   "role": "Chief Operating Officer",
+   "default_tone": "executive",
+   "default_length": "medium",
+   "icon_key": "User",
+   "color_key": "green"
+  },
+  {
+   "key": "chro",
+   "name": "Milind Lakkad",
+   "role": "Chief HR Officer",
+   "default_tone": "executive",
+   "default_length": "medium",
+   "icon_key": "User",
+   "color_key": "amber"
+  }
+ ],
+ "chat_seed_suggestions": [
+  {
+   "label": "Top competitive threats this quarter?",
+   "prompt": "What are our top competitive threats this quarter and how are we responding?",
+   "view_context": null
+  },
+  {
+   "label": "Summarize GenAI GTM progress",
+   "prompt": "Summarize our GenAI go-to-market progress vs Accenture and Infosys",
+   "view_context": null
+  },
+  {
+   "label": "Explain this signal's impact",
+   "prompt": "Explain the impact of this signal on our pipeline and margin",
+   "view_context": "signalDetail"
+  },
+  {
+   "label": "What changed in this initiative?",
+   "prompt": "What has changed recently in this initiative and what's the next gate?",
+   "view_context": "memory-detail"
+  }
+ ],
+ "agents": [
+  {
+   "agent_key": "chat",
+   "label": "Strategic Chat Agent",
+   "provider": "gemini_vertex",
+   "model": "gemini-2.5-flash",
+   "temperature": 0.4,
+   "max_tokens": 8000,
+   "tool_keys": "google_search",
+   "enable_search": true,
+   "prompts": [
+    {
+     "phase": "clarify",
+     "template": "You are a strategic assistant for {firm_name}. The CXO is {cxo_name}, {cxo_title}. Ask clarifying questions first."
+    },
+    {
+     "phase": "analysis",
+     "template": "Provide deep strategic analysis for {firm_name} using data-driven insights."
+    }
+   ]
+  },
+  {
+   "agent_key": "lite_sim",
+   "label": "Quick Simulation Agent",
+   "provider": "gemini_vertex",
+   "model": "gemini-2.5-flash",
+   "temperature": 0.5,
+   "max_tokens": 8000,
+   "tool_keys": "google_search",
+   "enable_search": true,
+   "prompts": [
+    {
+     "phase": "single",
+     "template": "You are a simulation engine for {firm_name}. Run quick what-if scenarios with quantified impact, assumptions, and confidence levels."
+    }
+   ]
+  }
+ ],
+ "firm_members": [
+  {
+   "name": "K Krithivasan",
+   "role": "CEO & MD",
+   "email": "ceo@tcs.com"
+  },
+  {
+   "name": "Samir Seksaria",
+   "role": "CFO",
+   "email": "cfo@tcs.com"
+  },
+  {
+   "name": "Aarthi Subramanian",
+   "role": "COO",
+   "email": "coo@tcs.com"
+  },
+  {
+   "name": "Milind Lakkad",
+   "role": "CHRO",
+   "email": "chro@tcs.com"
+  },
+  {
+   "name": "Head of GenAI / AI.Cloud",
+   "role": "Head of AI",
+   "email": "genai@tcs.com"
+  },
+  {
+   "name": "Head of BFSI",
+   "role": "Business Group Head",
+   "email": "bfsi.head@tcs.com"
+  }
+ ],
+ "wargame_competitors": [
+  {
+   "name": "Accenture",
+   "market_share": "22%",
+   "threat_level": "HIGH",
+   "tier": "T1",
+   "positioning": "Consulting-led GenAI leader. Reinvention narrative winning C-suite mandates in BFSI and Products.",
+   "strengths": [
+    "Consulting depth & C-suite relationships",
+    "GenAI bookings lead (~$3B/quarter)",
+    "Reinvention / Industry X.0 framework",
+    "Strategy + systems-integration bundle"
+   ],
+   "weaknesses": [
+    "Higher cost structure than TCS",
+    "Premium perception in price-sensitive mid-market",
+    "Attrition in hot GenAI skills",
+    "Slower low-cost delivery ramp"
+   ],
+   "recent_moves": [
+    "Reported $3B GenAI bookings, +67% QoQ",
+    "Contesting 3 of TCS's top-20 accounts",
+    "Acquired two GenAI boutiques",
+    "Aggressive BFSI reinvention push"
+   ],
+   "scenarios": [
+    {
+     "title": "Accenture wins the 3 contested top-20 GenAI RFPs",
+     "impact_assessment": "Swings ~$2.1B of pipeline and widens the GenAI bookings gap toward ~$2B, pressuring TCS's growth narrative with analysts.",
+     "recommended_response": "Deploy GenAI SWAT pods within 48h, lead with outcome-based pricing, and fast-track two closed BFSI references."
+    },
+    {
+     "title": "Accenture holds premium and cedes mid-market on price",
+     "impact_assessment": "Opens room for a TCS productized GenAI SKU to take mid-market share while Accenture defends enterprise margin.",
+     "recommended_response": "Ship the mid-market GenAI bundle ~15% below custom to capture the segment Accenture won't chase."
+    }
+   ]
+  },
+  {
+   "name": "Infosys",
+   "market_share": "12%",
+   "threat_level": "HIGH",
+   "tier": "T1",
+   "positioning": "Closest Indian-heritage rival. Topaz (AI) + Cobalt (cloud); aggressive on price and AI narrative.",
+   "strengths": [
+    "Topaz GenAI + Cobalt cloud platforms",
+    "Aggressive mid-market fixed-price bundles",
+    "Strong margin discipline",
+    "Fast productization"
+   ],
+   "weaknesses": [
+    "Smaller scale than TCS",
+    "Thinner sovereign/deep-tech footprint",
+    "Narrower domain depth in some verticals",
+    "Brand-value gap to TCS"
+   ],
+   "recent_moves": [
+    "Launched Topaz mid-market GenAI bundles ~15% below TCS custom",
+    "Demoed Topaz at contested accounts",
+    "Raised FY GenAI messaging",
+    "Pushed outcome-based pilots"
+   ],
+   "scenarios": [
+    {
+     "title": "Infosys triggers a mid-market GenAI price war",
+     "impact_assessment": "Compresses mid-market margin fastest — TCS's fastest-growing GenAI segment — and stalls evaluations on price.",
+     "recommended_response": "Ship a productized mid-market GenAI SKU to remove price as the deciding factor; hold a 24% margin floor."
+    },
+    {
+     "title": "Infosys wins on speed-to-productize in a key account",
+     "impact_assessment": "Cedes a reference logo and momentum in the productized-GenAI narrative.",
+     "recommended_response": "Counter with TCS's domain depth + sovereign/reference proof and an outcome guarantee."
+    }
+   ]
+  },
+  {
+   "name": "Cognizant",
+   "market_share": "8%",
+   "threat_level": "MEDIUM",
+   "tier": "T1",
+   "positioning": "US-heavy; strong in healthcare and BFSI; regaining large-deal momentum with Neuro AI.",
+   "strengths": [
+    "Healthcare & BFSI depth in the US",
+    "Large-deal momentum",
+    "Neuro AI platform",
+    "Disciplined capital return"
+   ],
+   "weaknesses": [
+    "Narrower global footprint",
+    "Less sovereign/deep-tech presence",
+    "Historically higher attrition",
+    "Thinner platform/IP portfolio"
+   ],
+   "recent_moves": [
+    "Signed multiple US large deals",
+    "Pushed Neuro AI in healthcare",
+    "Expanded BFSI GenAI pilots",
+    "Returned capital to shareholders"
+   ],
+   "scenarios": [
+    {
+     "title": "Cognizant wins US healthcare GenAI mandates",
+     "impact_assessment": "Erodes TCS's US healthcare growth lane where Cognizant is strongest.",
+     "recommended_response": "Lead with TCS Life-Sciences/ADD depth and cross-industry AI references; protect key US healthcare accounts."
+    },
+    {
+     "title": "Cognizant competes on US onshore amid visa cost rise",
+     "impact_assessment": "US-heavy delivery gives Cognizant a localization edge as H-1B costs rise.",
+     "recommended_response": "Accelerate US local hiring and near-shore; differentiate on AI-led productivity, not headcount."
+    }
+   ]
+  }
+ ],
+ "guardrails": [
+  {
+   "guardrail_type": "pii_detection",
+   "name": "PII Auto-Redaction",
+   "config": {
+    "detect": [
+     "email",
+     "phone"
+    ],
+    "action": "redact"
+   }
+  },
+  {
+   "guardrail_type": "token_limit",
+   "name": "Response Token Limit",
+   "config": {
+    "max_input_tokens": 4000,
+    "max_output_tokens": 8000
+   }
+  }
+ ],
+ "monitoring": [
+  {
+   "target_type": "data_source",
+   "target_label": "Earnings Feeds",
+   "frequency": "daily"
+  },
+  {
+   "target_type": "data_source",
+   "target_label": "Analyst Notes",
+   "frequency": "daily"
+  }
+ ],
+ "pipeline_runs": [
+  {
+   "data_source_name": "Analyst Notes",
+   "run_type": "ingest",
+   "status": "success",
+   "records_processed": 1200
+  },
+  {
+   "data_source_name": "Earnings Feeds",
+   "run_type": "ingest",
+   "status": "running",
+   "records_processed": 0
+  }
+ ]
+}

@@ -1,0 +1,61 @@
+# Cloud Build → Artifact Registry → Cloud Run for cco-os-backend.
+#
+# Usage:
+#   gcloud builds submit --config=cloudbuild.yaml \
+#       --substitutions=_REGION=us-central1,_SERVICE=cco-backend,_REPO=cco-os
+#
+# Prereqs:
+#   gcloud artifacts repositories create cco-os \
+#       --repository-format=docker --location=us-central1
+#   gcloud auth configure-docker us-central1-docker.pkg.dev
+
+substitutions:
+  _REGION: us-central1
+  _SERVICE: cco-backend
+  _REPO: cco-os
+  _IMAGE: ${_REGION}-docker.pkg.dev/${PROJECT_ID}/${_REPO}/${_SERVICE}
+
+steps:
+  # Build
+  - id: build
+    name: gcr.io/cloud-builders/docker
+    args:
+      - build
+      - --tag=${_IMAGE}:${SHORT_SHA}
+      - --tag=${_IMAGE}:latest
+      - .
+
+  # Push both tags
+  - id: push
+    name: gcr.io/cloud-builders/docker
+    args: [push, --all-tags, "${_IMAGE}"]
+
+  # Deploy to Cloud Run
+  - id: deploy
+    name: gcr.io/google.cloud-sdk/cloud-sdk
+    entrypoint: gcloud
+    args:
+      - run
+      - deploy
+      - ${_SERVICE}
+      - --image=${_IMAGE}:${SHORT_SHA}
+      - --region=${_REGION}
+      - --platform=managed
+      - --allow-unauthenticated
+      - --port=8080
+      - --memory=1Gi
+      - --cpu=1
+      - --min-instances=0
+      - --max-instances=4
+      - --timeout=300
+      - --concurrency=40
+      # Env vars override anything in the baked .env.
+      # Add --set-env-vars=KEY=VALUE,KEY2=VALUE2 here as needed.
+
+images:
+  - ${_IMAGE}:${SHORT_SHA}
+  - ${_IMAGE}:latest
+
+options:
+  logging: CLOUD_LOGGING_ONLY
+  machineType: E2_HIGHCPU_8
