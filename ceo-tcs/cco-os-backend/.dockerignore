@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+venv/
+env/
+.venv/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+bash.exe.stackdump
+
+# Local DB — rebuilt at container build via seed_db.py
+cxo_db.db
+*.sqlite
+*.sqlite3
+
+# Git
+.git/
+.gitignore
+
+# Docker
+Dockerfile
+.dockerignore
+
+# Logs
+*.log
+logs/
+
+# Tests
+tests/
+test_*.py
+
+# NOTE: .env IS NOT ignored — user requested it be copied into the image.
+# For production secrets prefer Cloud Run env vars or Secret Manager.

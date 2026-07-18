@@ -1,0 +1,626 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TCS CXO Companion — Decision Lab · Deep Simulation</title>
+<style>
+:root{
+  --bg:#f6f2ea; --bg2:#efe9dd; --panel:#ffffff; --ink:#1d1a15; --ink2:#3a352c;
+  --muted:#8c8373; --muted2:#a99f8c; --line:#e8e1d2; --line2:#ded5c2;
+  --gold:#b6811c; --gold-b:#e0a82e; --gold-soft:#f6ecd0; --gold-line:#ecd9a6;
+  --green:#1f7a52; --green-soft:#e4f2ea; --green-line:#bfe0cf;
+  --red:#b23524; --red-soft:#f8e6e2; --red-line:#f0cabf;
+  --teal:#2ca58d; --blue:#2f6fd6; --blue-soft:#e8f0fb;
+  --sb:#211913; --sb2:#160f0a;
+  --serif:Georgia,"Times New Roman",serif;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --shadow:0 1px 2px rgba(40,30,10,.05),0 8px 24px rgba(40,30,10,.06);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:14px;line-height:1.45;-webkit-font-smoothing:antialiased}
+.app{display:flex;min-height:100vh}
+/* ---------- sidebar ---------- */
+.sidebar{width:230px;flex:0 0 230px;background:linear-gradient(180deg,var(--sb),var(--sb2));color:#cfc4b2;display:flex;flex-direction:column;position:sticky;top:0;height:100vh}
+.brand{display:flex;align-items:center;gap:11px;padding:20px 18px 14px}
+.brand .logo{width:38px;height:38px;border-radius:9px;background:var(--gold-b);color:#231a10;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:13px;letter-spacing:.5px}
+.brand .bt{font-weight:700;color:#f3ead8;font-size:14px;line-height:1.1}
+.brand .bs{font-size:9px;letter-spacing:1.5px;color:#9c8f79;text-transform:uppercase;margin-top:2px}
+.nav{margin-top:14px;display:flex;flex-direction:column;gap:3px;padding:0 12px}
+.nav a{display:flex;align-items:center;gap:11px;padding:10px 12px;border-radius:9px;color:#b7ab97;text-decoration:none;font-size:13.5px;font-weight:500}
+.nav a .ic{width:17px;text-align:center;opacity:.85}
+.nav a:hover{background:rgba(255,255,255,.04);color:#e9dec9}
+.nav a.active{background:rgba(224,168,46,.13);color:#f3ead8;box-shadow:inset 3px 0 0 var(--gold-b)}
+.nav a.active .dot{margin-left:auto;width:6px;height:6px;border-radius:50%;background:var(--gold-b)}
+.sb-foot{margin-top:auto;padding:16px;display:flex;align-items:center;gap:10px;border-top:1px solid rgba(255,255,255,.06)}
+.sb-foot .av{width:34px;height:34px;border-radius:50%;background:var(--gold-b);color:#231a10;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:12px}
+.sb-foot .nm{font-size:12.5px;color:#eadfca;font-weight:600}
+.sb-foot .rl{font-size:9px;letter-spacing:1px;color:#9c8f79;text-transform:uppercase}
+/* ---------- main ---------- */
+.main{flex:1;min-width:0;display:flex;flex-direction:column}
+.topbar{display:flex;align-items:center;justify-content:space-between;padding:16px 30px 4px}
+.topbar .date{font-size:11px;letter-spacing:1.6px;color:var(--muted);text-transform:uppercase;font-weight:600}
+.tick{display:flex;align-items:center;gap:9px;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:7px 13px;font-size:12px;box-shadow:var(--shadow)}
+.tick b{font-weight:700}.tick .dn{color:var(--red);font-weight:700}.tick .sep{color:var(--muted2)}
+.wrap{padding:8px 30px 60px;max-width:1220px}
+.kicker{font-size:11px;letter-spacing:2px;color:var(--gold);text-transform:uppercase;font-weight:700;margin-bottom:8px}
+h1.display{font-family:var(--serif);font-size:33px;font-weight:400;letter-spacing:-.5px;line-height:1.1}
+h1.display .em{font-style:italic;color:var(--gold)}
+.sub{color:var(--muted);font-size:14px;margin-top:8px;max-width:720px}
+/* ---------- mode toggle ---------- */
+.modebar{display:flex;align-items:center;gap:14px;margin:22px 0 8px}
+.modebar .lbl{font-size:10px;letter-spacing:2px;color:var(--muted);text-transform:uppercase;font-weight:700}
+.seg{display:inline-flex;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:4px;box-shadow:var(--shadow)}
+.seg button{border:0;background:transparent;padding:7px 16px;border-radius:7px;font-size:13px;font-weight:600;color:var(--muted);cursor:pointer;font-family:var(--sans)}
+.seg button.on{background:var(--ink);color:#fff}
+/* ---------- objective cards ---------- */
+.count{font-size:10px;letter-spacing:2px;color:var(--muted);text-transform:uppercase;font-weight:700;margin:26px 0 12px}
+.objs{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.obj{background:var(--panel);border:1px solid var(--line);border-radius:15px;padding:22px;box-shadow:var(--shadow);cursor:pointer;transition:.16s;position:relative;overflow:hidden}
+.obj:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(40,30,10,.13);border-color:var(--line2)}
+.obj .cap{position:absolute;top:0;left:0;right:0;height:4px}
+.obj .top{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
+.obj .icon{width:42px;height:42px;border-radius:11px;display:flex;align-items:center;justify-content:center;font-size:20px}
+.obj .tag{font-size:9px;letter-spacing:1.5px;font-weight:700;text-transform:uppercase;padding:5px 9px;border-radius:20px;background:var(--bg2);color:var(--muted)}
+.obj h3{font-size:18px;font-weight:700;letter-spacing:-.2px;margin-bottom:7px}
+.obj p{color:var(--muted);font-size:12.5px;line-height:1.5;min-height:52px}
+.obj .stats{display:flex;gap:16px;margin:16px 0 4px;padding-top:15px;border-top:1px solid var(--line)}
+.obj .stat .k{font-size:9px;letter-spacing:1px;color:var(--muted2);text-transform:uppercase;font-weight:700}
+.obj .stat .v{font-size:17px;font-weight:800;margin-top:3px;font-family:var(--serif)}
+.obj .open{margin-top:16px;text-align:right;font-size:12px;font-weight:800;letter-spacing:1px;color:var(--gold);text-transform:uppercase}
+/* ---------- wizard ---------- */
+.crumb{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--muted);margin:2px 0 16px;cursor:default}
+.crumb a{color:var(--gold);text-decoration:none;font-weight:600;cursor:pointer}
+.crumb b{color:var(--ink);font-weight:600}
+.stepper{display:flex;align-items:center;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px 20px;box-shadow:var(--shadow);margin-bottom:22px}
+.stp{display:flex;align-items:center;gap:11px;cursor:pointer}
+.stp .num{width:30px;height:30px;border-radius:50%;background:var(--bg2);color:var(--muted);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;flex:0 0 30px}
+.stp .tx .a{font-size:9px;letter-spacing:1.5px;color:var(--muted2);text-transform:uppercase;font-weight:700}
+.stp .tx .b{font-size:13.5px;font-weight:700;color:var(--ink2)}
+.stp.active .num{background:var(--gold-b);color:#231a10}
+.stp.done .num{background:var(--green);color:#fff}
+.stp.active .tx .b{color:var(--ink)}
+.stpline{flex:1;height:2px;background:var(--line);margin:0 14px}
+.stpline.done{background:var(--green-line)}
+/* ---------- panels & kpis ---------- */
+.sechead{font-size:11px;letter-spacing:2px;color:var(--gold);text-transform:uppercase;font-weight:700;margin:6px 0 6px}
+h2.big{font-family:var(--serif);font-size:26px;font-weight:400;letter-spacing:-.3px;margin-bottom:5px}
+.lead{color:var(--muted);font-size:13.5px;max-width:760px;margin-bottom:18px}
+.pillrt{float:right;font-size:12px;font-weight:700}
+.kpis{display:grid;gap:12px;margin-bottom:20px}
+.kpi{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:15px 16px;box-shadow:var(--shadow);border-top:3px solid var(--line2)}
+.kpi.g{border-top-color:var(--green)}.kpi.r{border-top-color:var(--red)}.kpi.gold{border-top-color:var(--gold-b)}
+.kpi .k{font-size:9.5px;letter-spacing:1.2px;color:var(--muted);text-transform:uppercase;font-weight:700}
+.kpi .v{font-size:26px;font-weight:800;font-family:var(--serif);margin:5px 0 3px;letter-spacing:-.5px}
+.kpi .s{font-size:11.5px;color:var(--muted)}
+.kpi .s.pos{color:var(--green);font-weight:600}.kpi .s.neg{color:var(--red);font-weight:600}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:20px;box-shadow:var(--shadow);margin-bottom:18px}
+.card .ch{font-size:11px;letter-spacing:1.5px;color:var(--gold);text-transform:uppercase;font-weight:700;margin-bottom:3px;display:flex;justify-content:space-between;align-items:center}
+.card .ct{font-family:var(--serif);font-size:19px;margin-bottom:3px}
+.card .cs{color:var(--muted);font-size:12.5px;margin-bottom:14px}
+.badge{font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:4px 9px;border-radius:20px}
+.badge.warn{background:var(--red-soft);color:var(--red)}
+.badge.ok{background:var(--green-soft);color:var(--green)}
+.badge.gold{background:var(--gold-soft);color:var(--gold)}
+/* tables */
+.tbl{width:100%;border-collapse:collapse}
+.tbl th{text-align:left;font-size:9.5px;letter-spacing:1px;color:var(--muted2);text-transform:uppercase;font-weight:700;padding:9px 8px;border-bottom:1px solid var(--line)}
+.tbl td{padding:11px 8px;border-bottom:1px solid var(--line);font-size:13px;vertical-align:middle}
+.tbl tr:last-child td{border-bottom:0}
+.tbl .nm{font-weight:700}.tbl .subt{font-size:10.5px;color:var(--muted);font-weight:500}
+.dot{display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:7px;vertical-align:middle}
+.dot.r{background:var(--red)}.dot.g{background:var(--green)}.dot.y{background:var(--gold-b)}
+.mono{font-variant-numeric:tabular-nums}
+.pos{color:var(--green);font-weight:700}.neg{color:var(--red);font-weight:700}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.grid2a{display:grid;grid-template-columns:1.35fr 1fr;gap:18px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+@media(max-width:1050px){.objs{grid-template-columns:1fr}.grid2,.grid2a,.grid3,.grid4{grid-template-columns:1fr}}
+/* intelligence */
+.why .chips{display:flex;flex-direction:column;gap:9px;margin-top:12px}
+.wchip{display:flex;gap:11px;align-items:flex-start;padding:10px 12px;background:var(--bg2);border-radius:9px}
+.wchip .tp{font-size:9px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:3px 8px;border-radius:5px;background:#fff;border:1px solid var(--line);color:var(--muted);flex:0 0 auto;margin-top:1px}
+.wchip .tx{font-size:12.5px;color:var(--ink2)}
+.analog{background:linear-gradient(180deg,var(--green-soft),#fff);border:1px solid var(--green-line)}
+.analog .name{font-family:var(--serif);font-size:20px;color:var(--green);margin-bottom:2px}
+.obox{background:#fff;border:1px solid var(--green-line);border-radius:10px;padding:12px;font-size:12px;color:var(--ink2)}
+.play{background:linear-gradient(180deg,var(--gold-soft),#fff);border:1px solid var(--gold-line)}
+.play ul{list-style:none;display:flex;flex-direction:column;gap:9px;margin-top:6px}
+.play li{display:flex;gap:9px;font-size:12.8px;color:var(--ink2)}
+.play li:before{content:"";width:7px;height:7px;border-radius:50%;background:var(--gold-b);margin-top:6px;flex:0 0 7px}
+.mbox{background:#fff;border:1px solid var(--gold-line);border-radius:10px;padding:14px}
+.mrow{display:flex;justify-content:space-between;padding:6px 0;font-size:12.5px;border-bottom:1px dashed var(--line)}
+.mrow:last-child{border-bottom:0}.mrow b{font-family:var(--serif);font-size:14px}
+.conf{display:flex;gap:3px;margin:8px 0}
+.conf i{width:22px;height:9px;border-radius:2px;background:var(--green)}
+.conf i.off{background:var(--line2)}
+.next{background:linear-gradient(90deg,#fff,var(--gold-soft));border:1px solid var(--gold-line);border-radius:14px;padding:20px 22px;display:flex;align-items:center;justify-content:space-between;cursor:pointer;transition:.15s}
+.next:hover{box-shadow:0 10px 26px rgba(180,130,20,.16)}
+.next .nk{font-size:10px;letter-spacing:2px;color:var(--gold);text-transform:uppercase;font-weight:700}
+.next .nt{font-family:var(--serif);font-size:20px;margin:3px 0}
+.next .nd{font-size:12px;color:var(--muted);max-width:640px}
+.next .arw{font-size:26px;color:var(--gold)}
+/* workbench levers */
+.lvgroup{margin-bottom:8px}
+.lvhead{display:flex;justify-content:space-between;font-size:11px;letter-spacing:1.5px;color:var(--gold);text-transform:uppercase;font-weight:700;padding:12px 4px 8px}
+.lv{display:grid;grid-template-columns:1.5fr .8fr 1.6fr;gap:12px;align-items:center;padding:11px 4px;border-top:1px solid var(--line)}
+.lv .ln{font-size:13px;font-weight:600}.lv .ls{font-size:10.5px;color:var(--muted)}
+.lv .asis{font-size:12px;color:var(--muted)}
+.lv .tobe{font-size:13px;font-weight:700;color:var(--gold)}
+.lv .tobe .rec{display:block;font-size:9px;letter-spacing:.5px;color:var(--green);font-weight:700}
+.lv input[type=range]{width:100%;-webkit-appearance:none;height:5px;border-radius:4px;background:var(--line2);outline:none}
+.lv input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:18px;height:18px;border-radius:50%;background:var(--gold-b);border:3px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.2);cursor:pointer}
+.lv input[type=range]::-moz-range-thumb{width:15px;height:15px;border-radius:50%;background:var(--gold-b);border:3px solid #fff;cursor:pointer}
+.constraints .cr{margin-bottom:13px}
+.constraints .cl{display:flex;justify-content:space-between;font-size:11.5px;margin-bottom:5px}
+.constraints .bar{height:7px;border-radius:5px;background:var(--line2);position:relative;overflow:hidden}
+.constraints .bar>i{position:absolute;left:0;top:0;bottom:0;border-radius:5px;background:var(--gold-b)}
+.constraints .bar>.mk{position:absolute;top:-3px;width:2px;height:13px;background:var(--ink)}
+.constraints .cx{font-size:9.5px;color:var(--muted);margin-top:3px}
+.qr{background:var(--gold-soft);border:1px solid var(--gold-line);border-radius:12px;padding:16px}
+.qr .qh{font-size:10px;letter-spacing:1.5px;color:var(--gold);text-transform:uppercase;font-weight:700;margin-bottom:10px}
+.qr .qg{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.qr .qk{font-size:9.5px;letter-spacing:.5px;color:var(--muted);text-transform:uppercase;font-weight:700}
+.qr .qv{font-family:var(--serif);font-size:21px;font-weight:700;margin-top:2px}
+.runbar{display:flex;align-items:center;justify-content:space-between;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px 20px;box-shadow:var(--shadow);margin-top:8px}
+.btn{border:0;border-radius:10px;padding:11px 20px;font-size:13px;font-weight:700;cursor:pointer;font-family:var(--sans);display:inline-flex;align-items:center;gap:8px}
+.btn.gold{background:var(--gold-b);color:#231a10}.btn.gold:hover{background:#d19b1f}
+.btn.dark{background:var(--ink);color:#fff}.btn.ghost{background:#fff;border:1px solid var(--line2);color:var(--ink2)}
+.btn.big{padding:13px 26px;font-size:14px}
+.presets{display:flex;gap:8px}
+.preset{border:1px solid var(--line2);background:#fff;border-radius:8px;padding:8px 13px;font-size:12px;font-weight:600;cursor:pointer;color:var(--ink2)}
+.preset.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+/* options */
+.opts{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:18px}
+.opt{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:var(--shadow);cursor:pointer;position:relative;transition:.15s}
+.opt:hover{border-color:var(--line2)}
+.opt.sel{border-color:var(--gold-b);box-shadow:0 0 0 2px var(--gold-b) inset,0 10px 26px rgba(180,130,20,.14)}
+.opt .oh{font-size:9.5px;letter-spacing:1.5px;color:var(--muted);text-transform:uppercase;font-weight:700;display:flex;justify-content:space-between;align-items:center}
+.opt .otag{background:var(--gold-b);color:#231a10;padding:3px 8px;border-radius:20px;font-size:9px}
+.opt .on{font-family:var(--serif);font-size:20px;margin:4px 0 2px}
+.opt .od{font-size:11.5px;color:var(--muted);min-height:32px}
+.opt .og{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:12px 0;padding-top:12px;border-top:1px solid var(--line)}
+.opt .ok{font-size:9px;letter-spacing:.5px;color:var(--muted2);text-transform:uppercase;font-weight:700}
+.opt .ov{font-size:17px;font-weight:800;font-family:var(--serif);margin-top:2px}
+.opt .moves{list-style:none;font-size:11px;color:var(--ink2);display:flex;flex-direction:column;gap:5px;border-top:1px solid var(--line);padding-top:10px}
+.opt .moves li:before{content:"· ";color:var(--gold)}
+.opt .risk{margin-top:10px;font-size:11px;font-weight:700}
+/* outcomes */
+.applied{background:linear-gradient(90deg,var(--green-soft),#fff);border:1px solid var(--green-line);border-radius:14px;padding:16px 20px;display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}
+.applied .at{font-size:10px;letter-spacing:2px;color:var(--green);text-transform:uppercase;font-weight:700}
+.applied .av{font-size:14px;margin-top:3px}.applied .av b{font-family:var(--serif);color:var(--green);font-size:17px}
+.timeline{display:flex;justify-content:space-between;margin-top:18px;position:relative}
+.timeline:before{content:"";position:absolute;left:5%;right:5%;top:15px;height:2px;background:var(--line2)}
+.tn{position:relative;text-align:center;flex:1;z-index:1}
+.tn .c{width:30px;height:30px;border-radius:50%;background:#fff;border:2px solid var(--gold-b);color:var(--gold);font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 8px;font-size:13px}
+.tn .d{font-size:9px;letter-spacing:1px;color:var(--muted2);text-transform:uppercase;font-weight:700}
+.tn .l{font-size:12.5px;font-weight:700;margin:2px 0}
+.tn .v{font-family:var(--serif);font-size:15px;font-weight:700}
+.tn .x{font-size:10px;color:var(--muted);margin-top:3px;padding:0 6px}
+.commit{display:flex;align-items:center;justify-content:space-between;background:linear-gradient(90deg,#fff,var(--gold-soft));border:1px solid var(--gold-line);border-radius:14px;padding:18px 22px;margin-top:20px}
+.commit .ck{font-size:10px;letter-spacing:2px;color:var(--gold);text-transform:uppercase;font-weight:700}
+.commit .ct{font-family:var(--serif);font-size:18px;margin-top:2px}
+.hidden{display:none!important}
+.fadein{animation:fade .3s ease}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.legend{display:flex;gap:16px;font-size:10.5px;color:var(--muted);margin-top:8px;flex-wrap:wrap}
+.legend i{display:inline-block;width:16px;height:3px;border-radius:2px;margin-right:5px;vertical-align:middle}
+.hist rect{transition:.2s}
+.foot-note{font-size:10.5px;color:var(--muted2);margin-top:10px}
+</style>
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar">
+    <div class="brand"><div class="logo">TCS</div><div><div class="bt">CXO Companion</div><div class="bs">Powered by TwinX™</div></div></div>
+    <nav class="nav">
+      <a href="#"><span class="ic">◇</span> Home</a>
+      <a href="#"><span class="ic">◈</span> Signals</a>
+      <a href="#"><span class="ic">❑</span> Memory</a>
+      <a href="#" class="active"><span class="ic">✦</span> Decision Lab <span class="dot"></span></a>
+    </nav>
+    <div class="sb-foot"><div class="av">KK</div><div><div class="nm">K Krithivasan</div><div class="rl">CEO &amp; MD</div></div></div>
+  </aside>
+  <main class="main">
+    <div class="topbar">
+      <div class="date">Wednesday, July 8, 2026</div>
+      <div class="tick"><b>BSE: TCS</b><span>₹3,205.90</span><span class="dn">▼0.6%</span><span class="sep">|</span><span style="color:var(--muted)">Closed 8 Jul, 15:30 IST</span></div>
+    </div>
+    <div class="wrap" id="root"></div>
+  </main>
+</div>
+<script>
+const FLOWS = {"genai": {"id": "genai", "accent": "#1f7a52", "accentSoft": "#e4f2ea", "icon": "◎", "tag": "DEEP SIM", "title": "GenAI Growth Engine", "blurb": "Close the AI-led revenue gap with Accenture. Model the commercial, capability and ecosystem levers that scale GenAI bookings.", "landing": [["AI REV vs PLAN", "+$0.3B"], ["BOOKINGS GAP", "-$1.5B"], ["CONTESTED", "$2.1B"]], "accounts": [{"key": "citi", "group": "under", "dot": "r", "name": "Citi", "sub": "BFSI · GenAI fraud + ops RFP", "cells": [["$620M / $470M", "mono"], ["−$150M", "neg"], ["+$118M", "pos"]], "clickable": true, "intel": {"account": "Citi", "label": "BFSI · GenAI fraud + ops RFP", "cards": [{"k": "PLAN · FY26", "v": "$620M", "s": "GenAI + core ARR target", "c": ""}, {"k": "ACTUAL · YTD PACE", "v": "$470M", "s": "run-rate vs plan", "c": ""}, {"k": "GAP TO CLOSE", "v": "$150M", "s": "−24% · Accenture contesting", "c": "r"}, {"k": "RECOMMENDED LIFT", "v": "+$118M", "s": "if AI-led play applied · 79% of gap", "c": "gold"}], "whyTitle": "Why we're losing ground at Citi", "whyBody": "Accenture is the incumbent reinvention advisor on Citi's transformation and is framing the GenAI fraud-and-ops mandate as consulting-led. TCS delivery is competitive on capability and cost, but the evaluation is stalling on outcome-proof — a 5-day RFP response window on the fraud-ops workstream is closing, and win-rate at this account has slipped 6pp QoQ.", "causal": [["INCUMBENCY", "Accenture is incumbent reinvention advisor on 2 of 3 workstreams"], ["NARRATIVE", "Consulting-led 'reinvention' framing converts ~18 days faster than build-led"], ["PRICING", "No fixed-outcome SKU staged — deal read as effort, not outcome"], ["PROOF", "2 closed BFSI GenAI references not yet deployed into this account"]], "analogName": "Deutsche Bank — GenAI risk win (2025)", "analogSub": "Closest analog · same BaNCS incumbency shape", "analogOutcome": "+$40M expansion · fixed-outcome risk use case · marquee reference", "analogWorked": "At Deutsche Bank, a fixed-outcome GenAI risk use case on top of BaNCS incumbency converted a stalled eval into an expansion — the same lever set applies to Citi's fraud-ops workstream.", "analogWhy": "Same BFSI evaluation shape, same incumbent-advisor threat, and TCS holds core-banking incumbency at both. Directly transferable — and Citi's board is pressing for AI ROI now.", "playTitle": "Recommended AI-led play", "playSub": "derived from the Deutsche Bank GenAI win · adapted to Citi", "play": ["Deploy a GenAI SWAT pod (partner + solution architect + BFSI SME) within 48h.", "Lead with a fixed-outcome fraud-ops use case to reframe from rate-card to outcome.", "Deploy the 2 closed BFSI GenAI references into the evaluation within 5 days.", "Stand up hyperscaler + NVIDIA co-sell to match Accenture's ecosystem framing.", "Guarantee a 20% run-cost reduction by year 3 via tcsAI in the SDLC and operations."], "modeled": [["Bookings recovered", "+$118M"], ["Win-rate lift", "+11pp"], ["Cycle change", "−18d"], ["Gap closure", "79%"]], "conf": 4, "confText": "Based on the Deutsche Bank analog's actual outcome. Materializes over 3 quarters."}}, {"key": "metlife", "group": "under", "dot": "r", "name": "MetLife", "sub": "Insurance · Claims automation GenAI", "cells": [["$240M / $168M", "mono"], ["−$72M", "neg"], ["+$54M", "pos"]], "clickable": true, "intel": {"account": "MetLife", "label": "Insurance · Claims automation GenAI", "cards": [{"k": "PLAN · FY26", "v": "$240M", "s": "GenAI + platform ARR", "c": ""}, {"k": "ACTUAL · YTD PACE", "v": "$168M", "s": "run-rate vs plan", "c": ""}, {"k": "GAP TO CLOSE", "v": "$72M", "s": "−30% · pilot not scaling", "c": "r"}, {"k": "RECOMMENDED LIFT", "v": "+$54M", "s": "BaNCS-led play · 75% of gap", "c": "gold"}], "whyTitle": "Why the MetLife pilot isn't scaling", "whyBody": "Accenture and a niche insurtech are jointly pitching a claims-automation reinvention, and TCS's BaNCS insurance depth is under-leveraged in the narrative. A claims-automation pilot has proven cycle-time gains but has stalled at the enterprise-scale decision — the classic pilot-to-scale gap.", "causal": [["INCUMBENT", "Accenture leads the advisory reinvention framing"], ["INSURTECH", "Niche challenger competing on claimant UX"], ["SCALE", "Pilot proven but not converting to enterprise mandate"], ["PROOF", "BaNCS insurance accelerators & references not deployed into the eval"]], "analogName": "Global Insurer pilot-to-scale (2025)", "analogSub": "Closest analog · same claims-automation shape", "analogOutcome": "+$140M TCV · pilot→enterprise in 90 days · 8 processes to production", "analogWorked": "A stalled claims-automation pilot converted by leading with a fixed-outcome first use case (23% cycle-time gain, guaranteed) — neutralizing the consulting framing and unlocking the enterprise mandate.", "analogWhy": "Same insurance claims shape, same pilot-to-scale gap, same incumbent-advisor threat. The insurer playbook is directly transferable and the BaNCS accelerators shorten time-to-value.", "playTitle": "Recommended BaNCS-led play", "playSub": "adapted from the insurer pilot-to-scale", "play": ["Lead with TCS BaNCS insurance accelerators to compress claims cycle-time.", "Convert the pilot with a fixed-outcome claims use case (guaranteed cycle-time SLA).", "Deploy two insurer GenAI references into the evaluation.", "Hyperscaler co-sell to match the insurtech's cloud-native framing.", "Multi-year outcome pricing tied to claims-processing cost per policy."], "modeled": [["Bookings recovered", "+$54M"], ["Win-rate lift", "+9pp"], ["Cycle change", "−15d"], ["Gap closure", "75%"]], "conf": 4, "confText": "Based on the 2025 insurer pilot-to-scale outcome. Materializes over 3 quarters."}}, {"key": "att", "group": "under", "dot": "r", "name": "AT&T", "sub": "CMT · Network-ops GenAI RFP", "cells": [["$310M / $228M", "mono"], ["−$82M", "neg"], ["+$61M", "pos"]], "clickable": true, "intel": {"account": "AT&T", "label": "CMT · Network-ops GenAI RFP", "cards": [{"k": "PLAN · FY26", "v": "$310M", "s": "GenAI + network ARR", "c": ""}, {"k": "ACTUAL · YTD PACE", "v": "$228M", "s": "run-rate vs plan", "c": ""}, {"k": "GAP TO CLOSE", "v": "$82M", "s": "−26% · hyperscaler pull", "c": "r"}, {"k": "RECOMMENDED LIFT", "v": "+$61M", "s": "co-sell-led play · 74% of gap", "c": "gold"}], "whyTitle": "Why AT&T is drifting to a platform-native pitch", "whyBody": "A hyperscaler is pulling AT&T toward a platform-native network-ops build, and Accenture is wrapping it in a consulting-led reinvention story. TCS's network-engineering strength is real but under-proven in the GenAI framing, and account-team coverage was thinned in the last reorg.", "causal": [["NARRATIVE", "Consulting-led network reinvention framing"], ["HYPERSCALER", "Platform-native pull toward a cloud provider's stack"], ["COVERAGE", "Account-team depth reduced in the last reorg"], ["PROOF", "Telco network-AI references not surfaced in the eval"]], "analogName": "Vodafone network-AI win (2025)", "analogSub": "Closest analog · same network-ops shape", "analogOutcome": "+$22M expansion · network + customer AI · marquee telco reference", "analogWorked": "At Vodafone, deep hyperscaler co-sell plus telco network-AI accelerators and a fixed-outcome network-ops use case won the reinvention narrative and expanded SOW.", "analogWhy": "Same telco network-ops shape, same hyperscaler dynamic. The Vodafone motion is directly transferable and gives AT&T a credible reference of scale.", "playTitle": "Recommended co-sell-led play", "playSub": "adapted from the Vodafone network-AI win", "play": ["Stand up deep hyperscaler + NVIDIA co-sell to co-own the platform framing.", "Lead with telco network-ops accelerators and a fixed-outcome use case.", "Restore senior account-team coverage on the AT&T network org.", "Deploy the Vodafone reference into the evaluation.", "Outcome pricing tied to network-ops cost and incident MTTR."], "modeled": [["Bookings recovered", "+$61M"], ["Win-rate lift", "+8pp"], ["Cycle change", "−16d"], ["Gap closure", "74%"]], "conf": 3, "confText": "Based on the Vodafone analog. Materializes over 3–4 quarters."}}, {"key": "tesco", "group": "under", "dot": "y", "name": "Tesco", "sub": "Retail · Merchandising AI + supply", "cells": [["$95M / $74M", "mono"], ["−$21M", "neg"], ["+$16M", "pos"]], "clickable": true, "intel": {"account": "Tesco", "label": "Retail · Merchandising AI + supply", "cards": [{"k": "PLAN · FY26", "v": "$95M", "s": "GenAI + supply ARR", "c": ""}, {"k": "ACTUAL · YTD PACE", "v": "$74M", "s": "run-rate vs plan", "c": ""}, {"k": "GAP TO CLOSE", "v": "$21M", "s": "−22% · Infosys undercut", "c": "r"}, {"k": "RECOMMENDED LIFT", "v": "+$16M", "s": "SKU-led play · 76% of gap", "c": "gold"}], "whyTitle": "Why Tesco is stalling on price", "whyBody": "Discretionary caution plus Infosys undercutting with a productized retail GenAI SKU has stalled the eval — TCS's proposal is being read as bespoke and expensive. The opportunity is real but needs a productized, outcome-priced counter.", "causal": [["PRICING", "Infosys productized retail GenAI SKU ~15% below TCS custom"], ["DISCRETIONARY", "Retail budget caution slowing conversion"], ["NARRATIVE", "TCS proposal read as bespoke, not productized"], ["PROOF", "Retail supply-chain GenAI references not deployed"]], "analogName": "Mid-market retail GenAI counter (2025)", "analogSub": "Closest analog · same price dynamic", "analogOutcome": "6 retail logos · outcome-priced · +$210M TCV in 2 quarters", "analogWorked": "Where a rival undercut on a productized SKU, TCS shipped its own productized, outcome-priced retail GenAI bundle and won on total cost of outcome rather than rate card.", "analogWhy": "Same price-led dynamic and the same segment. The productized-SKU counter is directly transferable to Tesco's merchandising and supply mandate.", "playTitle": "Recommended SKU-led play", "playSub": "adapted from the mid-market retail counter", "play": ["Ship the productized retail GenAI SKU (merch + supply) to remove price as the decider.", "Outcome pricing tied to markdown reduction and forecast accuracy.", "Deploy retail supply-chain GenAI references into the eval.", "Compress the proposal to a 4-week proof with a guaranteed KPI.", "Hyperscaler co-sell for the data-platform layer."], "modeled": [["Bookings recovered", "+$16M"], ["Win-rate lift", "+7pp"], ["Cycle change", "−12d"], ["Gap closure", "76%"]], "conf": 3, "confText": "Based on the 2025 retail counter. Materializes over 2–3 quarters."}}, {"key": "ge", "group": "under", "dot": "y", "name": "GE Aerospace", "sub": "Manufacturing · Engineering GenAI", "cells": [["$140M / $118M", "mono"], ["−$22M", "neg"], ["+$18M", "pos"]], "clickable": true, "intel": {"account": "GE Aerospace", "label": "Manufacturing · Engineering GenAI", "cards": [{"k": "PLAN · FY26", "v": "$140M", "s": "GenAI + engineering ARR", "c": ""}, {"k": "ACTUAL · YTD PACE", "v": "$118M", "s": "run-rate vs plan", "c": ""}, {"k": "GAP TO CLOSE", "v": "$22M", "s": "−16% · assurance concerns", "c": "r"}, {"k": "RECOMMENDED LIFT", "v": "+$18M", "s": "assured-GenAI play · 82% of gap", "c": "gold"}], "whyTitle": "Why the GE Aerospace eval stalled", "whyBody": "The engineering GenAI evaluation stalled on IP-protection and safety-assurance concerns, and Accenture is leading with a reinvention narrative. TCS's deep engineering-services strength is under-proven in a regulated GenAI context — the gap is assurance and proof, not capability.", "causal": [["ASSURANCE", "IP-protection and safety-certification concerns unresolved"], ["NARRATIVE", "Accenture leading the reinvention framing"], ["PROOF", "Aerospace engineering GenAI references not deployed"], ["COVERAGE", "Engineering-GenAI SME depth not visible in the eval"]], "analogName": "Aerospace engineering GenAI (2025)", "analogSub": "Closest analog · same assurance shape", "analogOutcome": "assured GenAI accelerator · 19% design-cycle gain · certification-ready", "analogWorked": "A regulated engineering GenAI eval was won by leading with an IP-protected, certification-ready accelerator that resolved assurance up front, then a fixed-outcome design-cycle use case.", "analogWhy": "Same regulated-engineering shape and the same assurance objection. The assured-GenAI accelerator is directly transferable to GE Aerospace's mandate.", "playTitle": "Recommended assured-GenAI play", "playSub": "adapted from the aerospace analog", "play": ["Lead with an IP-protected, certification-ready engineering GenAI accelerator.", "Resolve safety-assurance and IP concerns up front with a governance pack.", "Fixed-outcome design-cycle use case with a guaranteed cycle-time gain.", "Deploy the aerospace engineering references into the eval.", "Surface engineering-GenAI SMEs into the account team."], "modeled": [["Bookings recovered", "+$18M"], ["Win-rate lift", "+7pp"], ["Cycle change", "−14d"], ["Gap closure", "82%"]], "conf": 3, "confText": "Based on the 2025 aerospace analog. Materializes over 2–3 quarters."}}, {"key": "db", "group": "top", "dot": "g", "name": "Deutsche Bank", "sub": "BFSI · GenAI risk + core banking", "cells": [["$120M / $146M", "mono"], ["+$26M (+21.7%)", "pos"]], "clickable": true, "intel": {"account": "Deutsche Bank", "label": "BFSI · GenAI risk + core banking", "cards": [{"k": "PLAN · FY26", "v": "$120M", "s": "GenAI + BaNCS ARR", "c": ""}, {"k": "ACTUAL · YTD PACE", "v": "$146M", "s": "+21.7% ahead", "c": "g"}, {"k": "EXPANSION HEADROOM", "v": "+$40M", "s": "2 adjacent workstreams", "c": "gold"}, {"k": "RETENTION", "v": "98%", "s": "multi-year annuity", "c": "g"}], "whyTitle": "Why we're winning at Deutsche Bank", "whyBody": "TCS BaNCS core-banking incumbency plus an early fixed-outcome GenAI risk use case created a reference win; engagement frequency and SOW have expanded. The play now is to protect the annuity and replicate the motion into two adjacent workstreams — and use it as the marquee reference for the Citi eval.", "causal": [["INCUMBENCY", "TCS BaNCS core-banking backbone"], ["OUTCOME", "Fixed-outcome GenAI risk use case delivered"], ["TRUST", "Multi-year relationship, board-level sponsorship"], ["REFERENCE", "Reusable proof for other BFSI evals (Citi)"]], "analogName": "— replicate this motion", "analogSub": "how we won it → transfer to Citi", "analogOutcome": "the winning pattern: BaNCS incumbency + fixed-outcome first use case", "analogWorked": "The combination that won here — incumbency, a guaranteed-outcome first use case, and fast reference deployment — is exactly what the Citi fraud-ops eval needs.", "analogWhy": "This is the reference analog powering the Citi recovery play — protect and replicate.", "playTitle": "Recommended protect-&-replicate play", "playSub": "expand the annuity · reuse the proof", "play": ["Expand into 2 adjacent GenAI workstreams (+$40M headroom).", "Lock a multi-year outcome-based agreement.", "Package as the marquee BFSI reference for the Citi evaluation.", "Deepen hyperscaler co-sell for the data-platform layer.", "Board-level QBR cadence to protect against competitive re-entry."], "modeled": [["Expansion", "+$40M"], ["Retention", "98%"], ["Reference value", "High"], ["Risk", "Low"]], "conf": 4, "confText": "High confidence — based on delivered outcomes and active expansion pipeline."}}, {"key": "vodafone", "group": "top", "dot": "g", "name": "Vodafone", "sub": "CMT · Network + customer AI", "cells": [["$78M / $92M", "mono"], ["+$14M (+17.9%)", "pos"]], "clickable": true, "intel": {"account": "Vodafone", "label": "CMT · Network + customer AI", "cards": [{"k": "PLAN · FY26", "v": "$78M", "s": "GenAI + network ARR", "c": ""}, {"k": "ACTUAL · YTD PACE", "v": "$92M", "s": "+17.9% ahead", "c": "g"}, {"k": "EXPANSION HEADROOM", "v": "+$22M", "s": "customer-AI extension", "c": "gold"}, {"k": "RETENTION", "v": "97%", "s": "multi-year", "c": "g"}], "whyTitle": "Why we're winning at Vodafone", "whyBody": "Strong network-AI delivery and telco accelerators made Vodafone a reference account, with hyperscaler co-sell locking in the platform layer. The play is to expand into customer-AI and replicate the motion into the AT&T network-ops eval.", "causal": [["DELIVERY", "Proven network-AI outcomes at scale"], ["ACCELERATORS", "Telco GenAI accelerators shortened time-to-value"], ["CO-SELL", "Deep hyperscaler + NVIDIA joint GTM"], ["REFERENCE", "Reusable proof for AT&T and other telcos"]], "analogName": "— replicate this motion", "analogSub": "how we won it → transfer to AT&T", "analogOutcome": "the winning pattern: co-sell + telco accelerators + outcome pricing", "analogWorked": "The co-sell-plus-accelerators motion that won Vodafone is the exact play the AT&T network-ops eval needs.", "analogWhy": "This is the reference analog powering the AT&T recovery play — protect and replicate.", "playTitle": "Recommended protect-&-replicate play", "playSub": "expand the annuity · reuse the proof", "play": ["Expand into customer-AI (+$22M headroom).", "Lock a multi-year outcome-based agreement.", "Package as the marquee telco reference for the AT&T evaluation.", "Deepen NVIDIA + hyperscaler co-sell.", "Executive sponsorship cadence to defend the account."], "modeled": [["Expansion", "+$22M"], ["Retention", "97%"], ["Reference value", "High"], ["Risk", "Low"]], "conf": 4, "confText": "High confidence — based on delivered outcomes and active expansion pipeline."}}, {"key": "lilly", "group": "top", "dot": "g", "name": "Eli Lilly", "sub": "Life Sciences · R&D / clinical GenAI", "cells": [["$64M / $73M", "mono"], ["+$9M (+14.1%)", "pos"]], "clickable": true, "intel": {"account": "Eli Lilly", "label": "Life Sciences · R&D / clinical GenAI", "cards": [{"k": "PLAN · FY26", "v": "$64M", "s": "GenAI + R&D ARR", "c": ""}, {"k": "ACTUAL · YTD PACE", "v": "$73M", "s": "+14.1% ahead", "c": "g"}, {"k": "EXPANSION HEADROOM", "v": "+$14M", "s": "clinical GenAI extension", "c": "gold"}, {"k": "RETENTION", "v": "96%", "s": "multi-year", "c": "g"}], "whyTitle": "Why we're winning at Eli Lilly", "whyBody": "R&D GenAI accelerators combined with regulatory-grade compliance rigor made Eli Lilly a life-sciences reference. The play is to expand into clinical GenAI and replicate the compliance-first motion across the pharma pipeline.", "causal": [["ACCELERATORS", "R&D GenAI accelerators delivered value fast"], ["COMPLIANCE", "Regulatory-grade governance built trust"], ["DOMAIN", "Deep life-sciences delivery credibility"], ["REFERENCE", "Reusable proof across pharma"]], "analogName": "— replicate this motion", "analogSub": "how we won it → transfer across pharma", "analogOutcome": "the winning pattern: compliance-first GenAI + R&D accelerators", "analogWorked": "The compliance-first accelerator motion that won Lilly is transferable to the broader life-sciences pipeline.", "analogWhy": "This is the reference analog for expanding the pharma vertical — protect and replicate.", "playTitle": "Recommended protect-&-replicate play", "playSub": "expand the annuity · reuse the proof", "play": ["Expand into clinical GenAI (+$14M headroom).", "Lock a multi-year compliance-backed agreement.", "Package as the marquee pharma reference across life-sciences.", "Deepen hyperscaler co-sell for the regulated-data layer.", "Scientific-advisory cadence to protect the relationship."], "modeled": [["Expansion", "+$14M"], ["Retention", "96%"], ["Reference value", "High"], ["Risk", "Low"]], "conf": 4, "confText": "High confidence — based on delivered outcomes and active expansion pipeline."}}], "firstUnder": "citi", "snapshot": {"kicker": "AI-LED BUSINESS SNAPSHOT", "title": "Where the AI-led business stands — and where the gap is.", "lead": "GenAI demand is expanding, but Accenture's consulting-led motion is winning the bookings narrative. The gap is concentrated in a handful of contested top-20 accounts — click any account to drill in.", "pill": ["-$1.5B bookings gap", "$2.1B recoverable"], "kpis": [{"k": "AI / GenAI Revenue", "v": "$1.8B", "s": "annualized · +67% YoY", "c": "g"}, {"k": "GenAI Bookings (Q)", "v": "$1.5B", "s": "vs Accenture $3.0B", "c": "r"}, {"k": "Win Rate vs Accenture", "v": "38%", "s": "−6pp QoQ", "c": "r"}, {"k": "Contested Pipeline", "v": "$2.1B", "s": "3 top-20 accounts", "c": "gold"}, {"k": "AI-Ready Workforce", "v": "62%", "s": "+14pp YTD · capacity", "c": "g"}, {"k": "Blended GenAI Margin", "v": "23.5%", "s": "guardrail 24%", "c": "gold"}], "chart": {"title": "GenAI revenue trajectory", "sub": "Bookings gap widened from Q3 '25 as Accenture scaled consulting-led wins.", "badge": "GAP WIDENING", "badgeCls": "warn", "ykind": "usd_b", "ymin": 0, "ymax": 4, "xlabels": ["Q3·25", "Q4·25", "Q1·26", "Q2·26", "Q3·26", "Q4·26", "Q1·27p", "Q2·27p"], "series": [{"name": "Accenture GenAI", "color": "#b23524", "dash": "4 3", "pts": [1.8, 2.2, 2.5, 3.0, 3.3, 3.6, 3.9, 4.2]}, {"name": "TCS actual", "color": "#b6811c", "pts": [0.6, 0.9, 1.2, 1.5, 1.8, null, null, null]}, {"name": "TCS if levers applied", "color": "#1f7a52", "dash": "5 4", "pts": [null, null, null, 1.5, 2.1, 2.7, 3.3, 3.8]}]}, "topTitle": "Pulling ahead", "topSub": "AI accounts beating plan", "topCols": ["Plan / Actual", "Delta"], "underTitle": "Contested — action required", "underSub": "Top-20 accounts Accenture is contesting", "underGap": "−$1.5B bookings", "underCols": ["Plan / Actual", "Gap", "Recover"]}, "workbench": {"title": "Pull the growth levers. See the impact.", "lead": "CEO-grade AI-led growth levers across commercial model, capability capacity and ecosystem. Every slider updates the live model — revenue, bookings-gap closure, win-rate and margin.", "heroCards": [{"k": "BOOKINGS GAP", "v": "−$1.5B", "s": "vs Accenture Q", "c": "r"}, {"k": "AI REV (ann.)", "v": "$1.8B", "s": "current run-rate", "c": ""}, {"k": "MODELED LIFT", "v": "id:lift", "s": "annualized AI revenue", "c": "gold"}], "groups": [{"name": "Commercial Model", "levers": [{"id": "pricing", "ln": "Outcome-based pricing mix", "ls": "% of GenAI deals fixed-outcome", "asIs": "20%", "fk": "pct", "min": 20, "rec": 55, "max": 80, "val": 20, "imp": {"rev": 210, "gap": 22, "win": 4.5, "margin": -0.4}}, {"id": "swat", "ln": "GenAI SWAT pods", "ls": "contested-account strike teams", "asIs": "1", "fk": "int", "min": 1, "rec": 3, "max": 6, "val": 1, "imp": {"rev": 150, "gap": 16, "win": 3.5, "margin": -0.1}}, {"id": "sku", "ln": "Mid-market productized SKU", "ls": "counter Infosys Topaz", "asIs": "None", "fk": "idx", "min": 0, "rec": 2, "max": 2, "val": 0, "imp": {"rev": 120, "gap": 8, "win": 2, "margin": 0.2}, "labels": ["None", "Pilot", "Launch"]}]}, {"name": "Capability & Capacity", "levers": [{"id": "aiready", "ln": "AI-ready workforce", "ls": "share of delivery AI-fluent", "asIs": "62%", "fk": "pct", "min": 62, "rec": 85, "max": 95, "val": 62, "imp": {"rev": 130, "gap": 10, "win": 2, "margin": 0.3}}, {"id": "auto", "ln": "Delivery automation (tcsAI)", "ls": "SDLC coverage", "asIs": "Partial", "fk": "idx", "min": 0, "rec": 2, "max": 2, "val": 0, "imp": {"rev": 90, "gap": 6, "win": 1.5, "margin": 0.5}, "labels": ["Partial", "Broad", "SDLC-wide"]}, {"id": "reskill", "ln": "Reskilling wave pace", "ls": "AI-fluency throughput", "asIs": "Standard", "fk": "idx", "min": 0, "rec": 2, "max": 2, "val": 0, "imp": {"rev": 60, "gap": 4, "win": 1, "margin": 0.1}, "labels": ["Standard", "Fast", "Accelerated"]}]}, {"name": "Ecosystem & Proof", "levers": [{"id": "cosell", "ln": "Hyperscaler + NVIDIA co-sell", "ls": "joint GTM depth", "asIs": "Light", "fk": "idx", "min": 0, "rec": 2, "max": 2, "val": 0, "imp": {"rev": 110, "gap": 9, "win": 2.5, "margin": 0}, "labels": ["Light", "Active", "Deep"]}, {"id": "refs", "ln": "Reference velocity", "ls": "speed to deploy proof", "asIs": "Slow", "fk": "idx", "min": 0, "rec": 2, "max": 2, "val": 0, "imp": {"rev": 70, "gap": 7, "win": 3, "margin": 0.1}, "labels": ["Slow", "Steady", "Fast"]}, {"id": "accel", "ln": "Domain solution accelerators", "ls": "pre-built vertical GenAI", "asIs": "2", "fk": "int", "min": 2, "rec": 6, "max": 10, "val": 2, "imp": {"rev": 80, "gap": 5, "win": 1.5, "margin": 0.2}}]}], "constraints": [{"l": "Blended margin floor", "r": "24%", "stage": ["pricing", "swat"], "x": "To-Be must hold ≥24% · CFO co-sign"}, {"l": "Delivery capacity", "r": "3.1x cover", "stage": ["swat", "accel"], "x": "GenAI pipeline coverage vs demand"}, {"l": "AI-ready workforce", "r": "62% → cap 95%", "stage": ["aiready", "reskill"], "x": "reskilling gates capacity"}, {"l": "Capability investment", "r": "$180M ceiling", "stage": ["pricing", "aiready", "cosell"], "x": "FY26 ring-fenced GenAI budget"}], "qr": [["REVENUE LIFT", "id:rev"], ["GAP CLOSURE", "id:gapc"], ["WIN-RATE Δ", "id:winr"], ["MARGIN Δ", "id:marg"]], "optNote": "Outcome over 3–4 quarters · vs Accenture bookings gap · 10,000 runs"}, "options": [{"name": "Conservative", "tag": "", "desc": "Protect margin · staged capability build", "g": [["AI REV LIFT", "+$380M"], ["GAP CLOSURE", "45%"], ["WIN-RATE", "+5pp"], ["INVEST", "$95M"]], "moves": ["Outcome pricing to 40%", "2 SWAT pods · protect nearest accounts", "Hold GenAI budget flat"], "risk": ["Low", "#1f7a52"], "levers": {"pricing": 40, "swat": 2, "sku": 0, "aiready": 68, "auto": 1, "reskill": 1, "cosell": 1, "refs": 1, "accel": 3}}, {"name": "Balanced", "tag": "AI PICK", "desc": "Analog-matched · the Deutsche Bank / insurer motion", "g": [["AI REV LIFT", "+$680M"], ["GAP CLOSURE", "72%"], ["WIN-RATE", "+9pp"], ["INVEST", "$175M"]], "moves": ["Outcome pricing to 55% + mid-market SKU", "3 SWAT pods · reference velocity fast", "AI-ready to 85% · deep co-sell"], "risk": ["Medium", "#b6811c"], "levers": {"pricing": 55, "swat": 3, "sku": 2, "aiready": 85, "auto": 2, "reskill": 2, "cosell": 2, "refs": 2, "accel": 6}}, {"name": "Aggressive", "tag": "", "desc": "Maximum gap closure · accept near-term margin dip", "g": [["AI REV LIFT", "+$1.05B"], ["GAP CLOSURE", "95%"], ["WIN-RATE", "+14pp"], ["INVEST", "$320M"]], "moves": ["Outcome pricing to 70% · SDLC-wide tcsAI", "6 SWAT pods · 8 accelerators", "AI-ready to 92% · full ecosystem"], "risk": ["Higher", "#b23524"], "levers": {"pricing": 70, "swat": 6, "sku": 2, "aiready": 92, "auto": 2, "reskill": 2, "cosell": 2, "refs": 2, "accel": 8}}], "outcomes": {"title": "Impact on the AI-led business — visualised.", "noteKind": "genai", "lead": "Bookings-gap recovery trajectory, phased execution timeline, and route-to-board panel.", "chart": {"title": "Q2 '26 → Q1 '27 · bookings gap closure", "sub": "Gold = TCS actual. Green = with applied option. Red dashed = Accenture.", "badge": "id:gapc", "badgeCls": "ok", "ykind": "usd_b", "ymin": 0, "ymax": 4.5, "xlabels": ["Q3·25", "Q4·25", "Q1·26", "Q2·26", "Q3·26", "Q4·26", "Q1·27"], "series": [{"name": "Accenture", "color": "#b23524", "dash": "4 3", "pts": [1.8, 2.2, 2.5, 3.0, 3.3, 3.6, 3.9]}, {"name": "TCS actual", "color": "#b6811c", "pts": [0.6, 0.9, 1.2, 1.5, null, null, null]}, {"name": "With applied option", "color": "#1f7a52", "dash": "5 4", "pts": [null, null, null, 1.5, 2.3, 3.1, 3.7]}]}, "timeline": [{"d": "JUL 26", "l": "Mobilize", "v": "$0M", "x": "SWAT pods staffed · references pulled"}, {"d": "AUG 26", "l": "First outcome win", "v": "+$40M", "x": "Fraud-ops fixed-outcome signed at Citi"}, {"d": "Q3 26", "l": "Scale", "v": "+$180M", "x": "Mid-market SKU live · co-sell engine on"}, {"d": "Q4 26", "l": "Compound", "v": "+$430M", "x": "AI-ready 85% · reference flywheel"}, {"d": "Q1 27", "l": "Gap closed", "v": "+$680M", "x": "72% of Accenture bookings gap recovered"}], "summ": [{"k": "CITI · FY26", "v": "+$118M", "s": "from $470M → $588M pace", "c": ""}, {"k": "AI SEGMENT · IF SCALED", "v": "+$680M", "s": "72% of bookings gap recovered", "c": ""}, {"k": "WIN-RATE UPLIFT", "v": "+9pp", "s": "vs Accenture · contested", "c": ""}, {"k": "CAPABILITY INVESTMENT", "v": "$175M", "s": "within ring-fenced budget", "c": ""}]}}, "workforce": {"id": "workforce", "accent": "#2f6fd6", "accentSoft": "#e8f0fb", "icon": "◐", "tag": "DEEP SIM", "title": "Workforce & AI-Readiness", "blurb": "Build the world's largest AI-ready workforce. Model retention, reskilling and pyramid levers against attrition, AI-fluency and margin — reskill, don't replace.", "landing": [["ATTRITION (LTM)", "13.8%"], ["AI-READY", "62%"], ["HOT-SKILL", "19%"]], "accounts": [{"key": "genai_eng", "group": "under", "dot": "r", "name": "GenAI Engineering", "sub": "Pune · Hyderabad · ~14,000", "cells": [["22% / 58%", "mono"], ["−6% comp", "neg"], ["reskill + comp", "pos"]], "clickable": true, "intel": {"account": "GenAI / Cloud Engineering — Pune & Hyderabad", "label": "hot-skill pool · ~14,000 engineers", "cards": [{"k": "COHORT SIZE", "v": "~14,000", "s": "hot-skill engineers", "c": ""}, {"k": "ATTRITION", "v": "22%", "s": "vs 13.8% firm-wide", "c": "r"}, {"k": "AI-READY", "v": "58%", "s": "below 62% firm avg", "c": ""}, {"k": "COMP GAP", "v": "−6%", "s": "vs aggressive offers", "c": "r"}], "whyTitle": "Why attrition is rising here", "whyBody": "The scarce skills powering the GenAI ramp are exactly the ones start-ups and client GCCs are poaching, concentrated in two hubs. A ~6% comp gap on aggressive offers, a project-mix skewed to run-work, and slow growth-path velocity are pushing regretted attrition to 22% — well above the 13.8% firm average.", "causal": [["POACHING", "Start-ups + client GCCs targeting GenAI engineers in Pune & Hyderabad"], ["COMP GAP", "~6% behind aggressive external offers"], ["PROJECT MIX", "Best engineers on run-work, not marquee GenAI builds"], ["GROWTH PATH", "Architect / AI-lead progression too slow"]], "analogName": "Cloud Reskilling Wave (2024)", "analogSub": "Prior program · same hub, same threat", "analogOutcome": "Attrition −4pp · subcontractor −12% · 38K cloud-certified in 3 quarters", "analogWorked": "A 2024 cloud reskilling wave paired targeted spot-comp with accelerated certification and project-pull, moving the best engineers onto marquee builds. Regretted attrition fell 4pp and subcontractor dependence dropped 12%.", "analogWhy": "Same hubs, same poaching dynamic, same comp-gap shape — for GenAI skills this time. The 2024 wave is the directly transferable playbook and the AI-fluency infra is already in place.", "playTitle": "Recommended reskill-and-redeploy play", "playSub": "skills realignment, not a cost action · CHRO co-owns", "play": ["Targeted spot-comp for the ~14,000 cohort — precision, not a broad reset.", "Accelerate AI-fluency waves to lift AI-ready from 58% to 88% by Q4.", "Route two marquee GenAI programs to Pune & Hyderabad.", "Fast-track architect / AI-lead growth paths.", "Substitute reskilled internal talent for subcontractors."], "modeled": [["Attrition change", "−6pp"], ["AI-ready by Q4", "88%"], ["Subcontractor", "−8%"], ["Margin impact", "+0.4pp"]], "conf": 4, "confText": "Based on the 2024 cloud reskilling wave. Materializes over 3 quarters."}}, {"key": "cloud", "group": "under", "dot": "r", "name": "Cloud / Platform", "sub": "Pune · Bengaluru", "cells": [["18% / 61%", "mono"], ["−5% comp", "neg"], ["reskill + comp", "pos"]], "clickable": true, "intel": {"account": "Cloud / Platform Engineering — Pune & Bengaluru", "label": "hot-skill pool · cloud & platform", "cards": [{"k": "ATTRITION", "v": "18%", "s": "vs 13.8% firm-wide", "c": "r"}, {"k": "AI-READY", "v": "61%", "s": "near firm avg", "c": ""}, {"k": "COMP GAP", "v": "−5%", "s": "vs aggressive offers", "c": "r"}, {"k": "SUBCON DEP.", "v": "high", "s": "reducible via reskilling", "c": ""}], "whyTitle": "Why cloud attrition is elevated", "whyBody": "Cloud and platform engineers are in high demand from hyperscaler partners and GCCs. Comp is ~5% behind aggressive offers and a chunk of demand is met with subcontractors — both a margin and a retention risk that reskilling can address.", "causal": [["POACHING", "Hyperscaler partners + GCCs hiring cloud engineers"], ["COMP GAP", "~5% behind aggressive offers"], ["SUBCON", "Subcontractor dependence inflates cost"], ["MOBILITY", "Internal mobility to marquee cloud builds too low"]], "analogName": "Cloud Reskilling Wave (2024)", "analogSub": "Prior program · same skill family", "analogOutcome": "Attrition −4pp · subcontractor −12% · 38K cloud-certified", "analogWorked": "The 2024 wave certified 38K engineers and substituted internal talent for subcontractors, cutting cost and attrition together.", "analogWhy": "Same skill family and the same subcontractor dynamic — the 2024 motion transfers directly.", "playTitle": "Recommended reskill-and-substitute play", "playSub": "reduce subcontractor dependence · CHRO co-owns", "play": ["Selective spot-comp for the highest-regret cloud roles.", "Accelerate cloud-to-GenAI certification waves.", "Substitute reskilled internal talent for subcontractors (−8-12%).", "Raise internal mobility to marquee cloud/GenAI builds.", "Fast-track platform-architect growth paths."], "modeled": [["Attrition change", "−4pp"], ["AI-ready by Q4", "82%"], ["Subcontractor", "−10%"], ["Margin impact", "+0.5pp"]], "conf": 4, "confText": "Based on the 2024 cloud reskilling wave. Materializes over 3 quarters."}}, {"key": "data", "group": "under", "dot": "r", "name": "Data / AI Science", "sub": "Hyderabad", "cells": [["17% / 60%", "mono"], ["−4% comp", "neg"], ["growth path", "pos"]], "clickable": true, "intel": {"account": "Data / AI Science — Hyderabad", "label": "hot-skill pool · data & AI science", "cards": [{"k": "ATTRITION", "v": "17%", "s": "vs 13.8% firm-wide", "c": "r"}, {"k": "AI-READY", "v": "60%", "s": "near firm avg", "c": ""}, {"k": "COMP GAP", "v": "−4%", "s": "vs aggressive offers", "c": "r"}, {"k": "GROWTH GAP", "v": "high", "s": "AI-lead tracks slow", "c": ""}], "whyTitle": "Why data-science attrition is rising", "whyBody": "Data and AI-science talent is highly liquid; the biggest driver here is growth-path velocity, not just comp. High performers want AI-lead and research tracks that progress faster than the current ladder allows.", "causal": [["POACHING", "AI labs + GCCs recruiting data scientists"], ["COMP GAP", "~4% behind aggressive offers"], ["GROWTH PATH", "AI-lead / research tracks too slow"], ["PROJECT MIX", "Not enough frontier GenAI work"]], "analogName": "Cloud Reskilling Wave (2024)", "analogSub": "Prior program · adjacent skill", "analogOutcome": "Attrition −4pp · fast-track tracks retained top performers", "analogWorked": "The 2024 wave showed that accelerated growth paths plus marquee project-pull retained the highest performers even against aggressive offers.", "analogWhy": "Adjacent skill family with the same growth-path sensitivity — the retention levers transfer.", "playTitle": "Recommended growth-and-project play", "playSub": "retain high performers · CHRO co-owns", "play": ["Fast-track AI-lead and research growth paths.", "Route frontier GenAI research programs to this pool.", "Selective spot-comp for the highest-regret scientists.", "Accelerate AI-fluency for the broader cohort.", "Internal mobility into marquee accounts."], "modeled": [["Attrition change", "−4pp"], ["AI-ready by Q4", "84%"], ["Subcontractor", "−5%"], ["Margin impact", "+0.3pp"]], "conf": 3, "confText": "Based on the 2024 wave retention levers. Materializes over 3 quarters."}}, {"key": "cyber", "group": "under", "dot": "y", "name": "Cybersecurity", "sub": "multi-hub", "cells": [["15% / 57%", "mono"], ["−3% comp", "neg"], ["reskill", "pos"]], "clickable": true, "intel": {"account": "Cybersecurity — multi-hub", "label": "hot-skill pool · security engineering", "cards": [{"k": "ATTRITION", "v": "15%", "s": "vs 13.8% firm-wide", "c": "r"}, {"k": "AI-READY", "v": "57%", "s": "below firm avg", "c": ""}, {"k": "COMP GAP", "v": "−3%", "s": "vs offers", "c": "r"}, {"k": "DEMAND", "v": "rising", "s": "cyber-first CIO agenda", "c": ""}], "whyTitle": "Why cyber talent is tightening", "whyBody": "Cybersecurity demand is rising across every client CIO agenda, tightening supply. Attrition is moderate but the AI-ready share is below average — the priority is reskilling security engineers into AI-augmented security operations.", "causal": [["DEMAND", "Cyber-first CIO agenda lifting market demand"], ["COMP GAP", "~3% behind offers"], ["AI-READY", "Below-average AI fluency in the pool"], ["MOBILITY", "Redeploy into AI-augmented SOC work"]], "analogName": "Cloud Reskilling Wave (2024)", "analogSub": "Prior program · same reskilling model", "analogOutcome": "reskilling lifted readiness and cut subcontractor use", "analogWorked": "The 2024 model — accelerated certification plus project-pull — applies directly to reskilling security engineers into AI-augmented security operations.", "analogWhy": "Same reskilling model, adjacent skill — directly transferable.", "playTitle": "Recommended reskill play", "playSub": "AI-augment the security workforce", "play": ["Accelerate AI-augmented security certification waves.", "Selective spot-comp for scarce cyber-architects.", "Redeploy into AI-augmented SOC and GenAI-security work.", "Substitute reskilled talent for security subcontractors.", "Growth paths for security architects."], "modeled": [["Attrition change", "−3pp"], ["AI-ready by Q4", "80%"], ["Subcontractor", "−6%"], ["Margin impact", "+0.3pp"]], "conf": 3, "confText": "Based on the 2024 reskilling model. Materializes over 3 quarters."}}, {"key": "fullstack", "group": "under", "dot": "y", "name": "Product / Full-stack", "sub": "Pune", "cells": [["14% / 63%", "mono"], ["−2% comp", "neg"], ["project pull", "pos"]], "clickable": true, "intel": {"account": "Product / Full-stack — Pune", "label": "hot-skill pool · product engineering", "cards": [{"k": "ATTRITION", "v": "14%", "s": "near firm avg", "c": ""}, {"k": "AI-READY", "v": "63%", "s": "above avg", "c": ""}, {"k": "COMP GAP", "v": "−2%", "s": "vs offers", "c": "r"}, {"k": "LEVER", "v": "project-pull", "s": "fastest retention lever", "c": ""}], "whyTitle": "Why product engineers churn at the margin", "whyBody": "This pool is relatively healthy — AI-readiness is above average and comp gap is small. The main lever is project-pull: high performers leave when they're not on the most interesting GenAI product builds.", "causal": [["PROJECT MIX", "Best engineers want frontier GenAI product work"], ["COMP GAP", "~2% behind offers — minor"], ["MOBILITY", "Internal mobility could be faster"], ["GROWTH", "Product-lead tracks in demand"]], "analogName": "Cloud Reskilling Wave (2024)", "analogSub": "Prior program · project-pull lever", "analogOutcome": "project-pull retained high performers at low cost", "analogWorked": "Project-pull — routing marquee builds to the pool — was the cheapest, highest-yield retention lever in 2024.", "analogWhy": "Same lever, healthy pool — low-cost retention upside.", "playTitle": "Recommended project-pull play", "playSub": "cheapest retention lever", "play": ["Route marquee GenAI product builds to this pool.", "Accelerate product-lead growth paths.", "Light selective comp only where needed.", "High internal mobility into flagship accounts.", "AI-fluency top-up to push readiness past 80%."], "modeled": [["Attrition change", "−2pp"], ["AI-ready by Q4", "83%"], ["Subcontractor", "−3%"], ["Margin impact", "+0.2pp"]], "conf": 3, "confText": "Based on the 2024 project-pull lever. Materializes over 2–3 quarters."}}, {"key": "erp", "group": "top", "dot": "g", "name": "Enterprise / SAP-Oracle", "sub": "~86,000 · stable", "cells": [["9.1% / 71%", "mono"], ["low risk", "pos"]], "clickable": true, "intel": {"account": "Enterprise / SAP-Oracle", "label": "healthy pool · ~86,000", "cards": [{"k": "HEADCOUNT", "v": "~86,000", "s": "largest pool", "c": ""}, {"k": "ATTRITION", "v": "9.1%", "s": "well below firm avg", "c": "g"}, {"k": "AI-READY", "v": "71%", "s": "above firm avg", "c": "g"}, {"k": "ROLE", "v": "reskilling source", "s": "feed hot-skill pools", "c": ""}], "whyTitle": "Why this pool is a strength", "whyBody": "The enterprise-applications pool is large, stable, and already 71% AI-ready. Beyond its own health, it is a reskilling source — a pipeline that can be moved into GenAI and cloud roles to relieve the hot-skill hubs.", "causal": [["STABILITY", "Attrition well below firm average"], ["AI-READY", "71% — ahead of the firm"], ["SCALE", "Largest single pool — reskilling reservoir"], ["ANNUITY", "Sticky enterprise-platform work"]], "analogName": "Cloud Reskilling Wave (2024)", "analogSub": "reskilling-source pattern", "analogOutcome": "enterprise pool fed 12K into cloud/GenAI roles", "analogWorked": "In 2024 the enterprise pool supplied thousands of reskilled engineers into cloud roles — the same reservoir can feed the GenAI ramp.", "analogWhy": "Proven reskilling reservoir — replicate the source pattern for GenAI.", "playTitle": "Recommended replicate-the-source play", "playSub": "turn stability into GenAI capacity", "play": ["Reskill a cohort into GenAI/cloud roles to relieve hot hubs.", "Maintain the low-attrition engagement model.", "Use as the internal-mobility reservoir for marquee builds.", "Protect annuity delivery quality.", "Push AI-readiness past 80%."], "modeled": [["Reskilling supply", "+12K"], ["Attrition", "9.1%"], ["AI-ready by Q4", "82%"], ["Risk", "Low"]], "conf": 4, "confText": "High confidence — stable pool with proven reskilling supply."}}, {"key": "testing", "group": "top", "dot": "g", "name": "Testing / Quality Eng", "sub": "~74,000 · reskilling", "cells": [["10.4% / 66%", "mono"], ["low risk", "pos"]], "clickable": true, "intel": {"account": "Testing / Quality Engineering", "label": "healthy pool · ~74,000", "cards": [{"k": "HEADCOUNT", "v": "~74,000", "s": "large pool", "c": ""}, {"k": "ATTRITION", "v": "10.4%", "s": "below firm avg", "c": "g"}, {"k": "AI-READY", "v": "66%", "s": "above firm avg", "c": "g"}, {"k": "ROLE", "v": "AI-augment", "s": "test-automation → GenAI QA", "c": ""}], "whyTitle": "Why this pool is a strength", "whyBody": "Quality engineering is stable and reskilling well into AI-augmented testing. It is both healthy and a source pool for GenAI-QA and automation roles.", "causal": [["STABILITY", "Below-average attrition"], ["AI-READY", "66% and climbing"], ["REskill", "Test-automation → GenAI QA transition underway"], ["SCALE", "Large reskilling reservoir"]], "analogName": "Cloud Reskilling Wave (2024)", "analogSub": "reskilling-source pattern", "analogOutcome": "QA pool reskilled into automation and AI-QA", "analogWorked": "The QA pool has a proven reskilling path into automation — extend it to GenAI-QA.", "analogWhy": "Proven source pattern — replicate for GenAI-QA.", "playTitle": "Recommended AI-augment play", "playSub": "modernize QA into GenAI-QA", "play": ["Accelerate the test-automation → GenAI-QA reskilling path.", "Supply reskilled talent to hot-skill pools.", "Maintain the stable engagement model.", "Internal mobility into flagship builds.", "Push readiness past 78%."], "modeled": [["Reskilling supply", "+8K"], ["Attrition", "10.4%"], ["AI-ready by Q4", "78%"], ["Risk", "Low"]], "conf": 4, "confText": "High confidence — stable pool actively reskilling."}}, {"key": "infra", "group": "top", "dot": "g", "name": "Infra / Cloud Ops", "sub": "~58,000 · stable", "cells": [["11.2% / 64%", "mono"], ["stable", "pos"]], "clickable": true, "intel": {"account": "Infrastructure / Cloud Ops", "label": "healthy pool · ~58,000", "cards": [{"k": "HEADCOUNT", "v": "~58,000", "s": "stable pool", "c": ""}, {"k": "ATTRITION", "v": "11.2%", "s": "below firm avg", "c": "g"}, {"k": "AI-READY", "v": "64%", "s": "near firm avg", "c": ""}, {"k": "ROLE", "v": "AIOps", "s": "reskill into AI-driven ops", "c": ""}], "whyTitle": "Why this pool is a strength", "whyBody": "Infrastructure and cloud-ops is stable and reskilling into AIOps. Healthy today, and a source pool for AI-driven operations roles.", "causal": [["STABILITY", "Below-average attrition"], ["AI-READY", "64% and rising"], ["REskill", "Ops → AIOps transition underway"], ["ANNUITY", "Sticky managed-services work"]], "analogName": "Cloud Reskilling Wave (2024)", "analogSub": "reskilling-source pattern", "analogOutcome": "ops pool reskilled into cloud and AIOps", "analogWorked": "The ops pool has a proven reskilling path into cloud and AIOps roles.", "analogWhy": "Proven source pattern — replicate for AIOps.", "playTitle": "Recommended AIOps play", "playSub": "modernize ops into AIOps", "play": ["Accelerate the ops → AIOps reskilling path.", "Supply reskilled talent to hot-skill pools.", "Maintain the stable managed-services model.", "Internal mobility into marquee accounts.", "Push readiness past 75%."], "modeled": [["Reskilling supply", "+6K"], ["Attrition", "11.2%"], ["AI-ready by Q4", "76%"], ["Risk", "Low"]], "conf": 4, "confText": "High confidence — stable pool reskilling into AIOps."}}], "firstUnder": "genai_eng", "snapshot": {"kicker": "WORKFORCE SNAPSHOT", "title": "Where the workforce stands — and where the risk is.", "lead": "Overall attrition is industry-best, but GenAI and cloud skills are being poached in two hubs. Click any skill pool to drill into its retention and reskilling intelligence.", "pill": ["19% hot-skill attrition", "62% AI-ready"], "kpis": [{"k": "Headcount", "v": "584,519", "s": "−23,460 YoY · realignment", "c": "gold"}, {"k": "LTM Attrition", "v": "13.8%", "s": "+0.7pp QoQ · industry-best", "c": "gold"}, {"k": "Hot-skill Attrition", "v": "19%", "s": "GenAI/cloud · 2 hubs", "c": "r"}, {"k": "AI-Ready Workforce", "v": "62%", "s": "+14pp YTD", "c": "g"}, {"k": "Utilization (ex-trainee)", "v": "85.2%", "s": "+0.6pp · margin lever", "c": "g"}, {"k": "Subcontractor Cost", "v": "8.1%", "s": "of revenue · reducible", "c": "r"}], "chart": {"title": "AI-ready workforce ramp vs attrition", "sub": "Reskilling is lifting AI-fluency; target ~85% by Q4 while holding attrition.", "badge": "ON TRACK", "badgeCls": "ok", "ykind": "pct", "ymin": 0, "ymax": 100, "xlabels": ["Q1·25", "Q2·25", "Q3·25", "Q4·25", "Q1·26", "Q2·26", "Q3·26p", "Q4·26p"], "series": [{"name": "AI-ready workforce %", "color": "#2f6fd6", "pts": [40, 46, 51, 55, 59, 62, 74, 85]}, {"name": "LTM attrition %", "color": "#b23524", "dash": "4 3", "pts": [12.8, 13.0, 13.2, 13.3, 13.5, 13.8, 12.9, 11.8]}]}, "topTitle": "Healthy skill pools", "topSub": "Retention strong · AI-ready ahead", "topCols": ["Attr / AI-ready", "Status"], "underTitle": "Hot-skill pools — action required", "underSub": "GenAI/cloud poaching in Pune & Hyderabad", "underGap": "~14,000 exposed", "underCols": ["Attr / AI-ready", "Comp gap", "Action"]}, "workbench": {"title": "Pull the people levers. See attrition, readiness and margin.", "lead": "People & Culture levers across retention, reskilling and the pyramid. Every slider updates the live model — attrition, AI-ready workforce by Q4, subcontractor substitution and margin.", "heroCards": [{"k": "HOT-SKILL ATTRITION", "v": "19%", "s": "2 hubs", "c": "r"}, {"k": "AI-READY NOW", "v": "62%", "s": "firm-wide", "c": ""}, {"k": "MODELED AI-READY Q4", "v": "id:lift", "s": "with staged levers", "c": "gold"}], "groups": [{"name": "Retention", "levers": [{"id": "comp", "ln": "Spot-comp for hot skills", "ls": "targeted, not broad reset", "asIs": "None", "fk": "idx", "min": 0, "rec": 2, "max": 3, "val": 0, "imp": {"attr": -1.6, "ready": 2, "subc": 0, "margin": -0.15}, "labels": ["None", "Selective", "Targeted", "Aggressive"]}, {"id": "growth", "ln": "Growth-path acceleration", "ls": "architect / AI-lead tracks", "asIs": "Standard", "fk": "idx", "min": 0, "rec": 1, "max": 2, "val": 0, "imp": {"attr": -0.9, "ready": 3, "subc": 0, "margin": 0.05}, "labels": ["Standard", "Fast", "Aggressive"]}, {"id": "pull", "ln": "Project-pull to hubs", "ls": "marquee GenAI builds", "asIs": "Low", "fk": "idx", "min": 0, "rec": 2, "max": 2, "val": 0, "imp": {"attr": -0.8, "ready": 4, "subc": -1, "margin": 0.1}, "labels": ["Low", "Medium", "High"]}]}, {"name": "Reskilling & Capability", "levers": [{"id": "wave", "ln": "AI-fluency wave pace", "ls": "reskilling throughput", "asIs": "Standard", "fk": "idx", "min": 0, "rec": 2, "max": 2, "val": 0, "imp": {"attr": -0.4, "ready": 9, "subc": -2, "margin": 0.1}, "labels": ["Standard", "Fast", "Accelerated"]}, {"id": "fresh", "ln": "Fresher intake (FY26)", "ls": "pyramid rebalancing", "asIs": "42K", "fk": "k", "min": 42, "rec": 50, "max": 60, "val": 42, "imp": {"attr": 0, "ready": 2, "subc": -1, "margin": 0.2}}, {"id": "mobility", "ln": "Internal mobility", "ls": "redeploy vs re-hire", "asIs": "Low", "fk": "idx", "min": 0, "rec": 2, "max": 2, "val": 0, "imp": {"attr": -0.5, "ready": 4, "subc": -2, "margin": 0.1}, "labels": ["Low", "Medium", "High"]}]}, {"name": "Pyramid & Mix", "levers": [{"id": "subc", "ln": "Subcontractor substitution", "ls": "reskilled internal talent", "asIs": "As-Is", "fk": "subc", "min": 0, "rec": 2, "max": 3, "val": 0, "imp": {"attr": 0, "ready": 1, "subc": -4, "margin": 0.18}}, {"id": "util", "ln": "Utilization target", "ls": "ex-trainee", "asIs": "85.2%", "fk": "util", "min": 85.2, "rec": 86.5, "max": 87.5, "val": 85.2, "imp": {"attr": 0.2, "ready": 0, "subc": 0, "margin": 0.25}}, {"id": "engage", "ln": "Engagement investment", "ls": "culture / wellbeing", "asIs": "Standard", "fk": "idx", "min": 0, "rec": 1, "max": 2, "val": 0, "imp": {"attr": -0.7, "ready": 1, "subc": 0, "margin": -0.05}, "labels": ["Standard", "Elevated", "High"]}]}], "constraints": [{"l": "Margin impact ceiling", "r": "±0.6pp", "stage": ["comp", "engage"], "x": "net people-cost within band"}, {"l": "Engagement guardrail", "r": "top-quartile", "stage": ["engage", "growth"], "x": "reskill-not-replace protects trust"}, {"l": "Delivery SLA", "r": "no slip", "stage": ["pull", "mobility"], "x": "redeploy without service impact"}, {"l": "Talent budget", "r": "$150M ceiling", "stage": ["comp", "wave", "fresh"], "x": "FY26 retention + reskilling"}], "qr": [["ATTRITION Δ", "id:rev"], ["AI-READY Q4", "id:gapc"], ["SUBCONTRACTOR Δ", "id:winr"], ["MARGIN Δ", "id:marg"]], "optNote": "Outcome over 3–4 quarters · vs FY26 talent plan · reskill-and-redeploy"}, "options": [{"name": "Conservative", "tag": "", "desc": "Protect margin · steady reskilling", "g": [["ATTRITION", "−1.5pp"], ["AI-READY Q4", "74%"], ["SUBCON", "−4%"], ["INVEST", "$40M"]], "moves": ["Selective spot-comp · nearest cohorts", "Fast-track growth paths", "Standard wave pace"], "risk": ["Low", "#1f7a52"], "levers": {"comp": 1, "growth": 1, "pull": 1, "wave": 0, "fresh": 42, "mobility": 1, "subc": 1, "util": 85.6, "engage": 1}}, {"name": "Balanced", "tag": "RECOMMENDED", "desc": "Analog-matched · the 2024 reskilling wave motion", "g": [["ATTRITION", "−3.0pp"], ["AI-READY Q4", "85%"], ["SUBCON", "−8%"], ["INVEST", "$85M"]], "moves": ["Targeted spot-comp · ~14K cohort", "Accelerated AI-fluency waves", "Project-pull + −8% subcontractor"], "risk": ["Medium", "#b6811c"], "levers": {"comp": 2, "growth": 1, "pull": 2, "wave": 2, "fresh": 50, "mobility": 2, "subc": 2, "util": 86.5, "engage": 1}}, {"name": "Aggressive", "tag": "", "desc": "Fastest AI-readiness · watch engagement", "g": [["ATTRITION", "−4.5pp"], ["AI-READY Q4", "92%"], ["SUBCON", "−12%"], ["INVEST", "$150M"]], "moves": ["Aggressive comp + 60K fresher intake", "High mobility + −12% subcontractor", "Full engagement investment"], "risk": ["Higher", "#b23524"], "levers": {"comp": 3, "growth": 2, "pull": 2, "wave": 2, "fresh": 60, "mobility": 2, "subc": 3, "util": 87.0, "engage": 2}}], "outcomes": {"title": "Impact on the workforce — visualised.", "noteKind": "workforce", "lead": "AI-readiness ramp, attrition recovery, phased execution timeline and route-to-people-council panel.", "chart": {"title": "AI-readiness ramp & attrition recovery", "sub": "Blue = AI-ready % with applied option. Red dashed = attrition, stabilizing then falling.", "badge": "id:gapc", "badgeCls": "ok", "ykind": "pct", "ymin": 0, "ymax": 100, "xlabels": ["Q1·26", "Q2·26", "Q3·26", "Q4·26", "Q1·27"], "series": [{"name": "AI-ready % (applied)", "color": "#2f6fd6", "pts": [59, 62, 74, 85, 90]}, {"name": "Attrition %", "color": "#b23524", "dash": "4 3", "pts": [13.5, 13.8, 12.9, 11.8, 11.0]}]}, "timeline": [{"d": "JUL 26", "l": "Comp actions", "v": "day 0", "x": "Spot-comp for ~14K cohort approved"}, {"d": "AUG 26", "l": "Reskilling waves", "v": "+9pp ready", "x": "Accelerated AI-fluency in 2 hubs"}, {"d": "Q3 26", "l": "Redeployment", "v": "−1.1pp attr", "x": "Project-pull · subcontractor substitution"}, {"d": "Q4 26", "l": "Stabilize", "v": "85% ready", "x": "Attrition to 11.8% · margin accretive"}, {"d": "Q1 27", "l": "AI-ready scale", "v": "90% ready", "x": "Hot-skill attrition normalized"}], "summ": [{"k": "HOT-SKILL ATTRITION", "v": "−6pp", "s": "19% → 13% in target hubs", "c": ""}, {"k": "AI-READY WORKFORCE", "v": "85%", "s": "by Q4 · +23pp", "c": ""}, {"k": "SUBCONTRACTOR SAVING", "v": "−8%", "s": "→ +0.4pp margin", "c": ""}, {"k": "TALENT INVESTMENT", "v": "$85M", "s": "within budget · self-funding", "c": ""}]}}, "wargame": {"id": "wargame", "accent": "#b23524", "accentSoft": "#f8e6e2", "icon": "⚔", "tag": "MONTE CARLO", "title": "Competitive Wargame", "blurb": "War-game the AI-services battle. Set TCS's strategy, choose a competitive scenario, and run a Monte-Carlo simulation of market-share shifts against Accenture, Infosys, Cognizant and the GCC threat.", "landing": [["COMPETITORS", "4"], ["TOP THREAT", "Accenture"], ["RUNS", "10K"]], "accounts": [{"key": "accenture", "group": "under", "dot": "r", "name": "Accenture", "sub": "T1 · consulting-led GenAI leader", "cells": [["22% / HIGH", "mono"], ["+67% QoQ", "neg"], ["$3.0B bookings", "mono"]], "clickable": true, "intel": {"account": "Accenture — Top Threat", "label": "T1 · consulting-led GenAI leader", "cards": [{"k": "GENAI BOOKINGS", "v": "$3.0B", "s": "per quarter · +67% QoQ", "c": "r"}, {"k": "MARKET SHARE", "v": "22%", "s": "AI-services pool", "c": ""}, {"k": "MOMENTUM", "v": "+0.6pp", "s": "share/qtr · accelerating", "c": "r"}, {"k": "CONTESTED ACCTS", "v": "3", "s": "of TCS's top-20", "c": "r"}], "whyTitle": "How Accenture is winning", "whyBody": "Accenture leads with a consulting-first 'reinvention' narrative that captures the C-suite mandate before the build decision, then pulls through delivery. Its GenAI bookings run ~2x TCS's and it converts evaluations ~18 days faster. Its exposure is a higher cost base and a premium perception in the price-sensitive mid-market — the seam to attack.", "causal": [["NARRATIVE", "Consulting-led reinvention wins the C-suite pre-build"], ["BOOKINGS", "~$3B GenAI bookings/qtr · ~2x TCS"], ["SPEED", "Evaluations convert ~18 days faster"], ["SEAM", "Higher cost base · premium in mid-market = attack surface"]], "analogName": "Mid-market GenAI counter (2025)", "analogSub": "Prior win vs a premium incumbent", "analogOutcome": "6 mid-market logos · outcome-priced · +$210M TCV in 2 quarters", "analogWorked": "Where a premium incumbent held enterprise and ignored mid-market, TCS shipped a productized, outcome-priced SKU and won on total cost of outcome, not rate card.", "analogWhy": "Accenture is defending enterprise margin and ceding the price-sensitive mid-market. The 2025 counter is transferable and TCS's sovereign/deep-tech depth adds an un-copyable moat.", "playTitle": "Recommended counter-strategy", "playSub": "attack the seam · defend the contested top-20", "play": ["Outcome-based pricing on contested enterprise deals to neutralize the consulting frame.", "Ship the mid-market productized GenAI SKU where Accenture is premium and absent.", "Lead sovereign / deep-tech differentiation (BSNL, semiconductor, quantum).", "Deep hyperscaler + NVIDIA co-sell to match ecosystem framing.", "Fast reference velocity from closed BFSI GenAI wins."], "modeled": [["Share shift (P50)", "+1.8pp"], ["Win-prob vs ACN", "58%"], ["Pipeline captured", "$1.4B"], ["Gap closure", "67%"]], "conf": 3, "confText": "Monte-Carlo P50 across 10,000 runs, base scenario. Range widens under stress."}}, {"key": "infosys", "group": "under", "dot": "r", "name": "Infosys", "sub": "T1 · Topaz/Cobalt · price-led", "cells": [["12% / HIGH", "mono"], ["mid-mkt −15%", "neg"], ["Topaz SKU", "mono"]], "clickable": true, "intel": {"account": "Infosys — Price-led Challenger", "label": "T1 · Topaz / Cobalt", "cards": [{"k": "MARKET SHARE", "v": "12%", "s": "AI-services pool", "c": ""}, {"k": "THREAT", "v": "HIGH", "s": "mid-market price war", "c": "r"}, {"k": "MOVE", "v": "−15%", "s": "productized SKU vs TCS custom", "c": "r"}, {"k": "PLATFORMS", "v": "Topaz+Cobalt", "s": "AI + cloud", "c": ""}], "whyTitle": "How Infosys competes", "whyBody": "Infosys attacks the mid-market with productized Topaz GenAI bundles ~15% below TCS custom, using aggressive fixed-price and fast productization. It is smaller in scale and thinner in sovereign/deep-tech, but its price-led motion compresses TCS's fastest-growing GenAI segment.", "causal": [["PRICING", "Productized Topaz bundles ~15% below TCS custom"], ["SPEED", "Fast productization and fixed-price motion"], ["MARGIN", "Strong margin discipline funds the price attack"], ["GAP", "Thin sovereign/deep-tech and smaller scale"]], "analogName": "Mid-market GenAI counter (2025)", "analogSub": "Prior win vs a price-led rival", "analogOutcome": "productized SKU held share and margin against undercutting", "analogWorked": "TCS's own productized, outcome-priced SKU removed price as the deciding factor and held a margin floor while defending share.", "analogWhy": "Same price-led dynamic — the productized-SKU counter neutralizes Infosys directly, with domain depth as the tie-breaker.", "playTitle": "Recommended counter-strategy", "playSub": "remove price as the decider", "play": ["Ship a productized mid-market GenAI SKU to remove price as the decider.", "Hold a 24% margin floor on mid-market deals.", "Lead with domain depth + sovereign references Infosys can't match.", "Outcome guarantees to win on total cost of outcome.", "Fast reference velocity to shorten evaluations."], "modeled": [["Share shift (P50)", "+1.2pp"], ["Win-prob vs INFY", "62%"], ["Pipeline captured", "$0.9B"], ["Gap closure", "—"]], "conf": 3, "confText": "Monte-Carlo P50, base scenario. Price-war scenario widens the range."}}, {"key": "cognizant", "group": "under", "dot": "y", "name": "Cognizant", "sub": "T1 · US healthcare/BFSI", "cells": [["8% / MED", "mono"], ["large deals", "neg"], ["Neuro AI", "mono"]], "clickable": true, "intel": {"account": "Cognizant — US-heavy Contender", "label": "T1 · US healthcare & BFSI", "cards": [{"k": "MARKET SHARE", "v": "8%", "s": "AI-services pool", "c": ""}, {"k": "THREAT", "v": "MEDIUM", "s": "US large-deal momentum", "c": "r"}, {"k": "STRENGTH", "v": "US health", "s": "+ BFSI depth", "c": ""}, {"k": "PLATFORM", "v": "Neuro AI", "s": "GenAI stack", "c": ""}], "whyTitle": "How Cognizant competes", "whyBody": "Cognizant is US-heavy with genuine depth in healthcare and BFSI and is regaining large-deal momentum with its Neuro AI platform. Its footprint is narrower globally and its sovereign/deep-tech presence is thin — it competes hardest in US healthcare where TCS must defend.", "causal": [["US HEALTH", "Deep US healthcare and BFSI relationships"], ["LARGE DEALS", "Regaining large-deal momentum"], ["NEURO AI", "GenAI platform pushed into healthcare"], ["GAP", "Narrow global footprint · thin sovereign/deep-tech"]], "analogName": "US healthcare GenAI defense", "analogSub": "Prior defense vs a US-focused rival", "analogOutcome": "domain depth + cross-industry references held key accounts", "analogWorked": "Leading with life-sciences/ADD depth and cross-industry AI references defended US healthcare accounts against a US-focused challenger.", "analogWhy": "Same US-healthcare battleground — protect key accounts with domain depth and references.", "playTitle": "Recommended counter-strategy", "playSub": "defend US healthcare · differentiate globally", "play": ["Lead with TCS life-sciences / ADD depth and cross-industry references.", "Protect key US healthcare accounts with executive sponsorship.", "Accelerate US local hiring + near-shore vs onshore-cost pressure.", "Differentiate on AI-led productivity, not headcount.", "Use global scale and sovereign depth where Cognizant can't follow."], "modeled": [["Share shift (P50)", "+0.9pp"], ["Win-prob vs CTSH", "63%"], ["Pipeline captured", "$0.6B"], ["Gap closure", "—"]], "conf": 3, "confText": "Monte-Carlo P50, base scenario."}}, {"key": "gcc", "group": "under", "dot": "y", "name": "Hyperscalers + GCC", "sub": "platform + client in-house", "cells": [["— / MED", "mono"], ["insourcing", "neg"], ["talent + lock-in", "mono"]], "clickable": true, "intel": {"account": "Hyperscalers + GCC — Structural Threat", "label": "platform pull + client in-house build", "cards": [{"k": "THREAT", "v": "MEDIUM", "s": "insourcing surge risk", "c": "r"}, {"k": "VECTOR", "v": "GCC", "s": "client-owned build", "c": ""}, {"k": "VECTOR 2", "v": "Platform", "s": "hyperscaler native", "c": ""}, {"k": "PRESSURE", "v": "talent", "s": "+ lock-in", "c": ""}], "whyTitle": "How the GCC / platform threat works", "whyBody": "Clients are standing up captive Global Capability Centers and hyperscalers are pulling workloads toward platform-native builds — both routing work away from external integrators. This is a structural, not a deal-by-deal, threat: it competes for the same talent and can lock in the platform layer.", "causal": [["GCC", "Clients building captive centers, insourcing work"], ["PLATFORM", "Hyperscaler-native builds bypass integrators"], ["TALENT", "Both compete for the same GenAI/cloud engineers"], ["LOCK-IN", "Platform choices create integration debt"]], "analogName": "GCC co-existence play (2025)", "analogSub": "Prior win vs an insourcing client", "analogOutcome": "hybrid build-operate-transfer + AI-productivity kept the mandate", "analogWorked": "Where a client insourced, TCS won a hybrid build-operate-transfer role plus an AI-productivity commitment — co-existing with the GCC rather than being displaced.", "analogWhy": "Same insourcing vector — the co-existence + productivity play converts a threat into a managed partnership.", "playTitle": "Recommended counter-strategy", "playSub": "co-exist, don't compete head-on", "play": ["Offer hybrid build-operate-transfer to co-exist with client GCCs.", "Lead with AI-led productivity the client can't build alone.", "Deep hyperscaler co-sell to co-own, not cede, the platform layer.", "Sovereign / deep-tech capability GCCs can't replicate.", "Reskilling to win the shared talent competition."], "modeled": [["Share shift (P50)", "+0.7pp"], ["Win-prob vs GCC", "56%"], ["Pipeline captured", "$0.5B"], ["Gap closure", "—"]], "conf": 2, "confText": "Monte-Carlo P50, base scenario. GCC-surge scenario widens the range."}}, {"key": "str1", "group": "top", "dot": "g", "name": "Delivery scale & annuity", "sub": "584K workforce · $40.7B TCV", "cells": [["lead vs field", "mono"], ["durable moat", "pos"]], "clickable": false, "intel": null}, {"key": "str2", "group": "top", "dot": "g", "name": "Sovereign / deep-tech", "sub": "BSNL · semiconductor · quantum", "cells": [["unique vs peers", "mono"], ["low-copy moat", "pos"]], "clickable": false, "intel": null}, {"key": "str3", "group": "top", "dot": "g", "name": "Cost + domain depth", "sub": "BFSI, mfg, retail", "cells": [["strong vs ACN", "mono"], ["pricing edge", "pos"]], "clickable": false, "intel": null}], "firstUnder": "accenture", "snapshot": {"kicker": "BATTLEFIELD SNAPSHOT", "title": "Where TCS stands in the AI-services battle.", "lead": "The AI-led services market is consolidating around a few global-scale integrators, with disruption from hyperscalers and client GCCs. Click any threat to drill into its intelligence.", "pill": ["-$1.2B bookings gap", "$2.1B contested"], "kpis": [{"k": "TCS Position", "v": "#2", "s": "by AI-services scale", "c": "gold"}, {"k": "Top Threat", "v": "Accenture", "s": "consulting-led GenAI", "c": "r"}, {"k": "Active Threats", "v": "4", "s": "ACN · INFY · CTSH · GCC", "c": "gold"}, {"k": "Contested Pipeline", "v": "$2.1B", "s": "3 top-20 accounts", "c": "r"}, {"k": "GenAI Bookings Gap", "v": "−$1.2B", "s": "vs Accenture", "c": "r"}, {"k": "Win Rate vs Field", "v": "41%", "s": "−4pp QoQ", "c": "r"}], "chart": {"title": "AI-services share momentum", "sub": "Share of the contestable AI-services pool; Accenture's GenAI momentum is the widening threat.", "badge": "THREAT RISING", "badgeCls": "warn", "ykind": "pct", "ymin": 0, "ymax": 26, "xlabels": ["Q1·25", "Q2·25", "Q3·25", "Q4·25", "Q1·26", "Q2·26"], "series": [{"name": "Accenture", "color": "#b23524", "dash": "4 3", "pts": [20, 20.5, 21, 21.5, 21.8, 22]}, {"name": "TCS", "color": "#b6811c", "pts": [15.4, 15.5, 15.6, 15.7, 15.8, 15.9]}, {"name": "Infosys", "color": "#2f6fd6", "dash": "2 2", "pts": [11.4, 11.5, 11.6, 11.7, 11.8, 12]}, {"name": "Cognizant", "color": "#8c8373", "dash": "2 2", "pts": [8.2, 8.1, 8.1, 8.0, 8.0, 8.0]}]}, "topTitle": "TCS strengths on the field", "topSub": "Where TCS wins today", "topCols": ["Position", "Edge"], "underTitle": "Threat board — action required", "underSub": "Competitive threats ranked", "underGap": "4 active", "underCols": ["Share / Level", "Momentum", "Signal"]}, "wargameWB": {"title": "Set your strategy. Run the Monte Carlo.", "lead": "Configure TCS's competitive posture, choose the scenario the market throws at you, and simulate 10,000 runs of market-share shift over four quarters. Sliders update the live strategy strength instantly.", "presets": [{"name": "Defensive", "vals": {"price": 0.2, "swat": 0.3, "sku": 0.2, "sov": 0.4, "eco": 0.3, "ref": 0.3}}, {"name": "Balanced", "vals": {"price": 0.6, "swat": 0.6, "sku": 0.6, "sov": 0.6, "eco": 0.6, "ref": 0.6}}, {"name": "Offensive", "vals": {"price": 0.9, "swat": 0.9, "sku": 0.85, "sov": 0.8, "eco": 0.8, "ref": 0.85}}], "levers": [{"id": "price", "ln": "Pricing posture", "ls": "rate-card ↔ outcome-based", "lo": "Rate-card", "hi": "Outcome"}, {"id": "swat", "ln": "GenAI SWAT intensity", "ls": "contested-account strike", "lo": "Low", "hi": "High"}, {"id": "sku", "ln": "Mid-market SKU push", "ls": "vs Infosys Topaz", "lo": "Off", "hi": "Full"}, {"id": "sov", "ln": "Sovereign / deep-tech moat", "ls": "BSNL · chip · quantum", "lo": "Low", "hi": "High"}, {"id": "eco", "ln": "Ecosystem co-sell", "ls": "hyperscaler + NVIDIA", "lo": "Light", "hi": "Deep"}, {"id": "ref", "ln": "Reference velocity", "ls": "speed of proof", "lo": "Slow", "hi": "Fast"}], "scenarios": [{"id": "base", "name": "Base case", "desc": "Current trajectory holds", "diff": 0.0}, {"id": "acn", "name": "Accenture-aggressive", "desc": "ACN doubles GenAI push, wins 3 RFPs", "diff": 0.9}, {"id": "price", "name": "Price war", "desc": "Infosys triggers mid-market price war", "diff": 0.6}, {"id": "gcc", "name": "GCC insourcing surge", "desc": "Clients pull work in-house", "diff": 0.7}], "competitors": [{"name": "Accenture", "base": 58}, {"name": "Infosys", "base": 54}, {"name": "Cognizant", "base": 63}, {"name": "GCC threat", "base": 56}]}, "outcomes": {"title": "War-game results — visualised.", "isWargame": true, "lead": "Projected market-share shift distribution, win-probabilities by competitor, and route-to-board panel."}}};
+
+/* ============================ ENGINE ============================ */
+const root=document.getElementById('root');
+function clamp(x,a,b){return Math.max(a,Math.min(b,x));}
+let cur={flow:null,step:0,acct:null,lev:{},opts:false,sel:null,mc:null,preset:null,scenario:'base'};
+
+function lvfmt(l,v){v=+v;
+  switch(l.fk){
+    case 'pct':return v+'%'; case 'int':return ''+v; case 'k':return v+'K';
+    case 'util':return v.toFixed(1)+'%'; case 'idx':return l.labels[Math.round(v)];
+    case 'subc':return v==0?'As-Is':'−'+(v*4)+'%'; default:return ''+v;}
+}
+function yfmt(kind,v){return kind==='usd_b'?('$'+v.toFixed(1)+'B'):(v+'%');}
+function findLever(f,id){let r=null;f.workbench.groups.forEach(g=>g.levers.forEach(l=>{if(l.id===id)r=l;}));return r;}
+
+/* ---------- charts ---------- */
+function lineChart(cfg,W,Hh){
+  const padL=48,padR=16,padT=14,padB=26,pw=W-padL-padR,ph=Hh-padT-padB;
+  const n=cfg.xlabels.length,ymin=cfg.ymin,ymax=cfg.ymax;
+  const X=i=>padL+(n<=1?0:i*pw/(n-1)),Y=v=>padT+ph-(v-ymin)/(ymax-ymin)*ph;
+  let g='';
+  for(let t=0;t<=4;t++){const v=ymin+(ymax-ymin)*t/4,y=Y(v);
+    g+=`<line x1="${padL}" y1="${y}" x2="${W-padR}" y2="${y}" stroke="#eee6d7"/>`;
+    g+=`<text x="${padL-8}" y="${y+3}" text-anchor="end" font-size="9" fill="#a99f8c">${yfmt(cfg.ykind,v)}</text>`;}
+  cfg.xlabels.forEach((l,i)=>{g+=`<text x="${X(i)}" y="${Hh-8}" text-anchor="middle" font-size="9" fill="#a99f8c">${l}</text>`;});
+  cfg.series.forEach(s=>{let d='',pen=false;
+    s.pts.forEach((v,i)=>{if(v==null){pen=false;return;}d+=(pen?'L':'M')+X(i)+' '+Y(v)+' ';pen=true;});
+    g+=`<path d="${d}" fill="none" stroke="${s.color}" stroke-width="2.4" ${s.dash?`stroke-dasharray="${s.dash}"`:''} stroke-linecap="round" stroke-linejoin="round"/>`;
+    s.pts.forEach((v,i)=>{if(v!=null)g+=`<circle cx="${X(i)}" cy="${Y(v)}" r="3" fill="${s.color}"/>`;});});
+  const leg=cfg.series.map(s=>`<span><i style="background:${s.color}"></i>${s.name}</span>`).join('');
+  return `<svg viewBox="0 0 ${W} ${Hh}" width="100%" style="display:block">${g}</svg><div class="legend">${leg}</div>`;
+}
+function histogram(vals,W,Hh){
+  const lo=-2,hi=4,bins=24,padL=8,padR=8,padT=10,padB=24,pw=W-padL-padR,ph=Hh-padT-padB;
+  const cnt=new Array(bins).fill(0);
+  vals.forEach(v=>{let b=Math.floor((clamp(v,lo,hi-1e-6)-lo)/(hi-lo)*bins);cnt[b]++;});
+  const mx=Math.max(...cnt),bw=pw/bins;let g='';
+  cnt.forEach((c,i)=>{const h=c/mx*ph,x=padL+i*bw,y=padT+ph-h,mid=lo+(i+0.5)/bins*(hi-lo);
+    const col=mid<0?'#d9b2ab':(mid<1.2?'#e6cf9a':'#9cc9b4');
+    g+=`<rect x="${x+1}" y="${y}" width="${bw-2}" height="${h}" rx="2" fill="${col}"/>`;});
+  for(let v=lo;v<=hi;v+=1){const x=padL+(v-lo)/(hi-lo)*pw;
+    g+=`<line x1="${x}" y1="${padT+ph}" x2="${x}" y2="${padT+ph+4}" stroke="#c9bfad"/>`;
+    g+=`<text x="${x}" y="${Hh-6}" text-anchor="middle" font-size="9" fill="#a99f8c">${v>0?'+':''}${v}pp</text>`;}
+  const sorted=[...vals].sort((a,b)=>a-b),pct=p=>sorted[Math.floor(p*sorted.length)];
+  [['P10',pct(0.1),'#8c8373'],['P50',pct(0.5),'#1d1a15'],['P90',pct(0.9),'#8c8373']].forEach(([lab,v,c])=>{
+    const x=padL+(clamp(v,lo,hi)-lo)/(hi-lo)*pw;
+    g+=`<line x1="${x}" y1="${padT}" x2="${x}" y2="${padT+ph}" stroke="${c}" stroke-width="${lab=='P50'?2:1}" stroke-dasharray="3 3"/>`;
+    g+=`<text x="${x}" y="${padT-2}" text-anchor="middle" font-size="8.5" font-weight="700" fill="${c}">${lab}</text>`;});
+  return `<svg viewBox="0 0 ${W} ${Hh}" width="100%" style="display:block">${g}</svg>`;
+}
+function gauss(){let u=0,v=0;while(!u)u=Math.random();while(!v)v=Math.random();return Math.sqrt(-2*Math.log(u))*Math.cos(2*Math.PI*v);}
+function runMC(strength,diff,runs){
+  const mean=-0.2+strength*2.9-diff*1.9,sd=0.45+diff*0.7+(1-strength)*0.15,out=new Array(runs);
+  for(let i=0;i<runs;i++)out[i]=mean+gauss()*sd;
+  const sorted=[...out].sort((a,b)=>a-b),pct=p=>sorted[Math.floor(p*sorted.length)];
+  const thr={"Accenture":1.5,"Infosys":0.8,"Cognizant":0.3,"GCC threat":0.6},wp={};
+  for(const k in thr){wp[k]=Math.round(out.filter(v=>v>thr[k]).length/runs*100);}
+  const p50=pct(0.5),captured=clamp(p50/2.6,0,1)*2.1,gapc=clamp(p50/2.6,0,1)*100*0.9;
+  return {out,p10:pct(0.1),p50,p90:pct(0.9),wp,captured,gapc,mean};
+}
+/* ---------- shared ---------- */
+function kpiGrid(kpis,cols){return `<div class="kpis" style="grid-template-columns:repeat(${cols||3},1fr)">`+kpis.map(k=>
+  `<div class="kpi ${k.c||''}"><div class="k">${k.k}</div><div class="v">${k.v}</div><div class="s ${k.pos?'pos':''}${k.neg?'neg':''}">${k.s}</div></div>`).join('')+`</div>`;}
+function chartCard(c,label){return `<div class="card"><div class="ch"><span>${label||'PLAN VS ACTUAL · TRAJECTORY'}</span><span class="badge ${c.badgeCls}">${c.badge}</span></div>
+  <div class="ct">${c.title}</div><div class="cs">${c.sub}</div>${lineChart(c,860,240)}</div>`;}
+function cellHtml(c){return `<span class="${c[1]==='neg'?'neg':c[1]==='pos'?'pos':'mono'}">${c[0]}</span>`;}
+
+/* ---------- LANDING ---------- */
+function renderLanding(){
+  const cards=Object.values(FLOWS).map(f=>`
+    <div class="obj" onclick="openFlow('${f.id}')"><div class="cap" style="background:${f.accent}"></div>
+      <div class="top"><div class="icon" style="background:${f.accentSoft};color:${f.accent}">${f.icon}</div><span class="tag">${f.tag}</span></div>
+      <h3>${f.title}</h3><p>${f.blurb}</p>
+      <div class="stats">${f.landing.map(s=>`<div class="stat"><div class="k">${s[0]}</div><div class="v">${s[1]}</div></div>`).join('')}</div>
+      <div class="open">Open →</div></div>`).join('');
+  root.innerHTML=`<div class="kicker">Decision Lab · Simulation Studio</div>
+    <h1 class="display"><span class="em">Soundboard your ideas,</span> before execution.</h1>
+    <div class="sub">Deep simulations for the CEO agenda — grow the AI-led business, build the AI-ready workforce, and war-game the competitive battle. Configure levers, run modelled experiments, then commit and push to the field.</div>
+    <div class="modebar"><span class="lbl">Mode</span><div class="seg"><button onclick="alert('Lite mode = conversational thinking partner (chat). This prototype demonstrates Deep mode.')">◆ Lite</button><button class="on">◆◆ Deep</button></div></div>
+    <div style="font-size:11px;color:var(--muted2);margin-top:10px">Illustrative scenario · synthetic figures grounded in TCS public reporting — not actual account status.</div>
+    <div class="count">3 Objectives</div><div class="objs">${cards}</div>`;
+}
+/* ---------- FLOW SHELL ---------- */
+const STEPS=[["01","Snapshot"],["02","Intelligence"],["03","Workbench"],["04","Outcomes"]];
+function openFlow(id){cur={flow:id,step:0,acct:FLOWS[id].firstUnder,lev:{},opts:false,sel:null,mc:null,preset:null,scenario:'base'};
+  const f=FLOWS[id];
+  if(f.workbench)f.workbench.groups.forEach(g=>g.levers.forEach(l=>cur.lev[l.id]=l.val));
+  if(f.wargameWB)f.wargameWB.levers.forEach(l=>cur.lev[l.id]=0.5);
+  renderFlow();}
+function openIntel(flow,key){cur.flow=flow;cur.acct=key;cur.step=1;renderFlow();window.scrollTo({top:0,behavior:'smooth'});}
+function goStep(s){const f=FLOWS[cur.flow];
+  if(s===3){if(f.wargameWB&&!cur.mc)runMonteCarlo();if(f.options&&cur.sel==null)return;}
+  cur.step=s;renderFlow();window.scrollTo({top:0,behavior:'smooth'});}
+function jump(i){if(i<=cur.step||i===cur.step+1)goStep(i);}
+function stepper(){return `<div class="stepper">`+STEPS.map((s,i)=>{
+  const cls=i===cur.step?'active':(i<cur.step?'done':''),line=i<3?`<div class="stpline ${i<cur.step?'done':''}"></div>`:'';
+  return `<div class="stp ${cls}" onclick="jump(${i})"><div class="num">${i<cur.step?'✓':s[0]}</div><div class="tx"><div class="a">Step ${s[0]}</div><div class="b">${s[1]}</div></div></div>${line}`;}).join('')+`</div>`;}
+function renderFlow(){const f=FLOWS[cur.flow];let body='';
+  if(cur.step===0)body=renderSnapshot(f);
+  else if(cur.step===1)body=renderIntel(f);
+  else if(cur.step===2)body=(f.wargameWB?renderWargameWB(f):renderWorkbench(f));
+  else body=renderOutcomes(f);
+  root.innerHTML=`<div class="crumb"><a onclick="renderLanding()">Decision Lab</a> / <b>${f.title}</b></div>${stepper()}<div class="fadein">${body}</div>`;
+  if(cur.step===2&&!f.wargameWB)syncModel();
+  if(cur.step===2&&f.wargameWB)syncStrength();
+}
+
+/* ---------- STEP 1: SNAPSHOT (rows from accounts, clickable) ---------- */
+function acctRows(f,group){return f.accounts.filter(a=>a.group===group);}
+function tableUnder(f){
+  const sn=f.snapshot,rows=acctRows(f,'under');
+  return `<div class="card" style="border-color:var(--red-line)">
+    <div class="ch"><span style="color:var(--red)">⚠ ${sn.underTitle}</span><span class="badge warn">${sn.underGap}</span></div>
+    <div class="cs">${sn.underSub}</div>
+    <table class="tbl"><thead><tr><th>Item</th>${sn.underCols.map(c=>`<th>${c}</th>`).join('')}<th></th></tr></thead>
+    <tbody>${rows.map(a=>`<tr style="cursor:pointer" onclick="openIntel('${f.id}','${a.key}')">
+      <td><span class="dot ${a.dot}"></span><span class="nm">${a.name}</span><div class="subt">${a.sub}</div></td>
+      ${a.cells.map(c=>`<td>${cellHtml(c)}</td>`).join('')}
+      <td style="text-align:right;color:var(--gold);font-size:16px">›</td></tr>`).join('')}</tbody></table>
+    <div style="text-align:right;margin-top:12px"><button class="btn gold" onclick="openIntel('${f.id}','${f.firstUnder}')">Move to intelligence →</button></div></div>`;
+}
+function tableTop(f){
+  const sn=f.snapshot,rows=acctRows(f,'top'),anyClick=rows.some(r=>r.clickable);
+  return `<div class="card"><div class="ch"><span>▲ ${sn.topTitle}</span><span class="badge ok">${sn.topSub}</span></div>
+    <table class="tbl"><thead><tr><th>Item</th>${sn.topCols.map(c=>`<th>${c}</th>`).join('')}${anyClick?'<th></th>':''}</tr></thead>
+    <tbody>${rows.map(a=>`<tr style="${a.clickable?'cursor:pointer':''}" ${a.clickable?`onclick="openIntel('${f.id}','${a.key}')"`:''}>
+      <td><span class="dot ${a.dot}"></span><span class="nm">${a.name}</span><div class="subt">${a.sub}</div></td>
+      ${a.cells.map(c=>`<td>${cellHtml(c)}</td>`).join('')}
+      ${anyClick?`<td style="text-align:right;color:var(--gold);font-size:16px">${a.clickable?'›':''}</td>`:''}</tr>`).join('')}</tbody></table></div>`;
+}
+function renderSnapshot(f){const sn=f.snapshot;
+  return `<div class="sechead">${sn.kicker}</div>
+    <h2 class="big">${sn.title} <span class="pillrt"><span class="neg">${sn.pill[0]}</span> · <span class="pos">${sn.pill[1]}</span></span></h2>
+    <div class="lead">${sn.lead}</div>${kpiGrid(sn.kpis)}${chartCard(sn.chart)}
+    <div class="grid2">${tableTop(f)}${tableUnder(f)}</div>
+    <div class="foot-note">Illustrative scenario · synthetic figures grounded in TCS public reporting — not actual account status.</div>`;
+}
+
+/* ---------- STEP 2: INTELLIGENCE (with account switcher) ---------- */
+function accountSwitcher(f){
+  const clickable=f.accounts.filter(a=>a.clickable);
+  const grp=(lbl,g)=>{const items=clickable.filter(a=>a.group===g);return items.length?`<optgroup label="${lbl}">`+items.map(a=>`<option value="${a.key}" ${a.key===cur.acct?'selected':''}>${a.name}</option>`).join('')+`</optgroup>`:'';};
+  return `<div style="display:flex;align-items:center;gap:10px">
+    <span style="font-size:10px;letter-spacing:1.5px;color:var(--muted2);text-transform:uppercase;font-weight:700">Account</span>
+    <select onchange="openIntel('${f.id}',this.value)" style="font-family:var(--sans);font-size:13px;font-weight:600;color:var(--ink);padding:8px 12px;border:1px solid var(--line2);border-radius:9px;background:#fff;cursor:pointer;min-width:220px">
+      ${grp(f.id==='wargame'?'Threats · action required':'Action required','under')}${grp(f.id==='wargame'?'':'Pulling ahead','top')}
+    </select></div>`;
+}
+function renderIntel(f){
+  let a=f.accounts.find(x=>x.key===cur.acct&&x.clickable);
+  if(!a)a=f.accounts.find(x=>x.key===f.firstUnder);
+  cur.acct=a.key;const t=a.intel;
+  const cards=t.cards.map(c=>`<div class="kpi ${c.c}"><div class="k">${c.k}</div><div class="v">${c.v}</div><div class="s">${c.s}</div></div>`).join('');
+  const causal=t.causal.map(c=>`<div class="wchip"><span class="tp">${c[0]}</span><span class="tx">${c[1]}</span></div>`).join('');
+  const modeled=t.modeled.map(m=>`<div class="mrow"><span>${m[0]}</span><b>${m[1]}</b></div>`).join('');
+  const conf=Array.from({length:5},(_,i)=>`<i class="${i<t.conf?'':'off'}"></i>`).join('');
+  const play=t.play.map(p=>`<li>${p}</li>`).join('');
+  const positive=a.group==='top';
+  return `<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
+      <div class="crumb" style="margin:0"><a onclick="goStep(0)">← Back to snapshot</a></div>${accountSwitcher(f)}</div>
+    <div class="sechead">${f.id==='wargame'?'THREAT INTELLIGENCE':(f.id==='workforce'?'SKILL-POOL INTELLIGENCE':'ACCOUNT INTELLIGENCE')} · ${t.label}</div>
+    <h2 class="big">${t.account}</h2>
+    <div class="kpis" style="grid-template-columns:repeat(4,1fr);margin-top:14px">${cards}</div>
+    <div class="card" style="border-color:${positive?'var(--green-line)':'var(--red-line)'}">
+      <div class="ch"><span style="color:${positive?'var(--green)':'var(--red)'}">● ${t.whyTitle}</span><span class="cs" style="margin:0">factual root-cause · linked to live signals</span></div>
+      <div style="font-size:13.5px;color:var(--ink2);line-height:1.6">${t.whyBody}</div>
+      <div class="why"><div class="chips">${causal}</div></div></div>
+    <div class="grid2a">
+      <div class="card analog"><div class="ch"><span style="color:var(--green)">◆ ${positive?'REPLICATE THIS WIN':'LOOKALIKE ANALOG'}</span></div>
+        <div class="name">${t.analogName}</div><div class="cs">${t.analogSub}</div>
+        <div class="obox"><b>Outcome:</b> ${t.analogOutcome}</div>
+        <div style="font-size:12.5px;color:var(--ink2);margin-top:12px"><b>What worked:</b> ${t.analogWorked}</div>
+        <div style="font-size:12.5px;color:var(--green);margin-top:10px"><b>Why it resonates:</b> ${t.analogWhy}</div></div>
+      <div class="card play"><div class="ch"><span style="color:var(--gold)">◆ ${t.playTitle}</span></div>
+        <div class="cs">${t.playSub}</div><ul>${play}</ul>
+        <div class="mbox" style="margin-top:14px">
+          <div style="font-size:9.5px;letter-spacing:1px;color:var(--muted);text-transform:uppercase;font-weight:700;margin-bottom:6px">Modeled outcome</div>${modeled}
+          <div style="font-size:9.5px;letter-spacing:1px;color:var(--muted);text-transform:uppercase;font-weight:700;margin:12px 0 4px">Confidence</div>
+          <div class="conf">${conf}</div><div style="font-size:10.5px;color:var(--muted)">${t.confText}</div></div></div></div>
+    <div class="next" onclick="goStep(2)"><div><div class="nk">Next step →</div>
+      <div class="nt">Open the ${f.wargameWB?'Wargame Workbench':f.title+' Workbench'}.</div>
+      <div class="nd">${f.wargameWB?'Set TCS\u2019s competitive posture, choose a scenario, and run the Monte-Carlo simulation.':'Pre-loaded with the recommended lever configuration. Every slider updates the live modelled impact — then generate three optimized options.'}</div></div>
+      <div class="arw">→</div></div>`;
+}
+
+/* ---------- model ---------- */
+function computeModel(f){const acc={};
+  f.workbench.groups.forEach(g=>g.levers.forEach(l=>{
+    const frac=clamp((cur.lev[l.id]-l.min)/((l.rec-l.min)||1),0,1.35);
+    for(const k in l.imp)acc[k]=(acc[k]||0)+l.imp[k]*frac;}));
+  return acc;}
+function readout(f,acc){
+  if(f.id==='genai'){const r=Math.round(acc.rev||0);
+    return {lift:"+$"+r+"M",cells:["+$"+r+"M",Math.min(100,Math.round(acc.gap||0))+"%","+"+(acc.win||0).toFixed(1)+"pp",((acc.margin||0)>=0?"+":"")+(acc.margin||0).toFixed(1)+"pp"]};}
+  const ready=Math.round(62+(acc.ready||0));
+  return {lift:ready+"%",cells:[((acc.attr||0)>=0?"+":"")+(acc.attr||0).toFixed(1)+"pp",ready+"%",(acc.subc||0).toFixed(0)+"%",((acc.margin||0)>=0?"+":"")+(acc.margin||0).toFixed(1)+"pp"]};}
+function updateWB(f){
+  f.workbench.groups.forEach(g=>g.levers.forEach(l=>{
+    const sl=document.getElementById('sl_'+l.id);if(sl&&(''+sl.value)!==(''+cur.lev[l.id]))sl.value=cur.lev[l.id];
+    const e=document.getElementById('tb_'+l.id);if(e)e.textContent=lvfmt(l,cur.lev[l.id]);
+    const rc=document.getElementById('rc_'+l.id);if(rc)rc.style.visibility=(Math.abs(cur.lev[l.id]-l.rec)<1e-6)?'visible':'hidden';}));
+  f.workbench.constraints.forEach((c,ci)=>{
+    const fr=c.stage.map(id=>{const l=findLever(f,id);return clamp((cur.lev[id]-l.min)/((l.max-l.min)||1),0,1);});
+    const fill=fr.reduce((a,b)=>a+b,0)/fr.length,mark=0.82;
+    const bar=document.getElementById('cbar'+ci);
+    if(bar){bar.style.width=(fill*100).toFixed(0)+'%';bar.style.background=fill>mark?'var(--red)':'var(--gold-b)';}
+    const st=document.getElementById('cst'+ci);if(st){st.textContent=fill>mark?'over':'ok';st.style.color=fill>mark?'var(--red)':'var(--green)';}});}
+function syncModel(){const f=FLOWS[cur.flow];updateWB(f);const ro=readout(f,computeModel(f));
+  const hl=document.getElementById('heroLift');if(hl)hl.textContent=ro.lift;
+  ro.cells.forEach((c,i)=>{const e=document.getElementById('qr'+i);if(e)e.textContent=c;});}
+function setLever(id,v){cur.lev[id]=parseFloat(v);cur.applied=null;syncModel();}
+
+/* ---------- STEP 3: WORKBENCH (genai / workforce) ---------- */
+function renderWorkbench(f){const wb=f.workbench;
+  const hero=wb.heroCards.map(c=>{const v=c.v==='id:lift'?`<span id="heroLift">—</span>`:c.v;
+    return `<div class="kpi ${c.c}"><div class="k">${c.k}</div><div class="v">${v}</div><div class="s">${c.s}</div></div>`;}).join('');
+  const groups=wb.groups.map(g=>`<div class="lvgroup"><div class="lvhead"><span>${g.name}</span><span>${g.levers.length} levers</span></div>
+    ${g.levers.map(l=>{const step=(l.fk==='util')?0.1:1;
+      return `<div class="lv"><div><div class="ln">${l.ln}</div><div class="ls">${l.ls}</div></div>
+        <div class="asis">${l.asIs} →</div>
+        <div><div class="tobe" style="display:flex;justify-content:space-between;align-items:center"><span id="tb_${l.id}">${lvfmt(l,l.val)}</span>
+          <span class="rec" id="rc_${l.id}" style="visibility:${Math.abs(l.val-l.rec)<1e-6?'visible':'hidden'}">✓ REC</span></div>
+          <input type="range" id="sl_${l.id}" min="${l.min}" max="${l.max}" step="${step}" value="${l.val}" oninput="setLever('${l.id}',this.value)"></div></div>`;}).join('')}</div>`).join('');
+  const cons=wb.constraints.map((c,ci)=>`<div class="cr"><div class="cl"><span>${c.l}</span><span style="font-weight:700">${c.r} <b id="cst${ci}" style="font-size:9px;color:var(--green)">ok</b></span></div>
+      <div class="bar"><i id="cbar${ci}" style="width:0%"></i><span class="mk" style="left:82%"></span></div><div class="cx">${c.x}</div></div>`).join('');
+  const qr=wb.qr.map((q,i)=>`<div><div class="qk">${q[0]}</div><div class="qv" id="qr${i}">—</div></div>`).join('');
+  return `<div class="crumb"><a onclick="goStep(1)">← Back to intelligence</a></div>
+    <div class="sechead">${f.title.toUpperCase()} · WORKBENCH</div><h2 class="big">${wb.title}</h2><div class="lead">${wb.lead}</div>
+    <div class="kpis" style="grid-template-columns:repeat(3,1fr)">${hero}</div>
+    <div class="grid2a"><div class="card">${groups}</div>
+      <div><div class="card constraints"><div class="ch"><span>GUARDRAILS &amp; CONSTRAINTS</span><span class="cs" style="margin:0">live · marker = limit</span></div>${cons}</div>
+        <div class="qr"><div class="qh">Simulated vs As-Is · quick read</div><div class="qg">${qr}</div>
+          <div class="foot-note">Live model · every lever updates the readout &amp; guardrails. Generate options to lock a scenario.</div></div></div></div>
+    <div class="runbar"><div><b style="font-family:var(--serif);font-size:16px">Ready to model.</b>
+      <div style="font-size:12px;color:var(--muted)">Run the simulator to generate three optimized lever configurations.</div></div>
+      <button class="btn gold big" id="genBtn" onclick="generate()">▷ Generate Options</button></div>
+    <div id="optsWrap"></div>`;
+}
+function generate(){const f=FLOWS[cur.flow];cur.opts=true;
+  const opts=f.options.map((o,i)=>`<div class="opt ${cur.sel===i?'sel':''}" id="opt${i}" onclick="selOpt(${i})">
+    <div class="oh"><span>OPTION ${String.fromCharCode(65+i)}</span>${o.tag?`<span class="otag">${o.tag}</span>`:''}</div>
+    <div class="on">${o.name}</div><div class="od">${o.desc}</div>
+    <div class="og">${o.g.map(x=>`<div><div class="ok">${x[0]}</div><div class="ov">${x[1]}</div></div>`).join('')}</div>
+    <ul class="moves">${o.moves.map(m=>`<li>${m}</li>`).join('')}</ul>
+    <div class="risk" style="color:${o.risk[1]}">Risk: ${o.risk[0]}</div></div>`).join('');
+  document.getElementById('optsWrap').innerHTML=`<div style="margin-top:24px" class="fadein">
+    <div class="sechead">● SIMULATION COMPLETE · 2.1s · 10,000 RUNS</div>
+    <div class="lead">${f.workbench.optNote}. Pick one to preview business impact.</div>
+    <div class="opts">${opts}</div>
+    <div class="runbar" style="margin-top:18px"><div id="selMsg" style="font-size:13px;color:var(--muted)">Select an option to continue.</div>
+      <button class="btn dark big" id="contBtn" onclick="goStep(3)" style="opacity:.5;pointer-events:none">Apply &amp; view outcomes →</button></div></div>`;
+  document.getElementById('genBtn').textContent='↻ Re-generate';
+  document.getElementById('optsWrap').scrollIntoView({behavior:'smooth'});}
+function selOpt(i){cur.sel=i;cur.applied=i;const f=FLOWS[cur.flow],opt=f.options[i];
+  f.options.forEach((_,j)=>document.getElementById('opt'+j).classList.toggle('sel',i===j));
+  if(opt.levers){for(const id in opt.levers)cur.lev[id]=opt.levers[id];
+    updateWB(f);                                   // snap sliders + tb labels + guardrails to this option
+    const ro=readout(f,computeModel(f));
+    const hero=document.getElementById('heroLift');if(hero)hero.textContent=(f.id==='genai'?opt.g[0][1]:opt.g[1][1]);
+    [0,1,2].forEach(k=>{const e=document.getElementById('qr'+k);if(e)e.textContent=opt.g[k][1];}); // show option's headline numbers
+    const q3=document.getElementById('qr3');if(q3)q3.textContent=ro.cells[3];}                     // margin computed live from the preset
+  const b=document.getElementById('contBtn');b.style.opacity='1';b.style.pointerEvents='auto';
+  document.getElementById('selMsg').innerHTML=`<b>${opt.name}</b> applied — levers set to this configuration · tweak any slider to customize`;}
+
+/* ---------- STEP 3 (wargame): MONTE-CARLO WORKBENCH ---------- */
+function wgStrength(){const wb=FLOWS.wargame.wargameWB;return wb.levers.reduce((a,l)=>a+cur.lev[l.id],0)/wb.levers.length;}
+function syncStrength(){const wb=FLOWS.wargame.wargameWB;const s=wgStrength();
+  const diff=wb.scenarios.find(x=>x.id===cur.scenario).diff;
+  const est=(-0.2+s*2.9-diff*1.9);
+  const bar=document.getElementById('wgStrength');if(bar)bar.style.width=(s*100).toFixed(0)+'%';
+  const tx=document.getElementById('wgStrengthTx');if(tx)tx.textContent=Math.round(s*100)+'%';
+  const pv=document.getElementById('wgPreview');if(pv)pv.textContent=(est>=0?'+':'')+est.toFixed(2)+'pp';}
+function setPreset(name){const p=FLOWS.wargame.wargameWB.presets.find(x=>x.name===name);
+  cur.preset=name;Object.keys(p.vals).forEach(k=>cur.lev[k]=p.vals[k]);renderFlow();}
+function setScenario(id){cur.scenario=id;renderFlow();}
+function setWL(id,v){cur.lev[id]=parseFloat(v);cur.preset=null;
+  const e=document.getElementById('wl_'+id);if(e)e.textContent=Math.round(cur.lev[id]*100)+'%';syncStrength();}
+function runMonteCarlo(){const wb=FLOWS.wargame.wargameWB;
+  const diff=wb.scenarios.find(s=>s.id===cur.scenario).diff;
+  cur.mc=runMC(wgStrength(),diff,10000);if(cur.step===2)renderFlow();}
+function renderWargameWB(f){const wb=f.wargameWB;
+  const presets=wb.presets.map(p=>`<button class="preset ${cur.preset===p.name?'on':''}" onclick="setPreset('${p.name}')">${p.name}</button>`).join('');
+  const levers=wb.levers.map(l=>`<div class="lv" style="grid-template-columns:1.3fr 1.7fr .5fr">
+    <div><div class="ln">${l.ln}</div><div class="ls">${l.ls}</div></div>
+    <div><input type="range" min="0" max="1" step="0.05" value="${cur.lev[l.id]}" oninput="setWL('${l.id}',this.value)">
+      <div style="display:flex;justify-content:space-between;font-size:9.5px;color:var(--muted2);margin-top:2px"><span>${l.lo}</span><span>${l.hi}</span></div></div>
+    <div class="tobe" style="text-align:right"><span id="wl_${l.id}">${Math.round(cur.lev[l.id]*100)}%</span></div></div>`).join('');
+  const scen=wb.scenarios.map(s=>`<div class="preset ${cur.scenario===s.id?'on':''}" style="display:block;text-align:left;padding:11px 13px;margin-bottom:8px" onclick="setScenario('${s.id}')">
+    <div style="font-weight:700;font-size:12.5px">${s.name}</div><div style="font-size:10.5px;color:${cur.scenario===s.id?'#e8dcc4':'var(--muted)'}">${s.desc}</div></div>`).join('');
+  let results='';
+  if(cur.mc){const mc=cur.mc;
+    const wprows=wb.competitors.map(c=>{const p=mc.wp[c.name];
+      return `<tr><td class="nm">${c.name}</td><td><div style="height:8px;border-radius:5px;background:var(--line2);position:relative;overflow:hidden">
+        <i style="position:absolute;left:0;top:0;bottom:0;border-radius:5px;width:${p}%;background:${p>=55?'var(--green)':p>=40?'var(--gold-b)':'var(--red)'}"></i></div></td>
+        <td style="text-align:right;font-weight:800;font-family:var(--serif);color:${p>=55?'var(--green)':p>=40?'var(--gold)':'var(--red)'}">${p}%</td></tr>`;}).join('');
+    results=`<div class="card fadein" style="margin-top:18px">
+      <div class="ch"><span>● SIMULATION COMPLETE · 10,000 RUNS</span><span class="badge ${mc.p50>=1.2?'ok':mc.p50>=0?'gold':'warn'}">P50 ${mc.p50>=0?'+':''}${mc.p50.toFixed(2)}pp share</span></div>
+      <div class="ct">TCS market-share shift — probability distribution</div>
+      <div class="cs">Distribution of 4-quarter share shift across 10,000 runs under the <b>${wb.scenarios.find(s=>s.id===cur.scenario).name}</b> scenario.</div>
+      ${histogram(mc.out,860,200)}
+      <div class="grid3" style="margin-top:14px">
+        <div class="kpi r"><div class="k">P10 · Downside</div><div class="v">${mc.p10>=0?'+':''}${mc.p10.toFixed(2)}pp</div><div class="s">pessimistic</div></div>
+        <div class="kpi gold"><div class="k">P50 · Expected</div><div class="v">${mc.p50>=0?'+':''}${mc.p50.toFixed(2)}pp</div><div class="s">median</div></div>
+        <div class="kpi g"><div class="k">P90 · Upside</div><div class="v">${mc.p90>=0?'+':''}${mc.p90.toFixed(2)}pp</div><div class="s">optimistic</div></div></div>
+      <div class="grid2" style="margin-top:16px">
+        <div><div style="font-size:10px;letter-spacing:1.5px;color:var(--gold);text-transform:uppercase;font-weight:700;margin-bottom:8px">Win-probability by competitor</div>
+          <table class="tbl"><tbody>${wprows}</tbody></table></div>
+        <div class="qr"><div class="qh">Expected outcome · P50</div><div class="qg">
+          <div><div class="qk">Pipeline captured</div><div class="qv">$${mc.captured.toFixed(1)}B</div></div>
+          <div><div class="qk">of $2.1B contested</div><div class="qv">${Math.round(mc.captured/2.1*100)}%</div></div>
+          <div><div class="qk">Bookings-gap closure</div><div class="qv">${Math.round(mc.gapc)}%</div></div>
+          <div><div class="qk">Strategy strength</div><div class="qv">${Math.round(wgStrength()*100)}%</div></div></div></div></div>
+      <div class="runbar" style="margin-top:16px"><div style="font-size:13px;color:var(--muted)">Adjust levers/scenario and re-run, or continue.</div>
+        <button class="btn dark big" onclick="goStep(3)">View war-game outcomes →</button></div></div>`;}
+  return `<div class="crumb"><a onclick="goStep(1)">← Back to intelligence</a></div>
+    <div class="sechead">COMPETITIVE WARGAME · MONTE-CARLO WORKBENCH</div><h2 class="big">${wb.title}</h2><div class="lead">${wb.lead}</div>
+    <div class="grid2a">
+      <div class="card"><div class="ch"><span>TCS STRATEGY POSTURE</span><div class="presets">${presets}</div></div>${levers}
+        <div class="qr" style="margin-top:14px"><div class="qh">Live strategy strength</div>
+          <div class="bar" style="height:9px;border-radius:5px;background:var(--line2);position:relative;overflow:hidden;margin:4px 0 8px"><i id="wgStrength" style="position:absolute;left:0;top:0;bottom:0;border-radius:5px;background:var(--gold-b);width:50%"></i></div>
+          <div class="qg"><div><div class="qk">Strength</div><div class="qv"><span id="wgStrengthTx">50</span>%</div></div>
+            <div><div class="qk">Pre-run P50 est.</div><div class="qv"><span id="wgPreview">+0.00pp</span></div></div></div></div></div>
+      <div><div class="card"><div class="ch"><span>MARKET SCENARIO</span></div><div class="cs">Choose what the market throws at TCS.</div>${scen}</div>
+        <div class="runbar" style="margin-top:0"><div><b style="font-family:var(--serif);font-size:15px">10,000 runs</b><div style="font-size:11.5px;color:var(--muted)">Box-Muller Monte Carlo</div></div>
+          <button class="btn gold big" onclick="runMonteCarlo()">▷ Run Monte Carlo</button></div></div></div>${results}`;
+}
+
+/* ---------- STEP 4: OUTCOMES ---------- */
+function appliedNote(f,opt){
+  if(f.id==='genai')return `<b>${opt.g[0][1]}</b> annualized AI-revenue lift · ${opt.g[1][1]} of the Accenture bookings gap closed · P50`;
+  return `AI-ready workforce to <b>${opt.g[1][1]}</b> by Q4 · attrition ${opt.g[0][1]} · subcontractor ${opt.g[2][1]} → margin accretive`;}
+function renderOutcomes(f){const o=f.outcomes;
+  if(o.isWargame)return renderWargameOutcomes(f);
+  const opt=f.options[cur.sel];const chart=o.chart;
+  let badge=chart.badge;if(badge&&badge.indexOf('id:')===0)badge=opt.g[1][1]+(f.id==='genai'?' gap closed':' AI-ready');
+  const timeline=o.timeline.map((t,i)=>`<div class="tn"><div class="c">${i+1}</div><div class="d">${t.d}</div><div class="l">${t.l}</div><div class="v">${t.v}</div><div class="x">${t.x}</div></div>`).join('');
+  const summ=o.summ.map(s=>`<div class="card" style="margin:0"><div class="k" style="font-size:9.5px;letter-spacing:1px;color:var(--muted);text-transform:uppercase;font-weight:700">${s.k}</div>
+    <div style="font-family:var(--serif);font-size:24px;font-weight:800;color:var(--green);margin:5px 0 2px">${s.v}</div><div class="s" style="font-size:11px;color:var(--muted)">${s.s}</div></div>`).join('');
+  return `<div class="crumb"><a onclick="goStep(2)">← Back to workbench</a></div>
+    <div class="sechead">RESULTS · ${opt.name.toUpperCase()} OPTION</div><h2 class="big">${o.title}</h2><div class="lead">${o.lead}</div>
+    <div class="applied"><div><div class="at">● Applied · Option ${String.fromCharCode(65+cur.sel)} · ${opt.name}</div>
+      <div class="av">${appliedNote(f,opt)}</div></div><button class="btn ghost" onclick="goStep(2)">← Change option</button></div>
+    <div class="card"><div class="ch"><span>PLAN VS ACTUAL · RECOVERY TRAJECTORY</span><span class="badge ok">${badge}</span></div>
+      <div class="ct">${chart.title}</div><div class="cs">${chart.sub}</div>${lineChart(chart,860,240)}</div>
+    <div class="card"><div class="ch"><span>TIMELINE · IMPACT MATERIALIZATION</span></div><div class="ct">When impact will be visible.</div>
+      <div class="cs">Phased execution — ${o.timeline.map(t=>t.l.toLowerCase()).join(' → ')}.</div><div class="timeline">${timeline}</div></div>
+    <div class="grid4">${summ}</div>
+    <div class="commit"><div><div class="ck">Ready to commit</div><div class="ct">Save as tracked initiative, then push to the field for execution.</div></div>
+      <div style="display:flex;gap:10px"><button class="btn ghost" onclick="commit('initiative')">Save as initiative</button>
+      <button class="btn gold" onclick="commit('brief')">◈ Create Board Brief</button></div></div>`;
+}
+function renderWargameOutcomes(f){const wb=f.wargameWB,mc=cur.mc||runMC(0.6,0,10000);
+  const chart={title:"Projected share position — with applied strategy",sub:"Gold = TCS baseline. Green dashed = with applied strategy (P50). Red dashed = Accenture.",
+    ykind:"pct",ymin:14,ymax:24,xlabels:["Q2·26","Q3·26","Q4·26","Q1·27","Q2·27"],
+    series:[{name:"Accenture",color:"#b23524",dash:"4 3",pts:[22,22.3,22.6,22.8,23]},
+      {name:"TCS baseline",color:"#b6811c",pts:[15.9,16.0,16.1,16.2,16.3]},
+      {name:"TCS with strategy",color:"#1f7a52",dash:"5 4",pts:[15.9,16.4,16.9,17.4,clamp(15.9+mc.p50,15.9,20)]}]};
+  const wprows=wb.competitors.map(c=>{const p=mc.wp[c.name];
+    return `<tr><td class="nm">${c.name}</td><td><div style="height:8px;border-radius:5px;background:var(--line2);position:relative;overflow:hidden">
+      <i style="position:absolute;left:0;top:0;bottom:0;border-radius:5px;width:${p}%;background:${p>=55?'var(--green)':p>=40?'var(--gold-b)':'var(--red)'}"></i></div></td>
+      <td style="text-align:right;font-weight:800;font-family:var(--serif);color:${p>=55?'var(--green)':p>=40?'var(--gold)':'var(--red)'}">${p}%</td></tr>`;}).join('');
+  const scenName=wb.scenarios.find(s=>s.id===cur.scenario).name;
+  const summ=[["SHARE SHIFT · P50",(mc.p50>=0?'+':'')+mc.p50.toFixed(2)+'pp'],["PIPELINE CAPTURED","$"+mc.captured.toFixed(1)+"B"],
+    ["BOOKINGS-GAP CLOSURE",Math.round(mc.gapc)+"%"],["WIN-PROB vs ACN",mc.wp["Accenture"]+"%"]]
+    .map(s=>`<div class="card" style="margin:0"><div class="k" style="font-size:9.5px;letter-spacing:1px;color:var(--muted);text-transform:uppercase;font-weight:700">${s[0]}</div>
+      <div style="font-family:var(--serif);font-size:24px;font-weight:800;color:var(--green);margin:5px 0 2px">${s[1]}</div></div>`).join('');
+  return `<div class="crumb"><a onclick="goStep(2)">← Back to workbench</a></div>
+    <div class="sechead">WAR-GAME RESULTS · ${scenName.toUpperCase()}</div><h2 class="big">${f.outcomes.title}</h2><div class="lead">${f.outcomes.lead}</div>
+    <div class="applied"><div><div class="at">● Strategy applied · ${cur.preset||'custom'} posture · ${scenName}</div>
+      <div class="av">Expected <b>${mc.p50>=0?'+':''}${mc.p50.toFixed(2)}pp</b> share shift · $${mc.captured.toFixed(1)}B of $2.1B contested captured · ${mc.wp["Accenture"]}% win-probability vs Accenture</div></div>
+      <button class="btn ghost" onclick="goStep(2)">← Adjust strategy</button></div>
+    <div class="card"><div class="ch"><span>PROJECTED SHARE TRAJECTORY</span><span class="badge ok">P50 ${mc.p50>=0?'+':''}${mc.p50.toFixed(2)}pp</span></div>
+      <div class="ct">${chart.title}</div><div class="cs">${chart.sub}</div>${lineChart(chart,860,240)}</div>
+    <div class="grid2a"><div class="card"><div class="ch"><span>WIN-PROBABILITY BY COMPETITOR</span></div>
+      <table class="tbl"><tbody>${wprows}</tbody></table>
+      <div class="foot-note">Probability TCS out-shifts each competitor over four quarters, from 10,000 Monte-Carlo runs.</div></div>
+      <div class="card"><div class="ch"><span>RECOMMENDED POSTURE</span></div>
+        <div style="font-size:13px;color:var(--ink2);line-height:1.6">Under <b>${scenName}</b>, the ${cur.preset||'current'} posture yields a P50 share gain with a ${mc.wp["Accenture"]}% probability of out-shifting Accenture. Lead with outcome-based pricing on the contested top-20, ship the mid-market SKU against Infosys, and press the sovereign / deep-tech moat where peers cannot follow.</div></div></div>
+    <div class="grid4">${summ}</div>
+    <div class="commit"><div><div class="ck">Ready to commit</div><div class="ct">Lock this competitive posture and brief the leadership team.</div></div>
+      <div style="display:flex;gap:10px"><button class="btn ghost" onclick="commit('initiative')">Save as initiative</button>
+      <button class="btn gold" onclick="commit('brief')">◈ Create Board Brief</button></div></div>`;
+}
+function commit(kind){const f=FLOWS[cur.flow];const what=kind==='brief'?'Board Brief drafted':'Initiative saved to Memory';
+  alert(what+'  ✓\n\nFlow: '+f.title+'\n'+(f.options&&cur.sel!=null?('Option: '+f.options[cur.sel].name):('Posture: '+(cur.preset||'custom')))+
+    '\n\nIn the live product this writes a tracked decision to the Memory ledger and pushes the configuration to the field — where real-world results feed back to sharpen the next simulation.');}
+
+renderLanding();
+</script>
+</body>
+</html>
