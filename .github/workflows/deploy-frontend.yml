@@ -1,0 +1,65 @@
+name: Deploy Frontend to GitHub Pages
+
+# Builds the Vite/React frontend (ceo-tcs/cco-os-ups) and publishes the
+# static bundle to GitHub Pages. Backend features are not deployed here.
+
+on:
+  push:
+    branches:
+      - main
+      - claude/commit-and-deploy-p4qjg4
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment.
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ceo-tcs/cco-os-ups
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm install --no-audit --no-fund
+
+      - name: Build
+        # No backend deployed — leave VITE_API_BASE_URL empty so API calls
+        # resolve to same-origin (they will fail gracefully with no backend).
+        env:
+          VITE_API_BASE_URL: ""
+        run: npm run build
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ceo-tcs/cco-os-ups/dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
